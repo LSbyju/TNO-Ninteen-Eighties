@@ -4261,9 +4261,8 @@ USA_OFN_Buffs_10_desc: "From the dark days of a war's aftermath shone forth a pr
  USA_WAL64_subsidy_spree: "Subsidy Spree"
  USA_WAL64_subsidy_spree_desc: "Wallace's unprecedented economic reforms have already made him one of the most effective Presidents in history. He has revolutionized, or some would say counter-revolutionized, employment and education across the country. Now, Wallace has implemented a new economic initiative: A leviathan stimulus package that will pour easy credit into small business, big business, show business, you name it! The Federal Reserve is screaming bloody murder, but the economy is partying like it's Mardi Gras."
  
- # Character Localisation
+ # Character Localisation mixed dont delete any
  USA_Richard_Nixon: "Ronald Reagan"
- #purge these
  USA_John_F_Kennedy: "John F. Kennedy"
  USA_Francis_Yockey: "Francis Parker Yockey"
  USA_George_Wallace: "George Wallace"
@@ -4279,8 +4278,8 @@ USA_OFN_Buffs_10_desc: "From the dark days of a war's aftermath shone forth a pr
  USA_Michael_Harrington: "Michael Harrington"
  USA_George_McGovern: "George McGovern"
  USA_Jeane_Kirkpatrick: "Jeane Kirkpatrick"
- USA_Strom_Thurmond: "Strom Thurmond"
- USA_Curtis_LeMay: "Curtis LeMay"
+ USA_Strom_Thurmond: "Walter Mondale"
+ USA_Curtis_LeMay: "Mo Udall"
  GRN_Mr_Greenland: "Mr. Greenland"
  AMK_Hans_Joachim_Herrmann: "Hans-Joachim Herrmann"
  
@@ -4336,10 +4335,9 @@ USA_OFN_Buffs_10_desc: "From the dark days of a war's aftermath shone forth a pr
  USA_Donald_Regan_eco_desc: "§YSecretary of the Treasury\nRepublican§!\n§F------------§!\n§LFew systems are as complex as the economy. For hundreds of years, economists have been trying to decipher what keeps the world spinning - and for the man hours spent, the results are mediocre at best. America is a bloated mess filled with obscure regulations, overbearing taxes, nonsensical clauses, and much more.\n\nDonald Regan is poised to clean up that mess and turn the rusty old engine into a fine-tuned machine. As a former Merrill Lynch executive, he has first-hand experience with the inner workings of the American economy, and over the years, he forged his solution on how to fix it. His bold plans will transfer every level of American society, and people are cautiously awaiting the results of his daring experiment.§!"
  
  USA_John_F_Kennedy_dep_desc: "§YVice President\nDemocrat§!\n§F------------§!\n§LYoung, rich, handsome, and charismatic, John Fitzgerald Kennedy doesn't embody his nation as it exists. He embodies his nation as it wants to be.\n\nA son of the businessman and politician Joseph P. Kennedy, Sr., JFK has enjoyed a life seemingly unburdened by hardship. As far as the public knows, he grew up in a supportive family and went to the best schools before enlisting in the US Navy and displaying heroism against the Japanese. Bolstered by his eloquence and a rare ability to connect with voters, Kennedy found himself swept into politics upon his return, ascending from congressman to senator, ousting a Republican rival in the process. His unabashed liberalism and uplifting campaign style led the coalition bosses to think of him as a good balance to Nixon on the ticket in '60. While Kennedy has his own ambitions, he is aware of the dangers in upsetting his erratic and confusing boss. He is determined to see their partnership succeed, at least for now.§!"
- 
- USA_John_McCormack: "John McCormack"
- USA_John_McCormack_dep_desc: "§YSpeaker of the House\nDemocrat§!\n§F------------§!\n§LAmerica is going through turbulent times, and John William McCormack is a rock of stability amidst the chaos.\n\nThe sudden and unexpected impeachment of Richard Nixon caused John F. Kennedy to assume office, but the line of command did not end there. Someone had to fill the empty seat left by him, and that someone was the Speaker of the House according to the much-treasured constitution. McCormack himself never had any grand ambitions regarding his future career, but fate takes strange turns sometimes.\n\nLuckily, few people are passionate about their vice President. McCormack is perfectly content to stay in the shadows for now, silently performing his duty until he gets replaced by a man the people voted for. This is how he wants history to remember him - not as a grand reformer or a glorious statesman, but as a man who solemnly fulfilled his duty.§!"
- 
+ ##John B. Anderson
+ USA_John_McCormack: "John B. Anderson"
+ ##John B. Anderson
  USA_Carl_Hayden: "Carl Hayden"
  USA_Carl_Hayden_dep_desc: "§YPresident pro tempore of the Senate\nDemocrat§!\n§F------------§!\n§LLife can be a curious thing. When Carl Trumbull Hayden got elected President pro tempore of the Senate, he prepared for years of administrative work and political legwork. Him being third in line to succeed the President of the United States was more of a fun fact to him, something he could tell his grandchildren - after all, there is no way that three Presidents would leave office in a row, right? Now, two out of three are gone, and Hayden is slowly getting worried.\n\nHayden's apparent reclusiveness when it comes to speaking on the floor of the senate should not be confused with shyness or cowardice. Known as the "Silent Senator", Carl Hayden is famous for winning friends and influencing people in committee meetings and cloakroom encounters. A colleague of him once claimed that "no man in Senate history wields more influence with less oratory", and perhaps these kinds of legislative abilities are exactly what John McCormack needs to enable a gradual return to normalcy.§!"
  
@@ -4618,18 +4616,22 @@ USA_OFN_Buffs_10_desc: "From the dark days of a war's aftermath shone forth a pr
 
  USA_pops_tooltip: "Cool US Debug Display\n\n§RR§!§TD§!§WC§!: §w[?This.RD_popularity]§!\n§ONPP: [?This.NPP_popularity]§!\n§BRDC-D:§! §B[?This.RD_D_bonus_popularity]§!\n§wRDC-R:§! §w[?This.RD_R_bonus_popularity]§!\n§PNPP-P:§! §P[?This.NPP_C_bonus_popularity]§!\n§gNPP-N:§! §g[?This.NPP_FR_bonus_popularity]§!\n§jNPP-ANV:§! §j[?This.NPP_Y_bonus_popularity]§!\n§eNPP-M:§! §e[?This.NPP_L_bonus_popularity]§!"
 
+
+##new parties
 USA_national_socialism_party:0 "NPP (ANV)"
 USA_national_socialism_party_long:0 "National Progressive Pact (American National Vanguard)"
 USA_paternalism_party:0 "NPP (N)"
 USA_paternalism_party_long:0 "National Progressive Pact (Nationalist)"
-USA_conservatism_party:0 "RDC (R)"
-USA_conservatism_party_long:0 "Republican-Democratic Coalition (Republicans)"
-USA_liberalism_party:0 "RDC (D)"
-USA_liberalism_party_long:0 "Republican-Democratic Coalition (Democratic)"
-USA_progressivism_party:0 "NPP (P)"
-USA_progressivism_party_long:0 "National Progressive Pact (Progressive)"
-USA_communist_party:0 "NPP (M)"
-USA_communist_party_long:0 "National Progressive Pact (Marxist)"
+USA_conservatism_party:0 "RP (C)"
+USA_conservatism_party_long:0 "The Republican Party (Conservative)"
+USA_liberalism_party:0 "DP (L)"
+USA_liberalism_party_long:0 "The Democratic Party (Liberal)"
+USA_liberal_conservatism_party:0 "RP (C)"
+USA_liberal_conservatism_party_long:0 "The Republican Party (Centrist)"
+USA_progressivism_party:0 "DP (P)"
+USA_progressivism_party_long:0 "The Democratic Party (Progressive)"
+USA_communist_party:0 "TUSF"
+USA_communist_party_long:0 "The United Socialist Front Of The United States Leader"
 
 USA_SR_NPP_Wallace_Presidency:0 "National Progressive Pact (States' Rights)"
 USA_SR_NPP_Wallace_Presidency_short:0 "NPP (SR)"

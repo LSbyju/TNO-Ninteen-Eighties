@@ -34,7 +34,7 @@ characters = {
 			id = -1
 		}
 	}
-
+    ##starting cabinet##
 	USA_gerald_ford = {
 		name = USA_gerald_ford
 		portraits = {
@@ -123,40 +123,10 @@ characters = {
 			ai_will_do = { factor = 0 }
 		}
 	}
-	USA_Phyllis_Schlafly = {
-		name = USA_Phyllis_Schlafly
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/USA/Portrait_USA_Phyllis_Schlafly.dds"
-			}
-		}
-		gender = female
-		country_leader = {
-			desc = "POLITICS_SCHLAFY_DESC"
-			expire = "1994.4.20"
-			ideology = paternalism_paleoconservatism_subtype
-			traits = {
-			}
-			id = -1
-		}
-	}
-	USA_George_Romney = {
-		name = USA_George_Romney
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/USA/Portrait_USA_George_Romney.dds"
-			}
-		}
-		country_leader = {
-			desc = "POLITICS_GEORGE_ROMNEY_DESC"
-			expire = "1994.4.20"
-			ideology = conservatism_urban_populism_subtype
-			traits = {
-			}
-			id = -1
-		}
-	}
-	USA_Strom_Thurmond = { # Racism
+	##end##
+	
+	##Walter Mondale##
+	USA_Strom_Thurmond = { 
 		name = USA_Strom_Thurmond
 		portraits = {
 			civilian = {
@@ -164,14 +134,15 @@ characters = {
 			}
 		}
 		country_leader = {
-			desc = "POLITICS_STROM_THURMOND_DESC"
+			desc = ""
 			expire = "1994.4.20"
-			ideology = paternalism_dixiecrat_subtype
+			ideology = progressivism_subtype
 			traits = {
 			}
 			id = -1
 		}
 	}
+	##Mo Udall##
 	USA_Curtis_LeMay = {
 		name = USA_Curtis_LeMay
 		portraits = {
@@ -181,73 +152,15 @@ characters = {
 			}
 		}
 		country_leader = {
-			desc = "POLITICS_CURTIS_LEMAY_DESC"
+			desc = ""
 			expire = "1994.4.20"
-			ideology = paternalism_national_conservatism_subtype
+			ideology = liberalism_subtype
 			traits = {
 			}
 			id = -1
 		}
-		advisor = {
-			slot = head_of_government
-			idea_token = USA_Curtis_LeMay_dep
-			on_add = { USA = { hidden_effect = { remove_ideas = USA_Generic_Vacant_hog } } }
-			allowed = { original_tag = USA }
-			traits = {
-				head_of_government
-				hog_flamboyant_tough_guy
-			}
-			ledger = civilian
-			cost = -1
-			can_be_fired = no
-			ai_will_do = { factor = 0 }
-		}
 	}
-	# Ministers #
-	USA_William_P_Rogers = {
-		name = USA_William_P_Rogers
-		portraits = {
-			civilian = {
-				small = "GFX_idea_USA_William_P_Rogers"
-			}
-		}
-		advisor = {
-			slot = foreign_minister
-			idea_token = USA_William_P_Rogers_pol
-			on_add = { USA = { hidden_effect = { remove_ideas = USA_Generic_Vacant_for } } }
-			allowed = { original_tag = USA }
-			traits = {
-				foreign_minister
-				for_apologetic_clerk
-			}
-			ledger = civilian
-			cost = -1
-			can_be_fired = no
-			ai_will_do = { factor = 0 }
-		}
-	}
-	USA_Melvin_Laird = {
-		name = USA_Melvin_Laird
-		portraits = {
-			civilian = {
-				small = "GFX_idea_USA_Melvin_Laird"
-			}
-		}
-		advisor = {
-			slot = security_minister
-			idea_token = USA_Melvin_Laird_mil
-			on_add = { USA = { hidden_effect = { remove_ideas = USA_Generic_Vacant_sec } } }
-			allowed = { original_tag = USA }
-			traits = {
-				security_minister
-				sec_compassionate_gentleman
-			}
-			ledger = civilian
-			cost = -1
-			can_be_fired = no
-			ai_will_do = { factor = 0 }
-		}
-	}
+	##John B. Anderson##
 	USA_John_McCormack = {
 		name = USA_John_McCormack
 		portraits = {
@@ -256,24 +169,10 @@ characters = {
 				large = "gfx/leaders/USA/Portrait_USA_John_W_McCormack.dds"
 			}
 		}
-		advisor = {
-			slot = head_of_government
-			idea_token = USA_John_McCormack_dep
-			on_add = { USA = { hidden_effect = { remove_ideas = USA_Generic_Vacant_hog } } }
-			allowed = { original_tag = USA }
-			traits = {
-				head_of_government
-				hog_pragmatic_statesman
-			}
-			ledger = civilian
-			cost = -1
-			can_be_fired = no
-			ai_will_do = { factor = 0 }
-		}
 		country_leader = {
-			desc = "POLITICS_JOHN_MCCORMACK_DESC"
+			desc = ""
 			expire = "1994.4.20"
-			ideology = liberalism_subtype
+			ideology = liberal_conservatism_subtype
 			id = -1
 		}
 	}

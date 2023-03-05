@@ -463,14 +463,14 @@ set_politics = {
 }
 
 set_popularities = {
-	communist = 0
+	communist = 1
 	ultranationalism = 0
 	socialist = 0
-	progressivism = 17.6
-	liberalism = 35.9
-
-	conservatism = 24.6
-	paternalism = 21.9
+	progressivism = 20
+	liberalism = 29
+	
+	liberal_conservatism = 18
+	conservatism = 32
 	despotism = 0
 	fascism = 0
 	national_socialism = 0
