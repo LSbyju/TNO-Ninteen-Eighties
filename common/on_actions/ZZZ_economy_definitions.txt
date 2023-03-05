@@ -42,14 +42,14 @@ on_actions = {
 			}
 			USA = {
 				##Variable Initiation
-				set_variable = { GDP = 322.723 } #in billions
-				set_variable = { GDP_growth = 6.9 } #as a percentage
+				set_variable = { GDP = 2526.723 } #in billions
+				set_variable = { GDP_growth = 7.65 } #as a percentage
 				set_variable = { income_tax_rate = 0.205 }
 				set_variable = { business_tax_rate = 0.25 }
 				set_variable = { poverty_rate = 15.63 }
 				set_variable = { poverty_monthly_change = 0.15 }
 				set_variable = { money_reserves = 0.0 } #in billions
-				set_variable = { national_debt = 254.517 } #in billions
+				set_variable = { national_debt = 1256.517 } #in billions
 				set_variable = { misc_income = 0.0 }
 				set_variable = { misc_costs = 0.0 }
 				
@@ -60,7 +60,7 @@ on_actions = {
 				set_temp_variable = { temp_credit_rating_max = 10 }
 				econ_initialize_credit_rating_system = yes
 
-				set_variable = { base_inflation_rate = 6.3 }
+				set_variable = { base_inflation_rate = 10.6 }
 
 				initiate_display_vars = yes
 			}
