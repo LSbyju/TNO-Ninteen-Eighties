@@ -6,11 +6,11 @@ state = {
 		tungsten = 15
 	}
 	history = {
-		owner = OMO
+		owner = KOM
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = OMO
+		add_core_of = KOM
 		victory_points = { 4455 5 }
 	}
 

@@ -377,6 +377,62 @@ ideas = {
 			}
 			removal_cost = -1
 		}
+		##new
+		USA_sttandard_bearer_liberty = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_sttandard_bearer_liberty"}
+			picture = idea_usa_last_bastion_of_liberty_tfo
+			
+			modifier = {
+				stability_factor = 0.10
+			}
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+		}
+		USA_dream_achieved = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_dream_achieved"}
+			picture = civil_rights_tfo
+			
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.1
+			}
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+		}
+		USA_legacy_of_the_new_frontier = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_legacy_of_the_new_frontier"}
+			picture = legacy_of_the_new_frontier
+			
+			modifier = {
+				stability_factor = 0.20
+			}
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+		}
+		USA_reagan_recession = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_reagan_recession"}
+			picture = The_Regean_Recession
+			
+			modifier = {
+				stability_factor = -0.10
+				political_power_gain = -1
+			}
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+		}
+        ##end here		
 
 		USA_the_american_depression_5 = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_the_american_depression_5"}

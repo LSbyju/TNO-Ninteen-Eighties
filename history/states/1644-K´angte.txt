@@ -6,8 +6,8 @@ state={
 	}
 
 	history={
-		owner = MAN
-		add_core_of = SOR
+		owner = KOM
+		add_core_of = KOM
 		victory_points = { 9604 5 }
 		victory_points = { 11643 5 }
 		set_state_flag = state_renamings
@@ -15,8 +15,6 @@ state={
 			infrastructure = 2
 			radar_station = 2
 		}
-		set_resistance = 0
-		set_compliance = 100
 	}
 
 	provinces={

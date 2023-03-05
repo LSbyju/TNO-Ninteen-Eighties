@@ -6880,4 +6880,23 @@ spriteTypes = {
 		name = "GFX_idea_AFG_The_Two_Mohammeds"
 		texturefile = "gfx/interface/ideas/national_spirits/idea_AFG_The_Two_Mohammeds.dds"
 	}
+	
+	##TFO-USA
+	
+	spriteType = {
+		name = "GFX_idea_USA_sttandard_bearer_liberty"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_usa_last_bastion_of_liberty_tfo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_dream_achieved"
+		texturefile = "gfx/interface/ideas/national_spirits/civil_rights_tfo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_legacy_of_the_new_frontier"
+		texturefile = "gfx/interface/ideas/national_spirits/legacy_of_the_new_frontier.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_reagan_recession"
+		texturefile = "gfx/interface/ideas/national_spirits/The_Regean_Recession.dds"
+	}
 }

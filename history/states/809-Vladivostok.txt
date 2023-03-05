@@ -6,8 +6,8 @@ state={
 		957 
 	}
 	history = {
-		owner = JAP
-		add_core_of = MAN
+		owner = KOM
+		add_core_of = KOM
 		buildings = {
 			infrastructure = 5
 			radar_station = 2
