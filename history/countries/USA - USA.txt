@@ -456,21 +456,21 @@ set_convoys = 500
 add_political_power = 99
 set_politics = {
 	ruling_party = conservatism
-	last_election = "1960.11.8"
+	last_election = "1976.8.11"
 	election_frequency = 48
 	elections_allowed = yes
 
 }
 
 set_popularities = {
-	communist = 1
+	communist = 0
 	ultranationalism = 0
 	socialist = 0
-	progressivism = 20
-	liberalism = 29
-	
-	liberal_conservatism = 18
-	conservatism = 32
+	progressivism = 
+	liberalism = 
+	liberal_conservatism = 
+	conservatism = 
+	paternalism = 
 	despotism = 0
 	fascism = 0
 	national_socialism = 0
