@@ -9,8 +9,8 @@ state={
 	}
 
 	history={
-		owner = GUX
-		add_core_of = GUX
+		owner = CHI
+		add_core_of = CHI
 		buildings = {
 			infrastructure = 2
 			air_base = 2

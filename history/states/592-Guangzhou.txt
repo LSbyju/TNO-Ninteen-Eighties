@@ -8,8 +8,8 @@ state={
 	}
 
 	history={
-		owner = GNG
-		add_core_of = GNG
+		owner = CHI
+		add_core_of = CHI
 		set_state_flag = state_renamings		
 		
 		buildings = {

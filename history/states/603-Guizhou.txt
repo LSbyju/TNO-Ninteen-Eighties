@@ -8,8 +8,8 @@ state={
 	}
 
 	history={
-		owner = GUZ
-		add_core_of = GUZ
+		owner = CHI
+		add_core_of = CHI
 		buildings = {
 			schools = 3
 			offices = 2
