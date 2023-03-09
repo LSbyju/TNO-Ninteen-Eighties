@@ -3,14 +3,12 @@ state={
 	name="STATE_1964"
 
 	history={
-		owner = XIN
-		add_core_of = XIN
-		add_claim_by = IND
-		add_claim_by = AZH
+		owner = IND
+		add_core_of = IND
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 		}
-		set_demilitarized_zone = yes
+
 	}
 
 	provinces={
