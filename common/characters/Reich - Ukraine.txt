@@ -1,20 +1,20 @@
 characters={
 	#country leaders
-	UKR_erich_koch={
-		name=UKR_erich_koch
+	UKR_kostiantyn_sytnyk={
+		name=UKR_kostiantyn_sytnyk
 		portraits={
 			civilian={
-				large="gfx/leaders/UKR/Portrait_Ukraine_Erich_Koch.dds"
+				large="gfx/leaders/UKR/Portrait_Ukraine_kostiantyn_sytnyk.dds"
 			}
 		}
 		country_leader={
-			desc="POLITICS_ERICH_KOCH_DESC"
-			ideology=national_socialism_subtype
-			expire="1983.4.24.1"
+			desc="POLITICS_KOSTIANTYN_SYTNYK_DESC"
+			ideology=left_wing_corporatism_subtype
+			expire="2017.7.22.1"
 			id=-1
 		}
 	}
-	UKR_Georg_Leibbrandt={
+	#UKR_Georg_Leibbrandt={
 		name=UKR_Georg_Leibbrandt
 		portraits={
 			civilian={
@@ -42,7 +42,7 @@ characters={
 			ai_will_do = { factor = 0 }
 		}
 	}
-	UKR_Pieter_Schelte_Heerema = {
+	#UKR_Pieter_Schelte_Heerema = {
 		name = UKR_Pieter_Schelte_Heerema
 		portraits = {
 			civilian = { large = "gfx/leaders/UKR/Portrait_UKR_Pieter_Schelte_Heerema.dds" }
@@ -55,7 +55,7 @@ characters={
 		}
 	}
 
-	UKR_Volodymyr_Kubiyovych = {
+	#UKR_Volodymyr_Kubiyovych = {
 		name = UKR_Volodymyr_Kubiyovych
 		portraits = {
 			civilian = {
@@ -69,7 +69,7 @@ characters={
 			id = -1
 		}
 	}
-	UKR_Alfred_Frauenfeld={
+	#UKR_Alfred_Frauenfeld={
 		name=UKR_Alfred_Frauenfeld
 		portraits={
 			civilian={
@@ -106,7 +106,7 @@ characters={
 	}
 	#Ministers
 	#starting ministers that are new for TT3
-	UKR_Hans_Otto_Brautigam={
+	#UKR_Hans_Otto_Brautigam={
 		name=UKR_Hans_Otto_Brautigam
 		portraits={
 			civilian={
@@ -127,7 +127,7 @@ characters={
 			ai_will_do = { factor = 0 }
 		}
 	}
-	UKR_Otto_Ohlendorf={
+	#UKR_Otto_Ohlendorf={
 		name=UKR_Otto_Ohlendorf
 		portraits={
 			civilian={
