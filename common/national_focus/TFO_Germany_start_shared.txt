@@ -1,0 +1,75 @@
+shared_focus = {
+	id = TFOGER_blankfocus
+	icon = GFX_generic_little_entente
+	x = 0
+	y = 2
+	cost = 5
+	allow_branch = {
+		has_country_flag = neversetthisflag
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TFOGER_blankfocus"
+	}
+}
+
+### TFO's Start Tree ###
+shared_focus = {
+	id = TFOGER_deutschland_uber_alles
+	icon = GFX_TFOGER_Deutschland_uber_alles
+	cost = 1
+	allow_branch = {
+		has_country_leader = {
+			character = GER_albert_speer
+			ruling_only = yes
+		}
+	}
+	x = 8
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TFOGER_deutschland_uber_alles"
+	}
+}
+
+shared_focus = {
+	id = TFOGER_gaze_upon_fuhrer_work
+	icon = GFX_TFOGER_Gaze_upon_fuhrer_work
+	cost = 1
+	prerequisite = {
+		focus = TFOGER_deutschland_uber_alles
+	}
+	relative_position_id = TFOGER_deutschland_uber_alles
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TFOGER_gaze_upon_fuhrer_work"
+	}
+}
+
+shared_focus = {
+	id = TFOGER_sickness_beneath_it
+	icon = GFX_TFOGER_Sickness_beneath_it
+	cost = 1
+	prerequisite = {
+		focus = TFOGER_deutschland_uber_alles
+	}
+	relative_position_id = TFOGER_deutschland_uber_alles
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TFOGER_sickness_beneath_it"
+	}
+}
+
+shared_focus = {
+	id = TFOGER_get_into_works
+	icon = GFX_TFOGER_Get_into_works
+	cost = 1
+	prerequisite = { focus = TFOGER_gaze_upon_fuhrer_work }
+	prerequisite = { focus = TFOGER_sickness_beneath_it }
+	relative_position_id = TFOGER_deutschland_uber_alles
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TFOGER_sickness_beneath_it"
+	}
+}

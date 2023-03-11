@@ -1,0 +1,20 @@
+spriteTypes = {
+	### GERMANY ###
+	#Germany Starting Tree
+	SpriteType = {
+		name = "GFX_TFOGER_Deutschland_uber_alles"
+		texturefile = "gfx/interface/goals/TFO_Germany/TFOGER_Deutschland_uber_alles.dds"
+	}
+	SpriteType = {
+		name = "GFX_TFOGER_Gaze_upon_fuhrer_work"
+		texturefile = "gfx/interface/goals/TFO_Germany/TFOGER_Gaze_upon_fuhrer_work.dds"
+	}
+	SpriteType = {
+		name = "GFX_TFOGER_Sickness_beneath_it"
+		texturefile = "gfx/interface/goals/TFO_Germany/TFOGER_Sickness_beneath_it.dds"
+	}
+	SpriteType = {
+		name = "GFX_TFOGER_Get_into_works"
+		texturefile = "gfx/interface/goals/TFO_Germany/TFOGER_Get_into_works.dds"
+	}
+}
