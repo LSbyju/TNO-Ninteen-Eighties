@@ -1,5 +1,31 @@
 ﻿l_english:
  ### STUFF ###
+ 
+ ##TFO CODE
+ 
+ ### COUNTRY NAMES ###
+ GER_fascism:0 "Großgermanisches Reich"
+ GER_fascism_DEF:0 "Das Großgermanische Reich der Deutschen Nation"
+ GER_fascism_ADJ:0 "German"
+ 
+ GER_albert_speer:0 "Albert Speer"
+ POLITICS_SPEER_GERMANY_DESC:0 "No longer is Albert Speer merely the architectural genius behind Hitler's grandiose plans and visions for the future. No longer is Albert Speer the Minister of Armaments and War Production during Germany's finest hour. No longer is he the side-character who pulled Germany out of failure when it sunk to its depths before he took the reins. No longer is Albert Speer the political webspinner, mastermind and silver tongue that got a loose alliance of so called "Loyal" liberals and backstabbing yesmen to back him as he spun an image of being the reformist force of there dreams. Albert Speer is no longer the "good" National Socialist.\n\nNow he stands above all else as the representation of true National Socialism, an ideology fit to serve a modern Germany, a modern era, and a modern man.\n\nThe fruitless endeavors of the past National Socialists - there need to exterminate the East, to expand until nothing is left, to turn Germany into the ultimate pariah state, to close it off utterly and let it wallow in a bitter autarky. None of those policies belong in this new Reich, the standing representation of Speers vision. The Einheitspakt and Zollverein are now a well-oiled machine, propagating German domination and influence not through wasteful pits of death that would only antagonize its colonies and enemies, but instead through a showcase of cultural, moral, economic and military superiority. And now as Germany soars with a bureaucracy purified of degenerate liberals and bloodthirsty hardliners, Albert Speer finds himself at the top as the architect unmatched by all others.\n\nAnd though he stands unchallenged his health has been in rapid decline and it appears that without a strong force to continue his vision all that he has achieved may be in vein."
+ 
+ GER_karl_carstens:0 "Karl Carstens"
+ GER_karl_carstens_hog_desc:0 "§YStellvertreter des Führers\nReformed National Socialism§!\n--------------\n§L"Born in 1914 in the city Bremen, Carstens father would be one of the first victims of the Great War having been killed on the Western Front, despite this Carstens was able to study law and political science at the universities Frankfurt, Dijon, Munich, Königsberg, and Hamburg, Carstens would also be somewhat active in German politics throughout the 1930s attempting to join the Nazi Party, and serving in the SA, he would work as a law clerk until the Second World War when he joined the Luftwaffe were he would serve in a Flak unit in England.\n\nAfter the war Carstens would briefly serve as a Lawyer and bureaucrat before becoming a diplomat with the German foreign office eventually using his relationship with Kiesinger to achieve the position of Secretary of State in the German foreign office. During the 1970s he would position himself as a strong ally of Speer and a moderate reformist. During this time he would form a close friendship with the Führer and personally negotiate many of Germany's treaties with the US becoming a key figure in the Détente.\n\nAfter his retirement in 1979 Kiesinger would recommend to Speer that Carstens take his position, the Führer enthusiastically agreed to this recommendation, appointing Carstens as his deputy. Since then Carstens has portrayed himself as the true ideological successor to Speer promising moderate reforms while attempting to secure his place as successor, but only time will tell if this proves to be a success." "
+
+ GER_karl_schiller:0 "Karl Schiller"
+ GER_karl_schiller_eco_desc:0 "§YReichswirtschaftsminister\nReformed National Socialism§!\n--------------\n§L"Karl Schiller, Economist, Politician, and Mastermind of Germany's economic miracle, for years Schiller has been at the head of the German economy and at that role he has shown great proficiency spurring massive growth and stability. But to analyze his success we must first look at his past, he would initially live a very unremarkable life before 1931 when he would begin his studies at universities across the land, from Berlin to Frankfurt he would train in the field of economics growing his knowledge and abilities.\n\nIt was during this time he would also become interested in politics joining not just the Nazi party but the SA. During the Second World War Schiller would also briefly serve in the Wehrmacht, before becoming a professor after the wars end. During the 1950s he would look on in horror at Germanys failing economy quickly becoming a staunch advocate of reform.\n\nAfter the GCW during Speers early years as Führer, Schiller would become a leading voice in the cabinet as not just an advisor but the secret mastermind of many of Germanys economic reforms. Finally after Erhards Retirement from public life due to immense health concerns, Schiller would use the opportunity to take the position of Reichswirtschaftsminister for himself much to the Führer delight, In this role Schiller has attempted to further liberalize the German economy and reach out to the reformists. And now with Speers health in rapid decline he has become a leading advocate for Carstens succession to the role of Führer but it now seems uncertain whether or not this will cement his legacy or lead to his downfall.""
+ 
+ GER_martin_muss:0 "Martin Mussgnug"
+ GER_martin_muss_for_desc:0 "§YStaatssekretär im Reichsauswärtigen Amt\nReformed National Socialism§!\n--------------\n§LFor many people, the Reich stands as a tower on a hill, casting a shadow over the land of the degenerates, and the plains filled with sub-humans and worse, but our great Reich requires someone who can talk to those the inferior beings and that man is Martin Mussgnug.\n\nBut we can't talk about the man if we don't talk about the man who came before him, Helmut Schmidt, the diplomat of the Reich, the chosen man to go and talk with those sub-humans was however, in the end, sympathetic to those below the Aryan race, and on the day that he tried and failed to undermine the power of our Führer, Martin Mussgnug came to take over the now empty post of Reichsminister des Auswärtigennote. And while Mussgnug and Schmidt have some parallels, both becoming group heads of the Hitler youth and joining the party on similar dates they stand in stark contrast to each other. Yet the shadow of reform still lives in the Reich."
+ 
+ GER_otto_ernst_remer_tfo:0 "Otto Ernst Remer"
+ GER_otto_ernst_remer_tfo_sec_desc:0 "§YChef des Oberkommandos der Wehrmacht\nReformed National Socialism§!\n--------------\n§L"To Otto Ernst Remer, the idea of duty exists above all else, this has been demonstrated numerus times throughout his long and storied career, first when he had supported Joseph Goebbels' promotion of Stratocratic National Socialism, but remained loyal to the Führer above all else, Next when he had supported Hermann Göring's ascension to power 17 years ago, but his loyalty to Speer remained absolute above all else, and though had been supportive of Schörner's ideals his loyalty to the chain of command remained absolute.\n\nIt was his betrayal of the Militarists that earned him the most valuable thing a man can get in Germany, the Führer's trust. This would lead to his promotion to Feldmarschall a position he would use to institute his plans, reforming the Wehrmacht into an efficient and ruthless killing machine that overshadowed even its pre GCW counterpart.\n\nNow with the Führer's health in rapid decline and men across Germany vying for influence Remer has attempted to position himself as the rightful and natural successor to Albert Speer, taking ever chance he can to be seen in public with him. It seems now that these next few years alone will forever shape Remer's legacy whether it be one of obscurity or one of greatness...""
+ 
+ 
+ ##Purge these when we dont need them anymore
+ 
  #Where new options will become available.
  GER_new_options_focus_tree:0 "§YNew options§! are available in the focus tree..."
  GER_new_options_focus_tree_linebreak:0 "§YNew options§! are available in the focus tree...\n"
@@ -79,11 +105,6 @@
  # Generic
  GER_debug_break_pakt:0 "§qGermany§! - Dismantle the Pakt"
 
- ### COUNTRY NAMES ###
- GER:0 "Großgermanisches Reich"
- GER_DEF:0 "Das Großgermanische Reich der Deutschen Nation"
- GER_ADJ:0 "German"
- 
  ### PARTIES ###
  GER_communist_party: "RZ"
  GER_communist_party_long: "Revolutionäre Zellen"
@@ -111,7 +132,6 @@
  GER_reichstag_emergency_council:0 "Reichstag Emergency Council"
  GER_unbekannt:0 "UNBEKANNT"
  GER_willy_brandt:0 "Willy Brandt"
- GER_albert_speer:0 "Albert Speer"
  GER_ludwig_erhard:0 "Ludwig Erhard"
  GER_wernher_von_braun:0 "Wernher von Braun"
  GER_hans_kehrl:0 "Hans Kehrl"

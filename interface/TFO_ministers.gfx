@@ -1140,22 +1140,24 @@ spriteTypes = {
 	}
 
 	### Germany ###
+	##TFO
 	spriteType = {
-		name = "GFX_idea_GER_Martin_Bormann"
-		texturefile = "gfx/interface/ideas/ministers/GER/GER_minister_Martin_Bormann.dds"
+		name = "GFX_idea_GER_otto_ernst_remer_tfo"
+		texturefile = "gfx/interface/ideas/ministers/GER/otto_ernst_remer_minister.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_GER_Hermann_Goring"
-		texturefile = "gfx/interface/ideas/ministers/GER/GER_minister_Hermann_Goring.dds"
+		name = "GFX_idea_GER_martin_muss"
+		texturefile = "gfx/interface/ideas/ministers/GER/Minister_Base.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_GER_Walther_Hewel"
-		texturefile = "gfx/interface/ideas/ministers/GER/GER_minister_Walther_Hewel.dds"
+		name = "GFX_idea_GER_karl_schiller"
+		texturefile = "gfx/interface/ideas/ministers/GER/GER_Minister_Karl_Schiller_tfo.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_GER_Albert_Speer"
-		texturefile = "gfx/interface/ideas/ministers/GER/GER_minister_Albert_Speer.dds"
+		name = "GFX_idea_GER_karl_carstens"
+		texturefile = "gfx/interface/ideas/ministers/GER/Minister_karlcarstens.dds"
 	}
+	##remover the rest
 	spriteType = {
 		name = "GFX_idea_GER_Erwin_Rommel"
 		texturefile = "gfx/interface/ideas/ministers/GER/GER_minister_Erwin_Rommel.dds"

@@ -26,9 +26,15 @@ set_country_flag = tno_playable_country
 set_country_flag = tno_can_research_nuclear_tech
 
 ### Leaders
+##TFO
+recruit_character = GER_albert_speer
+recruit_character = GER_karl_schiller
+recruit_character = GER_karl_carstens
+recruit_character = GER_martin_muss
+recruit_character = GER_otto_ernst_remer_tfo
+##purge
 recruit_character = GER_adolf_hitler
 recruit_character = GER_reichstag_emergency_council
-recruit_character = GER_albert_speer
 recruit_character = GER_kurt_georg_kiesinger
 recruit_character = GER_helmut_schmidt
 recruit_character = GER_ludwig_erhard
@@ -165,6 +171,8 @@ recruit_character = GER_various_leaders
 recruit_character = GER_robert_ritter_von_greim
 recruit_character = GER_gerhard_klopfer
 
+
+
 add_ideas = {
 	#Faction Status
 	Pakt_Leader
@@ -176,10 +184,10 @@ add_ideas = {
 	gone_over
 
 	## Ministers
-	GER_Martin_Bormann_hog
-	GER_Hermann_Goring_sec
-	GER_Walther_Hewel_for
-	GER_Albert_Speer_eco
+	GER_karl_carstens_hog
+	GER_otto_ernst_remer_tfo_sec
+	GER_martin_muss_for
+	GER_karl_schiller_eco
 
 	## Officer Corps ##
 	GER_Hermann_Goring_air_chief
@@ -640,7 +648,7 @@ MAD = { set_cosmetic_tag = MAD_GER }
 
 ## POLITICS
 set_politics = {
-	ruling_party = national_socialism
+	ruling_party = fascism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
@@ -648,15 +656,15 @@ set_politics = {
 
 set_popularities = {
 	communist = 0
-	socialist = 1
-	progressivism = 1
-	liberalism = 4
-	conservatism = 4
-	paternalism = 5
-	despotism = 10
+	socialist = 0
+	progressivism = 0
+	liberalism = 0
+	conservatism = 0
+	paternalism = 0
+	despotism = 0
 	ultranationalism = 0
-	fascism = 17
-	national_socialism = 58
+	fascism = 100
+	national_socialism = 0
 	esoteric_nazism = 0
 }
 

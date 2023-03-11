@@ -58,6 +58,7 @@ characters = {
 			id = -1
 		}
 	}
+	##TFO
 	GER_albert_speer = {
 		name = GER_albert_speer
 		portraits = {
@@ -87,6 +88,92 @@ characters = {
 			ai_will_do = { factor = 0 }
 		}
 	}
+	GER_karl_carstens = {
+		name = GER_karl_carstens
+		portraits = {
+			civilian = {
+				small = "GFX_idea_GER_karl_carstens"
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = GER_karl_carstens_hog
+			allowed = { original_tag = GER }
+			traits = {
+				head_of_government
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	GER_karl_schiller = {
+		name = GER_karl_schiller
+		portraits = {
+			civilian = {
+				small = "GFX_idea_GER_karl_schiller"
+			}
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = GER_karl_schiller_eco
+			allowed = { original_tag = GER }
+			traits = {
+				economy_minister
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	GER_martin_muss = {
+		name = GER_martin_muss
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/Portrait_Germany_Helmut_Schmidt.dds"
+				small = "GFX_idea_GER_martin_muss"
+			}
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = GER_martin_muss_for
+			allowed = { original_tag = GER }
+			traits = {
+				foreign_minister
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	GER_otto_ernst_remer_tfo = {
+		name = GER_otto_ernst_remer_tfo
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/Portrait_Germany_Hermann_Goring.dds"
+				small = "GFX_idea_GER_otto_ernst_remer_tfo"
+			}
+			army = {
+				small = "GFX_idea_GER_otto_ernst_remer_tfo"
+			}
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = GER_otto_ernst_remer_tfo_sec
+			allowed = { original_tag = GER }
+			traits = {
+				security_minister
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	##remove this
 	GER_kurt_georg_kiesinger = {
 		name = GER_kurt_georg_kiesinger
 		portraits = {
