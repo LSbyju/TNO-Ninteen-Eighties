@@ -64,88 +64,6 @@
  KEN_GER_autonomy_reichsprotektorat_DEF: "the Reichsprotektorat Ostafrika"
  KEN_GER_autonomy_reichskommissariat_DEF: "Deutsch-Ostafrika"
 
- DEN_RK_paternalism: "Reichskommissariat Dänemark"
- DEN_RK_paternalism_DEF: "Reichskommissariat Dänemark"
- DEN_RK_despotism: "Reichskommissariat Dänemark"
- DEN_RK_despotism_DEF: "Reichskommissariat Dänemark"
- DEN_RK_fascism: "Reichskommissariat Dänemark"
- DEN_RK_fascism_DEF: "Reichskommissariat Dänemark"
- DEN_RK_national_socialism: "Reichskommissariat Dänemark"
- DEN_RK_national_socialism_DEF: "Reichskommissariat Dänemark"
-
- NOR_GER_communist: "Reichskommissariat Norwegen"
- NOR_GER_communist_DEF: "Reichskommissariat Norwegen"
- NOR_GER_socialist: "Reichskommissariat Norwegen"
- NOR_GER_socialist_DEF: "Reichskommissariat Norwegen"
- NOR_GER_progressivism: "Reichskommissariat Norwegen"
- NOR_GER_progressivism_DEF: "Reichskommissariat Norwegen"
- NOR_GER_liberalism: "Reichskommissariat Norwegen"
- NOR_GER_liberalism_DEF: "Reichskommissariat Norwegen"
- NOR_GER_conservatism: "Reichskommissariat Norwegen"
- NOR_GER_conservatism_DEF: "Reichskommissariat Norwegen"
- NOR_GER_paternalism: "Reichskommissariat Norwegen"
- NOR_GER_paternalism_DEF: "Reichskommissariat Norwegen"
- NOR_GER_despotism: "Reichskommissariat Norwegen"
- NOR_GER_despotism_DEF: "Reichskommissariat Norwegen"
- NOR_GER_fascism: "Reichskommissariat Norwegen"
- NOR_GER_fascism_DEF: "Reichskommissariat Norwegen"
- NOR_GER_national_socialism: "Reichskommissariat Norwegen"
- NOR_GER_national_socialism_DEF: "Reichskommissariat Norwegen"
- NOR_GER_ultranationalism: "Reichskommissariat Norwegen"
- NOR_GER_ultranationalism_DEF: "Reichskommissariat Norwegen"
- NOR_GER_esoteric_nazism: "Reichskommissariat Norwegen"
- NOR_GER_esoteric_nazism_DEF: "Reichskommissariat Norwegen"
-
- UKR_GER_despotism: "Reichskommissariat Ukraine"
- UKR_GER_despotism_DEF: "Reichskommissariat Ukraine"
- UKR_GER_fascism: "Reichskommissariat Ukraine"
- UKR_GER_fascism_DEF: "Reichskommissariat Ukraine"
- UKR_GER_national_socialism: "Reichskommissariat Ukraine"
- UKR_GER_national_socialism_DEF: "Reichskommissariat Ukraine"
- UKR_GER_ultranationalism: "Reichskommissariat Ukraine"
- UKR_GER_ultranationalism_DEF: "Reichskommissariat Ukraine"
- UKR_GER_esoteric_nazism: "Reichskommissariat Ukraine"
- UKR_GER_esoteric_nazism_DEF: "Reichskommissariat Ukraine"
-
- UKR_autonomy_reichsprotektorat: "Reichsprotektorat Ukraine"
- UKR_autonomy_reichsprotektorat_DEF: "Reichsprotektorat Ukraine"
- UKR_autonomy_autonomous_reichskommissariat: "Reichskommissariat Ukraine"
- UKR_autonomy_autonomous_reichskommissariat_DEF: "Reichskommissariat Ukraine"
- UKR_autonomy_integrated_reichskommissariat: "Reichskommissariat Ukraine"
- UKR_autonomy_integrated_reichskommissariat_DEF: "Reichskommissariat Ukraine"
- UKR_GER_autonomy_reichsprotektorat: "Reichsprotektorat Ukraine"
- UKR_GER_autonomy_reichsprotektorat_DEF: "Reichsprotektorat Ukraine"
- UKR_GER_autonomy_autonomous_reichskommissariat: "Reichskommissariat Ukraine"
- UKR_GER_autonomy_autonomous_reichskommissariat_DEF: "Reichskommissariat Ukraine"
- UKR_GER_autonomy_integrated_reichskommissariat: "Reichskommissariat Ukraine"
- UKR_GER_autonomy_integrated_reichskommissariat_DEF: "Reichskommissariat Ukraine"
-
- FUK_GER_fascism: "Reichsprotektorat Ukraine"
- FUK_GER_fascism_def: "Reichsprotektorat Ukraine"
- FUK_autonomy_reichsprotektorat: "Reichsprotektorat Ukraine"
- FUK_autonomy_reichsprotektorat_DEF: "Reichsprotektorat Ukraine"
- FUK_autonomy_autonomous_reichskommissariat: "Reichskommissariat Ukraine"
- FUK_autonomy_autonomous_reichskommissariat_DEF: "Reichskommissariat Ukraine"
- FUK_autonomy_integrated_reichskommissariat: "Reichskommissariat Ukraine"
- FUK_autonomy_integrated_reichskommissariat_DEF: "Reichskommissariat Ukraine"
-
- HOL_GER_autonomy_satellite: "Reichskommissariat Niederlande"
- HOL_GER_autonomy_satellite_DEF: "Reichskommissariat Niederlande"
- HOL_GER_autonomy_reichsprotektorat: "Reichsprotektorat Niederlande"
- HOL_GER_autonomy_reichsprotektorat_DEF: "Reichsprotektorat Niederlande"
- HOL_GER_autonomy_autonomous_reichskommissariat: "Reichskommissariat Niederlande"
- HOL_GER_autonomy_autonomous_reichskommissariat_DEF: "Reichskommissariat Niederlande"
- HOL_GER_autonomy_integrated_reichskommissariat: "Reichskommissariat Niederlande"
- HOL_GER_autonomy_integrated_reichskommissariat_DEF: "Reichskommissariat Niederlande"
- HOL_GER_autonomy_dominion: "Reichskommissariat Niederlande"
- HOL_GER_autonomy_colony: "Reichskommissariat Niederlande"
- HOL_GER_autonomy_puppet: "Reichskommissariat Niederlande"
- HOL_GER_autonomy_integrated_puppet: "Reichskommissariat Niederlande"
- HOL_GER_autonomy_dominion_DEF: "Reichskommissariat Niederlande"
- HOL_GER_autonomy_colony_DEF: "Reichskommissariat Niederlande"
- HOL_GER_autonomy_puppet_DEF: "Reichskommissariat Niederlande"
- HOL_GER_autonomy_integrated_puppet_DEF: "Reichskommissariat Niederlande"
-
  ZIM_GER_autonomy_dominion: "Mittelafrika"
  ZIM_GER_autonomy_colony: "Reichsland Mittelafrika"
  ZIM_GER_autonomy_puppet: "Reichsprotektorat Mittelafrika"
@@ -921,59 +839,13 @@
  YEM_ARABIA_ultranationalism_DEF: "the Arabian Republic"
 
  ### Speer Cosmetic Tags ###
-
+ ##purge these whenn we dont need them anymore
  SGR_HOL_provisional_government_fascism: "Niederländische Übergangsregierung"
  SGR_HOL_provisional_government_fascism_desc: "Die Niederländische Übergangsregierung" 
  
  SGR_HOL_provisional_government_despotism: "Niederländische Übergangsregierung"
  SGR_HOL_provisional_government_despotism_desc: "Die Niederländische Übergangsregierung"
 
- SGR_CAU_provisional_government_fascism: "Kaukasische Militärregierung"
- SGR_CAU_provisional_government_fascism_desc: "Die Kaukasische Militärregierung"
-
- UKR_SGR_military_rule_national_socialism: "Gouvernement der Ukraine"
- UKR_SGR_military_rule_national_socialism_DEF: "das Gouvernement der Ukraine"
- UKR_SGR_reichskommissariat_national_socialism: "Reichskommissariat Ukraine"
- UKR_SGR_reichskommissariat_national_socialism_DEF: "Reichskommissariat Ukraine"
- UKR_SGR_collab_fascism: "Ukraine"
- UKR_SGR_collab_fascism_DEF: "the Ukraine"
- UKR_SGR_paternalism: "Ukrainian National Republic"
- UKR_SGR_paternalism_DEF: "the Ukrainian National Republic"
- 
-
- POL_SGR_paternalism: "Poland"
- POL_SGR_paternalism_DEF: "the Republic of Poland"
- POL_SGR_fascism: "Übergangsregierung in Polen"
- POL_SGR_fascism_DEF: "Die Übergangsregierung in Polen"
-
- BEL_SGR_national_socialism: "Reichskommissariat Belgien-Nordfrankreich"
- BEL_SGR_national_socialism_DEF: "Reichskommissariat Belgien-Nordfrankreich"
- 
- EST_SGR_paternalism: "Baltischer Bund"
- EST_SGR_paternalism_DEF: "the Baltic Federation" 
- 
- OST_BLT_paternalism: "Baltischer Bund"
- OST_BLT_paternalism_DEF: "the Baltic Federation" 
- 
- BLR_SGR_paternalism: "Republic of Belarus"
- BLR_SGR_paternalism_DEF: "the Republic of Belarus"
-
- OST_BLT2_fascism: "Reichsland Baltikum"
- OST_BLT2_fascism_DEF: "Reichsland Baltikum"
- 
- BLR_SGR2_fascism: "Reichsland Weißruthenien"
- BLR_SGR2_fascism_DEF: "Reichsland Weißruthenien" 
- 
- POL_SGR2_fascism: "Reichsland Polen"
- POL_SGR2_fascism_DEF: "Reichsland Polen" 
- 
- UKR_SGR2_fascism: "Reichsland Ukraine"
- UKR_SGR2_fascism_DEF: "Reichsland Ukraine" 
- 
- CAU_SGR2_fascism: "Reichsprotektorat Kaukasien"
- CAU_SGR2_fascism_DEF: "Reichsprotektorat Kaukasien"
- 
- 
  ### Heydrich ###
  HGR_DEAD_esoteric_nazism: "SS-Deutschland"
  HGR_DEAD_esoteric_nazism_DEF: "SS-Deutschland"
@@ -1352,10 +1224,6 @@
  LAT_ssr_communist_DEF: "the Latvian Soviet Socialist Republic"
  LAT_ssr_communist_ADJ: "Latvian"
  
- BLR_ssr_communist: "Byelorussian SSR"
- BLR_ssr_communist_DEF: "the Byelorussian Soviet Socialist Republic"
- BLR_ssr_communist_ADJ: "Byelorussian" 
- 
  UKR_ssr_communist: "Ukrainian SSR"
  UKR_ssr_communist_DEF: "the Ukrainian Soviet Socialist Republic"
  UKR_ssr_communist_ADJ: "Ukrainian"
@@ -1430,11 +1298,6 @@
  SGR_AZR_industry_UKR_speer_prov_government_fascism: "Verwaltungsbezirk Baku" 
  SGR_AZR_industry_UKR_speer_prov_government_fascism_ADJ: "Verwaltungsbezirk Baku"
  SGR_AZR_industry_UKR_speer_prov_government_fascism_DEF: "Verwaltungsbezirk Baku"
-
- #SPEER OSTLAND
- ostland_occupation_authority_fascism: "Ostländischer Besatzungsrat"
- ostland_occupation_authority_fascism_ADJ: "Ostländische"
- ostland_occupation_authority_fascism_DEF: "der Ostländische Besatzungsrat"
 
  #PETROGRAD OKB
  OKB_OKB_fascism: "Oberkommando Sankt-Petersburg"

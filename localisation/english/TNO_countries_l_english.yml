@@ -169,10 +169,6 @@
  BKV_DEF: "the State of Bukavu"
  BKV_ADJ: "Bukavu"
 
- BLR: "Republic of Belarus"
- BLR_DEF: "the Republic of Belarus"
- BLR_ADJ: "Belarusian"
-
  BLZ: "Belize"
  BLZ_DEF: "Belize"
  BLZ_ADJ: "Belizean"
@@ -236,6 +232,11 @@
  BZZ_ADJ: "Brazzavillian"
 
  # C
+ ##cau
+ CAU_fascism:0 "Kaukasische Militärregierung"
+ CAU_fascism_DEF:0 "Die Kaukasische Militärregierung"
+ CAU_fascism_ADJ:0 "Kaukasian"
+ ##
  CAN: "Canada"
  CAN_DEF: "Canada"
  CAN_ADJ: "Canadian"
@@ -1354,18 +1355,6 @@
  UKR: "Republic of Ukraine"
  UKR_DEF: "the Republic of Ukraine"
  UKR_ADJ: "Ukrainian"
- UKR_communist: "Ukrainian Soviet Socialist Republic"
- UKR_communist_DEF: "the Ukrainian Soviet Socialist Republic"
- UKR_socialist: "Ukrainian Soviet Socialist Republic"
- UKR_socialist_DEF: "the Ukrainian Soviet Socialist Republic"
- UKR_fascism: "Ukrainian State"
- UKR_fascism_DEF: "the Ukrainian State"
- UKR_national_socialism: "Ukrainian State"
- UKR_national_socialism_DEF: "the Ukrainian State"
- UKR_ultranationalism: "Ukrainian State"
- UKR_ultranationalism_DEF: "the Ukrainian State"
- UKR_esoteric_nazism: "Ukrainian State"
- UKR_esoteric_nazism_DEF: "the Ukrainian State"
 
  UPH: "USFIP"
  UPH_DEF: "the U.S. Forces in the Philippines"

@@ -604,8 +604,8 @@ HOL = {
 }
 
 GGN = {
-	color = rgb { 68 68 69 }
-	color_ui = rgb { 68 68 69 }
+    color = rgb { 157 66 90 }
+	color_ui = rgb { 157 66 90 }
 }
 
 ITA = {
@@ -1149,8 +1149,8 @@ CRN = {
 }
 
 OST = {
-	color = rgb { 79 79 81 }
-	color_ui = rgb { 79 79 81 }
+	color = rgb { 50 135 175 }
+	color_ui = rgb { 99 204 254 }
 }
 
 MCW = {
@@ -1229,8 +1229,8 @@ SGR = {
 }
 
 BGR = {
-	color = rgb { 99 105 90 }
-	color_ui = rgb { 99 105 90 }
+	color = rgb { 68 40 73 }
+	color_ui = rgb { 68 40 73 }
 }
 
 GGR = {

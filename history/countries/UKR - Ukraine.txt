@@ -51,11 +51,9 @@ set_convoys = 120
 
 add_ideas = {
 	##FACTION##
-	Pakt_Autonomous_Reichskommissariat
+	Pakt_Mitstreiter
 	##SPIRITS##
-	UKR_breadbasket_of_the_reich
-	UKR_land_of_contrasts
-	UKR_paradise_undone
+
 	### MINISTERS ###
 	UKR_Georg_Leibrandt_hog
 	UKR_Hans_Otto_Brautigam_for
@@ -384,7 +382,7 @@ if = {
 }
 
 set_politics = {
-	ruling_party = national_socialism
+	ruling_party = fascism
 	last_election = "1941.4.17"
 	election_frequency = 48
 	elections_allowed = no
@@ -399,8 +397,8 @@ set_popularities = {
 	conservatism = 0
 	paternalism = 5
 	despotism = 15
-	fascism = 10
-	national_socialism = 70
+	fascism = 70
+	national_socialism = 10
 	ultranationalism = 0
 	
 }

@@ -295,11 +295,11 @@ set_war_support = 0.6
 
 add_ideas = {
 	#FACTION
-	Pakt_Autonomous_Reichskommissariat
+	Pakt_Military_Authority
 	#SPIRITS
-	CAU_bergbaureich
+	
 	CAU_shipments_to_ger
-	CAU_stratified
+	
 	#MINISTERS
 	CAU_Paul_Pleiger_for
 	CAU_Karl_Blessing_hog
@@ -354,7 +354,7 @@ add_ideas = {
 }
 
 set_politics = {
-	ruling_party = esoteric_nazism
+	ruling_party = fascism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
@@ -371,9 +371,9 @@ set_popularities = {
 	conservatism = 0
 	paternalism = 0
 	despotism = 0
-	fascism = 0
+	fascism = 74
 	national_socialism = 18
-	esoteric_nazism = 74
+	esoteric_nazism = 0
 }
 
 #econtype

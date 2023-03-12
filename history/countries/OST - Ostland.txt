@@ -63,11 +63,10 @@ set_country_flag = tno_playable_country
 
 add_ideas = {
 	#Faction Status
-	Pakt_Integrated_Reichskommissariat
+	Pakt_Mitstreiter
 
 	## Spirits
-	OST_model_colony
-	OST_unusual_quiet
+
 
 	## Ministers
 	OST_Hinrich_Lohse_hog
@@ -569,7 +568,7 @@ set_variable = { OST_LIT_loyalty = -2 }
 set_variable = { OST_BLR_loyalty = 0 }
 
 set_politics = {
-	ruling_party = national_socialism
+	ruling_party = fascism
 	last_election = "1939.9.12"
 	election_frequency = 48
 	elections_allowed = no
@@ -586,8 +585,8 @@ set_popularities = {
 	conservatism = 0
 	paternalism = 0
 	despotism = 0
-	fascism = 0
-	national_socialism = 100
+	fascism = 100
+	national_socialism = 0
 }
 
 #econ types

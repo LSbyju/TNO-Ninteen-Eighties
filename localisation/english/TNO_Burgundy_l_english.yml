@@ -18,7 +18,17 @@
  BRG_GUI_ultranationalism:0 "Grafische-Benutzeroberflächestaat 65EBF6"
  BRG_national_socialism_DEF:0 "SS-Ordensstaat Burgund"
  BRG_national_socialism_ADJ:0 "Burgundian"
-
+ 
+ ###TFO###
+ BRG_fascism_party:0 "PKB"
+ BRG_fascism_party_long:0 "Paktkomitee Burgund"
+ 
+ 
+ BRG_fascism:0 "Paktkomitee Burgund"
+ BRG_fascism_DEF:0 "Paktkomitee Burgund"
+ BRG_fascism_ADJ:0 "Burgundian"
+ ###TFO###
+ 
  ## Leader Bios ##
  
  BRG_Heinrich_Himmler: "Heinrich Himmler"

@@ -36,12 +36,10 @@ promote_character = MCW_Siegfried_Kasche
 oob = "MCW_1962"
 add_ideas = {
 	# Faction Status
-		Pakt_Autonomous_Reichskommissariat
+		Pakt_Military_Authority
 	# National Spirits
-		MCW_generalplan_moskowien_and_its_fruits
-		MCW_totalrekonstruktion_and_what_lead_to_it
-		MCW_ostvolkrat_and_its_rats
-		MCW_living_on_a_minefield
+		MCW_Pakt_Commission
+		MCW_Russia_in_ruins
 	# Ministers
 		MSK_Wolf_Heinrich_von_Helldorff_hog
 		MSK_Bronislav_Kaminski_for
@@ -342,7 +340,7 @@ set_research_slots = 4
 set_convoys = 200
 set_stability = 0.23
 set_politics = {
-	ruling_party = national_socialism
+	ruling_party = despotism
 	last_election = "1941.4.17"
 	election_frequency = 48
 	elections_allowed = no
@@ -354,15 +352,15 @@ set_politics = {
 
 # Politics
 	set_politics = {
-		ruling_party = national_socialism
+		ruling_party = despotism
 		last_election = "1941.4.17"
 		election_frequency = 48
 		elections_allowed = no
 	}
 	set_popularities = {
-		national_socialism = 40
-		despotism = 30
-		ultranationalism = 10
-		progressivism = 10
-		esoteric_nazism = 10
+		national_socialism = 0
+		despotism = 100
+		ultranationalism = 0
+		progressivism = 0
+		esoteric_nazism = 0
 	}

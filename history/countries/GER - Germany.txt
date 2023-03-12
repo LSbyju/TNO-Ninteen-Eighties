@@ -593,58 +593,44 @@ if = {
 create_faction = Unity-Pakt
 add_to_faction = GER
 add_to_faction = BRG
+add_to_faction = BLR
 add_to_faction = ENG
-add_to_faction = CRN
 add_to_faction = FRA
 add_to_faction = GGN
 add_to_faction = SLO
 add_to_faction = UKR
 add_to_faction = MCW
 add_to_faction = OST
-add_to_faction = GRO
-add_to_faction = COG
-add_to_faction = ANG
-add_to_faction = MAD
 add_to_faction = CAU
-add_to_faction = SER
 add_to_faction = DEN
 add_to_faction = HOL
 add_to_faction = NOR
 add_to_faction = IRE
 
-set_autonomy = { target = ANG autonomy_state = autonomy_autonomous_reichskommissariat }
-set_autonomy = { target = CAU autonomy_state = autonomy_autonomous_reichskommissariat }
-set_autonomy = { target = COG autonomy_state = autonomy_autonomous_reichskommissariat }
-set_autonomy = { target = DEN autonomy_state = autonomy_reichsprotektorat }
-set_autonomy = { target = CRN autonomy_state = autonomy_military_government }
-set_autonomy = { target = GGN autonomy_state = autonomy_reichsprotektorat }
-set_autonomy = { target = HOL autonomy_state = autonomy_integrated_reichskommissariat }
-set_autonomy = { target = MAD autonomy_state = autonomy_autonomous_reichskommissariat }
-set_autonomy = { target = MCW autonomy_state = autonomy_autonomous_reichskommissariat }
-set_autonomy = { target = GRO autonomy_state = autonomy_autonomous_reichskommissariat }
-set_autonomy = { target = NOR autonomy_state = autonomy_autonomous_reichskommissariat }
-set_autonomy = { target = OST autonomy_state = autonomy_integrated_reichskommissariat }
-set_autonomy = { target = SER autonomy_state = autonomy_occupied_territory }
+set_autonomy = { target = CAU autonomy_state = autonomy_collaborator_puppet_state }
+set_autonomy = { target = DEN autonomy_state = autonomy_collaborator_puppet_state }
+set_autonomy = { target = GGN autonomy_state = autonomy_collaborator_puppet_state }
+set_autonomy = { target = HOL autonomy_state = autonomy_collaborator_puppet_state }
+set_autonomy = { target = MCW autonomy_state = autonomy_collaborator_puppet_state }
+set_autonomy = { target = NOR autonomy_state = autonomy_collaborator_puppet_state }
+set_autonomy = { target = OST autonomy_state = autonomy_collaborator_puppet_state }
 set_autonomy = { target = SLO autonomy_state = autonomy_collaborator_puppet_state }
-set_autonomy = { target = UKR autonomy_state = autonomy_integrated_reichskommissariat }
+set_autonomy = { target = UKR autonomy_state = autonomy_collaborator_puppet_state }
+set_autonomy = { target = BLR autonomy_state = autonomy_collaborator_puppet_state }
 
-diplomatic_relation = { country = BRG relation = non_aggression_pact }
 
-OST = { set_cosmetic_tag = OST_GER }
-UKR = { set_cosmetic_tag = UKR_GER }
+
+OST = { set_cosmetic_tag = OST }
+BLR = { set_cosmetic_tag = BLR }
+UKR = { set_cosmetic_tag = UKR }
 MCW = { set_cosmetic_tag = MCW_GER }
 DEN = { set_cosmetic_tag = DEN_GER }
 NOR = { set_cosmetic_tag = NOR_GER }
 CZE = { set_cosmetic_tag = CZE_GER }
 SLO = { set_cosmetic_tag = SLO_GER }
-HOL = { set_cosmetic_tag = HOL_GER }
-CAU = { set_cosmetic_tag = CAU_GER }
-BRG = { set_cosmetic_tag = BRG_SS }
-SER = { set_cosmetic_tag = SER_GER }
-COG = { set_cosmetic_tag = COG_GER }
-ANG = { set_cosmetic_tag = ANG_GER }
-GRO = { set_cosmetic_tag = GRO_GER }
-MAD = { set_cosmetic_tag = MAD_GER }
+HOL = { set_cosmetic_tag = HOL }
+CAU = { set_cosmetic_tag = CAU }
+BRG = { set_cosmetic_tag = BRG }
 
 ## POLITICS
 set_politics = {

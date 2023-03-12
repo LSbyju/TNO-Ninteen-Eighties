@@ -1,9 +1,12 @@
 ﻿l_english:
 
-MCW_ultranationalism_schorner_party:0 "Schörner's Clique"
-MCW_ultranationalism_schorner_party_long:0 "Schörner's Clique"
-MCW_despotism_postSR_party:0 "EfR"
-MCW_despotism_postSR_party_long:0 "Einheitspaktausschuss für Russland"
+##tfo
+ MCW_despotism_party:0 "EfR"
+ MCW_despotism_party_long:0 "Einheitspaktausschuss für Russland"
+
+ MCW_despotism:0 "Paktkommission Russland"
+ MCW_despotism_DEF:0 "Die Hohe Paktkommission für Russland"
+ MCW_despotism_ADJ:0 "das Militärbezirk Russland"
 
 MCW_The_Marshals_Fiefdom:0 "The Marshal's Fiefdom"
 MCW_The_Marshals_Fiefdom_desc:0 "Feldmarschall Ferdinand Schörner and his clique of radical militarists have stormed their way to power in Moskowien, establishing a brutal military dictatorship. While he claims to be saving the Reich's conquests from the revolt of the subhuman slaves, in actuality Schörner has transformed the snowy territory into his own personal fiefdom."

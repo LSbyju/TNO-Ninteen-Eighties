@@ -1,18 +1,20 @@
 ﻿l_english:
 
-##COUNTRY NAMES###
-BLR_fascism:0 "Belarusian Central Council"
-BLR_fascism_DEF:0 "the Belarusian Central Council"
-BLR_fascism_ADJ:0 "Belarusian"
-BLR_national_socialism:0 "Belarusian Central Council"
-BLR_national_socialism_DEF:0 "the Belarusian Central Council"
-BLR_national_socialism_ADJ:0 "Belarusian"
-BLR_conservatism:0 "Belarus"
-BLR_conservatism_DEF:0 "Belarus"
-BLR_conservatism_ADJ:0 "Belorusian"
-####PARTY NAMES#####
- BLR_fascism_party:0 "WZ (N)"
- BLR_fascism_party_long:0 "Weißruthenischer Zentralrat"
+##COUNTRY NAMES TFO###
+ BLR_fascism:0 "Republic of Belarus"
+ BLR_fascism_DEF:0 "the Republic of Belarus"
+ BLR_fascism_ADJ:0 "Belarusian"
+##
+ BLR_national_socialism:0 "Belarusian Central Council"
+ BLR_national_socialism_DEF:0 "the Belarusian Central Council"
+ BLR_national_socialism_ADJ:0 "Belarusian"
+ BLR_conservatism:0 "Belarus"
+ BLR_conservatism_DEF:0 "Belarus"
+ BLR_conservatism_ADJ:0 "Belorusian"
+####PARTY NAMES TFO#####
+ BLR_fascism_party:0 "NSDAP-W"
+ BLR_fascism_party_long:0 "Nationalsozialistische Deutsche Arbeiterpartei - Weißruthenien"
+ ##
  BLR_national_socialism_party:0 "WZ (G)"
  BLR_national_socialism_party_long:0 "Weißruthenischer Zentralrat"
  BLR_ultranationalism_party:0 ""
@@ -36,8 +38,6 @@ BLR_conservatism_ADJ:0 "Belorusian"
  BLR_collab_paternalism_long:0 "Bielaruskaja Centraĺnaja Rada" 
  BLR_collab_conservatism:0 "BCR"
  BLR_collab_conservatism_long:0 "Bielaruskaja Centraĺnaja Rada"
- BLR_collab_fascism:0 "NSDAP-W"
- BLR_collab_fascism_long:0 "Nationalsozialistische Deutsche Arbeiterpartei - Weißruthenien" 
  BLR_collab_national_socialism:0 "NSDAP-W"
  BLR_collab_national_socialism_long:0 "Nationalsozialistische Deutsche Arbeiterpartei - Weißruthenien"
  ### Characters ###

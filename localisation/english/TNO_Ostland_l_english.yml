@@ -1,9 +1,6 @@
 ﻿l_english:
 
- ### Country Names ###
- OST_national_socialism:0 "Reichskommissariat Ostland"
- OST_national_socialism_DEF:0 "Reichskommissariat Ostland"
- OST_national_socialism_ADJ:0 "Ostlandian"
+
 
  #Puppet
  OST_GER_autonomy_reichsprotektorat:0 "Reichsprotektorat Ostland"
@@ -28,8 +25,6 @@
  OST_paternalism_party_long:0 "Deutsche Konservative Partei - Ostland" #wait, what, two of them?????
  OST_despotism_party:0 "Despotist"
  OST_despotism_party_long:0 "Despotist" #Despotist
- OST_fascism_party:0 "AOdNSDAP"
- OST_fascism_party_long:0 "Arbeitsbereich Osten der Nationalsozialistischen Deutschen Arbeiterpartei"
  OST_national_socialism_party:0 "AOdNSDAP"
  OST_national_socialism_party_long:0 "Arbeitsbereich Osten der Nationalsozialistischen Deutschen Arbeiterpartei"
  OST_ultranationalism_party:0 "AOdNSDAP"
@@ -42,9 +37,15 @@
  OST_speer_united_baltic_army_long:0 "The United Army of the Baltic"
  OST_speer_student_movement:0 "Studentenbewegung"
  OST_speer_student_movement_long:0 "Studentenbewegung"
- OST_collab_national_socialism:0 "NSDAP-O"
- OST_collab_national_socialism_long:0 "Nationalsozialistische Deutsche Arbeiterpartei - Ostland"
  
+ ###TFO
+ OST_fascism_party:0 "NSDAP-O"
+ OST_fascism_party_long:0 "Nationalsozialistische Deutsche Arbeiterpartei - Ostland"
+
+ ### Country Names ###
+ OST_fascism:0 "Baltischer Bund"
+ OST_fascism_DEF:0 "the Baltic Federation" 
+ OST_fascism_ADJ:0 "Baltic"
  
 
 ### Leader Bios ###

@@ -282,11 +282,11 @@ recruit_character = NOR_Arne_Dagfin_Dahl
 
 add_ideas = {
 	###FACTION###
-	Pakt_Autonomous_Reichskommissariat
+	Pakt_Marionettenstaat
 	###SPIRITS###
-	NOR_the_overstayed_occupation
-	NOR_Milorg
-	NOR_argricultural_devolution
+	
+	
+	
 	###MINISTERS###
 	NOR_Gulbrand_Lunde_hog
 	NOR_Hans_Skarphagen_eco

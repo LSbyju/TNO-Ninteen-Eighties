@@ -33,9 +33,9 @@ oob = "GGN_1962"
 
 add_ideas = {
 	#FACTION
-	Pakt_Protektorat
+	Pakt_Mitstreiter
 	#NATIONAL
-	POL_underground_state
+	
 	#POLITICAL
 	tno_political_parties_one_party_state
 	tno_religious_rights_supression_of_churches
@@ -93,7 +93,7 @@ set_research_slots = 4
 set_stability = 0.62
 
 set_politics = {
-	ruling_party = national_socialism
+	ruling_party = fascism
 	last_election = "1939.10.6"
 	election_frequency = 48
 	elections_allowed = no
@@ -107,8 +107,8 @@ set_popularities = {
 	conservatism = 0
 	paternalism = 20
 	despotism = 4
-	fascism = 1
-	national_socialism = 64
+	fascism = 64
+	national_socialism = 1
 	ultranationalism = 2
 	
 }
