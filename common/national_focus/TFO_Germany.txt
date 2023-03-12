@@ -1,0 +1,12 @@
+focus_tree = {
+	id = GER_TFO_game_start_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	default = no
+	shared_focus = TFOGER_deutschland_uber_alles	
+}
