@@ -17,4 +17,36 @@ spriteTypes = {
 		name = "GFX_TFOGER_Get_into_works"
 		texturefile = "gfx/interface/goals/TFO_Germany/TFOGER_Get_into_works.dds"
 	}
+	SpriteType = {
+		name = "GFX_TFOGER_Legacy_oil_crisis"
+		texturefile = "gfx/interface/goals/TFO_Germany/TFOGER_Legacy_oil_crisis.dds"
+	}
+	SpriteType = {
+		name = "GFX_TFOGER_Thadden_proposal"
+		texturefile = "gfx/interface/goals/TFO_Germany/TFOGER_Thadden_proposal.dds"
+	}
+	SpriteType = {
+		name = "GFX_TFOGER_Schiller_way"
+		texturefile = "gfx/interface/goals/TFO_Germany/TFOGER_Schiller_way.dds"
+	}
+	SpriteType = {
+		name = "GFX_TFOGER_Fan_flames"
+		texturefile = "gfx/interface/goals/TFO_Germany/TFOGER_Fan_flames.dds"
+	}
+	SpriteType = {
+		name = "GFX_TFOGER_Land_black_gold"
+		texturefile = "gfx/interface/goals/TFO_Germany/TFOGER_Land_black_gold.dds"
+	}
+	SpriteType = {
+		name = "GFX_TFOGER_End_trade_war"
+		texturefile = "gfx/interface/goals/TFO_Germany/TFOGER_End_trade_war.dds"
+	}
+	SpriteType = {
+		name = "GFX_TFOGER_Oil_flows"
+		texturefile = "gfx/interface/goals/TFO_Germany/TFOGER_Oil_flows.dds"
+	}
+	SpriteType = {
+		name = "GFX_TFOGER_Into_reichstag"
+		texturefile = "gfx/interface/goals/TFO_Germany/TFOGER_Into_reichstag.dds"
+	}
 }

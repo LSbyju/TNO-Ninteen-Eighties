@@ -23,7 +23,7 @@ shared_focus = {
 			ruling_only = yes
 		}
 	}
-	x = 8
+	x = 10
 	y = 0
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus TFOGER_deutschland_uber_alles"
@@ -70,6 +70,113 @@ shared_focus = {
 	x = 0
 	y = 2
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus TFOGER_sickness_beneath_it"
+		log = "[GetDateText]: [Root.GetName]: Focus TFOGER_get_into_works"
+	}
+}
+
+shared_focus = {
+	id = TFOGER_legacy_oil_crisis
+	icon = GFX_TFOGER_Legacy_oil_crisis
+	cost = 1
+	prerequisite = { focus = TFOGER_get_into_works }
+	relative_position_id = TFOGER_get_into_works
+	x = -6
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TFOGER_legacy_oil_crisis"
+	}
+}
+
+shared_focus = {
+	id = TFOGER_thadden_proposal
+	icon = GFX_TFOGER_Thadden_proposal
+	cost = 1
+	prerequisite = { focus = TFOGER_legacy_oil_crisis }
+	mutually_exclusive = { focus = TFOGER_schiller_way }
+	relative_position_id = TFOGER_legacy_oil_crisis
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TFOGER_thadden_proposal"
+	}
+}
+
+shared_focus = {
+	id = TFOGER_schiller_way
+	icon = GFX_TFOGER_Schiller_way
+	cost = 1
+	prerequisite = { focus = TFOGER_legacy_oil_crisis }
+	mutually_exclusive = { focus = TFOGER_thadden_proposal }
+	relative_position_id = TFOGER_legacy_oil_crisis
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TFOGER_schiller_way"
+	}
+}
+
+shared_focus = {
+	id = TFOGER_fan_the_flames
+	icon = GFX_TFOGER_Fan_flames
+	cost = 1
+	prerequisite = { focus = TFOGER_thadden_proposal }
+	relative_position_id = TFOGER_legacy_oil_crisis
+	x = -2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TFOGER_fan_the_flames"
+	}
+}
+
+shared_focus = {
+	id = TFOGER_land_of_black_gold
+	icon = GFX_TFOGER_Land_black_gold
+	cost = 1
+	prerequisite = { focus = TFOGER_thadden_proposal focus = TFOGER_schiller_way }
+	relative_position_id = TFOGER_legacy_oil_crisis
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TFOGER_land_of_black_gold"
+	}
+}
+
+shared_focus = {
+	id = TFOGER_end_the_trade_war
+	icon = GFX_TFOGER_End_trade_war
+	cost = 1
+	prerequisite = { focus = TFOGER_schiller_way }
+	relative_position_id = TFOGER_legacy_oil_crisis
+	x = 2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TFOGER_end_the_trade_war"
+	}
+}
+
+shared_focus = {
+	id = TFOGER_oil_flows
+	icon = GFX_TFOGER_Oil_flows
+	cost = 1
+	prerequisite = { focus = TFOGER_fan_the_flames focus = TFOGER_end_the_trade_war }
+	prerequisite = { focus = TFOGER_land_of_black_gold }
+	relative_position_id = TFOGER_legacy_oil_crisis
+	x = 0
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TFOGER_oil_flows"
+	}
+}
+
+shared_focus = {
+	id = TFOGER_into_reichstag
+	icon = GFX_TFOGER_Into_reichstag
+	cost = 1
+	prerequisite = { focus = TFOGER_get_into_works }
+	relative_position_id = TFOGER_get_into_works
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TFOGER_into_reichstag"
 	}
 }
