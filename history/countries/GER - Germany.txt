@@ -179,11 +179,9 @@ add_ideas = {
 	Pakt_Leader
 
 	## Spirits
-	to_banish_want
-	the_two_principles
-	endsieg
-	gone_over
-
+	GER_TFO_Fuhrer_dream
+	GER_TFO_new_wehrmacht
+	GER_TFO_stain_of_our_past
 	## Ministers
 	GER_karl_carstens_hog
 	GER_otto_ernst_remer_tfo_sec

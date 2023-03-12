@@ -6899,4 +6899,20 @@ spriteTypes = {
 		name = "GFX_idea_USA_reagan_recession"
 		texturefile = "gfx/interface/ideas/national_spirits/The_Regean_Recession.dds"
 	}
+
+	##TFO-GER
+	#Speer
+
+	spriteType = {
+		name = "GFX_idea_GER_tfo_fuhrer_dream"
+		texturefile = "gfx/interface/ideas/national_spirits/TFO_Germany/idea_GER_tfo_fuhrer_dream.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_tfo_new_wehrmacht"
+		texturefile = "gfx/interface/ideas/national_spirits/TFO_Germany/idea_GER_tfo_new_wehrmacht.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_tfo_stain_our_past"
+		texturefile = "gfx/interface/ideas/national_spirits/TFO_Germany/idea_GER_tfo_stain_our_past.dds"
+	}
 }

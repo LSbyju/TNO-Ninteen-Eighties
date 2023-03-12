@@ -1,0 +1,60 @@
+ideas = {
+
+	country = {
+		GER_TFO_Fuhrer_dream = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GER_TFO_Fuhrer_dream"}
+			
+			allowed = {
+				always = no
+			}
+
+			picture = GER_tfo_fuhrer_dream
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.15
+				annual_gdp_growth_factor = 0.02
+				production_speed_buildings_factor = 0.15 
+			}
+
+		}		
+
+		GER_TFO_new_wehrmacht = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GER_TFO_new_wehrmacht"}
+			
+			allowed = {
+				always = no
+			}
+
+			picture = GER_tfo_new_wehrmacht
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.1
+				army_attack_factor = 0.1
+				army_speed_factor = 0.1
+				planning_speed = -0.25
+				land_doctrine_cost_factor = 0.1
+				custom_modifier_tooltip = GER_gone_over_tt
+			}
+
+		}
+
+		GER_TFO_stain_of_our_past = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GER_TFO_stain_of_our_past"}
+			
+			allowed = {
+				always = no
+			}
+	
+			picture = GER_tfo_stain_our_past
+			removal_cost = -1
+	
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.15
+			}
+	
+		}
+	}
+}

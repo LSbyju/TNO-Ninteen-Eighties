@@ -830,5 +830,24 @@ ideas = {
 				supply_consumption_factor = 0.25
 			}
 		}
+		##TFO
+		GER_TFO_Fuhrer_dream = {
+
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GER_TFO_Fuhrer_dream"}
+			
+			allowed = {
+				always = no
+			}
+
+			picture = GFX_idea_GER_tfo_fuhrer_dream
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.15
+				annual_gdp_growth_factor = 0.02
+				production_speed_buildings_factor = 0.15 
+			}
+
+		}
 	}
 }
