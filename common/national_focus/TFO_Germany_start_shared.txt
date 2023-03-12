@@ -180,3 +180,177 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus TFOGER_into_reichstag"
 	}
 }
+
+shared_focus = {
+	id = TFOGER_appease_oberlander
+	icon = GFX_TFOGER_Oberlander
+	cost = 1
+	prerequisite = { focus = TFOGER_into_reichstag }
+	mutually_exclusive = { focus = TFOGER_strengthen_speerite }
+	relative_position_id = TFOGER_into_reichstag
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TFOGER_appease_oberlander"
+	}
+}
+
+shared_focus = {
+	id = TFOGER_strengthen_speerite
+	icon = GFX_TFOGER_Speerite
+	cost = 1
+	prerequisite = { focus = TFOGER_into_reichstag }
+	mutually_exclusive = { focus = TFOGER_appease_oberlander }
+	relative_position_id = TFOGER_into_reichstag
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TFOGER_strengthen_speerite"
+	}
+}
+
+shared_focus = {
+	id = TFOGER_empower_remer
+	icon = GFX_TFOGER_Empower_Remer
+	cost = 1
+	prerequisite = { focus = TFOGER_appease_oberlander }
+	relative_position_id = TFOGER_into_reichstag
+	x = -1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TFOGER_empower_remer"
+	}
+}
+
+shared_focus = {
+	id = TFOGER_tame_mad_dog
+	icon = GFX_TFOGER_Tame_mad_dog
+	cost = 1
+	prerequisite = { focus = TFOGER_strengthen_speerite }
+	relative_position_id = TFOGER_into_reichstag
+	x = 1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TFOGER_tame_mad_dog"
+	}
+}
+
+shared_focus = {
+	id = TFOGER_calm_before_storm
+	icon = GFX_TFOGER_Calm_before_storm
+	cost = 1
+	prerequisite = { focus = TFOGER_empower_remer focus = TFOGER_tame_mad_dog }
+	relative_position_id = TFOGER_into_reichstag
+	x = 0
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TFOGER_calm_before_storm"
+	}
+}
+
+shared_focus = {
+	id = TFOGER_art_of_diplomacy
+	icon = GFX_TFOGER_Art_diplomacy
+	cost = 1
+	prerequisite = { focus = TFOGER_get_into_works }
+	relative_position_id = TFOGER_get_into_works
+	x = 7
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TFOGER_art_of_diplomacy"
+	}
+}
+
+shared_focus = {
+	id = TFOGER_remer_way
+	icon = GFX_TFOGER_Remer_way
+	cost = 1
+	prerequisite = { focus = TFOGER_art_of_diplomacy }
+	mutually_exclusive = { focus = TFOGER_carsten_doctrine }
+	relative_position_id = TFOGER_art_of_diplomacy
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TFOGER_remer_way"
+	}
+}
+
+shared_focus = {
+	id = TFOGER_meet_old_ally
+	icon = GFX_TFOGER_Meet_old_ally
+	cost = 1
+	prerequisite = { focus = TFOGER_remer_way }
+	relative_position_id = TFOGER_remer_way
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TFOGER_meet_old_ally"
+	}
+}
+
+shared_focus = {
+	id = TFOGER_reinforce_pakt
+	icon = GFX_TFOGER_Reinforce_Pakt
+	cost = 1
+	prerequisite = { focus = TFOGER_remer_way }
+	relative_position_id = TFOGER_remer_way
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TFOGER_reinforce_pakt"
+	}
+}
+
+shared_focus = {
+	id = TFOGER_sideline_yankee
+	icon = GFX_TFOGER_Sideline_Yankee
+	cost = 1
+	prerequisite = { focus = TFOGER_meet_old_ally }
+	prerequisite = { focus = TFOGER_reinforce_pakt }
+	relative_position_id = TFOGER_remer_way
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TFOGER_sideline_yankee"
+	}
+}
+
+shared_focus = {
+	id = TFOGER_carsten_doctrine
+	icon = GFX_TFOGER_Carsten_doctrine
+	cost = 1
+	prerequisite = { focus = TFOGER_art_of_diplomacy }
+	mutually_exclusive = { focus = TFOGER_remer_way }
+	relative_position_id = TFOGER_art_of_diplomacy
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TFOGER_carsten_doctrine"
+	}
+}
+
+shared_focus = {
+	id = TFOGER_trip_oversea
+	icon = GFX_TFOGER_Trip_Oversea
+	cost = 1
+	prerequisite = { focus = TFOGER_carsten_doctrine }
+	relative_position_id = TFOGER_carsten_doctrine
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TFOGER_trip_oversea"
+	}
+}
+
+shared_focus = {
+	id = TFOGER_long_road_normalcy
+	icon = GFX_TFOGER_Return_to_normalcy
+	cost = 1
+	prerequisite = { focus = TFOGER_trip_oversea }
+	relative_position_id = TFOGER_carsten_doctrine
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TFOGER_long_road_normalcy"
+	}
+}

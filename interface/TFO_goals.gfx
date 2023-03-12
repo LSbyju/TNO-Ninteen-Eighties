@@ -49,4 +49,64 @@ spriteTypes = {
 		name = "GFX_TFOGER_Into_reichstag"
 		texturefile = "gfx/interface/goals/TFO_Germany/TFOGER_Into_reichstag.dds"
 	}
+	SpriteType = {
+		name = "GFX_TFOGER_Speerite"
+		texturefile = "gfx/interface/goals/TFO_Germany/TFOGER_Speerite.dds"
+	}
+	SpriteType = {
+		name = "GFX_TFOGER_Oberlander"
+		texturefile = "gfx/interface/goals/TFO_Germany/TFOGER_Into_reichstag.dds"
+	}
+	SpriteType = {
+		name = "GFX_TFOGER_Speerite"
+		texturefile = "gfx/interface/goals/TFO_Germany/TFOGER_Speerite.dds"
+	}
+	SpriteType = {
+		name = "GFX_TFOGER_Oberlander"
+		texturefile = "gfx/interface/goals/TFO_Germany/TFOGER_Oberlander.dds"
+	}
+	SpriteType = {
+		name = "GFX_TFOGER_Empower_Remer"
+		texturefile = "gfx/interface/goals/TFO_Germany/TFOGER_Empower_Remer.dds"
+	}
+	SpriteType = {
+		name = "GFX_TFOGER_Tame_mad_dog"
+		texturefile = "gfx/interface/goals/TFO_Germany/TFOGER_Tame_mad_dog.dds"
+	}
+	SpriteType = {
+		name = "GFX_TFOGER_Calm_before_storm"
+		texturefile = "gfx/interface/goals/TFO_Germany/TFOGER_Calm_before_storm.dds"
+	}
+	SpriteType = {
+		name = "GFX_TFOGER_Art_diplomacy"
+		texturefile = "gfx/interface/goals/TFO_Germany/TFOGER_Art_diplomacy.dds"
+	}
+	SpriteType = {
+		name = "GFX_TFOGER_Remer_way"
+		texturefile = "gfx/interface/goals/TFO_Germany/TFOGER_Remer_way.dds"
+	}
+	SpriteType = {
+		name = "GFX_TFOGER_Carsten_doctrine"
+		texturefile = "gfx/interface/goals/TFO_Germany/TFOGER_Carsten_doctrine.dds"
+	}
+	SpriteType = {
+		name = "GFX_TFOGER_Meet_old_ally"
+		texturefile = "gfx/interface/goals/TFO_Germany/TFOGER_Meet_old_ally.dds"
+	}
+	SpriteType = {
+		name = "GFX_TFOGER_Reinforce_Pakt"
+		texturefile = "gfx/interface/goals/TFO_Germany/TFOGER_Reinforce_Pakt.dds"
+	}
+	SpriteType = {
+		name = "GFX_TFOGER_Sideline_Yankee"
+		texturefile = "gfx/interface/goals/TFO_Germany/TFOGER_Sideline_Yankee.dds"
+	}
+	SpriteType = {
+		name = "GFX_TFOGER_Trip_Oversea"
+		texturefile = "gfx/interface/goals/TFO_Germany/TFOGER_Trip_Oversea.dds"
+	}
+	SpriteType = {
+		name = "GFX_TFOGER_Return_to_normalcy"
+		texturefile = "gfx/interface/goals/TFO_Germany/TFOGER_Return_to_normalcy.dds"
+	}
 }
