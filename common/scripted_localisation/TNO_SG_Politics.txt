@@ -484,6 +484,10 @@ defined_text = {
 		localization_key = paternalism_authoritarian_developmentalism_subtype
 	}
 	text = {
+		trigger = { has_country_leader_ideology = paternalism_antarctic_administration_subtype }
+		localization_key = paternalism_antarctic_administration_subtype
+	}
+	text = {
 		localization_key = paternalism
 	}
 }
@@ -557,6 +561,10 @@ defined_text = {
 	text = {
 		trigger = { has_country_leader_ideology = despotism_managerial_state_subtype }
 		localization_key = despotism_managerial_state_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = despotism_antarctic_administration_subtype }
+		localization_key = despotism_antarctic_administration_subtype
 	}
 	text = {
 		localization_key = despotism
@@ -700,6 +708,10 @@ defined_text = {
 		localization_key = national_socialism_revolutionary_nazism_subtype
 	}
 	text = {
+		trigger = { has_country_leader_ideology = national_socialism_antarctic_administration_subtype }
+		localization_key = national_socialism_antarctic_administration_subtype
+	}
+	text = {
 		localization_key = national_socialism
 	}
 }
@@ -721,6 +733,10 @@ defined_text = {
 	text = {
 		trigger = { has_country_leader_ideology = esoteric_nazism_deep_ecology_nazism_subtype }
 		localization_key = esoteric_nazism_deep_ecology_nazism_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = esoteric_nazism_antarctic_administration_subtype }
+		localization_key = esoteric_nazism_antarctic_administration_subtype
 	}
 	text = {
 		localization_key = esoteric_nazism

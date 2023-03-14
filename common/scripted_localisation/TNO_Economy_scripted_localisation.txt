@@ -5471,6 +5471,14 @@ defined_text = {
 		localization_key = econ_subtype_yagoda_title
 	}
 	text = {
+		trigger = { check_variable = { TNO_economy_subtype = 998 } } 
+		localization_key = econ_subtype_none_title
+	}
+	text = {
+		trigger = { check_variable = { TNO_economy_subtype = 999 } } 
+		localization_key = econ_subtype_extraction_title
+	}
+	text = {
 		trigger = {
 			check_variable = { TNO_economy_subtype = 20 }
 			check_variable = { TNO_economy_type = 1 }
@@ -5594,6 +5602,14 @@ defined_text = {
 		localization_key = "GFX_econ_type_yagoda"
 	}
 	text = {
+		trigger = { check_variable = { TNO_economy_subtype = 998 } } 
+		localization_key = "GFX_econ_type_none"
+	}
+	text = {
+		trigger = { check_variable = { TNO_economy_subtype = 999 } } 
+		localization_key = "GFX_econ_type_extraction"
+	}
+	text = {
 		trigger = {
 			check_variable = { TNO_economy_subtype = 20 }
 			check_variable = { TNO_economy_type = 1 }
@@ -5715,6 +5731,14 @@ defined_text = {
 	text = {
 		trigger = { check_variable = { TNO_economy_subtype = 19 } }
 		localization_key = econ_subtype_yagoda_tt
+	}
+    text = {
+		trigger = { check_variable = { TNO_economy_subtype = 998 } }
+		localization_key = econ_subtype_none_tt
+	}
+	text = {
+		trigger = { check_variable = { TNO_economy_subtype = 999 } }
+		localization_key = econ_subtype_extraction_tt
 	}
 	text = {
 		trigger = {

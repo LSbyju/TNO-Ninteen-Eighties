@@ -1,0 +1,395 @@
+characters = {
+	AAO_William_Francis_Raborn = {
+		name = AAO_William_Francis_Raborn
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Antarctica/Portrait_AAO_William_Francis_Raborn.dds"
+				small = "gfx/interface/ideas/AAO/AAO_William_Francis_Raborn.dds"
+			}
+			army = {
+				large = "gfx/leaders/Antarctica/Portrait_AAO_William_Francis_Raborn.dds"
+				small = "gfx/interface/ideas/AAO/AAO_William_Francis_Raborn.dds"
+			}
+		}
+		country_leader = {
+			ideology = paternalism_antarctic_administration_subtype
+			expire = "1999.1.1"
+			desc = POLITICS_WILLIAM_RABORN_DESC
+			traits = {
+				paternalism
+				Antarctic_Admiral
+			}
+			id = -1
+		}
+	}
+	AAO_James_R_Reedy = {
+		name = AAO_James_R_Reedy
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAO/AAO_HoG_James_R_Reedy_large.dds"
+				small = "gfx/interface/ideas/AAO/AAO_HoG_James_R_Reedy.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAO/AAO_HoG_James_R_Reedy_large.dds"
+				small = "gfx/interface/ideas/AAO/AAO_HoG_James_R_Reedy.dds"
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = AAO_James_R_Reedy_dep
+			allowed = { original_tag = AAO }
+			traits = {
+				head_of_government
+				paternalism
+				hog_respected_war_hero
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAO_Herman_Phleger = {
+		name = AAO_Herman_Phleger
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAO/AAO_ForMin_Herman_Phleger_large.dds"
+				small = "gfx/interface/ideas/AAO/AAO_ForMin_Herman_Phleger.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAO/AAO_ForMin_Herman_Phleger_large.dds"
+				small = "gfx/interface/ideas/AAO/AAO_ForMin_Herman_Phleger.dds"
+			}
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = AAO_Herman_Phleger_pol
+			allowed = { original_tag = AAO }
+			traits = {
+				foreign_minister
+				conservatism
+				for_seasoned_ambassador
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAO_Howard_Beale = {
+		name = AAO_Howard_Beale
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Antarctica/Portrait_AAO_Howard_Beale.dds"
+				small = "gfx/interface/ideas/AAO/AAO_EconMin_Howard_Beale.dds"
+			}
+			army = {
+				large = "gfx/leaders/Antarctica/Portrait_AAO_Howard_Beale.dds"
+				small = "gfx/interface/ideas/AAO/AAO_EconMin_Howard_Beale.dds"
+			}
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = AAO_Howard_Beale_eco
+			allowed = { original_tag = AAO }
+			traits = {
+				economy_minister
+				liberalism
+				eco_administrative_genius
+				eco_political_appointment
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		country_leader = {
+			ideology = paternalism_antarctic_administration_subtype
+			expire = "1999.1.1"
+			#desc = 
+			traits = {
+				paternalism
+			}
+			id = -1
+		}
+	}
+	AAO_William_Robertson = {
+		name = AAO_William_Robertson
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAO/AAO_SecMin_William_Robertson_large.dds"
+				small = "gfx/interface/ideas/AAO/AAO_SecMin_William_Robertson.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAO/AAO_SecMin_William_Robertson_large.dds"
+				small = "gfx/interface/ideas/AAO/AAO_SecMin_William_Robertson.dds"
+			}
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = AAO_William_Robertson_sec
+			allowed = { original_tag = AAO }
+			traits = {
+				security_minister
+				paternalism
+				sec_spymaster
+				sec_guerilla_fighter
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		advisor = {
+			slot = theorist
+			idea_token = AAO_William_Robertson_theorist
+			allowed = {
+				original_tag = AAO
+			}
+			traits = {
+				theorist
+			}
+			ledger = army
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = AAO_William_Robertson_army_chief
+			allowed = {
+				original_tag = AAO
+			}
+			traits = {
+				army_chief
+			}
+			ledger = army
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		field_marshal = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			traits = {
+				commando
+				guerilla_fighter
+			}
+		}
+	}
+	AAO_Grayston_Lynch = {
+		name = AAO_Grayston_Lynch
+		portraits = { 
+			civilian = {
+				large = "gfx/interface/ideas/AAO/AAO_Grayston_Lynch_large.dds"
+				small = "gfx/interface/ideas/AAO/AAO_Grayston_Lynch.dds"
+			} 
+			army = {
+				large = "gfx/interface/ideas/AAO/AAO_Grayston_Lynch_large.dds"
+				small = "gfx/interface/ideas/AAO/AAO_Grayston_Lynch.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = AAO_Grayston_Lynch_high_command
+			allowed = {
+				original_tag = AAO
+			}
+			traits = {
+				high_command
+			}
+			ledger = army
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			traits = {
+				commando
+				war_hero
+			}
+		}
+	}
+	AAO_Theodore_Shackley = {
+		name = AAO_Theodore_Shackley
+		portraits = { 
+			civilian = {
+				large = "gfx/interface/ideas/AAO/AAO_Theodore_Shackley_large.dds"
+				small = "gfx/interface/ideas/AAO/AAO_Theodore_Shackley.dds"
+			} 
+			army = {
+				large = "gfx/interface/ideas/AAO/AAO_Theodore_Shackley_large.dds"
+				small = "gfx/interface/ideas/AAO/AAO_Theodore_Shackley.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = AAO_Theodore_Shackley_high_command
+			allowed = {
+				original_tag = AAO
+			}
+			traits = {
+				high_command
+			}
+			ledger = army
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAO_David_Atlee_Phillips = {
+		name = AAO_David_Atlee_Phillips
+		portraits = { 
+			civilian = {
+				large = "gfx/interface/ideas/AAO/AAO_David_Atlee_Phillips_large.dds"
+				small = "gfx/interface/ideas/AAO/AAO_David_Atlee_Phillips.dds"
+			} 
+			army = {
+				large = "gfx/interface/ideas/AAO/AAO_David_Atlee_Phillips_large.dds"
+				small = "gfx/interface/ideas/AAO/AAO_David_Atlee_Phillips.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = AAO_David_Atlee_Phillips_high_command
+			allowed = {
+				original_tag = AAO
+			}
+			traits = {
+				high_command
+			}
+			ledger = army
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAO_William_Pawley = {
+		name = AAO_William_Pawley
+		portraits = { 
+			civilian = {
+				large = "gfx/interface/ideas/AAO/AAO_William_Pawley_large.dds"
+				small = "gfx/interface/ideas/AAO/AAO_William_Pawley.dds"
+			} 
+			army = {
+				large = "gfx/interface/ideas/AAO/AAO_William_Pawley_large.dds"
+				small = "gfx/interface/ideas/AAO/AAO_William_Pawley.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = AAO_William_Pawley_air_chief
+			allowed = {
+				original_tag = AAO
+			}
+			traits = {
+				air_chief
+			}
+			ledger = army
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAO_Christopher_Fitzgerald = {
+		name = AAO_Christopher_Fitzgerald
+		portraits = { 
+			civilian = {
+				large = "gfx/interface/ideas/AAO/AAO_Christopher_Fitzgerald_large.dds"
+				small = "gfx/interface/ideas/AAO/AAO_Christopher_Fitzgerald.dds"
+			} 
+			army = {
+				large = "gfx/interface/ideas/AAO/AAO_Christopher_Fitzgerald_large.dds"
+				small = "gfx/interface/ideas/AAO/AAO_Christopher_Fitzgerald.dds"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = AAO_Christopher_Fitzgerald_navy_chief
+			allowed = {
+				original_tag = AAO
+			}
+			traits = {
+				navy_chief
+			}
+			ledger = army
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAO_Edmund_Hillary = {
+		name = AAO_Edmund_Hillary
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Antarctica/Portrait_AAO_Edmund_Hillary.dds"
+				small = "gfx/interface/ideas/AAO/AAO_Edmund_Hillary.dds"
+			}
+			army = {
+				large = "gfx/leaders/Antarctica/Portrait_AAO_Edmund_Hillary.dds"
+				small = "gfx/interface/ideas/AAO/AAO_Edmund_Hillary.dds"
+			}
+		}
+		country_leader = {
+			ideology = paternalism_antarctic_administration_subtype
+			expire = "1999.1.1"
+			#desc = 
+			traits = {
+				paternalism
+			}
+			id = -1
+		}
+	}
+	AAO_Hyman_Rickover = {
+		name = AAO_Hyman_Rickover
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Antarctica/Portrait_AAO_Hyman_Rickover.dds"
+				small = "gfx/interface/ideas/AAO/AAO_Hyman_Rickover.dds"
+			}
+			army = {
+				large = "gfx/leaders/Antarctica/Portrait_AAO_Edmund_Hillary.dds"
+				small = "gfx/interface/ideas/AAO/AAO_Hyman_Rickover.dds"
+			}
+		}
+		country_leader = {
+			ideology = paternalism_antarctic_administration_subtype
+			expire = "1999.1.1"
+			#desc = 
+			traits = {
+				paternalism
+			}
+			id = -1
+		}
+	}
+	AAO_Phillip_Law = {
+		name = AAO_Phillip_Law
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Antarctica/Portrait_AAO_Phillip_Law.dds"
+				small = "gfx/interface/ideas/AAO/AAO_Phillip_Law.dds"
+			}
+			army = {
+				large = "gfx/leaders/Antarctica/Portrait_AAO_Phillip_Law.dds"
+				small = "gfx/interface/ideas/AAO/AAO_Phillip_Law.dds"
+			}
+		}
+		country_leader = {
+			ideology = paternalism_antarctic_administration_subtype
+			expire = "1999.1.1"
+			#desc = 
+			traits = {
+				paternalism
+			}
+			id = -1
+		}
+	}
+}

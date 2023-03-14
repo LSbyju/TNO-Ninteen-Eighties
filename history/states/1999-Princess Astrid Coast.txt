@@ -1,0 +1,25 @@
+state={
+	id=1999
+	name="STATE_1999"
+	provinces={
+		16591 16600 16628 16655 16576 16577 16586 16614 16769 16770 16771
+	}
+	manpower = 1
+
+	state_category = wasteland
+
+	history = {
+		owner = AAG
+		add_core_of = AAG
+		victory_points = { 16771 1 }
+		victory_points = { 16770 1 }
+		victory_points = { 16769 1 }
+		buildings = {
+			infrastructure = 0
+			16769 = {
+				naval_base = 1
+			}
+		}
+	}
+
+}

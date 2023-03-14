@@ -1,0 +1,4 @@
+graphical_culture = AST
+graphical_culture_2d = AST
+
+color = { 44 82 142 }

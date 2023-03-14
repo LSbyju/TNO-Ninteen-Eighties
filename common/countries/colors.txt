@@ -604,8 +604,8 @@ HOL = {
 }
 
 GGN = {
-    color = rgb { 157 66 90 }
-	color_ui = rgb { 157 66 90 }
+	color = rgb { 68 68 69 }
+	color_ui = rgb { 68 68 69 }
 }
 
 ITA = {
@@ -1119,8 +1119,8 @@ CAM = {
 }
 
 BRG = {
-	color = rgb { 41 55 71 }
-	color_ui = rgb { 41 55 71 }
+	color = rgb { 68 40 73 }
+	color_ui = rgb { 68 40 73 }
 }
 
 IBR = {
@@ -1149,8 +1149,8 @@ CRN = {
 }
 
 OST = {
-	color = rgb { 50 135 175 }
-	color_ui = rgb { 99 204 254 }
+	color = rgb { 79 79 81 }
+	color_ui = rgb { 79 79 81 }
 }
 
 MCW = {
@@ -1229,8 +1229,8 @@ SGR = {
 }
 
 BGR = {
-	color = rgb { 68 40 73 }
-	color_ui = rgb { 68 40 73 }
+	color = rgb { 99 105 90 }
+	color_ui = rgb { 99 105 90 }
 }
 
 GGR = {
@@ -1319,8 +1319,8 @@ GAY = {
 }
 
 KOM = {
-	color = rgb { 163 66 76 }
-	color_ui = rgb { 163 66 76 }
+	color = rgb { 94 131 162 }
+	color_ui = rgb { 94 131 162 }
 }
 
 VYT = {
@@ -2343,4 +2343,61 @@ POV = {
 POP = {
 	color = rgb { 100 0 0 }
 	color_ui = rgb { 100 0 0 }
+}
+
+#Antarctica
+
+AAC = {
+	color = rgb { 175 98 51 }
+	color_ui = rgb { 175 98 51 }
+}
+
+AAA = {
+	color = rgb { 140 167 170 }
+	color_ui = rgb { 140 167 170 }
+}
+
+AAG = {
+	color = rgb { 60 60 60 }
+	color_ui = rgb { 60 60 60 }
+}
+
+AAI = {
+	color = rgb { 109 142 96 }
+	color_ui = rgb { 109 142 96 }
+}
+
+AAJ = {
+	color = rgb { 130 19 46 }
+	color_ui = rgb { 130 19 46 }
+}
+
+AAO = {
+	color = rgb { 44 82 142 }
+	color_ui = rgb { 44 82 142 }
+}
+
+AAB = {
+	color = rgb { 68 40 73 }
+	color_ui = rgb { 68 40 73 }
+}
+
+AAU = {
+	color = rgb { 100 138 190 }
+	color_ui = rgb { 100 138 190 }
+}
+
+AAS = {
+	color = rgb { 140 175 115 }
+	color_ui = rgb { 140 175 115 }
+}
+
+AAZ = {
+	color = rgb { 115 102 162 }
+	color_ui = rgb { 115 102 162 }
+}
+
+AAR = {
+	color = rgb { 134 157 55 }
+	color_ui = rgb { 134 157 55 }
 }

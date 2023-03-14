@@ -1,0 +1,22 @@
+state={
+	id=1987
+	name="STATE_1987"
+	provinces={
+		16571 16641 16778 
+	}
+	manpower = 1
+
+	state_category = wasteland
+
+	history = {
+		owner = AAC
+		add_core_of = AAC
+		victory_points = { 16778 1 }
+		buildings = {
+			infrastructure = 0
+			16778 = {
+				naval_base = 1
+			}
+		}
+	}
+}

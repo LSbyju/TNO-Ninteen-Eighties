@@ -1,0 +1,268 @@
+guiTypes = {
+	containerWindowType = {
+		name = "Antarctica_GUI_AAA"
+		position = { x = 0 y = 0 }
+		size = { width = 0 height = 1000 }
+		
+		instantTextboxType = {
+			name = "Antarctica_GUI_AAA_Info_Text"
+			position = { x = 20 y = 10 }
+			font = "aldrich_18_outline"
+			text = Antarctica_GUI_AAA_Info_Text
+			maxWidth = 452
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "Antarctica_GUI_AAA_Main_Contents"
+			position = { x = 20 y = 84 }
+			size = { width = 0 height = 0 }
+			
+			iconType = {
+				name = "Antarctica_GUI_AAA_Horizontal_Bar_1"
+				spriteType = "GFX_Antarctica_GUI_AAA_Horizontal_Bar"
+				position = { x = 0 y = 36 }
+			}
+			
+			instantTextboxType = {
+				name = "Antarctica_GUI_AAA_Equipment_Title_Text"
+				position = { x = 0 y = 46 }
+				font = "aldrich_24_outline"
+				text = Antarctica_GUI_AAA_Equipment_Title_Text
+				maxWidth = 482
+				format = left
+			}
+			
+			iconType = {
+				name = "Antarctica_GUI_AAA_Tech_Icon"
+				spriteType = "GFX_Antarctica_GUI_AAA_Tech_Icon"
+				position = { x = 241 y = 135 }
+				centerposition = yes
+			}
+			
+			instantTextboxType = {
+				name = "Antarctica_GUI_AAA_Equipment_Upgrades_Text"
+				position = { x = 0 y = 200 }
+				font = "aldrich_24_outline"
+				text = Antarctica_GUI_AAA_Equipment_Upgrades_Text
+				maxWidth = 482
+				format = center
+			}
+			
+			buttonType = {
+				name = "Antarctica_GUI_AAA_Equipment_Upgrades_Button_Reliability"
+				position = { x = 10 y = 232 }
+				quadTextureSprite = "GFX_Antarctica_GUI_AAA_Standard_Button"
+				buttonFont = "aldrich_24_outline"
+				buttonText = Antarctica_GUI_AAA_Equipment_Upgrades_Button_Reliability
+			}
+			instantTextboxType = {
+				name = "Antarctica_GUI_AAA_Equipment_Upgrades_Button_Reliability_Percent"
+				position = { x = 10 y = 270 }
+				font = "aldrich_22_outline"
+				text = Antarctica_GUI_AAA_Equipment_Upgrades_Button_Reliability_Percent
+				maxWidth = 220
+				format = center
+			}
+			buttonType = {
+				name = "Antarctica_GUI_AAA_Equipment_Upgrades_Button_Engine"
+				position = { x = 250 y = 232 }
+				quadTextureSprite = "GFX_Antarctica_GUI_AAA_Standard_Button"
+				buttonFont = "aldrich_24_outline"
+				buttonText = Antarctica_GUI_AAA_Equipment_Upgrades_Button_Engine
+			}
+			instantTextboxType = {
+				name = "Antarctica_GUI_AAA_Equipment_Upgrades_Button_Engine_Percent"
+				position = { x = 250 y = 270 }
+				font = "aldrich_22_outline"
+				text = Antarctica_GUI_AAA_Equipment_Upgrades_Button_Engine_Percent
+				maxWidth = 220
+				format = center
+			}
+			
+			buttonType = {
+				name = "Antarctica_GUI_AAA_Equipment_Upgrades_Button_Storage"
+				position = { x = 10 y = 300 }
+				quadTextureSprite = "GFX_Antarctica_GUI_AAA_Standard_Button"
+				buttonFont = "aldrich_24_outline"
+				buttonText = Antarctica_GUI_AAA_Equipment_Upgrades_Button_Storage
+			}
+			instantTextboxType = {
+				name = "Antarctica_GUI_AAA_Equipment_Upgrades_Button_Storage_Percent"
+				position = { x = 10 y = 338 }
+				font = "aldrich_22_outline"
+				text = Antarctica_GUI_AAA_Equipment_Upgrades_Button_Storage_Percent
+				maxWidth = 220
+				format = center
+			}
+			buttonType = {
+				name = "Antarctica_GUI_AAA_Equipment_Upgrades_Button_Fuel"
+				position = { x = 250 y = 300 }
+				quadTextureSprite = "GFX_Antarctica_GUI_AAA_Standard_Button"
+				buttonFont = "aldrich_24_outline"
+				buttonText = Antarctica_GUI_AAA_Equipment_Upgrades_Button_Fuel
+			}
+			instantTextboxType = {
+				name = "Antarctica_GUI_AAA_Equipment_Upgrades_Button_Fuel_Percent"
+				position = { x = 250 y = 338 }
+				font = "aldrich_22_outline"
+				text = Antarctica_GUI_AAA_Equipment_Upgrades_Button_Fuel_Percent
+				maxWidth = 220
+				format = center
+			}
+			
+			iconType = {
+				name = "Antarctica_GUI_AAA_Horizontal_Bar_2"
+				spriteType = "GFX_Antarctica_GUI_AAA_Horizontal_Bar"
+				position = { x = 0 y = 366 }
+			}
+			
+			instantTextboxType = {
+				name = "Antarctica_GUI_AAA_Supplies_Title_Text"
+				position = { x = 0 y = 376 }
+				font = "aldrich_24_outline"
+				text = Antarctica_GUI_AAA_Supplies_Title_Text
+				maxWidth = 482
+				format = left
+			}
+			
+			iconType = {
+				name = "Antarctica_GUI_AAA_Supplies_Main_Base_Bar"
+				spriteType = "GFX_Antarctica_Decision_GUI_Bar_E_Base"
+				position = { x = 15 y = 408 }
+			}
+			instantTextboxType = {
+				name = "Antarctica_GUI_AAA_Supplies_Main_Base_Bar_Text"
+				position = { x = 0 y = 446 }
+				font = "aldrich_20_outline"
+				text = Antarctica_GUI_AAA_Supplies_Main_Base_Bar_Text
+				maxWidth = 482
+				format = center
+			}
+			buttonType = {
+				name = "Antarctica_GUI_AAA_Supplies_Main_Base_Bar_Minus"
+				position = { x = 15 y = 442 }
+				quadTextureSprite = "GFX_Antarctica_GUI_AAA_Minus_Button"
+			}
+			buttonType = {
+				name = "Antarctica_GUI_AAA_Supplies_Main_Base_Bar_Plus"
+				position = { x = 441 y = 442 }
+				quadTextureSprite = "GFX_Antarctica_GUI_AAA_Plus_Button"
+			}
+			
+			iconType = {
+				name = "Antarctica_GUI_AAA_Supplies_Sub_Base_Bar"
+				spriteType = "GFX_Antarctica_Decision_GUI_Bar_E_SubBase"
+				position = { x = 15 y = 472 }
+			}
+			instantTextboxType = {
+				name = "Antarctica_GUI_AAA_Supplies_Sub_Base_Bar_Text"
+				position = { x = 0 y = 510 }
+				font = "aldrich_20_outline"
+				text = Antarctica_GUI_AAA_Supplies_Sub_Base_Bar_Text
+				maxWidth = 482
+				format = center
+			}
+			buttonType = {
+				name = "Antarctica_GUI_AAA_Supplies_Sub_Base_Bar_Minus"
+				position = { x = 15 y = 506 }
+				quadTextureSprite = "GFX_Antarctica_GUI_AAA_Minus_Button"
+			}
+			buttonType = {
+				name = "Antarctica_GUI_AAA_Supplies_Sub_Base_Bar_Plus"
+				position = { x = 441 y = 506 }
+				quadTextureSprite = "GFX_Antarctica_GUI_AAA_Plus_Button"
+			}
+			
+			iconType = {
+				name = "Antarctica_GUI_AAA_Supplies_Patrol_Bar"
+				spriteType = "GFX_Antarctica_Decision_GUI_Bar_E_Patrol"
+				position = { x = 15 y = 536 }
+			}
+			instantTextboxType = {
+				name = "Antarctica_GUI_AAA_Supplies_Patrol_Bar_Text"
+				position = { x = 0 y = 574 }
+				font = "aldrich_20_outline"
+				text = Antarctica_GUI_AAA_Supplies_Patrol_Bar_Text
+				maxWidth = 482
+				format = center
+			}
+			buttonType = {
+				name = "Antarctica_GUI_AAA_Supplies_Patrol_Bar_Minus"
+				position = { x = 15 y = 570 }
+				quadTextureSprite = "GFX_Antarctica_GUI_AAA_Minus_Button"
+			}
+			buttonType = {
+				name = "Antarctica_GUI_AAA_Supplies_Patrol_Bar_Plus"
+				position = { x = 441 y = 570 }
+				quadTextureSprite = "GFX_Antarctica_GUI_AAA_Plus_Button"
+			}
+			
+			iconType = {
+				name = "Antarctica_GUI_AAA_Horizontal_Bar_3"
+				spriteType = "GFX_Antarctica_GUI_AAA_Horizontal_Bar"
+				position = { x = 0 y = 608 }
+			}
+			
+			instantTextboxType = {
+				name = "Antarctica_GUI_AAA_Patrol_Title_Text"
+				position = { x = 0 y = 618 }
+				font = "aldrich_24_outline"
+				text = Antarctica_GUI_AAA_Patrol_Title_Text
+				maxWidth = 482
+				format = left
+			}
+			
+			buttonType = {
+				name = "Antarctica_GUI_AAA_Patrol_Option_1"
+				position = { x = 20 y = 650 }
+				quadTextureSprite = "GFX_Antarctica_GUI_AAA_Large_Button"
+				buttonFont = "aldrich_24_outline"
+				buttonText = Antarctica_GUI_AAA_Patrol_Option_1
+			}
+			buttonType = {
+				name = "Antarctica_GUI_AAA_Patrol_Option_2"
+				position = { x = 20 y = 710 }
+				quadTextureSprite = "GFX_Antarctica_GUI_AAA_Large_Button"
+				buttonFont = "aldrich_24_outline"
+				buttonText = Antarctica_GUI_AAA_Patrol_Option_2
+			}
+			
+			iconType = {
+				name = "Antarctica_GUI_AAA_Horizontal_Bar_4"
+				spriteType = "GFX_Antarctica_GUI_AAA_Horizontal_Bar"
+				position = { x = 0 y = 770 }
+			}
+			
+			instantTextboxType = {
+				name = "Antarctica_GUI_AAA_Info_Success_Chance"
+				position = { x = 0 y = 780 }
+				font = "aldrich_24_outline"
+				text = Antarctica_GUI_AAA_Info_Success_Chance
+				maxWidth = 482
+				format = left
+			}
+			instantTextboxType = {
+				name = "Antarctica_GUI_AAA_Info_Secrecy_Title"
+				position = { x = 0 y = 812 }
+				font = "aldrich_22_outline"
+				text = Antarctica_GUI_AAA_Info_Secrecy_Title
+				maxWidth = 482
+				format = left
+			}
+			iconType = {
+				name = "Antarctica_GUI_AAA_Info_Secrecy_Bar"
+				spriteType = "GFX_Antarctica_GUI_AAA_Progressbar_Secrecy"
+				position = { x = 15 y = 842 }
+			}
+			buttonType = {
+				name = "Antarctica_GUI_AAA_Info_Crew_Button"
+				quadTextureSprite = "GFX_Antarctica_GUI_AAA_Standard_Button_Blue"
+				position = { x = 131 y = 885 }
+				buttonFont = "aldrich_24_outline"
+				buttonText = Antarctica_GUI_AAA_Info_Crew_Button_Text
+				pdx_tooltip = Antarctica_GUI_AAA_Info_Crew_Button_tt
+			}
+		}
+	}
+}

@@ -1,0 +1,180 @@
+music = {
+	name = "I Got A Woman"
+	file = "McMurdoFM/I_Got_A_Woman.ogg"
+}
+music = {
+	name = "Crystal Blue Persuasion"
+	file = "McMurdoFM/CBP.ogg"
+}
+music = {
+	name = "Home Is Where The Hatred Is"
+	file = "McMurdoFM/Home_Hatred.ogg"
+}
+music = {
+	name = "Dreams"
+	file = "McMurdoFM/Dreams.ogg"
+}
+music = {
+	name = "Take It Easy (Live)"
+	file = "McMurdoFM/Take_Easy.ogg"
+}
+music = {
+	name = "You'll Never Find Another Love Like Mine"
+	file = "McMurdoFM/Lou.ogg"
+}
+music = {
+	name = "I Can Make It Better"
+	file = "McMurdoFM/Better.ogg"
+}
+music = {
+	name = "Summer Breeze"
+	file = "McMurdoFM/Breeze.ogg"
+}
+music = {
+	name = "Summer Madness"
+	file = "McMurdoFM/Madness.ogg"
+}
+music = {
+	name = "And The Beat Goes On"
+	file = "McMurdoFM/Beat.ogg"
+}
+music = {
+	name = "Ladyfingers"
+	file = "McMurdoFM/Ladyfingers.ogg"
+}
+music = {
+	name = "Lake Shore Drive"
+	file = "McMurdoFM/LSD.ogg"
+}
+music = {
+	name = "Everybody Wants To Rule The World"
+	file = "McMurdoFM/Rule_World.ogg"
+}
+music = {
+	name = "Reelin' In The Years"
+	file = "McMurdoFM/Reelin_Years.ogg"
+}
+music = {
+	name = "Let's Stay Together"
+	file = "McMurdoFM/Al_Green.ogg"
+}
+music = {
+	name = "The Wreck Of The Edmund Fitzgerald"
+	file = "McMurdoFM/Edmund.ogg"
+}
+music = {
+	name = "Already Gone"
+	file = "McMurdoFM/Already_Gone.ogg"
+}
+music = {
+	name = "Down Under"
+	file = "McMurdoFM/Down_Under.ogg"
+}
+music = {
+	name = "Running On Empty"
+	file = "McMurdoFM/Run_Empty.ogg"
+}
+music = {
+	name = "I'll Do My Best"
+	file = "McMurdoFM/Do_My_Best.ogg"
+}
+music = {
+	name = "I Shot The Sherriff"
+	file = "McMurdoFM/Shot_Sherriff.ogg"
+}
+music = {
+	name = "Syncopated Love"
+	file = "McMurdoFM/Syncopated.ogg"
+}
+music = {
+	name = "Tonight"
+	file = "McMurdoFM/Tonight.ogg"
+}
+music = {
+	name = "The Gambler"
+	file = "McMurdoFM/Gambler.ogg"
+}
+music = {
+	name = "American Remains"
+	file = "McMurdoFM/Remains.ogg"
+}
+music = {
+	name = "Do It Again"
+	file = "McMurdoFM/Do_It_Again.ogg"
+}
+music = {
+	name = "Centerfold"
+	file = "McMurdoFM/Centerfold.ogg"
+}
+music = {
+	name = "Carribean Queen"
+	file = "McMurdoFM/Queen.ogg"
+}
+music = {
+	name = "Let's Groove"
+	file = "McMurdoFM/Groove.ogg"
+}
+music = {
+	name = "West End Girls"
+	file = "McMurdoFM/West.ogg"
+}
+music = {
+	name = "Linus & Lucy"
+	file = "McMurdoFM/Peanuts.ogg"
+}
+music = {
+	name = "North to Alaska"
+	file = "McMurdoFM/Alaska.ogg"
+}
+music = {
+	name = "Hold Tight"
+	file = "McMurdoFM/HoldTight.ogg"
+}
+music = {
+	name = "Intermission 1"
+	file = "McMurdoFM/McMurdoIntermission1.ogg"
+}
+music = {
+	name = "Intermission 2"
+	file = "McMurdoFM/McMurdoIntermission2.ogg"
+}
+music = {
+	name = "Intermission 3"
+	file = "McMurdoFM/McMurdoIntermission3.ogg"
+}
+music = {
+	name = "Intermission 4 w/ Ride Like The Wind"
+	file = "McMurdoFM/McMurdoIntermission4wRideLikeTheWind.ogg"
+}
+music = {
+	name = "Intermission 5"
+	file = "McMurdoFM/McMurdoIntermission5.ogg"
+}
+music = {
+	name = "Intermission 6"
+	file = "McMurdoFM/McMurdoIntermission6.ogg"
+}
+music = {
+	name = "Searching"
+	file = "McMurdoFM/Searching.ogg"
+}
+music = {
+	name = "The Glow of Love"
+	file = "McMurdoFM/GlowOfLove.ogg"
+}
+music = {
+	name = "California Dreamin"
+	file = "McMurdoFM/CaliforniaDreamin.ogg"
+}
+music = {
+	name = "Lazy Nina"
+	file = "McMurdoFM/LazyNina.ogg"
+}
+music = {
+	name = "Der Gefrorene Adler"
+	file = "ODFNSTheme.ogg"
+}
+music = {
+	name = "Operation Deep Freeze"
+	file = "ODFMainTheme.ogg"
+}

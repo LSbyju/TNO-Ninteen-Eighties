@@ -1,0 +1,1082 @@
+debug_mil = {
+	set_variable = { Antarctica_Militarization = 100 }
+}
+debug_leg = {
+	set_variable = { Antarctica_Legitimacy = 100 }
+}
+debug_sup = {
+	set_variable = { Antarctica_Equipment = 100 }
+}
+
+Antarctica_AAO_Successor_Add = { # gets passed plus (amount to increase by) and scope (country getting bonus)
+	set_temp_variable = { half = plus }
+	divide_temp_variable = { half = 2 }
+	if = {
+		limit = {
+			check_variable = { scope = USA }
+		}
+		add_to_variable = { Antarctica_GUI_AAO_USA_Control_Percent = plus }
+		
+		if = {
+			limit = {
+				check_variable = { Antarctica_GUI_AAO_AST_Control_Percent = 0 }
+			}
+			subtract_from_variable = { Antarctica_GUI_AAO_NZL_Control_Percent = plus }
+		}
+		if = {
+			limit = {
+				check_variable = { Antarctica_GUI_AAO_NZL_Control_Percent = 0 }
+			}
+			subtract_from_variable = { Antarctica_GUI_AAO_AST_Control_Percent = plus }
+		}
+		else = {
+			subtract_from_variable = { Antarctica_GUI_AAO_AST_Control_Percent = half }
+			subtract_from_variable = { Antarctica_GUI_AAO_NZL_Control_Percent = half }
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { scope = AST }
+		}
+		add_to_variable = { Antarctica_GUI_AAO_AST_Control_Percent = plus }
+		
+		if = {
+			limit = {
+				check_variable = { Antarctica_GUI_AAO_USA_Control_Percent = 0 }
+			}
+			subtract_from_variable = { Antarctica_GUI_AAO_NZL_Control_Percent = plus }
+		}
+		if = {
+			limit = {
+				check_variable = { Antarctica_GUI_AAO_NZL_Control_Percent = 0 }
+			}
+			subtract_from_variable = { Antarctica_GUI_AAO_USA_Control_Percent = plus }
+		}
+		else = {
+			subtract_from_variable = { Antarctica_GUI_AAO_USA_Control_Percent = half }
+			subtract_from_variable = { Antarctica_GUI_AAO_NZL_Control_Percent = half }
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { scope = NZL }
+		}
+		add_to_variable = { Antarctica_GUI_AAO_NZL_Control_Percent = plus }
+		
+		if = {
+			limit = {
+				check_variable = { Antarctica_GUI_AAO_USA_Control_Percent = 0 }
+			}
+			subtract_from_variable = { Antarctica_GUI_AAO_AST_Control_Percent = plus }
+		}
+		if = {
+			limit = {
+				check_variable = { Antarctica_GUI_AAO_AST_Control_Percent = 0 }
+			}
+			subtract_from_variable = { Antarctica_GUI_AAO_USA_Control_Percent = plus }
+		}
+		else = {
+			subtract_from_variable = { Antarctica_GUI_AAO_USA_Control_Percent = half }
+			subtract_from_variable = { Antarctica_GUI_AAO_AST_Control_Percent = half }
+		}
+	}
+	
+	Antarctica_AAO_Successor_Update_Pie_Chart = yes
+	Antarctica_AAO_Check_Cohesion = yes
+}
+
+Antarctica_AAO_Successor_Subtract = { # gets passed minus (amount to decrease by) and scope (country getting malus)
+	set_temp_variable = { half = minus }
+	divide_temp_variable = { half = 2 }
+	if = {
+		limit = {
+			check_variable = { scope = USA }
+		}
+		subtract_from_variable = { Antarctica_GUI_AAO_USA_Control_Percent = minus }
+		add_to_variable = { Antarctica_GUI_AAO_AST_Control_Percent = half }
+		add_to_variable = { Antarctica_GUI_AAO_NZL_Control_Percent = half }
+	}
+	else_if = {
+		limit = {
+			check_variable = { scope = AST }
+		}
+		subtract_from_variable = { Antarctica_GUI_AAO_AST_Control_Percent = minus }
+		add_to_variable = { Antarctica_GUI_AAO_USA_Control_Percent = half }
+		add_to_variable = { Antarctica_GUI_AAO_NZL_Control_Percent = half }
+	}
+	if = {
+		limit = {
+			check_variable = { scope = NZL }
+		}
+		subtract_from_variable = { Antarctica_GUI_AAO_NZL_Control_Percent = minus }
+		add_to_variable = { Antarctica_GUI_AAO_AST_Control_Percent = half }
+		add_to_variable = { Antarctica_GUI_AAO_USA_Control_Percent = half }
+	}
+	
+	Antarctica_AAO_Successor_Update_Pie_Chart = yes
+	Antarctica_AAO_Check_Cohesion = yes
+}
+
+Antarctica_AAO_Successor_Update_Pie_Chart = {
+	# Clamp
+	clamp_variable = {
+		var = Antarctica_GUI_AAO_USA_Control_Percent
+		max = 100
+		min = 0
+	}
+	round_variable = Antarctica_GUI_AAO_USA_Control_Percent
+	clamp_variable = {
+		var = Antarctica_GUI_AAO_AST_Control_Percent
+		max = 100
+		min = 0
+	}
+	round_variable = Antarctica_GUI_AAO_AST_Control_Percent
+	clamp_variable = {
+		var = Antarctica_GUI_AAO_NZL_Control_Percent
+		max = 100
+		min = 0
+	}
+	round_variable = Antarctica_GUI_AAO_NZL_Control_Percent
+	
+	# Overflow Check
+	set_temp_variable = { sum = Antarctica_GUI_AAO_USA_Control_Percent }
+	add_to_temp_variable = { sum = Antarctica_GUI_AAO_AST_Control_Percent }
+	add_to_temp_variable = { sum = Antarctica_GUI_AAO_NZL_Control_Percent }
+	if = {
+		limit = {
+			check_variable = { sum > 100 }
+		}
+		set_temp_variable = { excess = sum }
+		add_to_temp_variable = { excess = -100 }
+		if = {
+			limit = {
+				check_variable = { Antarctica_GUI_AAO_USA_Control_Percent > excess }
+			}
+			subtract_from_variable = { Antarctica_GUI_AAO_USA_Control_Percent = excess }
+		}
+		else_if = {
+			limit = {
+				check_variable = { Antarctica_GUI_AAO_AST_Control_Percent > excess }
+			}
+			subtract_from_variable = { Antarctica_GUI_AAO_AST_Control_Percent = excess }
+		}
+		else_if = {
+			limit = {
+				check_variable = { Antarctica_GUI_AAO_NZL_Control_Percent > excess }
+			}
+			subtract_from_variable = { Antarctica_GUI_AAO_NZL_Control_Percent = excess }
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { sum < 100 }
+		}
+		set_temp_variable = { deficit = 100 }
+		subtract_from_temp_variable = { deficit = sum }
+		if = {
+			limit = {
+				check_variable = { Antarctica_GUI_AAO_USA_Control_Percent < deficit }
+			}
+			add_to_variable = { Antarctica_GUI_AAO_USA_Control_Percent = deficit }
+		}
+		else_if = {
+			limit = {
+				check_variable = { Antarctica_GUI_AAO_AST_Control_Percent < deficit }
+			}
+			add_to_variable = { Antarctica_GUI_AAO_AST_Control_Percent = deficit }
+		}
+		else_if = {
+			limit = {
+				check_variable = { Antarctica_GUI_AAO_NZL_Control_Percent < deficit }
+			}
+			add_to_variable = { Antarctica_GUI_AAO_NZL_Control_Percent = deficit }
+		}
+	}
+	
+	# Pie Chart update
+	set_variable = { Antarctica_GUI_AAO_USA_Control = Antarctica_GUI_AAO_USA_Control_Percent }
+	round_variable = Antarctica_GUI_AAO_USA_Control
+
+	set_variable = { Antarctica_GUI_AAO_AST_Control = Antarctica_GUI_AAO_AST_Control_Percent }
+	round_variable = Antarctica_GUI_AAO_AST_Control
+	add_to_variable = { Antarctica_GUI_AAO_AST_Control = Antarctica_GUI_AAO_USA_Control }
+
+	set_variable = { Antarctica_GUI_AAO_NZL_Control = Antarctica_GUI_AAO_NZL_Control_Percent }
+	round_variable = Antarctica_GUI_AAO_NZL_Control
+	add_to_variable = { Antarctica_GUI_AAO_NZL_Control = Antarctica_GUI_AAO_AST_Control }
+}
+
+Antarctica_AAO_Check_Cohesion = {
+	if = {
+		limit = {
+			check_variable = { Antarctica_GUI_AAO_Cohesion > 79 }
+		}
+		remove_ideas = AAO_Cohesion_1
+		remove_ideas = AAO_Cohesion_2
+		remove_ideas = AAO_Cohesion_3
+		remove_ideas = AAO_Cohesion_4
+		add_ideas = AAO_Cohesion_5
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_GUI_AAO_Cohesion > 59 }
+		}
+		remove_ideas = AAO_Cohesion_1
+		remove_ideas = AAO_Cohesion_2
+		remove_ideas = AAO_Cohesion_3
+		add_ideas = AAO_Cohesion_4
+		remove_ideas = AAO_Cohesion_5
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_GUI_AAO_Cohesion > 39 }
+		}
+		remove_ideas = AAO_Cohesion_1
+		remove_ideas = AAO_Cohesion_2
+		add_ideas = AAO_Cohesion_3
+		remove_ideas = AAO_Cohesion_4
+		remove_ideas = AAO_Cohesion_5
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_GUI_AAO_Cohesion > 19 }
+		}
+		remove_ideas = AAO_Cohesion_1
+		add_ideas = AAO_Cohesion_2
+		remove_ideas = AAO_Cohesion_3
+		remove_ideas = AAO_Cohesion_4
+		remove_ideas = AAO_Cohesion_5
+	}
+	else = {
+		add_ideas = AAO_Cohesion_1
+		remove_ideas = AAO_Cohesion_2
+		remove_ideas = AAO_Cohesion_3
+		remove_ideas = AAO_Cohesion_4
+		remove_ideas = AAO_Cohesion_5
+	}
+}
+
+AAJ_update_dyn_mod = {
+	clamp_variable = {
+		var = Antarctica_GUI_AAJ_Dot_x
+		max = 200
+		min = -200
+	}
+	clamp_variable = {
+		var = Antarctica_GUI_AAJ_Dot_y
+		max = 200
+		min = -200
+	}
+
+	set_variable = { AAJ_1st_Airborne_Brigade_Total = 0 }
+	if = {
+		limit = { check_variable = { Antarctica_GUI_AAJ_Dot_x > 0 } } # Attack
+		set_variable = { AAJ_1st_Airborne_Brigade_Attack_Num = Antarctica_GUI_AAJ_Dot_x }
+		divide_variable = { AAJ_1st_Airborne_Brigade_Attack_Num = 400 }
+		
+		set_variable = { AAJ_1st_Airborne_Brigade_army_attack_factor = AAJ_1st_Airborne_Brigade_Attack_Num }
+		set_variable = { AAJ_1st_Airborne_Brigade_breakthrough_factor = AAJ_1st_Airborne_Brigade_Attack_Num }
+		set_variable = { AAJ_1st_Airborne_Brigade_army_org_factor = AAJ_1st_Airborne_Brigade_Attack_Num }
+		set_variable = { AAJ_1st_Airborne_Brigade_land_night_attack = AAJ_1st_Airborne_Brigade_Attack_Num }
+		
+		add_to_variable = { AAJ_1st_Airborne_Brigade_Total = AAJ_1st_Airborne_Brigade_Attack_Num }
+		
+		set_variable = { AAJ_1st_Airborne_Brigade_army_defence_factor = 0 }
+		set_variable = { AAJ_1st_Airborne_Brigade_dig_in_speed_factor = 0 }
+		set_variable = { AAJ_1st_Airborne_Brigade_max_dig_in_factor = 0 }
+		set_variable = { AAJ_1st_Airborne_Brigade_no_supply_grace = 0 }
+	}
+	else_if = {
+		limit = { check_variable = { Antarctica_GUI_AAJ_Dot_x < 0 } } # Defense
+		set_variable = { AAJ_1st_Airborne_Brigade_Defense_Num = Antarctica_GUI_AAJ_Dot_x }
+		divide_variable = { AAJ_1st_Airborne_Brigade_Defense_Num = 400 }
+		multiply_variable = { AAJ_1st_Airborne_Brigade_Defense_Num = -1 }
+		
+		set_variable = { AAJ_1st_Airborne_Brigade_army_defence_factor = AAJ_1st_Airborne_Brigade_Defense_Num }
+		set_variable = { AAJ_1st_Airborne_Brigade_dig_in_speed_factor = AAJ_1st_Airborne_Brigade_Defense_Num }
+		set_variable = { AAJ_1st_Airborne_Brigade_max_dig_in_factor = AAJ_1st_Airborne_Brigade_Defense_Num }
+		set_variable = { AAJ_1st_Airborne_Brigade_no_supply_grace = AAJ_1st_Airborne_Brigade_Defense_Num }
+		multiply_variable = { AAJ_1st_Airborne_Brigade_no_supply_grace = 168 }
+		
+		add_to_variable = { AAJ_1st_Airborne_Brigade_Total = AAJ_1st_Airborne_Brigade_Defense_Num }
+		
+		set_variable = { AAJ_1st_Airborne_Brigade_army_attack_factor = 0 }
+		set_variable = { AAJ_1st_Airborne_Brigade_breakthrough_factor = 0 }
+		set_variable = { AAJ_1st_Airborne_Brigade_army_org_factor = 0 }
+		set_variable = { AAJ_1st_Airborne_Brigade_land_night_attack = 0 }
+	}
+	else = { # Zero Attack and Defense
+		set_variable = { AAJ_1st_Airborne_Brigade_army_attack_factor = 0 }
+		set_variable = { AAJ_1st_Airborne_Brigade_breakthrough_factor = 0 }
+		set_variable = { AAJ_1st_Airborne_Brigade_army_org_factor = 0 }
+		set_variable = { AAJ_1st_Airborne_Brigade_land_night_attack = 0 }
+		
+		set_variable = { AAJ_1st_Airborne_Brigade_army_defence_factor = 0 }
+		set_variable = { AAJ_1st_Airborne_Brigade_dig_in_speed_factor = 0 }
+		set_variable = { AAJ_1st_Airborne_Brigade_max_dig_in_factor = 0 }
+		set_variable = { AAJ_1st_Airborne_Brigade_no_supply_grace = 0 }
+		
+		add_to_variable = { AAJ_1st_Airborne_Brigade_Total = 0 }
+	}
+	
+	if = {
+		limit = { check_variable = { Antarctica_GUI_AAJ_Dot_y > 0 } } # Endurance
+		set_variable = { AAJ_1st_Airborne_Brigade_Endurance_Num = Antarctica_GUI_AAJ_Dot_y }
+		divide_variable = { AAJ_1st_Airborne_Brigade_Endurance_Num = 400 }
+		
+		multiply_variable = { AAJ_1st_Airborne_Brigade_Endurance_Num = -1 }
+		set_variable = { AAJ_1st_Airborne_Brigade_army_fuel_consumption_factor = AAJ_1st_Airborne_Brigade_Endurance_Num }
+		set_variable = { AAJ_1st_Airborne_Brigade_attrition = AAJ_1st_Airborne_Brigade_Endurance_Num }
+		set_variable = { AAJ_1st_Airborne_Brigade_org_loss_when_moving = AAJ_1st_Airborne_Brigade_Endurance_Num }
+		set_variable = { AAJ_1st_Airborne_Brigade_out_of_supply_factor = AAJ_1st_Airborne_Brigade_Endurance_Num }
+		multiply_variable = { AAJ_1st_Airborne_Brigade_Endurance_Num = -1 }
+		set_variable = { AAJ_1st_Airborne_Brigade_recon_factor = AAJ_1st_Airborne_Brigade_Endurance_Num }
+		
+		add_to_variable = { AAJ_1st_Airborne_Brigade_Total = AAJ_1st_Airborne_Brigade_Endurance_Num }
+		
+		set_variable = { AAJ_1st_Airborne_Brigade_army_speed_factor = 0 }
+		set_variable = { AAJ_1st_Airborne_Brigade_army_morale_factor = 0 }
+		set_variable = { AAJ_1st_Airborne_Brigade_max_planning_factor = 0 }
+		set_variable = { AAJ_1st_Airborne_Brigade_planning_speed = 0 }
+		set_variable = { AAJ_1st_Airborne_Brigade_supply_consumption_factor = 0 }
+	}
+	else_if = {
+		limit = { check_variable = { Antarctica_GUI_AAJ_Dot_y < 0 } } # Maneuver
+		set_variable = { AAJ_1st_Airborne_Brigade_Maneuver_Num = Antarctica_GUI_AAJ_Dot_y }
+		divide_variable = { AAJ_1st_Airborne_Brigade_Maneuver_Num = 400 }
+		multiply_variable = { AAJ_1st_Airborne_Brigade_Maneuver_Num = -1 }
+		
+		set_variable = { AAJ_1st_Airborne_Brigade_army_speed_factor = AAJ_1st_Airborne_Brigade_Maneuver_Num }
+		set_variable = { AAJ_1st_Airborne_Brigade_army_morale_factor = AAJ_1st_Airborne_Brigade_Maneuver_Num }
+		set_variable = { AAJ_1st_Airborne_Brigade_max_planning_factor = AAJ_1st_Airborne_Brigade_Maneuver_Num }
+		set_variable = { AAJ_1st_Airborne_Brigade_planning_speed = AAJ_1st_Airborne_Brigade_Maneuver_Num }
+		multiply_variable = { AAJ_1st_Airborne_Brigade_Maneuver_Num = -1 }
+		set_variable = { AAJ_1st_Airborne_Brigade_supply_consumption_factor = AAJ_1st_Airborne_Brigade_Maneuver_Num }
+		multiply_variable = { AAJ_1st_Airborne_Brigade_Maneuver_Num = -1 }
+		
+		add_to_variable = { AAJ_1st_Airborne_Brigade_Total = AAJ_1st_Airborne_Brigade_Maneuver_Num }
+		
+		set_variable = { AAJ_1st_Airborne_Brigade_army_fuel_consumption_factor = 0 }
+		set_variable = { AAJ_1st_Airborne_Brigade_attrition = 0 }
+		set_variable = { AAJ_1st_Airborne_Brigade_org_loss_when_moving = 0 }
+		set_variable = { AAJ_1st_Airborne_Brigade_out_of_supply_factor = 0 }
+		set_variable = { AAJ_1st_Airborne_Brigade_recon_factor = 0 }
+	}
+	else = { # Zero Endurance and Maneuver
+		set_variable = { AAJ_1st_Airborne_Brigade_army_fuel_consumption_factor = 0 }
+		set_variable = { AAJ_1st_Airborne_Brigade_attrition = 0 }
+		set_variable = { AAJ_1st_Airborne_Brigade_recon_factor = 0 }
+		set_variable = { AAJ_1st_Airborne_Brigade_org_loss_when_moving = 0 }
+		set_variable = { AAJ_1st_Airborne_Brigade_out_of_supply_factor = 0 }
+		
+		set_variable = { AAJ_1st_Airborne_Brigade_army_speed_factor = 0 }
+		set_variable = { AAJ_1st_Airborne_Brigade_army_morale_factor = 0 }
+		set_variable = { AAJ_1st_Airborne_Brigade_max_planning_factor = 0 }
+		set_variable = { AAJ_1st_Airborne_Brigade_planning_speed = 0 }
+		set_variable = { AAJ_1st_Airborne_Brigade_supply_consumption_factor = 0 }
+		
+		add_to_variable = { AAJ_1st_Airborne_Brigade_Total = 0 }
+	}
+	
+	set_variable = { AAJ_1st_Airborne_Brigade_acclimatization_cold_climate_gain_factor = AAJ_1st_Airborne_Brigade_Total }
+	set_variable = { AAJ_1st_Airborne_Brigade_terrain_penalty_reduction = AAJ_1st_Airborne_Brigade_Total }
+	multiply_variable = { AAJ_1st_Airborne_Brigade_Total = -1 }
+	set_variable = { AAJ_1st_Airborne_Brigade_winter_attrition_factor = AAJ_1st_Airborne_Brigade_Total }
+	force_update_dynamic_modifier = yes
+}
+
+calculate_AAA_Progressbar_Display = {
+	clamp_variable = {
+		var = Antarctica_GUI_AAA_Mission_Secrecy_AAO
+		max = 25
+		min = 0
+	}
+	clamp_variable = {
+		var = Antarctica_GUI_AAA_Mission_Secrecy_AAG
+		max = 25
+		min = 0
+	}
+	clamp_variable = {
+		var = Antarctica_GUI_AAA_Mission_Secrecy_AAJ
+		max = 25
+		min = 0
+	}
+	clamp_variable = {
+		var = Antarctica_GUI_AAA_Mission_Secrecy_AAC
+		max = 25
+		min = 0
+	}
+	
+	set_variable = { Antarctica_GUI_AAA_Mission_Secrecy_AAC_Display = Antarctica_GUI_AAA_Mission_Secrecy_AAC }
+	set_variable = { Antarctica_GUI_AAA_Mission_Secrecy_AAJ_Display = Antarctica_GUI_AAA_Mission_Secrecy_AAC }
+	add_to_variable = { Antarctica_GUI_AAA_Mission_Secrecy_AAJ_Display = Antarctica_GUI_AAA_Mission_Secrecy_AAJ }
+	set_variable = { Antarctica_GUI_AAA_Mission_Secrecy_AAG_Display = Antarctica_GUI_AAA_Mission_Secrecy_AAC }
+	add_to_variable = { Antarctica_GUI_AAA_Mission_Secrecy_AAG_Display = Antarctica_GUI_AAA_Mission_Secrecy_AAJ }
+	add_to_variable = { Antarctica_GUI_AAA_Mission_Secrecy_AAG_Display = Antarctica_GUI_AAA_Mission_Secrecy_AAG }
+	set_variable = { Antarctica_GUI_AAA_Mission_Secrecy_AAO_Display = Antarctica_GUI_AAA_Mission_Secrecy_AAC }
+	add_to_variable = { Antarctica_GUI_AAA_Mission_Secrecy_AAO_Display = Antarctica_GUI_AAA_Mission_Secrecy_AAJ }
+	add_to_variable = { Antarctica_GUI_AAA_Mission_Secrecy_AAO_Display = Antarctica_GUI_AAA_Mission_Secrecy_AAG }
+	add_to_variable = { Antarctica_GUI_AAA_Mission_Secrecy_AAO_Display = Antarctica_GUI_AAA_Mission_Secrecy_AAO }
+}
+
+calculate_AAA_Operacion_90_Success_Chance = {
+	set_variable = { Antarctica_GUI_AAA_Success_Chance = 0 }
+	add_to_variable = { vehicle_temp = Antarctica_GUI_AAA_Reliability_Percent }
+	add_to_variable = { vehicle_temp = Antarctica_GUI_AAA_Engine_Percent }
+	add_to_variable = { vehicle_temp = Antarctica_GUI_AAA_Storage_Percent }
+	add_to_variable = { vehicle_temp = Antarctica_GUI_AAA_Fuel_Percent }
+	
+	multiply_variable = { vehicle_temp = 0.33 }
+	add_to_variable = { Antarctica_GUI_AAA_Success_Chance = vehicle_temp }
+	round_variable = Antarctica_GUI_AAA_Success_Chance
+	log = "Chance from vehicle: [?vehicle_temp]"
+	set_variable = { vehicle_temp = 0 }
+	
+	set_variable = { temp = Antarctica_GUI_AAA_Base_Supply }
+	divide_variable = { temp = 60 }
+	multiply_variable = { temp = 11 }
+	add_to_variable = { supply_temp = temp }
+	set_variable = { temp = Antarctica_GUI_AAA_SubBase_Supply }
+	divide_variable = { temp = 40 }
+	multiply_variable = { temp = 11 }
+	add_to_variable = { supply_temp = temp }
+	set_variable = { temp = Antarctica_GUI_AAA_Patrol_Supply }
+	divide_variable = { temp = 15 }
+	multiply_variable = { temp = 11 }
+	add_to_variable = { supply_temp = temp }
+	
+	add_to_variable = { Antarctica_GUI_AAA_Success_Chance = supply_temp }
+	round_variable = Antarctica_GUI_AAA_Success_Chance
+	log = "Chance from supply: [?supply_temp]"
+	set_variable = { supply_temp = 0 }
+	set_variable = { temp = 0 }
+	
+	set_variable = { secrecy_temp = Antarctica_GUI_AAA_Mission_Secrecy }
+	multiply_variable = { secrecy_temp = 0.33 }
+	add_to_variable = { Antarctica_GUI_AAA_Success_Chance = secrecy_temp }
+	round_variable = Antarctica_GUI_AAA_Success_Chance
+	log = "Chance from secrecy: [?secrecy_temp]"
+	set_variable = { secrecy_temp = 0 }
+}
+
+setup_Antarctica_GUI_Capital_Special_Mission_AAA = {
+	add_to_variable = { Antarctic_Special_Missions_Count = 3 }
+	add_to_array = { Antarctic_Special_Missions_Count_Array = 10 }
+	add_to_array = { Antarctic_Special_Missions_Count_Array = 11 }
+	add_to_array = { Antarctic_Special_Missions_Count_Array = 12 }
+}
+
+setup_Antarctica_GUI_Capital_Special_Mission_AAB = {
+	add_to_variable = { Antarctic_Special_Missions_Count = 3 }
+	add_to_array = { Antarctic_Special_Missions_Count_Array = 13 }
+	add_to_array = { Antarctic_Special_Missions_Count_Array = 14 }
+	add_to_array = { Antarctic_Special_Missions_Count_Array = 15 }
+}
+
+setup_Antarctica_GUI_Capital_Special_Mission_AAC = {
+	add_to_variable = { Antarctic_Special_Missions_Count = 3 }
+	add_to_array = { Antarctic_Special_Missions_Count_Array = 16 }
+	add_to_array = { Antarctic_Special_Missions_Count_Array = 17 }
+	add_to_array = { Antarctic_Special_Missions_Count_Array = 18 }
+}
+
+setup_Antarctica_GUI_Capital_Special_Mission_AAG = {
+	add_to_variable = { Antarctic_Special_Missions_Count = 3 }
+	add_to_array = { Antarctic_Special_Missions_Count_Array = 19 }
+	add_to_array = { Antarctic_Special_Missions_Count_Array = 20 }
+	add_to_array = { Antarctic_Special_Missions_Count_Array = 21 }
+}
+
+setup_Antarctica_GUI_Capital_Special_Mission_AAJ = {
+	add_to_variable = { Antarctic_Special_Missions_Count = 3 }
+	add_to_array = { Antarctic_Special_Missions_Count_Array = 22 }
+	add_to_array = { Antarctic_Special_Missions_Count_Array = 23 }
+	add_to_array = { Antarctic_Special_Missions_Count_Array = 24 }
+}
+
+setup_Antarctica_GUI_Capital_Special_Mission_AAO = {
+	add_to_variable = { Antarctic_Special_Missions_Count = 3 }
+	add_to_array = { Antarctic_Special_Missions_Count_Array = 25 }
+	add_to_array = { Antarctic_Special_Missions_Count_Array = 26 }
+	add_to_array = { Antarctic_Special_Missions_Count_Array = 27 }
+}
+
+AAG_Clamp_Testing_Variables = {
+	clamp_variable = {
+		var = Antarctica_GUI_AAG_Research_Array_Success^0
+		max = 100
+	}
+	clamp_variable = {
+		var = Antarctica_GUI_AAG_Research_Array_Success^1
+		max = 100
+	}
+	clamp_variable = {
+		var = Antarctica_GUI_AAG_Research_Array_Success^2
+		max = 100
+	}
+	clamp_variable = {
+		var = Antarctica_GUI_AAG_Research_Array_Success^3
+		max = 100
+	}
+}
+
+AAG_Nuclear_Mechanic_Increase_Electronics_5 = {
+	add_to_variable = { Antarctica_GUI_AAG_Nuclear_Electronics = 5 }
+	AAG_Nuclear_Mechanic_Check_Frames = yes
+}
+
+AAG_Nuclear_Mechanic_Increase_Electronics_10 = {
+	add_to_variable = { Antarctica_GUI_AAG_Nuclear_Electronics = 10 }
+	AAG_Nuclear_Mechanic_Check_Frames = yes
+}
+
+AAG_Nuclear_Mechanic_Increase_Delivery_5 = {
+	add_to_variable = { Antarctica_GUI_AAG_Nuclear_Delivery = 5 }
+	AAG_Nuclear_Mechanic_Check_Frames = yes
+}
+
+AAG_Nuclear_Mechanic_Increase_Delivery_10 = {
+	add_to_variable = { Antarctica_GUI_AAG_Nuclear_Delivery = 10 }
+	AAG_Nuclear_Mechanic_Check_Frames = yes
+}
+
+AAG_Nuclear_Mechanic_Increase_Material_5 = {
+	add_to_variable = { Antarctica_GUI_AAG_Nuclear_Material = 5 }
+	AAG_Nuclear_Mechanic_Check_Frames = yes
+}
+
+AAG_Nuclear_Mechanic_Increase_Material_10 = {
+	add_to_variable = { Antarctica_GUI_AAG_Nuclear_Material = 10 }
+	AAG_Nuclear_Mechanic_Check_Frames = yes
+}
+
+AAG_Nuclear_Mechanic_Check_Frames = {
+	clamp_variable = {
+		var = Antarctica_GUI_AAG_Nuclear_Electronics
+		max = 100
+	}
+	clamp_variable = {
+		var = Antarctica_GUI_AAG_Nuclear_Delivery
+		max = 100
+	}
+	clamp_variable = {
+		var = Antarctica_GUI_AAG_Nuclear_Material
+		max = 100
+	}
+	
+	set_variable = { Antarctica_GUI_AAG_Nuclear_Sum = Antarctica_GUI_AAG_Nuclear_Electronics }
+	add_to_variable = { Antarctica_GUI_AAG_Nuclear_Sum = Antarctica_GUI_AAG_Nuclear_Delivery }
+	add_to_variable = { Antarctica_GUI_AAG_Nuclear_Sum = Antarctica_GUI_AAG_Nuclear_Material }
+	
+	if = {
+		limit = {
+			AND = {
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum > 0 }
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum < 18 }
+			}
+		}
+		set_variable = { Antarctica_GUI_AAG_Nuclear_FPS = 0 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum > 17 }
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum < 36 }
+			}
+		}
+		set_variable = { Antarctica_GUI_AAG_Nuclear_FPS = 1 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum > 17 }
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum < 36 }
+			}
+		}
+		set_variable = { Antarctica_GUI_AAG_Nuclear_FPS = 2 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum > 35 }
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum < 54 }
+			}
+		}
+		set_variable = { Antarctica_GUI_AAG_Nuclear_FPS = 3 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum > 53 }
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum < 72 }
+			}
+		}
+		set_variable = { Antarctica_GUI_AAG_Nuclear_FPS = 4 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum > 71 }
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum < 90 }
+			}
+		}
+		set_variable = { Antarctica_GUI_AAG_Nuclear_FPS = 5 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum > 89 }
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum < 108 }
+			}
+		}
+		set_variable = { Antarctica_GUI_AAG_Nuclear_FPS = 6 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum > 107 }
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum < 126 }
+			}
+		}
+		set_variable = { Antarctica_GUI_AAG_Nuclear_FPS = 7 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum > 125 }
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum < 144 }
+			}
+		}
+		set_variable = { Antarctica_GUI_AAG_Nuclear_FPS = 8 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum > 143 }
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum < 162 }
+			}
+		}
+		set_variable = { Antarctica_GUI_AAG_Nuclear_FPS = 9 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum > 161 }
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum < 180 }
+			}
+		}
+		set_variable = { Antarctica_GUI_AAG_Nuclear_FPS = 10 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum > 179 }
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum < 198 }
+			}
+		}
+		set_variable = { Antarctica_GUI_AAG_Nuclear_FPS = 11 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum > 197 }
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum < 216 }
+			}
+		}
+		set_variable = { Antarctica_GUI_AAG_Nuclear_FPS = 12 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum > 217 }
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum < 234 }
+			}
+		}
+		set_variable = { Antarctica_GUI_AAG_Nuclear_FPS = 13 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum > 233 }
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum < 252 }
+			}
+		}
+		set_variable = { Antarctica_GUI_AAG_Nuclear_FPS = 14 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum > 251 }
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum < 270 }
+			}
+		}
+		set_variable = { Antarctica_GUI_AAG_Nuclear_FPS = 15 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum > 269 }
+				check_variable = { Antarctica_GUI_AAG_Nuclear_Sum < 301 } # 288
+			}
+		}
+		set_variable = { Antarctica_GUI_AAG_Nuclear_FPS = 16 }
+	}
+	
+	if = {
+		limit = {
+			NOT = { has_country_flag = Antarctica_AAG_Fired_antarctica_aag_nuclear_90 }
+			check_variable = { Antarctica_GUI_AAG_Nuclear_Electronics = 100 }
+			check_variable = { Antarctica_GUI_AAG_Nuclear_Delivery = 100 }
+			check_variable = { Antarctica_GUI_AAG_Nuclear_Material = 100 }
+		}
+		country_event = {
+			id = antarctica_aag_nuclear.90
+			days = 1
+		}
+	}
+}
+
+Antarctica_AAG_Survival_Decrease_Personnel = {
+	# deaths per day = (-100/(1+10e^(.2*(x-49))))+100, x is number of days under max supply
+	# 0 - 14 = 0 per day
+	# 15 - 18 = 1 per day
+	# 19 - 20 = 2 per day
+	# 21 = 3 per day
+	# 22 = 4 per day
+	# 23 = 5 per day
+	# 24 = 6 per day
+	# 25 = 7 per day
+	# 26 = 9 per day
+	# 27 = 11 per day
+	# 28 = 13 per day
+	# 29 = 15 per day
+	# 30 = 18 per day
+	# 31 = 21 per day
+	# 32 = 25 per day
+	# 33 = 29 per day
+	# 34 = 33 per day
+	# 35 = 37 per day
+	# 36 = 42 per day
+	# 37 = 47 per day
+	# 38 = 52 per day
+	# 39 = 57 per day
+	# 40 = 62 per day
+	# 41 = 66 per day
+	# 42 = 71 per day
+	# 43 = 75 per day
+	# 44 = 78 per day
+	# 45 = 81 per day
+	# 46 = 84 per day
+	# 47 = 87 per day
+	# 48 = 89 per day
+	# 49 = 91 per day
+	# 50 = 92 per day
+	# 51 = 93 per day
+	# 52 = 94 per day
+	# 53 = 95 per day
+	# 54 = 96 per day
+	# 55 = 97 per day
+	# 56 - 57 = 98 per day
+	# 58 - 61 = 99 per day
+	# 62+ = 100 per day
+	
+	add_to_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply = 1 }
+	
+	set_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 0 }
+	
+	if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 14 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 0 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 18 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 20 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 2 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 21 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 3 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 22 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 4 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 23 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 5 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 24 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 6 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 25 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 7 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 26 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 9 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 27 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 11 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 28 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 13 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 29 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 15 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 30 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 18 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 31 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 21 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 32 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 25 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 33 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 29 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 34 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 33 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 35 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 37 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 36 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 42 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 37 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 47 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 38 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 52 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 39 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 57 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 40 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 62 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 41 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 66 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 42 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 71 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 43 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 75 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 44 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 78 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 45 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 81 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 46 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 84 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 47 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 87 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 48 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 89 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 49 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 91 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 50 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 92 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 51 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 93 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 52 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 94 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 53 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 95 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 54 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 96 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 55 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 97 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 57 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 98 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { Antarctica_AAG_Survival_Days_Under_Max_Supply < 61 }
+		}
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 99 }
+	}
+	else = {
+		add_to_variable = { Antarctica_AAG_Survival_Loss_Per_Day = 100 }
+	}
+	
+	set_temp_variable = { max_personnel_loss_per_day = Antarctica_Active_Personnel } # Current number of personnel
+	set_temp_variable = { max_personnel_loss_per_day_math = Antarctica_AAG_Survival_Supply_Usage }
+	multiply_temp_variable = { max_personnel_loss_per_day_math = Antarctica_GUI_AAG_Survival_Mech_One_Supply_Amount } # Number of personnel at current supply rate
+	subtract_from_temp_variable = { max_personnel_loss_per_day = max_personnel_loss_per_day_math } # Max number we can lose this day
+	clamp_variable = { # Make sure we're not going to lose more than the current poplation this day
+		var = Antarctica_AAG_Survival_Loss_Per_Day
+		max = max_personnel_loss_per_day
+	}
+	
+	subtract_from_variable = { Antarctica_Active_Personnel = Antarctica_AAG_Survival_Loss_Per_Day }
+	round_variable = Antarctica_Active_Personnel
+	clamp_variable = {
+		var = Antarctica_Active_Personnel
+		min = 21 # Just a random value
+	}
+	add_to_variable = { Antarctica_AAG_Survival_Total_Loss = Antarctica_AAG_Survival_Loss_Per_Day }
+	
+	Antarctica_AAG_Survival_Check_Game_Over = yes
+	
+	Antarctica_AAG_Survival_Check_Supply_Usage = yes
+}
+
+Antarctica_AAG_Survival_Check_Supply_Usage = { # Run after every "manual" personnel amount change
+	if = {
+		limit = {
+			set_temp_variable = { current_supply_usage_temp = Antarctica_Active_Personnel }
+			divide_temp_variable = { current_supply_usage_temp = Antarctica_GUI_AAG_Survival_Mech_One_Supply_Amount }
+			
+			OR = {
+				check_variable = { current_supply_usage_temp < Antarctica_AAG_Survival_Supply_Usage }
+				check_variable = { current_supply_usage_temp = Antarctica_AAG_Survival_Supply_Usage }
+			}
+		}
+		set_variable = { Antarctica_AAG_Survival_Supply_Usage = Antarctica_Active_Personnel }
+		divide_variable = { Antarctica_AAG_Survival_Supply_Usage = Antarctica_GUI_AAG_Survival_Mech_One_Supply_Amount }
+	}
+
+	set_variable = { Antarctica_GUI_AAG_Survival_Mech_Max_Use = current_supply_usage_temp }
+	set_variable = { Antarctica_GUI_AAG_Survival_Mech_Min_Use = current_supply_usage_temp }
+	multiply_variable = { Antarctica_GUI_AAG_Survival_Mech_Min_Use = Antarctica_GUI_AAG_Survival_Mech_Min_Percent }
+}
+
+Antarctica_AAG_Survival_Check_Game_Over = {
+	if = {
+		limit = {  # Game Over
+			check_variable = { Antarctica_Active_Personnel < 22 } # Random value from effects line 761
+		}
+		clr_country_flag = Antarctica_GUI_AAG_Survival_Mech_Enabled
+		clr_country_flag = Antarctica_Equipment_Change_Locked
+		country_event = antarctica_aag_survival.300
+	}
+}

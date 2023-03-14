@@ -1,0 +1,129 @@
+characters = {
+	AAB_Wolfram_Sievers = {
+		name = AAB_Wolfram_Sievers
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Antarctica/Portrait_AAB_Wolfram_Sievers.dds"
+				small = "gfx/interface/ideas/AAB/AAB_Wolfram_Sievers.dds"
+			}
+			army = {
+				large = "gfx/leaders/Antarctica/Portrait_AAB_Wolfram_Sievers.dds"
+				small = "gfx/interface/ideas/AAB/AAB_Wolfram_Sievers.dds"
+			}
+		}
+		country_leader = {
+			ideology = esoteric_nazism_antarctic_administration_subtype
+			expire = "1999.1.1"
+			desc = POLITICS_WOLFRAM_SIEVERS_DESC
+			traits = {
+				esoteric_nazism
+				Reichsgeschaftsfuhrer_des_Ahnenerbe
+			}
+			id = -1
+		}
+	}
+	AAB_Herbert_Jankuhn = {
+		name = AAB_Herbert_Jankuhn
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAB/AAB_HoG_Herbert_Jankuhn_large.dds"
+				small = "gfx/interface/ideas/AAB/AAB_HoG_Herbert_Jankuhn.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAB/AAB_HoG_Herbert_Jankuhn_large.dds"
+				small = "gfx/interface/ideas/AAB/AAB_HoG_Herbert_Jankuhn.dds"
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = AAB_Herbert_Jankuhn_dep
+			allowed = { original_tag = AAB }
+			traits = {
+				head_of_government
+				esoteric_nazism
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAB_Yrjo_Von_Gronhagen = {
+		name = AAB_Yrjo_Von_Gronhagen
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAB/AAB_ForMin_Yrjo_Von_Gronhagen_large.dds"
+				small = "gfx/interface/ideas/AAB/AAB_ForMin_Yrjo_Von_Gronhagen.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAB/AAB_ForMin_Yrjo_Von_Gronhagen_large.dds"
+				small = "gfx/interface/ideas/AAB/AAB_ForMin_Yrjo_Von_Gronhagen.dds"
+			}
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = AAB_Yrjo_Von_Gronhagen_pol
+			allowed = { original_tag = AAB }
+			traits = {
+				foreign_minister
+				esoteric_nazism
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAB_Heinz_Brucher = {
+		name = AAB_Heinz_Brucher
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAB/AAB_EconMin_Heinz_Brucher_large.dds"
+				small = "gfx/interface/ideas/AAB/AAB_EconMin_Heinz_Brucher.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAB/AAB_EconMin_Heinz_Brucher_large.dds"
+				small = "gfx/interface/ideas/AAB/AAB_EconMin_Heinz_Brucher.dds"
+			}
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = AAB_Heinz_Brucher_eco
+			allowed = { original_tag = AAB }
+			traits = {
+				economy_minister
+				esoteric_nazism
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAB_Otto_Ohlendorf = {
+		name = AAB_Otto_Ohlendorf
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAB/AAB_SecMin_Otto_Ohlendorf_large.dds"
+				small = "gfx/interface/ideas/AAB/AAB_SecMin_Otto_Ohlendorf.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAB/AAB_SecMin_Otto_Ohlendorf_large.dds"
+				small = "gfx/interface/ideas/AAB/AAB_SecMin_Otto_Ohlendorf.dds"
+			}
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = AAB_Otto_Ohlendorf_sec
+			allowed = { original_tag = AAB }
+			traits = {
+				security_minister
+				esoteric_nazism
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+}

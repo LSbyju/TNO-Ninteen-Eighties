@@ -1,0 +1,3969 @@
+Antarctica_Situation_Overview = {
+	Antarctica_Situation_Overview_Supply_AAO_mission = {
+		icon = Antarctica_texticon_SUP
+		
+		allowed = {
+			tag = AAO
+		}
+
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		
+		activation = {
+			always = yes
+		}
+
+		visible = {
+			original_tag = AAO
+		}
+
+		days_mission_timeout = var:USA.Antarctica_Agency_Supply_Shipment_Time
+		selectable_mission = no
+		is_good = yes
+
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout Antarctica_Situation_Overview_Supply_AAO"
+			add_to_variable = { Antarctica_Equipment = USA.Antarctica_Agency_Supply_to_be_Sent }
+			activate_mission = Antarctica_Situation_Overview_Supply_AAO_mission
+			
+			hidden_effect = { clamp_all_Antarctica_variables = yes }
+		}
+	}
+	Antarctica_Situation_Overview_Supply_AAJ_mission = {
+		icon = Antarctica_texticon_SUP
+		
+		allowed = {
+			tag = AAJ
+		}
+
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		
+		activation = {
+			always = yes
+		}
+
+		visible = {
+			original_tag = AAJ
+		}
+
+		days_mission_timeout = var:JAP.Antarctica_Agency_Supply_Shipment_Time
+		selectable_mission = no
+		is_good = yes
+
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout Antarctica_Situation_Overview_Supply_AAJ"
+			add_to_variable = { Antarctica_Equipment = JAP.Antarctica_Agency_Supply_to_be_Sent }
+			activate_mission = Antarctica_Situation_Overview_Supply_AAJ_mission
+			
+			hidden_effect = { clamp_all_Antarctica_variables = yes }
+		}
+	}
+	Antarctica_Situation_Overview_Supply_AAB_mission = {
+		icon = Antarctica_texticon_SUP
+		
+		allowed = {
+			tag = AAB
+		}
+
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		
+		activation = {
+			always = yes
+		}
+
+		visible = {
+			original_tag = AAB
+		}
+
+		days_mission_timeout = 31
+		selectable_mission = no
+		is_good = yes
+
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout Antarctica_Situation_Overview_Supply_AAB"
+			add_to_variable = { Antarctica_Equipment = 90 }
+			activate_mission = Antarctica_Situation_Overview_Supply_AAB_mission
+			
+			hidden_effect = { clamp_all_Antarctica_variables = yes }
+		}
+	}
+	Antarctica_Situation_Overview_Supply_AAA_mission = {
+		icon = Antarctica_texticon_SUP
+		
+		allowed = {
+			tag = AAA
+		}
+
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		
+		activation = {
+			always = yes
+		}
+
+		visible = {
+			original_tag = AAA
+		}
+
+		days_mission_timeout = 21
+		selectable_mission = no
+		is_good = yes
+
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout Antarctica_Situation_Overview_Supply_AAA"
+			add_to_variable = { Antarctica_Equipment = 60 }
+			activate_mission = Antarctica_Situation_Overview_Supply_AAA_mission
+			
+			hidden_effect = { clamp_all_Antarctica_variables = yes }
+		}
+	}
+	Antarctica_Situation_Overview_Supply_AAC_mission = {
+		icon = Antarctica_texticon_SUP
+		
+		allowed = {
+			tag = AAC
+		}
+
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		
+		activation = {
+			always = yes
+		}
+
+		visible = {
+			original_tag = AAC
+		}
+
+		days_mission_timeout = 15
+		selectable_mission = no
+		is_good = yes
+
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout Antarctica_Situation_Overview_Supply_AAC"
+			add_to_variable = { Antarctica_Equipment = 40 }
+			activate_mission = Antarctica_Situation_Overview_Supply_AAC_mission
+			
+			hidden_effect = { clamp_all_Antarctica_variables = yes }
+		}
+	}
+	Antarctica_Situation_Overview_Supply_AAG_mission = {
+		icon = Antarctica_texticon_SUP
+		
+		allowed = {
+			tag = AAG
+		}
+
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		
+		activation = {
+			always = no
+		}
+
+		visible = {
+			original_tag = AAG
+		}
+
+		days_mission_timeout = var:Antarctica_Situation_Overview_Supply_AAG_mission_days
+		selectable_mission = no
+		is_good = yes
+
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout Antarctica_Situation_Overview_Supply_AAG"
+			add_to_variable = { Antarctica_Equipment = Antarctica_Situation_Overview_Supply_AAG_mission_amount }
+			
+			hidden_effect = {
+				clamp_all_Antarctica_variables = yes
+				
+				randomize_variable = {
+					var = Antarctica_Situation_Overview_Supply_AAG_mission_days_math
+					distribution = uniform
+					min = -4
+					max = 4
+				}
+				round_variable = Antarctica_Situation_Overview_Supply_AAG_mission_days_math
+				add_to_variable = { Antarctica_Situation_Overview_Supply_AAG_mission_days_math = GER.Antarctica_Agency_Supply_Shipment_Time }
+				set_variable = { Antarctica_Situation_Overview_Supply_AAG_mission_days = Antarctica_Situation_Overview_Supply_AAG_mission_days_math }
+				
+				randomize_variable = {
+					var = Antarctica_Situation_Overview_Supply_AAG_mission_amount_math
+					distribution = uniform
+					min = Antarctica_Situation_Overview_Supply_AAG_min_amount
+					max = Antarctica_Situation_Overview_Supply_AAG_max_amount
+				}
+				round_variable = Antarctica_Situation_Overview_Supply_AAG_mission_amount_math
+				add_to_variable = { Antarctica_Situation_Overview_Supply_AAG_mission_amount_math = GER.Antarctica_Agency_Supply_to_be_Sent }
+				set_variable = { Antarctica_Situation_Overview_Supply_AAG_mission_amount = Antarctica_Situation_Overview_Supply_AAG_mission_amount_math }
+			}
+
+			if = {
+				limit = {
+					NOT = { has_country_flag = Antarctica_Equipment_Change_Locked }
+				}
+				activate_mission = Antarctica_Situation_Overview_Supply_AAG_mission
+			}
+		}
+	}
+	
+	Antarctica_Situation_Overview_Emergency_Militarization_mission = {
+		icon = Antarctica_texticon_MIL
+		
+		allowed = {
+			OR = {
+				tag = AAA
+				tag = AAB
+				tag = AAC
+				tag = AAG
+				tag = AAJ
+				tag = AAO
+			}
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = Antarctica_Situation_Overview_Emergency_Militarization_mission_tt
+				check_variable = { Antarctica_Militarization = 0 }
+			}
+		}
+		
+		visible = {
+			NOT = { has_country_flag = Antarctica_Situation_Overview_Emergency_Militarization_mission_triggered }
+		}
+
+		visible = {
+			OR = {
+				original_tag = AAA
+				original_tag = AAB
+				original_tag = AAC
+				original_tag = AAG
+				original_tag = AAJ
+				original_tag = AAO
+			}
+		}
+		
+		selectable_mission = no
+		is_good = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout Antarctica_Situation_Overview_Emergency_Militarization_mission"
+			
+			hidden_effect = { clamp_all_Antarctica_variables = yes }
+			set_country_flag = Antarctica_Situation_Overview_Emergency_Militarization_mission_triggered
+		}
+	}
+	Antarctica_Situation_Overview_Emergency_Legitimacy_mission = {
+		icon = Antarctica_texticon_LEG
+		
+		allowed = {
+			OR = {
+				tag = AAA
+				tag = AAB
+				tag = AAC
+				tag = AAG
+				tag = AAJ
+				tag = AAO
+			}
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = Antarctica_Situation_Overview_Emergency_Legitimacy_mission_tt
+				check_variable = { Antarctica_Legitimacy = 0 }
+			}
+		}
+		
+		visible = {
+			NOT = { has_country_flag = Antarctica_Situation_Overview_Emergency_Legitimacy_mission_triggered }
+		}
+
+		visible = {
+			OR = {
+				original_tag = AAA
+				original_tag = AAB
+				original_tag = AAC
+				original_tag = AAG
+				original_tag = AAJ
+				original_tag = AAO
+			}
+		}
+		
+		selectable_mission = no
+		is_good = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout Antarctica_Situation_Overview_Emergency_Legitimacy_mission"
+			
+			hidden_effect = { clamp_all_Antarctica_variables = yes }
+			set_country_flag = Antarctica_Situation_Overview_Emergency_Legitimacy_mission_triggered
+		}
+	}
+	Antarctica_Situation_Overview_Emergency_Supply_mission = {
+		icon = Antarctica_texticon_SUP
+		
+		allowed = {
+			OR = {
+				tag = AAA
+				tag = AAB
+				tag = AAC
+				tag = AAG
+				tag = AAJ
+				tag = AAO
+			}
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = Antarctica_Situation_Overview_Emergency_Supply_mission_tt
+				check_variable = { Antarctica_Equipment = 0 }
+			}
+		}
+		
+		visible = {
+			NOT = { has_country_flag = Antarctica_Situation_Overview_Emergency_Supply_mission_triggered }
+		}
+
+		visible = {
+			OR = {
+				original_tag = AAA
+				original_tag = AAB
+				original_tag = AAC
+				original_tag = AAG
+				original_tag = AAJ
+				original_tag = AAO
+			}
+		}
+		
+		selectable_mission = no
+		is_good = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout Antarctica_Situation_Overview_Emergency_Supply_mission"
+			
+			hidden_effect = { clamp_all_Antarctica_variables = yes }
+			set_country_flag = Antarctica_Situation_Overview_Emergency_Supply_mission_triggered
+		}
+	}
+}
+
+Antarctica_GUI_AAO = {
+	Antarctica_GUI_AAO_Decision_Promote_American_Officers = {
+		icon = generic_military_parade
+		
+		custom_cost_trigger = {
+			AND = {
+				has_political_power > 19
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAO_Decision_Promote_American_Officers_cost_tt
+		days_remove = 7
+		days_re_enable = 21 # 7 + 21 = 28 days
+		
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_Decision_Promote_American_Officers"
+			hidden_effect = { add_political_power = -20 }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAO_Decision_Promote_American_Officers_effect_tt
+			hidden_effect = { army_experience = 20 }
+			
+			set_temp_variable = { scope = USA }
+			set_temp_variable = { plus = 4 }
+			hidden_effect = { Antarctica_AAO_Successor_Add = yes }
+			add_to_variable = { Antarctica_GUI_AAO_Cohesion = -2 }
+			hidden_effect = { Antarctica_AAO_Check_Cohesion = yes }
+		}
+	}
+	Antarctica_GUI_AAO_Decision_Request_American_Military_Equipment = {
+		icon = generic_prepare_civil_war
+		
+		custom_cost_trigger = {
+			AND = {
+				has_political_power > 29
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAO_Decision_Request_American_Military_Equipment_cost_tt
+		days_remove = 14
+		days_re_enable = 21
+		
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_Decision_Request_American_Military_Equipment"
+			hidden_effect = { add_political_power = -30 }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAO_Decision_Request_American_Military_Equipment_effect_tt
+			hidden_effect = { add_command_power = 25 }
+			
+			set_temp_variable = { scope = USA }
+			set_temp_variable = { plus = 6 }
+			hidden_effect = { Antarctica_AAO_Successor_Add = yes }
+			add_to_variable = { Antarctica_GUI_AAO_Cohesion = -4 }
+			hidden_effect = { Antarctica_AAO_Check_Cohesion = yes }
+		}
+	}
+	Antarctica_GUI_AAO_Decision_Connect_With_American_Diplomats = {
+		icon = GFX_decision_generic_shake_hands
+		
+		cost = 40
+		days_remove = 14
+		days_re_enable = 28
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAO_Decision_Connect_With_American_Diplomats_Available
+			NOT = { has_country_flag = Antarctica_GUI_AAO_Decision_Connect_With_American_Diplomats_Improved_Available }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_Decision_Connect_With_American_Diplomats"
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAO_Decision_Connect_With_American_Diplomats_effect_tt
+			add_to_variable = { Antarctica_Legitimacy = 8 }
+			
+			set_temp_variable = { scope = USA }
+			set_temp_variable = { plus = 6 }
+			hidden_effect = { Antarctica_AAO_Successor_Add = yes }
+			add_to_variable = { Antarctica_GUI_AAO_Cohesion = 4 }
+			hidden_effect = { Antarctica_AAO_Check_Cohesion = yes }
+		}
+	}
+	Antarctica_GUI_AAO_Decision_Connect_With_American_Diplomats_Improved = {
+		icon = GFX_decision_generic_shake_hands
+		
+		cost = 60
+		days_remove = 28
+		days_re_enable = 28
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAO_Decision_Connect_With_American_Diplomats_Improved_Available
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_Decision_Connect_With_American_Diplomats_Improved"
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAO_Decision_Connect_With_American_Diplomats_Improved_effect_tt
+			add_to_variable = { Antarctica_Legitimacy = 12 }
+			
+			set_temp_variable = { scope = USA }
+			set_temp_variable = { plus = 6 }
+			hidden_effect = { Antarctica_AAO_Successor_Add = yes }
+			add_to_variable = { Antarctica_GUI_AAO_Cohesion = 6 }
+			hidden_effect = { Antarctica_AAO_Check_Cohesion = yes }
+		}
+	}
+	Antarctica_GUI_AAO_Decision_Reinforce_American_Naval_Presence = {
+		icon = GFX_decision_shipyard
+		
+		custom_cost_trigger = {
+			AND = {
+				has_political_power > 49
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAO_Decision_Reinforce_American_Naval_Presence_cost_tt
+		days_remove = 21
+		days_re_enable = 21
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAO_Decision_Reinforce_American_Naval_Presence_Available
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_Decision_Reinforce_American_Naval_Presence"
+			hidden_effect = { add_political_power = -50 }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAO_Decision_Reinforce_American_Naval_Presence_effect_tt
+			add_to_variable = { Antarctica_Militarization = 8 }
+			
+			set_temp_variable = { scope = USA }
+			set_temp_variable = { plus = 8 }
+			hidden_effect = { Antarctica_AAO_Successor_Add = yes }
+			add_to_variable = { Antarctica_GUI_AAO_Cohesion = -8 }
+			hidden_effect = { Antarctica_AAO_Check_Cohesion = yes }
+		}
+	}
+	Antarctica_GUI_AAO_Decision_Build_Up_McMurdo_Station = {
+		icon = GFX_decision_black_market_presence_increase
+		
+		custom_cost_trigger = {
+			AND = {
+				has_political_power > 29
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAO_Decision_Build_Up_McMurdo_Station_cost_tt
+		days_remove = 56
+		days_re_enable = 28
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAO_Decision_Letter_Received_Available
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_Decision_Build_Up_McMurdo_Station"
+			hidden_effect = { add_political_power = -30 }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAO_Decision_Build_Up_McMurdo_Station_effect_tt
+			1944 = {
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					instant_build = yes
+					province = 16580
+				}
+			}
+			
+			set_temp_variable = { scope = USA }
+			set_temp_variable = { plus = 5 }
+			hidden_effect = { Antarctica_AAO_Successor_Add = yes }
+			add_to_variable = { Antarctica_GUI_AAO_Cohesion = 1 }
+			hidden_effect = { Antarctica_AAO_Check_Cohesion = yes }
+		}
+	}
+	Antarctica_GUI_AAO_Decision_Run_Internal_CIA_Probes = {
+		icon = GFX_decision_generic_investigate
+		
+		custom_cost_trigger = {
+			AND = {
+				has_political_power > 59
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAO_Decision_Run_Internal_CIA_Probes_cost_tt
+		days_remove = 35
+		days_re_enable = 14
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAO_Decision_Letter_Received_Available
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_Decision_Run_Internal_CIA_Probes"
+			hidden_effect = { add_political_power = -60 }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAO_Decision_Run_Internal_CIA_Probes_effect_tt
+			add_to_variable = { Antarctica_Militarization = 2 }
+			
+			set_temp_variable = { scope = USA }
+			set_temp_variable = { plus = 8 }
+			hidden_effect = { Antarctica_AAO_Successor_Add = yes }
+			add_to_variable = { Antarctica_GUI_AAO_Cohesion = -5 }
+			hidden_effect = { Antarctica_AAO_Check_Cohesion = yes }
+		}
+	}
+	Antarctica_GUI_AAO_Decision_Promote_Australian_Officers = {
+		icon = generic_military_parade
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Legitimacy > 4 }
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAO_Decision_Promote_Australian_Officers_cost_tt
+		days_remove = 7
+		days_re_enable = 21
+		
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_Decision_Promote_Australian_Officers"
+			add_to_variable = { Antarctica_Legitimacy = -4 }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAO_Decision_Promote_Australian_Officers_effect_tt
+			hidden_effect = { army_experience = 10 }
+			
+			set_temp_variable = { scope = AST }
+			set_temp_variable = { plus = 2 }
+			hidden_effect = { Antarctica_AAO_Successor_Add = yes }
+			add_to_variable = { Antarctica_GUI_AAO_Cohesion = -2 }
+			hidden_effect = { Antarctica_AAO_Check_Cohesion = yes }
+		}
+	}
+	Antarctica_GUI_AAO_Decision_Work_With_Beale = {
+		icon = generic_political_action
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Legitimacy > 6 }
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAO_Decision_Work_With_Beale_cost_tt
+		days_remove = 21
+		days_re_enable = 21
+		
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_Decision_Work_With_Beale"
+			add_to_variable = { Antarctica_Legitimacy = -6 }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAO_Decision_Work_With_Beale_effect_tt
+			add_political_power = 10
+			
+			set_temp_variable = { scope = AST }
+			set_temp_variable = { plus = 4 }
+			hidden_effect = { Antarctica_AAO_Successor_Add = yes }
+			add_to_variable = { Antarctica_GUI_AAO_Cohesion = 4 }
+			hidden_effect = { Antarctica_AAO_Check_Cohesion = yes }
+		}
+	}
+	Antarctica_GUI_AAO_Decision_Construct_Australian_Outposts = {
+		icon = GFX_decision_black_market_presence_increase
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Legitimacy > 6 }
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAO_Decision_Construct_Australian_Outposts_cost_tt
+		days_remove = 28
+		days_re_enable = 28
+		
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_Decision_Reinforce_Australian_Supply_Lines"
+			add_to_variable = { Antarctica_Legitimacy = -6 }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAO_Decision_Construct_Australian_Outposts_effect_tt
+			add_to_variable = { Antarctica_Militarization = 4 }
+			
+			set_temp_variable = { scope = AST }
+			set_temp_variable = { plus = 6 }
+			hidden_effect = { Antarctica_AAO_Successor_Add = yes }
+			add_to_variable = { Antarctica_GUI_AAO_Cohesion = 6 }
+			hidden_effect = { Antarctica_AAO_Check_Cohesion = yes }
+		}
+	}
+	Antarctica_GUI_AAO_Decision_Reinforce_Australian_Supply_Lines = {
+		icon = GFX_decision_generic_supply
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Legitimacy > 8 }
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAO_Decision_Reinforce_Australian_Supply_Lines_cost_tt
+		days_remove = 28
+		days_re_enable = 56
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAO_Decision_Reinforce_Australian_Supply_Lines_Available
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_Decision_Reinforce_Australian_Supply_Lines"
+			add_to_variable = { Antarctica_Legitimacy = -8 }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAO_Decision_Reinforce_Australian_Supply_Lines_effect_tt
+			add_to_variable = { Antarctica_Equipment = 4 }
+			
+			set_temp_variable = { scope = AST }
+			set_temp_variable = { plus = 8 }
+			hidden_effect = { Antarctica_AAO_Successor_Add = yes }
+			add_to_variable = { Antarctica_GUI_AAO_Cohesion = 8 }
+			hidden_effect = { Antarctica_AAO_Check_Cohesion = yes }
+		}
+	}
+	Antarctica_GUI_AAO_Decision_Develop_Mawson_Station = {
+		icon = GFX_decision_black_market_presence_increase
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Legitimacy > 4 }
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAO_Decision_Develop_Mawson_Station_cost_tt
+		days_remove = 56
+		days_re_enable = 28
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAO_Decision_Letter_Received_Available
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_Decision_Develop_Mawson_Station"
+			add_to_variable = { Antarctica_Legitimacy = -4 }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAO_Decision_Develop_Mawson_Station_effect_tt
+			1927 = {
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					instant_build = yes
+					province = 16604
+				}
+			}
+			
+			set_temp_variable = { scope = AST }
+			set_temp_variable = { plus = 4 }
+			hidden_effect = { Antarctica_AAO_Successor_Add = yes }
+			add_to_variable = { Antarctica_GUI_AAO_Cohesion = 1 }
+			hidden_effect = { Antarctica_AAO_Check_Cohesion = yes }
+		}
+	}
+	Antarctica_GUI_AAO_Decision_Utilize_the_ASIS = {
+		icon = GFX_decision_generic_investigate
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Legitimacy > 4 }
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAO_Decision_Utilize_the_ASIS_cost_tt
+		days_remove = 28
+		days_re_enable = 21
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAO_Decision_Letter_Received_Available
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_Decision_Utilize_the_ASIS"
+			add_to_variable = { Antarctica_Legitimacy = -4 }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAO_Decision_Utilize_the_ASIS_effect_tt
+			
+			set_temp_variable = { scope = AST }
+			set_temp_variable = { plus = 6 }
+			hidden_effect = { Antarctica_AAO_Successor_Add = yes }
+			add_to_variable = { Antarctica_GUI_AAO_Cohesion = -4 }
+			hidden_effect = { Antarctica_AAO_Check_Cohesion = yes }
+		}
+	}
+	Antarctica_GUI_AAO_Decision_Promote_New_Zealander_Officers = {
+		icon = generic_military_parade
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Militarization > 4 }
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAO_Decision_Promote_New_Zealander_Officers_cost_tt
+		days_remove = 7
+		days_re_enable = 21
+		
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_Decision_Promote_New_Zealander_Officers"
+			add_to_variable = { Antarctica_Militarization = -4 }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAO_Decision_Promote_New_Zealander_Officers_effect_tt
+			hidden_effect = { army_experience = 10 }
+			
+			set_temp_variable = { scope = NZL }
+			set_temp_variable = { plus = 2 }
+			hidden_effect = { Antarctica_AAO_Successor_Add = yes }
+			
+			add_to_variable = { Antarctica_GUI_AAO_Cohesion = -2 }
+			hidden_effect = { Antarctica_AAO_Check_Cohesion = yes }
+		}
+	}
+	Antarctica_GUI_AAO_Decision_Consult_With_Hillary = {
+		icon = generic_phone_call
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Militarization > 6 }
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAO_Decision_Consult_With_Hillary_cost_tt
+		days_remove = 7
+		days_re_enable = 35
+		
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_Decision_Consult_With_Hillary"
+			add_to_variable = { Antarctica_Militarization = -6 }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAO_Decision_Consult_With_Hillary_effect_tt
+			add_political_power = 15
+			
+			set_temp_variable = { scope = NZL }
+			set_temp_variable = { plus = 4 }
+			hidden_effect = { Antarctica_AAO_Successor_Add = yes }
+			
+			add_to_variable = { Antarctica_GUI_AAO_Cohesion = 4 }
+			hidden_effect = { Antarctica_AAO_Check_Cohesion = yes }
+		}
+	}
+	Antarctica_GUI_AAO_Decision_Improve_Communication_Links = {
+		icon = generic_phone_call
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Militarization > 8 }
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAO_Decision_Improve_Communication_Links_cost_tt
+		days_remove = 56
+		days_re_enable = 35
+		
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_Decision_Improve_Communication_Links"
+			add_to_variable = { Antarctica_Militarization = -8 }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAO_Decision_Improve_Communication_Links_effect_tt
+			add_to_variable = { Antarctica_Equipment = 6 }
+			
+			set_temp_variable = { scope = NZL }
+			set_temp_variable = { plus = 8 }
+			hidden_effect = { Antarctica_AAO_Successor_Add = yes }
+			
+			add_to_variable = { Antarctica_GUI_AAO_Cohesion = 8 }
+			hidden_effect = { Antarctica_AAO_Check_Cohesion = yes }
+		}
+	}
+	Antarctica_GUI_AAO_Decision_Increase_Scientific_Cooperation = {
+		icon = GFX_decision_research_generic
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Militarization > 6 }
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAO_Decision_Increase_Scientific_Cooperation_cost_tt
+		days_remove = 21
+		days_re_enable = 28
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAO_Decision_Increase_Scientific_Cooperation_Available
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_Decision_Increase_Scientific_Cooperation"
+			hidden_effect = { add_to_variable = { Antarctica_Militarization = -6 } }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAO_Decision_Increase_Scientific_Cooperation_effect_tt
+			add_to_variable = { Antarctica_Legitimacy = 4 }
+			
+			set_temp_variable = { scope = NZL }
+			set_temp_variable = { plus = 6 }
+			hidden_effect = { Antarctica_AAO_Successor_Add = yes }
+			
+			add_to_variable = { Antarctica_GUI_AAO_Cohesion = 6 }
+			hidden_effect = { Antarctica_AAO_Check_Cohesion = yes }
+		}
+	}
+	Antarctica_GUI_AAO_Decision_Expand_Substation_Scott = {
+		icon = GFX_decision_black_market_presence_increase
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Militarization > 4 }
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAO_Decision_Expand_Substation_Scott_cost_tt
+		days_remove = 56
+		days_re_enable = 28
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAO_Decision_Letter_Received_Available
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_Decision_Expand_Substation_Scott"
+			add_to_variable = { Antarctica_Militarization = -4 }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAO_Decision_Expand_Substation_Scott_effect_tt
+			1944 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			set_temp_variable = { scope = NZL }
+			set_temp_variable = { plus = 3 }
+			hidden_effect = { Antarctica_AAO_Successor_Add = yes }
+			add_to_variable = { Antarctica_GUI_AAO_Cohesion = 1 }
+			hidden_effect = { Antarctica_AAO_Check_Cohesion = yes }
+		}
+	}
+	Antarctica_GUI_AAO_Decision_Source_Equipment_from_New_Zealand = {
+		icon = GFX_decision_generic_supply
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Militarization > 4 }
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAO_Decision_Source_Equipment_from_New_Zealand_cost_tt
+		days_remove = 35
+		days_re_enable = 14
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAO_Decision_Letter_Received_Available
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_Decision_Source_Equipment_from_New_Zealand"
+			add_to_variable = { Antarctica_Militarization = -4 }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAO_Decision_Source_Equipment_from_New_Zealand_effect_tt
+			add_to_variable = { Antarctica_Equipment = 3 }
+			
+			set_temp_variable = { scope = NZL }
+			set_temp_variable = { plus = 6 }
+			hidden_effect = { Antarctica_AAO_Successor_Add = yes }
+		}
+	}
+	Antarctica_GUI_AAO_Decision_Call_Rip = {
+		icon = generic_phone_call
+		
+		days_remove = 2
+		fire_only_once = yes
+		cost = 5
+		
+		visible = {
+			#has_country_flag = Antarctica_GUI_AAO_Decision_Call_Rip_Available
+			always = no
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAO_Decision_Call_Rip_effect_tt
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_Decision_Call_Rip"
+		}
+		
+		remove_effect = {
+			# event
+		}
+	}
+}
+
+Antarctica_GUI_AAO_CIA = {
+	Antarctica_GUI_AAO_CIA_Execution_Phase_3_Malaysia_Decision = {
+		icon = GFX_decision_generic_supply
+		
+		custom_cost_trigger = {
+			command_power > 30
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Execution_Phase_3_Malaysia_Decision_cost_tt
+		days_remove = 30
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 0 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 1 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Execution_Phase_3_Malaysia_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Execution_Phase_3_Malaysia_Decision"
+			add_command_power = -30
+		}
+		
+		remove_effect = {
+			#custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Execution_Phase_3_Malaysia_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Execution_Phase_3_Malaysia_Completed
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_2
+				amount = 180
+				producer = AAO
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment_0
+				amount = 20
+				producer = AAO
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 60
+				producer = AAO
+			}
+		}
+	}
+	Antarctica_GUI_AAO_CIA_Conclusion_Phase_1_Malaysia_Decision = {
+		icon = generic_assault
+		
+		custom_cost_trigger = {
+			command_power > 40
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Conclusion_Phase_1_Malaysia_Decision_cost_tt
+		days_remove = 40
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 0 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 2 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Conclusion_Phase_1_Malaysia_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Conclusion_Phase_1_Malaysia_Decision"
+			add_command_power = -40
+		}
+		
+		remove_effect = {
+			#custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Conclusion_Phase_1_Malaysia_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Conclusion_Phase_1_Malaysia_Completed
+			add_manpower = 75
+			
+			country_event = antarctica_aao_cia.30
+		}
+	}
+	Antarctica_GUI_AAO_CIA_Conclusion_Phase_2_Malaysia_Decision = {
+		icon = generic_voting
+		
+		custom_cost_trigger = {
+			command_power > 40
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Conclusion_Phase_2_Malaysia_Decision_cost_tt
+		days_remove = 40
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 0 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 2 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Conclusion_Phase_2_Malaysia_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Conclusion_Phase_2_Malaysia_Decision"
+			add_command_power = -40
+		}
+		
+		remove_effect = {
+			#custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Conclusion_Phase_2_Malaysia_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Conclusion_Phase_2_Malaysia_Completed
+			add_political_power = 50
+			
+			country_event = antarctica_aao_cia.40
+		}
+	}
+	Antarctica_GUI_AAO_CIA_Conclusion_Phase_3_Malaysia_Decision = {
+		icon = generic_money
+		
+		custom_cost_trigger = {
+			command_power > 40
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Conclusion_Phase_3_Malaysia_Decision_cost_tt
+		days_remove = 40
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 0 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 2 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Conclusion_Phase_3_Malaysia_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Conclusion_Phase_3_Malaysia_Decision"
+			add_command_power = -40
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Conclusion_Phase_3_Malaysia_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Conclusion_Phase_3_Malaysia_Completed
+			add_to_variable = { Antarctica_Equipment = 8 }
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_2
+				amount = 100
+				producer = AAO
+			}
+			
+			country_event = antarctica_aao_cia.50
+		}
+	}
+	
+	Antarctica_GUI_AAO_CIA_Planning_Phase_1_Madagascar_Decision = {
+		icon = GFX_decision_generic_ger_espionage
+		
+		custom_cost_trigger = {
+			command_power > 20
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Planning_Phase_1_Madagascar_Decision_cost_tt
+		days_remove = 20
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 1 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 0 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Planning_Phase_1_Madagascar_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Planning_Phase_1_Madagascar_Decision"
+			add_command_power = -20
+		}
+		
+		remove_effect = {
+			#custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Planning_Phase_1_Madagascar_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Planning_Phase_1_Madagascar_Completed
+			add_political_power = 50
+			
+			country_event = antarctica_aao_cia.120
+		}
+	}
+	Antarctica_GUI_AAO_CIA_Planning_Phase_2_Madagascar_Decision = {
+		icon = GFX_decision_generic_military_parade
+		
+		custom_cost_trigger = {
+			command_power > 20
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Planning_Phase_2_Madagascar_Decision_cost_tt
+		days_remove = 20
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 1 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 0 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Planning_Phase_2_Madagascar_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Planning_Phase_2_Madagascar_Decision"
+			add_command_power = -20
+		}
+		
+		remove_effect = {
+			#custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Planning_Phase_2_Madagascar_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Planning_Phase_2_Madagascar_Completed
+			army_experience = 50
+			
+			country_event = antarctica_aao_cia.130
+		}
+	}
+	Antarctica_GUI_AAO_CIA_Planning_Phase_3_Madagascar_Decision = {
+		icon = GFX_decision_ger_reichskommissariats
+		
+		custom_cost_trigger = {
+			command_power > 20
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Planning_Phase_3_Madagascar_Decision_cost_tt
+		days_remove = 20
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 1 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 0 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Planning_Phase_3_Madagascar_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Planning_Phase_3_Madagascar_Decision"
+			add_command_power = -20
+		}
+		
+		remove_effect = {
+			#custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Planning_Phase_3_Madagascar_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Planning_Phase_3_Madagascar_Completed
+			add_command_power = 40
+			
+			country_event = antarctica_aao_cia.140
+		}
+	}
+	
+	Antarctica_GUI_AAO_CIA_Execution_Phase_1_Madagascar_Decision = {
+		icon = GFX_decision_arrest
+		
+		custom_cost_trigger = {
+			command_power > 30
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Execution_Phase_1_Madagascar_Decision_cost_tt
+		days_remove = 30
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 1 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 1 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Execution_Phase_1_Madagascar_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Execution_Phase_1_Madagascar_Decision"
+			add_command_power = -30
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Execution_Phase_1_Madagascar_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Execution_Phase_1_Madagascar_Completed
+			add_to_variable = { Antarctica_Intel_on_AAG_Value = 10 }
+			add_to_variable = { Antarctica_Intel_on_AAG_Max = 2 }
+			
+			country_event = antarctica_aao_cia.150
+		}
+	}
+	Antarctica_GUI_AAO_CIA_Execution_Phase_2_Madagascar_Decision = {
+		icon = generic_assault
+		
+		custom_cost_trigger = {
+			command_power > 30
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Execution_Phase_2_Madagascar_Decision_cost_tt
+		days_remove = 30
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 1 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 1 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Execution_Phase_2_Madagascar_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Execution_Phase_2_Madagascar_Decision"
+			add_command_power = -30
+		}
+		
+		remove_effect = {
+			#custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Execution_Phase_2_Madagascar_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Execution_Phase_2_Madagascar_Completed
+			add_war_support = 0.05
+			
+			country_event = antarctica_aao_cia.160
+		}
+	}
+	Antarctica_GUI_AAO_CIA_Execution_Phase_3_Madagascar_Decision = {
+		icon = GFX_decision_generic_military_parade
+		
+		custom_cost_trigger = {
+			command_power > 30
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Execution_Phase_3_Madagascar_Decision_cost_tt
+		days_remove = 30
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 1 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 1 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Execution_Phase_3_Madagascar_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Execution_Phase_3_Madagascar_Decision"
+			add_command_power = -30
+		}
+		
+		remove_effect = {
+			#custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Execution_Phase_3_Madagascar_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Execution_Phase_3_Madagascar_Completed
+			army_experience = 50
+			
+			country_event = antarctica_aao_cia.170
+		}
+	}
+	
+	Antarctica_GUI_AAO_CIA_Conclusion_Phase_1_Madagascar_Decision = {
+		icon = GFX_decision_generic_money
+		
+		custom_cost_trigger = {
+			command_power > 40
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Conclusion_Phase_1_Madagascar_Decision_cost_tt
+		days_remove = 40
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 1 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 2 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Conclusion_Phase_1_Madagascar_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Conclusion_Phase_1_Madagascar_Decision"
+			add_command_power = -40
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Conclusion_Phase_1_Madagascar_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Conclusion_Phase_1_Madagascar_Completed
+			add_to_variable = { Antarctica_Legitimacy = 5 }
+			
+			country_event = antarctica_aao_cia.180
+		}
+	}
+	Antarctica_GUI_AAO_CIA_Conclusion_Phase_2_Madagascar_Decision = {
+		icon = GFX_decision_arrest
+		
+		custom_cost_trigger = {
+			command_power > 40
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Conclusion_Phase_2_Madagascar_Decision_cost_tt
+		days_remove = 40
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 1 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 2 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Conclusion_Phase_2_Madagascar_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Conclusion_Phase_2_Madagascar_Decision"
+			add_command_power = -40
+		}
+		
+		remove_effect = {
+			#custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Conclusion_Phase_2_Madagascar_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Conclusion_Phase_2_Madagascar_Completed
+			add_command_power = 50
+			
+			country_event = antarctica_aao_cia.190
+		}
+	}
+	Antarctica_GUI_AAO_CIA_Conclusion_Phase_3_Madagascar_Decision = {
+		icon = GFX_decision_humanitarian_aid_increase
+		
+		custom_cost_trigger = {
+			command_power > 40
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Conclusion_Phase_3_Madagascar_Decision_cost_tt
+		days_remove = 40
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 1 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 2 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Conclusion_Phase_3_Madagascar_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Conclusion_Phase_3_Madagascar_Decision"
+			add_command_power = -40
+		}
+		
+		remove_effect = {
+			#custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Conclusion_Phase_3_Madagascar_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Conclusion_Phase_3_Madagascar_Completed
+			add_political_power = 25
+			
+			country_event = antarctica_aao_cia.200
+		}
+	}
+	
+	Antarctica_GUI_AAO_CIA_Planning_Phase_1_Philippines_Decision = {
+		icon = GFX_decision_generic_phone_call
+		
+		custom_cost_trigger = {
+			command_power > 20
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Planning_Phase_1_Philippines_Decision_cost_tt
+		days_remove = 20
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 2 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 0 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Planning_Phase_1_Philippines_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Planning_Phase_1_Philippines_Decision"
+			add_command_power = -20
+		}
+		
+		remove_effect = {
+			#custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Planning_Phase_1_Philippines_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Planning_Phase_1_Philippines_Completed
+			add_command_power = 50
+			
+			country_event = antarctica_aao_cia.420
+		}
+	}
+	Antarctica_GUI_AAO_CIA_Planning_Phase_2_Philippines_Decision = {
+		icon = GFX_decision_document_building
+		
+		custom_cost_trigger = {
+			command_power > 20
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Planning_Phase_2_Philippines_Decision_cost_tt
+		days_remove = 20
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 2 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 0 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Planning_Phase_2_Philippines_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Planning_Phase_2_Philippines_Decision"
+			add_command_power = -20
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Planning_Phase_2_Philippines_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Planning_Phase_2_Philippines_Completed
+			add_to_variable = { Antarctica_Intel_on_AAJ_Value = 10 }
+			add_to_variable = { Antarctica_Intel_on_AAJ_Max = 2 }
+			
+			country_event = antarctica_aao_cia.430
+		}
+	}
+	Antarctica_GUI_AAO_CIA_Planning_Phase_3_Philippines_Decision = {
+		icon = GFX_decision_generic_supply_alternate
+		
+		custom_cost_trigger = {
+			command_power > 20
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Planning_Phase_3_Philippines_Decision_cost_tt
+		days_remove = 20
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 2 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 0 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Planning_Phase_3_Philippines_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Planning_Phase_3_Philippines_Decision"
+			add_command_power = -20
+		}
+		
+		remove_effect = {
+			#custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Planning_Phase_3_Philippines_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Planning_Phase_3_Philippines_Completed
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 160
+				producer = AAO
+			}
+			
+			country_event = antarctica_aao_cia.440
+		}
+	}
+	
+	Antarctica_GUI_AAO_CIA_Execution_Phase_1_Philippines_Decision = {
+		icon = GFX_decision_generic_assault
+		
+		custom_cost_trigger = {
+			command_power > 30
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Execution_Phase_1_Philippines_Decision_cost_tt
+		days_remove = 30
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 2 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 1 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Execution_Phase_1_Philippines_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Execution_Phase_1_Philippines_Decision"
+			add_command_power = -30
+		}
+		
+		remove_effect = {
+			#custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Execution_Phase_1_Philippines_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Execution_Phase_1_Philippines_Completed
+			add_manpower = 200
+			
+			country_event = antarctica_aao_cia.450
+		}
+	}
+	Antarctica_GUI_AAO_CIA_Execution_Phase_2_Philippines_Decision = {
+		icon = GFX_decision_document_target
+		
+		custom_cost_trigger = {
+			command_power > 30
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Execution_Phase_2_Philippines_Decision_cost_tt
+		days_remove = 30
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 2 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 1 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Execution_Phase_2_Philippines_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Execution_Phase_2_Philippines_Decision"
+			add_command_power = -30
+		}
+		
+		remove_effect = {
+			#custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Execution_Phase_2_Philippines_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Execution_Phase_2_Philippines_Completed
+			add_command_power = 60
+			
+			country_event = antarctica_aao_cia.460
+		}
+	}
+	Antarctica_GUI_AAO_CIA_Execution_Phase_3_Philippines_Decision = {
+		icon = GFX_decision_generic_military_parade
+		
+		custom_cost_trigger = {
+			command_power > 30
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Execution_Phase_3_Philippines_Decision_cost_tt
+		days_remove = 30
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 2 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 1 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Execution_Phase_3_Philippines_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Execution_Phase_3_Philippines_Decision"
+			add_command_power = -30
+		}
+		
+		remove_effect = {
+			#custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Execution_Phase_3_Philippines_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Execution_Phase_3_Philippines_Completed
+			army_experience = 50
+			
+			country_event = antarctica_aao_cia.470
+		}
+	}
+	
+	Antarctica_GUI_AAO_CIA_Conclusion_Phase_1_Philippines_Decision = {
+		icon = GFX_decision_generic_money
+		
+		custom_cost_trigger = {
+			command_power > 40
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Conclusion_Phase_1_Philippines_Decision_cost_tt
+		days_remove = 40
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 2 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 2 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Conclusion_Phase_1_Philippines_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Conclusion_Phase_1_Philippines_Decision"
+			add_command_power = -40
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Conclusion_Phase_1_Philippines_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Conclusion_Phase_1_Philippines_Completed
+			add_to_variable = { Antarctica_Legitimacy = 6 }
+			
+			country_event = antarctica_aao_cia.480
+		}
+	}
+	Antarctica_GUI_AAO_CIA_Conclusion_Phase_2_Philippines_Decision = {
+		icon = decision_generic_defend
+		
+		custom_cost_trigger = {
+			command_power > 40
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Conclusion_Phase_2_Philippines_Decision_cost_tt
+		days_remove = 40
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 2 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 2 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Conclusion_Phase_2_Philippines_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Conclusion_Phase_2_Philippines_Decision"
+			add_command_power = -40
+		}
+		
+		remove_effect = {
+			#custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Conclusion_Phase_2_Philippines_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Conclusion_Phase_2_Philippines_Completed
+			add_command_power = 60
+			
+			country_event = antarctica_aao_cia.490
+		}
+	}
+	Antarctica_GUI_AAO_CIA_Conclusion_Phase_3_Philippines_Decision = {
+		icon = GFX_decision_document_cancel
+		
+		custom_cost_trigger = {
+			command_power > 40
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Conclusion_Phase_3_Philippines_Decision_cost_tt
+		days_remove = 40
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 2 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 2 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Conclusion_Phase_3_Philippines_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Conclusion_Phase_3_Philippines_Decision"
+			add_command_power = -40
+		}
+		
+		remove_effect = {
+			#custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Conclusion_Phase_3_Philippines_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Conclusion_Phase_3_Philippines_Completed
+			add_political_power = 25
+			
+			country_event = antarctica_aao_cia.500
+		}
+	}
+	
+	Antarctica_GUI_AAO_CIA_Planning_Phase_1_SAW_Decision = {
+		icon = GFX_decision_ger_reichskommissariats
+		
+		custom_cost_trigger = {
+			command_power > 20
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Planning_Phase_1_SAW_Decision_cost_tt
+		days_remove = 20
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 3 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 0 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Planning_Phase_1_SAW_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Planning_Phase_1_SAW_Decision"
+			add_command_power = -20
+		}
+		
+		remove_effect = {
+			#custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Planning_Phase_1_SAW_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Planning_Phase_1_SAW_Completed
+			GRO = {
+				1063 = {
+					damage_building = {
+						type = infrastructure
+						damage = 1
+					}
+				}
+				545 = {
+					damage_building = {
+						type = infrastructure
+						damage = 1
+					}
+				}
+				1750 = {
+					damage_building = {
+						type = infrastructure
+						damage = 1
+					}
+				}
+				1065 = {
+					damage_building = {
+						type = infrastructure
+						damage = 1
+					}
+				}
+			}
+			
+			country_event = antarctica_aao_cia.620
+		}
+	}
+	Antarctica_GUI_AAO_CIA_Planning_Phase_2_SAW_Decision = {
+		icon = GFX_decision_generic_supply_alternate
+		
+		custom_cost_trigger = {
+			command_power > 20
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Planning_Phase_2_SAW_Decision_cost_tt
+		days_remove = 20
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 3 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 0 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Planning_Phase_2_SAW_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Planning_Phase_2_SAW_Decision"
+			add_command_power = -20
+		}
+		
+		remove_effect = {
+			#custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Planning_Phase_2_SAW_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Planning_Phase_2_SAW_Completed
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_2
+				amount = 120
+				producer = AAO
+			}
+			
+			country_event = antarctica_aao_cia.630
+		}
+	}
+	Antarctica_GUI_AAO_CIA_Planning_Phase_3_SAW_Decision = {
+		icon = GFX_decision_generic_money
+		
+		custom_cost_trigger = {
+			command_power > 20
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Planning_Phase_3_SAW_Decision_cost_tt
+		days_remove = 20
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 3 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 0 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Planning_Phase_3_SAW_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Planning_Phase_3_SAW_Decision"
+			add_command_power = -20
+		}
+		
+		remove_effect = {
+			#custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Planning_Phase_3_SAW_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Planning_Phase_3_SAW_Completed
+			add_political_power = 50
+			
+			country_event = antarctica_aao_cia.640
+		}
+	}
+	
+	Antarctica_GUI_AAO_CIA_Execution_Phase_1_SAW_Decision = {
+		icon = GFX_decision_generic_assault
+		
+		custom_cost_trigger = {
+			command_power > 30
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Execution_Phase_1_SAW_Decision_cost_tt
+		days_remove = 30
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 3 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 1 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Execution_Phase_1_SAW_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Execution_Phase_1_SAW_Decision"
+			add_command_power = -30
+		}
+		
+		remove_effect = {
+			#custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Execution_Phase_1_SAW_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Execution_Phase_1_SAW_Completed
+			army_experience = 60
+			
+			country_event = antarctica_aao_cia.650
+		}
+	}
+	Antarctica_GUI_AAO_CIA_Execution_Phase_2_SAW_Decision = {
+		icon = GFX_decision_generic_money
+		
+		custom_cost_trigger = {
+			command_power > 30
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Execution_Phase_2_SAW_Decision_cost_tt
+		days_remove = 30
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 3 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 1 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Execution_Phase_2_SAW_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Execution_Phase_2_SAW_Decision"
+			add_command_power = -30
+		}
+		
+		remove_effect = {
+			#custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Execution_Phase_2_SAW_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Execution_Phase_2_SAW_Completed
+			army_experience = 60
+			
+			country_event = antarctica_aao_cia.660
+		}
+	}
+	Antarctica_GUI_AAO_CIA_Execution_Phase_3_SAW_Decision = {
+		icon = GFX_decision_generic_civil_support
+		
+		custom_cost_trigger = {
+			command_power > 30
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Execution_Phase_3_SAW_Decision_cost_tt
+		days_remove = 30
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 3 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 1 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Execution_Phase_3_SAW_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Execution_Phase_3_SAW_Decision"
+			add_command_power = -30
+		}
+		
+		remove_effect = {
+			#custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Execution_Phase_3_SAW_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Execution_Phase_3_SAW_Completed
+			army_experience = 60
+			
+			country_event = antarctica_aao_cia.670
+		}
+	}
+	
+	Antarctica_GUI_AAO_CIA_Conclusion_Phase_1_SAW_Decision = {
+		icon = GFX_decision_generic_military_parade
+		
+		custom_cost_trigger = {
+			command_power > 40
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Conclusion_Phase_1_SAW_Decision_cost_tt
+		days_remove = 40
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 3 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 2 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Conclusion_Phase_1_SAW_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Conclusion_Phase_1_SAW_Decision"
+			add_command_power = -40
+		}
+		
+		remove_effect = {
+			#custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Conclusion_Phase_1_SAW_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Conclusion_Phase_1_SAW_Completed
+			add_command_power = 60
+			
+			country_event = antarctica_aao_cia.680
+		}
+	}
+	Antarctica_GUI_AAO_CIA_Conclusion_Phase_2_SAW_Decision = {
+		icon = GFX_decision_generic_money
+		
+		custom_cost_trigger = {
+			command_power > 40
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Conclusion_Phase_2_SAW_Decision_cost_tt
+		days_remove = 40
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 3 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 2 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Conclusion_Phase_2_SAW_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Conclusion_Phase_2_SAW_Decision"
+			add_command_power = -40
+		}
+		
+		remove_effect = {
+			#custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Conclusion_Phase_2_SAW_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Conclusion_Phase_2_SAW_Completed
+			add_political_power = 75
+			
+			country_event = antarctica_aao_cia.690
+		}
+	}
+	Antarctica_GUI_AAO_CIA_Conclusion_Phase_3_SAW_Decision = {
+		icon = GFX_decision_document_cancel
+		
+		custom_cost_trigger = {
+			command_power > 40
+		}
+		custom_cost_text = Antarctica_GUI_AAO_CIA_Conclusion_Phase_3_SAW_Decision_cost_tt
+		days_remove = 40
+		
+		visible = {
+			check_variable = { Antarctica_GUI_AAO_CIA_War_Array^Antarctica_GUI_AAO_CIA_Selected_War = 3 }
+			check_variable = { Antarctica_GUI_AAO_CIA_Phase_Array^Antarctica_GUI_AAO_CIA_Selected_War = 2 }
+			NOT = { has_country_flag = Antarctica_GUI_AAO_CIA_Conclusion_Phase_3_SAW_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_CIA_Conclusion_Phase_3_SAW_Decision"
+			add_command_power = -40
+		}
+		
+		remove_effect = {
+			#custom_effect_tooltip = Antarctica_GUI_AAO_CIA_Conclusion_Phase_3_SAW_Decision_effect_tt
+			set_country_flag = Antarctica_GUI_AAO_CIA_Conclusion_Phase_3_SAW_Completed
+			add_political_power = 50
+			
+			country_event = antarctica_aao_cia.700
+		}
+	}
+}
+
+Antarctica_GUI_AAO_Invasion = {
+	Antarctica_GUI_AAO_Invasion_Decision_Smallest = {
+		icon = GFX_decision_generic_assault
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Militarization > 8 }
+				check_variable = { Antarctica_Equipment > 8 }
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAO_Invasion_Decision_Smallest_cost_tt
+		days_remove = 22
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAO_Invasion_Enabled
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_Invasion_Decision_Smallest"
+			add_to_variable = { Antarctica_Militarization = -8 }
+			add_to_variable = { Antarctica_Equipment = -8 }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAO_Invasion_Decision_Smallest_effect_tt
+			add_to_variable = { Antarctica_GUI_AAO_Invasion_Prep_Percent = 20 }
+		}
+	}
+	Antarctica_GUI_AAO_Invasion_Decision_Small = {
+		icon = GFX_decision_generic_investigate
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Intel_on_AAG_Value > 8 }
+				check_variable = { Antarctica_Militarization > 8 }
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAO_Invasion_Decision_Small_cost_tt
+		days_remove = 26
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAO_Invasion_Enabled
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_Invasion_Decision_Small"
+			add_to_variable = { Antarctica_Intel_on_AAG_Value = -8 }
+			add_to_variable = { Antarctica_Militarization = -8 }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAO_Invasion_Decision_Small_effect_tt
+			add_to_variable = { Antarctica_GUI_AAO_Invasion_Prep_Percent = 20 }
+		}
+	}
+	Antarctica_GUI_AAO_Invasion_Decision_Med = {
+		icon = GFX_decision_generic_supply_alternate
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Militarization > 10 }
+				check_variable = { Antarctica_Equipment > 10 }
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAO_Invasion_Decision_Med_cost_tt
+		days_remove = 24
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAO_Invasion_Enabled
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_Invasion_Decision_Med"
+			add_to_variable = { Antarctica_Militarization = -10 }
+			add_to_variable = { Antarctica_Equipment = -10 }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAO_Invasion_Decision_Med_effect_tt
+			add_to_variable = { Antarctica_GUI_AAO_Invasion_Prep_Percent = 20 }
+		}
+	}
+	Antarctica_GUI_AAO_Invasion_Decision_Big = {
+		icon = GFX_decision_generic_military_parade
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Legitimacy > 8 }
+				check_variable = { Antarctica_Militarization > 8 }
+				check_variable = { Antarctica_Equipment > 10 }
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAO_Invasion_Decision_Big_cost_tt
+		days_remove = 30
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAO_Invasion_Enabled
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_Invasion_Decision_Big"
+			add_to_variable = { Antarctica_Legitimacy = -8 }
+			add_to_variable = { Antarctica_Militarization = -8 }
+			add_to_variable = { Antarctica_Equipment = -10 }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAO_Invasion_Decision_Big_effect_tt
+			add_to_variable = { Antarctica_GUI_AAO_Invasion_Prep_Percent = 20 }
+		}
+	}
+	Antarctica_GUI_AAO_Invasion_Decision_Biggest = {
+		icon = GFX_decision_generic_ger_espionage
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Legitimacy > 8 }
+				check_variable = { Antarctica_Militarization > 12 }
+				check_variable = { Antarctica_Intel_on_AAG_Value > 6 }
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAO_Invasion_Decision_Biggest_cost_tt
+		days_remove = 25
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAO_Invasion_Enabled
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAO_Invasion_Decision_Biggest"
+			add_to_variable = { Antarctica_Legitimacy = -8 }
+			add_to_variable = { Antarctica_Militarization = -12 }
+			add_to_variable = { Antarctica_Intel_on_AAG_Value = -6 }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAO_Invasion_Decision_Biggest_effect_tt
+			add_to_variable = { Antarctica_GUI_AAO_Invasion_Prep_Percent = 20 }
+		}
+	}
+}
+
+Antarctica_GUI_AAA = {
+	
+}
+
+Antarctica_GUI_AAC = {
+	Antarctica_GUI_AAC_Decision_AAA_Negotiate_Maritime_Zones = {
+		icon = decision_submarines
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Militarization > 1 }
+				has_political_power > 24
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAC_Decision_AAA_Negotiate_Maritime_Zones_cost_tt
+		days_remove = 30
+		days_re_enable = 15
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAC_AAA_Decisions_Visible
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAC_Decision_AAA_Negotiate_Maritime_Zones"
+			hidden_effect = { add_political_power = -25 }
+			hidden_effect = { add_to_variable = { Antarctica_Militarization = -1 } }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAC_Decision_AAA_Negotiate_Maritime_Zones_effect_tt
+			add_to_variable = { Antarctica_GUI_AAC_Diplo_AAA = 4 }
+			add_to_variable = { Antarctica_GUI_AAC_Tensions_AAA = 1 }
+		}
+	}
+	Antarctica_GUI_AAC_Decision_AAA_Hold_Diplomatic_Discussions = {
+		icon = decision_generic_political_action
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Legitimacy > 1 }
+				has_political_power > 9
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAC_Decision_AAA_Hold_Diplomatic_Discussions_cost_tt
+		days_remove = 15
+		days_re_enable = 15
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAC_AAA_Decisions_Visible
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAC_Decision_AAA_Hold_Diplomatic_Discussions"
+			hidden_effect = { add_political_power = -10 }
+			hidden_effect = { add_to_variable = { Antarctica_Legitimacy = -1 } }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAC_Decision_AAA_Hold_Diplomatic_Discussions_effect_tt
+			add_to_variable = { Antarctica_GUI_AAC_Diplo_AAA = 2 }
+			add_to_variable = { Antarctica_GUI_AAC_Tensions_AAA = -1 }
+		}
+	}
+	Antarctica_GUI_AAC_Decision_AAA_Fabricate_Legal_Documents = {
+		icon = GFX_decision_generic_break_treaty
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Legitimacy > 4 }
+				has_political_power > 49
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAC_Decision_AAA_Fabricate_Legal_Documents_cost_tt
+		days_remove = 30
+		days_re_enable = 30
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAC_AAA_Decisions_Visible
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAC_Decision_AAA_Fabricate_Legal_Documents"
+			hidden_effect = { add_political_power = -50 }
+			hidden_effect = { add_to_variable = { Antarctica_Legitimacy = -4 } }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAC_Decision_AAA_Fabricate_Legal_Documents_effect_tt
+			add_to_variable = { Antarctica_GUI_AAC_Diplo_AAA = 8 }
+			add_to_variable = { Antarctica_GUI_AAC_Tensions_AAA = 6 }
+		}
+	}
+	
+	Antarctica_GUI_AAC_Decision_AAJ_Negotiate_Maritime_Zones = {
+		icon = decision_submarines
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Militarization > 2 }
+				has_political_power > 24
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAC_Decision_AAJ_Negotiate_Maritime_Zones_cost_tt
+		days_remove = 30
+		days_re_enable = 15
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAC_AAJ_Decisions_Visible
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAC_Decision_AAJ_Negotiate_Maritime_Zones"
+			hidden_effect = { add_political_power = -25 }
+			hidden_effect = { add_to_variable = { Antarctica_Militarization = -2 } }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAC_Decision_AAJ_Negotiate_Maritime_Zones_effect_tt
+			add_to_variable = { Antarctica_GUI_AAC_Diplo_AAJ = 4 }
+			add_to_variable = { Antarctica_GUI_AAC_Tensions_AAJ = 2 }
+		}
+	}
+	Antarctica_GUI_AAC_Decision_AAJ_Hold_Diplomatic_Discussions = {
+		icon = decision_generic_political_action
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Legitimacy > 1 }
+				has_political_power > 14
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAC_Decision_AAJ_Hold_Diplomatic_Discussions_cost_tt
+		days_remove = 15
+		days_re_enable = 15
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAC_AAJ_Decisions_Visible
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAC_Decision_AAJ_Hold_Diplomatic_Discussions"
+			hidden_effect = { add_political_power = -15 }
+			hidden_effect = { add_to_variable = { Antarctica_Legitimacy = -1 } }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAC_Decision_AAJ_Hold_Diplomatic_Discussions_effect_tt
+			add_to_variable = { Antarctica_GUI_AAC_Diplo_AAJ = 2 }
+			add_to_variable = { Antarctica_GUI_AAC_Tensions_AAJ = -1 }
+		}
+	}
+	Antarctica_GUI_AAC_Decision_AAJ_Fabricate_Legal_Documents = {
+		icon = GFX_decision_generic_break_treaty
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Legitimacy > 6 }
+				has_political_power > 49
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAC_Decision_AAJ_Fabricate_Legal_Documents_cost_tt
+		days_remove = 30
+		days_re_enable = 30
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAC_AAJ_Decisions_Visible
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAC_Decision_AAJ_Fabricate_Legal_Documents"
+			hidden_effect = { add_political_power = -50 }
+			hidden_effect = { add_to_variable = { Antarctica_Legitimacy = -6 } }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAC_Decision_AAJ_Fabricate_Legal_Documents_effect_tt
+			add_to_variable = { Antarctica_GUI_AAC_Diplo_AAJ = 8 }
+			add_to_variable = { Antarctica_GUI_AAC_Tensions_AAJ = 10 }
+		}
+	}
+}
+
+Antarctica_GUI_AAG = {
+	Antarctica_GUI_AAG_Ho_229_Generic_Improve_Small = {
+		icon = GFX_decision_ho_229
+		
+		custom_cost_trigger = {
+			check_variable = { Antarctica_Equipment > 4 }
+		}
+		custom_cost_text = Antarctica_GUI_AAG_Generic_Improve_Small_cost_tt
+		days_remove = 30
+		days_re_enable = 7
+		
+		visible = {
+			is_in_array = {
+				array = Antarctica_GUI_AAG_Research_Array
+				value = 1
+			}
+			NOT = { has_country_flag = Antarctica_GUI_AAG_Research_1_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAG_Ho_229_Generic_Improve_Small"
+			hidden_effect = { add_to_variable = { Antarctica_Equipment = -4 } }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Ho_229_Generic_Improve_Small_effect_tt
+			add_to_variable = { Antarctica_GUI_AAG_Research_Array_Success^0 = 5 }
+			AAG_Clamp_Testing_Variables = yes
+			
+			hidden_effect = {
+				country_event = {
+					id = antarctica_aag_testing.400
+				}
+			}
+		}
+	}
+	Antarctica_GUI_AAG_Ho_229_Generic_Improve_Large = {
+		icon = GFX_decision_ho_229
+		
+		custom_cost_trigger = {
+			check_variable = { Antarctica_Equipment > 8 }
+		}
+		custom_cost_text = Antarctica_GUI_AAG_Generic_Improve_Large_cost_tt
+		days_remove = 60
+		days_re_enable = 7
+		
+		visible = {
+			is_in_array = {
+				array = Antarctica_GUI_AAG_Research_Array
+				value = 1
+			}
+			NOT = { has_country_flag = Antarctica_GUI_AAG_Research_1_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAG_Ho_229_Generic_Improve_Large"
+			hidden_effect = { add_to_variable = { Antarctica_Equipment = -8 } }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Ho_229_Generic_Improve_Large_effect_tt
+			add_to_variable = { Antarctica_GUI_AAG_Research_Array_Success^0 = 12 }
+			AAG_Clamp_Testing_Variables = yes
+			
+			hidden_effect = {
+				country_event = {
+					id = antarctica_aag_testing.401
+				}
+			}
+		}
+	}
+	Antarctica_GUI_AAG_Me_P1110_Generic_Improve_Small = {
+		icon = GFX_decision_me_p1110
+		
+		custom_cost_trigger = {
+			check_variable = { Antarctica_Equipment > 4 }
+		}
+		custom_cost_text = Antarctica_GUI_AAG_Generic_Improve_Small_cost_tt
+		days_remove = 30
+		days_re_enable = 7
+		
+		visible = {
+			is_in_array = {
+				array = Antarctica_GUI_AAG_Research_Array
+				value = 2
+			}
+			NOT = { has_country_flag = Antarctica_GUI_AAG_Research_2_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAG_Me_P1110_Generic_Improve_Small"
+			hidden_effect = { add_to_variable = { Antarctica_Equipment = -4 } }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Me_P1110_Generic_Improve_Small_effect_tt
+			add_to_variable = { Antarctica_GUI_AAG_Research_Array_Success^1 = 5 }
+			AAG_Clamp_Testing_Variables = yes
+			
+			hidden_effect = {
+				country_event = {
+					id = antarctica_aag_testing.410
+				}
+			}
+		}
+	}
+	Antarctica_GUI_AAG_Me_P1110_Generic_Improve_Large = {
+		icon = GFX_decision_me_p1110
+		
+		custom_cost_trigger = {
+			check_variable = { Antarctica_Equipment > 8 }
+		}
+		custom_cost_text = Antarctica_GUI_AAG_Generic_Improve_Large_cost_tt
+		days_remove = 60
+		days_re_enable = 7
+		
+		visible = {
+			is_in_array = {
+				array = Antarctica_GUI_AAG_Research_Array
+				value = 2
+			}
+			NOT = { has_country_flag = Antarctica_GUI_AAG_Research_2_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAG_Me_P1110_Generic_Improve_Large"
+			hidden_effect = { add_to_variable = { Antarctica_Equipment = -8 } }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Me_P1110_Generic_Improve_Large_effect_tt
+			add_to_variable = { Antarctica_GUI_AAG_Research_Array_Success^1 = 12 }
+			AAG_Clamp_Testing_Variables = yes
+			
+			hidden_effect = {
+				country_event = {
+					id = antarctica_aag_testing.411
+				}
+			}
+		}
+	}
+	Antarctica_GUI_AAG_Bo_115_Generic_Improve_Small = {
+		icon = GFX_decision_bo_115
+		
+		custom_cost_trigger = {
+			check_variable = { Antarctica_Equipment > 4 }
+		}
+		custom_cost_text = Antarctica_GUI_AAG_Generic_Improve_Small_cost_tt
+		days_remove = 30
+		days_re_enable = 7
+		
+		visible = {
+			is_in_array = {
+				array = Antarctica_GUI_AAG_Research_Array
+				value = 3
+			}
+			NOT = { has_country_flag = Antarctica_GUI_AAG_Research_3_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAG_Bo_115_Generic_Improve_Small"
+			hidden_effect = { add_to_variable = { Antarctica_Equipment = -4 } }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Bo_115_Generic_Improve_Small_effect_tt
+			add_to_variable = { Antarctica_GUI_AAG_Research_Array_Success^2 = 5 }
+			AAG_Clamp_Testing_Variables = yes
+			
+			hidden_effect = {
+				country_event = {
+					id = antarctica_aag_testing.420
+				}
+			}
+		}
+	}
+	Antarctica_GUI_AAG_Bo_115_Generic_Improve_Large = {
+		icon = GFX_decision_bo_115
+		
+		custom_cost_trigger = {
+			check_variable = { Antarctica_Equipment > 8 }
+		}
+		custom_cost_text = Antarctica_GUI_AAG_Generic_Improve_Large_cost_tt
+		days_remove = 60
+		days_re_enable = 7
+		
+		visible = {
+			is_in_array = {
+				array = Antarctica_GUI_AAG_Research_Array
+				value = 3
+			}
+			NOT = { has_country_flag = Antarctica_GUI_AAG_Research_3_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAG_Bo_115_Generic_Improve_Large"
+			hidden_effect = { add_to_variable = { Antarctica_Equipment = -8 } }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Bo_115_Generic_Improve_Large_effect_tt
+			add_to_variable = { Antarctica_GUI_AAG_Research_Array_Success^2 = 12 }
+			AAG_Clamp_Testing_Variables = yes
+			
+			hidden_effect = {
+				country_event = {
+					id = antarctica_aag_testing.421
+				}
+			}
+		}
+	}
+	Antarctica_GUI_AAG_Ho_18_Generic_Improve_Small = {
+		icon = GFX_decision_ho_18
+		
+		custom_cost_trigger = {
+			check_variable = { Antarctica_Equipment > 4 }
+		}
+		custom_cost_text = Antarctica_GUI_AAG_Generic_Improve_Small_cost_tt
+		days_remove = 30
+		days_re_enable = 7
+		
+		visible = {
+			is_in_array = {
+				array = Antarctica_GUI_AAG_Research_Array
+				value = 4
+			}
+			NOT = { has_country_flag = Antarctica_GUI_AAG_Research_4_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAG_Ho_18_Generic_Improve_Small"
+			hidden_effect = { add_to_variable = { Antarctica_Equipment = -4 } }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Ho_18_Generic_Improve_Small_effect_tt
+			add_to_variable = { Antarctica_GUI_AAG_Research_Array_Success^3 = 5 }
+			AAG_Clamp_Testing_Variables = yes
+			
+			hidden_effect = {
+				country_event = {
+					id = antarctica_aag_testing.430
+				}
+			}
+		}
+	}
+	Antarctica_GUI_AAG_Ho_18_Generic_Improve_Large = {
+		icon = GFX_decision_ho_18
+		
+		custom_cost_trigger = {
+			check_variable = { Antarctica_Equipment > 8 }
+		}
+		custom_cost_text = Antarctica_GUI_AAG_Generic_Improve_Large_cost_tt
+		days_remove = 60
+		days_re_enable = 7
+		
+		visible = {
+			is_in_array = {
+				array = Antarctica_GUI_AAG_Research_Array
+				value = 4
+			}
+			NOT = { has_country_flag = Antarctica_GUI_AAG_Research_4_Completed }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAG_Ho_18_Generic_Improve_Large"
+			hidden_effect = { add_to_variable = { Antarctica_Equipment = -8 } }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Ho_18_Generic_Improve_Large_effect_tt
+			add_to_variable = { Antarctica_GUI_AAG_Research_Array_Success^3 = 12 }
+			AAG_Clamp_Testing_Variables = yes
+			
+			hidden_effect = {
+				country_event = {
+					id = antarctica_aag_testing.431
+				}
+			}
+		}
+	}
+}
+
+Antarctica_GUI_AAG_Survival = {
+	Antarctica_GUI_AAG_Survival_End_Naval_Endeavors = {
+		icon = decision_submarines
+		
+		custom_cost_trigger = {
+			check_variable = { Antarctica_Militarization > 2 }
+			has_political_power > 49
+		}
+		custom_cost_text = Antarctica_GUI_AAG_Survival_End_Naval_Endeavors_cost_tt
+		
+		days_remove = 20
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAG_Survival_Mech_Enabled
+		}
+		
+		available = {
+			NOT = { has_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess }
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Antarctica_GUI_AAG_Survival_End_Naval_Endeavors"
+			set_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess
+			hidden_effect = {
+				add_political_power = -50
+				add_to_variable = { Antarctica_Militarization = -2 }
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Survival_End_Naval_Endeavors_effect_tt
+			clr_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess
+			hidden_effect = {
+				add_to_variable = { Antarctica_GUI_AAG_Survival_Mech_One_Supply_Amount = 250 }
+				set_country_flag = Antarctica_GUI_Sea_Tile_Missions_Disabled
+				Antarctica_AAG_Survival_Check_Supply_Usage = yes
+				
+				country_event = {
+					id = antarctica_aag_survival.100
+				}
+			}
+		}
+	}
+	Antarctica_GUI_AAG_Organize_Security_Force = {
+		icon = decision_generic_military_parade
+		
+		custom_cost_trigger = {
+			has_political_power > 24
+		}
+		custom_cost_text = Antarctica_GUI_AAG_Organize_Security_Force_cost_tt
+		
+		days_remove = 14
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAG_Survival_Mech_Enabled
+		}
+		
+		available = {
+			NOT = { has_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess }
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Antarctica_GUI_AAG_Organize_Security_Force"
+			set_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess
+			hidden_effect = {
+				add_political_power = -25
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Organize_Security_Force_effect_tt
+			clr_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess
+			hidden_effect = {
+				add_to_variable = { Antarctica_Militarization = 2 }
+				
+				country_event = {
+					id = antarctica_aag_survival.190
+					days = 3
+				}
+			}
+		}
+	}
+	Antarctica_GUI_AAG_Survival_Half_Rations = {
+		icon = decision_humanitarian_aid_decrease
+		
+		custom_cost_trigger = {
+			check_variable = { Antarctica_Legitimacy > 2 }
+			has_political_power > 99
+		}
+		custom_cost_text = Antarctica_GUI_AAG_Survival_Half_Rations_cost_tt
+		
+		days_remove = 15
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAG_Survival_Mech_Enabled
+		}
+		
+		available = {
+			NOT = { has_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess }
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Antarctica_GUI_AAG_Survival_Half_Rations"
+			set_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess
+			hidden_effect = {
+				add_political_power = -100
+				add_to_variable = { Antarctica_Legitimacy = -2 }
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Survival_Half_Rations_effect_tt
+			clr_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess
+			hidden_effect = {
+				add_to_variable = { Antarctica_GUI_AAG_Survival_Mech_One_Supply_Amount = 1000 }
+				Antarctica_AAG_Survival_Check_Supply_Usage = yes
+				set_country_flag = Antarctica_GUI_AAG_Survival_On_Half_Rations
+				
+				country_event = {
+					id = antarctica_aag_survival.110
+				}
+			}
+		}
+	}
+	Antarctica_GUI_AAG_Survival_Consolidate_All_Forces = {
+		icon = decision_generic_military_parade
+		
+		custom_cost_trigger = {
+			check_variable = { Antarctica_Legitimacy > 1 }
+			check_variable = { Antarctica_Militarization > 4 }
+		}
+		custom_cost_text = Antarctica_GUI_AAG_Survival_Consolidate_All_Forces_cost_tt
+		
+		days_remove = 30
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAG_Survival_Mech_Enabled
+		}
+		
+		available = {
+			NOT = { has_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess }
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Antarctica_GUI_AAG_Survival_Consolidate_All_Forces"
+			set_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess
+			hidden_effect = {
+				add_to_variable = { Antarctica_Legitimacy = -1 }
+				add_to_variable = { Antarctica_Militarization = -4 }
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Survival_Consolidate_All_Forces_effect_tt
+			clr_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess
+			hidden_effect = {
+				add_to_variable = { Antarctica_GUI_AAG_Survival_Mech_One_Supply_Amount = 500 }
+				Antarctica_AAG_Survival_Check_Supply_Usage = yes
+				set_country_flag = Antarctica_GUI_AAG_Survival_Consolidated_Forces
+				
+				country_event = {
+					id = antarctica_aag_survival.120
+				}
+			}
+		}
+	}
+	Antarctica_GUI_AAG_Survival_Conduct_Patrols = {
+		icon = decision_generic_assault
+		
+		custom_cost_trigger = {
+			has_political_power > 49
+		}
+		custom_cost_text = Antarctica_GUI_AAG_Survival_Conduct_Patrols_cost_tt
+		
+		days_remove = 18
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAG_Survival_Mech_Enabled
+			has_country_flag = Antarctica_GUI_AAG_Survival_On_Half_Rations
+		}
+		
+		available = {
+			NOT = { has_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess }
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Antarctica_GUI_AAG_Survival_Conduct_Patrols"
+			set_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess
+			hidden_effect = {
+				add_political_power = -50
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Survival_Conduct_Patrols_effect_tt
+			clr_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess
+			hidden_effect = {
+				add_to_variable = { Antarctica_Equipment = 1 }
+				
+				country_event = {
+					id = antarctica_aag_survival.200
+				}
+			}
+		}
+	}
+	Antarctica_GUI_AAG_Survival_Conduct_Patrols_Outside = {
+		icon = decision_generic_assault
+		
+		custom_cost_trigger = {
+			has_political_power > 24
+		}
+		custom_cost_text = Antarctica_GUI_AAG_Survival_Conduct_Patrols_Outside_cost_tt
+		
+		days_remove = 30
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAG_Survival_Mech_Enabled
+			has_country_flag = Antarctica_GUI_AAG_Survival_On_Half_Rations
+		}
+		
+		available = {
+			NOT = { has_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess }
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Antarctica_GUI_AAG_Survival_Conduct_Patrols_Outside"
+			set_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess
+			hidden_effect = {
+				add_political_power = -25
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Survival_Conduct_Patrols_Outside_effect_tt
+			clr_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess
+			hidden_effect = {
+				country_event = {
+					id = antarctica_aag_survival.230
+				}
+			}
+		}
+	}
+	Antarctica_GUI_AAG_Survival_Repurpose_Vehicle_Fuel = {
+		icon = decision_black_market_motorized_purchase
+		
+		custom_cost_trigger = {
+			check_variable = { Antarctica_Militarization > 2 }
+			has_political_power > 74
+		}
+		custom_cost_text = Antarctica_GUI_AAG_Survival_Repurpose_Vehicle_Fuel_cost_tt
+		
+		days_remove = 20
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAG_Survival_Mech_Enabled
+			has_country_flag = Antarctica_GUI_AAG_Survival_Consolidated_Forces
+		}
+		
+		available = {
+			NOT = { has_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess }
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Antarctica_GUI_AAG_Survival_Repurpose_Vehicle_Fuel"
+			set_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess
+			hidden_effect = {
+				add_political_power = -75
+				add_to_variable = { Antarctica_Militarization = -2 }
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Survival_Repurpose_Vehicle_Fuel_effect_tt
+			clr_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess
+			hidden_effect = {
+				add_to_variable = { Antarctica_Equipment = 8 }
+				Antarctica_AAG_Survival_Check_Supply_Usage = yes
+				
+				country_event = {
+					id = antarctica_aag_survival.130
+				}
+			}
+		}
+	}
+	Antarctica_GUI_AAG_Survival_End_All_Non_Essential_Missions = {
+		icon = decision_generic_political_action
+		
+		custom_cost_trigger = {
+			check_variable = { Antarctica_Militarization > 5 }
+			check_variable = { Antarctica_Legitimacy > 5 }
+			has_political_power > 149
+		}
+		custom_cost_text = Antarctica_GUI_AAG_Survival_End_All_Non_Essential_Missions_cost_tt
+		
+		days_remove = 30
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAG_Survival_Mech_Enabled
+			has_country_flag = Antarctica_GUI_Sea_Tile_Missions_Disabled
+		}
+		
+		available = {
+			NOT = { has_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess }
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Antarctica_GUI_AAG_Survival_End_All_Non_Essential_Missions"
+			set_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess
+			hidden_effect = {
+				add_political_power = -150
+				add_to_variable = { Antarctica_Militarization = -5 }
+				add_to_variable = { Antarctica_Legitimacy = -5 }
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Survival_End_All_Non_Essential_Missions_effect_tt
+			clr_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess
+			hidden_effect = {
+				add_to_variable = { Antarctica_GUI_AAG_Survival_Mech_One_Supply_Amount = 750 }
+				Antarctica_AAG_Survival_Check_Supply_Usage = yes
+				set_country_flag = Antarctica_GUI_Land_Tile_Missions_Disabled
+				
+				country_event = {
+					id = antarctica_aag_survival.140
+				}
+			}
+		}
+	}
+	Antarctica_GUI_AAG_Survival_Quarter_Rations = {
+		icon = decision_humanitarian_aid_decrease
+		
+		custom_cost_trigger = {
+			check_variable = { Antarctica_Legitimacy > 4 }
+			has_political_power > 124
+		}
+		custom_cost_text = Antarctica_GUI_AAG_Survival_Quarter_Rations_cost_tt
+		
+		days_remove = 15
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAG_Survival_Mech_Enabled
+			has_country_flag = Antarctica_GUI_AAG_Survival_On_Half_Rations
+		}
+		
+		available = {
+			NOT = { has_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess }
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Antarctica_GUI_AAG_Survival_Quarter_Rations"
+			set_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess
+			hidden_effect = {
+				add_political_power = -125
+				add_to_variable = { Antarctica_Legitimacy = -4 }
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Survival_Quarter_Rations_effect_tt
+			clr_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess
+			hidden_effect = {
+				add_to_variable = { Antarctica_GUI_AAG_Survival_Mech_One_Supply_Amount = 2000 }
+				Antarctica_AAG_Survival_Check_Supply_Usage = yes
+				set_country_flag = Antarctica_GUI_AAG_Survival_On_Quarter_Rations
+				
+				country_event = {
+					id = antarctica_aag_survival.150
+				}
+			}
+		}
+	}
+	Antarctica_GUI_AAG_Survival_Starvation_Rations = {
+		icon = decision_humanitarian_aid_decrease
+		
+		custom_cost_trigger = {
+			check_variable = { Antarctica_Legitimacy > 6 }
+			has_political_power > 149
+		}
+		custom_cost_text = Antarctica_GUI_AAG_Survival_Starvation_Rations_cost_tt
+		
+		days_remove = 15
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAG_Survival_Mech_Enabled
+			check_variable = { Antarctica_Equipment < 25 }
+			has_country_flag = Antarctica_Situation_Overview_Emergency_Supply_mission_triggered
+			has_country_flag = Antarctica_GUI_AAG_Survival_On_Quarter_Rations
+		}
+		
+		available = {
+			NOT = { has_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess }
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Antarctica_GUI_AAG_Survival_Starvation_Rations"
+			set_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess
+			hidden_effect = {
+				add_political_power = -150
+				add_to_variable = { Antarctica_Legitimacy = -6 }
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Survival_Starvation_Rations_effect_tt
+			clr_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess
+			hidden_effect = {
+				add_to_variable = { Antarctica_GUI_AAG_Survival_Mech_One_Supply_Amount = 3000 }
+				Antarctica_AAG_Survival_Check_Supply_Usage = yes
+				set_country_flag = Antarctica_GUI_AAG_Survival_On_Starvation_Rations
+				
+				country_event = {
+					id = antarctica_aag_survival.160
+				}
+			}
+		}
+	}
+	Antarctica_GUI_AAG_Survival_Shoot_Local_Wildlife = {
+		icon = decision_generic_assault
+		
+		custom_cost_trigger = {
+			check_variable = { Antarctica_Militarization > 1 }
+			check_variable = { Antarctica_Equipment > 1 }
+		}
+		custom_cost_text = Antarctica_GUI_AAG_Survival_Shoot_Local_Wildlife_cost_tt
+		
+		days_remove = 10
+		days_re_enable = 30
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAG_Survival_Mech_Enabled
+		}
+		
+		available = {
+			NOT = { has_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess }
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Antarctica_GUI_AAG_Survival_Shoot_Local_Wildlife"
+			set_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess
+			hidden_effect = {
+				add_to_variable = { Antarctica_Militarization = -1 }
+				add_to_variable = { Antarctica_Equipment = -1 }
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Survival_Shoot_Local_Wildlife_effect_tt
+			clr_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess
+			hidden_effect = {
+				if = {
+					limit = {
+						check_variable = { Antarctica_GUI_AAG_Survival_Shoot_Local_Wildlife_Counter = 0 }
+					}
+					add_to_variable = { Antarctica_Equipment = 5 }
+					
+					country_event = {
+						id = antarctica_aag_survival.170
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = { Antarctica_GUI_AAG_Survival_Shoot_Local_Wildlife_Counter = 1 }
+					}
+					add_to_variable = { Antarctica_Equipment = 4 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { Antarctica_GUI_AAG_Survival_Shoot_Local_Wildlife_Counter = 2 }
+					}
+					add_to_variable = { Antarctica_Equipment = 3 }
+					
+					country_event = {
+						id = antarctica_aag_survival.171
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = { Antarctica_GUI_AAG_Survival_Shoot_Local_Wildlife_Counter = 3 }
+					}
+					add_to_variable = { Antarctica_Equipment = 2 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { Antarctica_GUI_AAG_Survival_Shoot_Local_Wildlife_Counter = 4 }
+					}
+					add_to_variable = { Antarctica_Equipment = 1 }
+					
+					country_event = {
+						id = antarctica_aag_survival.172
+					}
+				}
+				else = {
+					add_to_variable = { Antarctica_Equipment = 0.5 }
+				}
+				
+				Antarctica_AAG_Survival_Check_Supply_Usage = yes
+				add_to_variable = { Antarctica_GUI_AAG_Survival_Shoot_Local_Wildlife_Counter = 1 }
+			}
+		}
+	}
+	Antarctica_GUI_AAG_Survival_Contact_Foreign_Admin = {
+		icon = decision_generic_phone_call
+		
+		custom_cost_trigger = {
+			has_political_power > 199
+		}
+		custom_cost_text = Antarctica_GUI_AAG_Survival_Contact_Foreign_Admin_cost_tt
+		
+		days_remove = 5
+		fire_only_once = yes
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAG_Survival_Mech_Enabled
+			check_variable = { Antarctica_Equipment < 25 }
+			has_country_flag = Antarctica_Situation_Overview_Emergency_Supply_mission_triggered
+		}
+		
+		available = {
+			NOT = { has_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess }
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Antarctica_GUI_AAG_Survival_Contact_Foreign_Admin"
+			set_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess
+			hidden_effect = {
+				add_political_power = -200
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Survival_Contact_Foreign_Admin_effect_tt
+			clr_country_flag = Antarctica_GUI_AAG_Survival_Decision_In_Progess
+			set_country_flag = Antarctica_GUI_AAG_Survival_Contacted_Foreign_Admin
+			hidden_effect = {
+				country_event = {
+					id = antarctica_aag_gcw.20
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+Antarctica_GUI_AAG_Nuclear = {
+	Antarctica_GUI_AAG_Nuclear_Repurpose_Electronic_Components = {
+		icon = GFX_decision_electronics
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Equipment > 10 }
+				has_political_power > 9
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAG_Nuclear_Repurpose_Electronic_Components_cost_tt
+		
+		cost = 10
+		days_remove = 20
+		days_re_enable = 7
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAG_Nuclear_Mechanic_Enabled
+			check_variable = { Antarctica_GUI_AAG_Nuclear_Electronics < 100 }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Antarctica_GUI_AAG_Nuclear_Repurpose_Electronic_Components"
+			hidden_effect = { add_to_variable = { Antarctica_Equipment = -10 } }
+			hidden_effect = { add_political_power = -10 }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Nuclear_Repurpose_Electronic_Components_effect_tt
+			AAG_Nuclear_Mechanic_Increase_Electronics_5 = yes
+			
+			hidden_effect = {
+				country_event = {
+					id = antarctica_aag_nuclear.10
+				}
+			}
+		}
+	}
+	Antarctica_GUI_AAG_Nuclear_Refurbish_Used_Systems = {
+		icon = GFX_decision_electronics
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Equipment > 10 }
+				check_variable = { Antarctica_Militarization > 5 }
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAG_Nuclear_Refurbish_Used_Systems_cost_tt
+
+		days_remove = 30
+		days_re_enable = 7
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAG_Nuclear_Mechanic_Enabled
+			check_variable = { Antarctica_GUI_AAG_Nuclear_Electronics < 100 }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Antarctica_GUI_AAG_Nuclear_Refurbish_Used_Systems"
+			hidden_effect = { add_to_variable = { Antarctica_Equipment = -10 } }
+			hidden_effect = { add_to_variable = { Antarctica_Militarization = -5 } }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Nuclear_Refurbish_Used_Systems_effect_tt
+			AAG_Nuclear_Mechanic_Increase_Electronics_5 = yes
+			
+			hidden_effect = {
+				country_event = {
+					id = antarctica_aag_nuclear.20
+				}
+			}
+		}
+	}
+	Antarctica_GUI_AAG_Nuclear_Request_Electronics_Shipment = {
+		icon = GFX_decision_electronics
+		
+		cost = 20
+		days_remove = 40
+		days_re_enable = 14
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAG_Nuclear_Mechanic_Enabled
+			check_variable = { Antarctica_GUI_AAG_Nuclear_Electronics < 100 }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Antarctica_GUI_AAG_Nuclear_Request_Electronics_Shipment"
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Nuclear_Request_Electronics_Shipment_effect_tt
+			AAG_Nuclear_Mechanic_Increase_Electronics_10 = yes
+			
+			hidden_effect = {
+				country_event = {
+					id = antarctica_aag_nuclear.30
+				}
+			}
+		}
+	}
+	Antarctica_GUI_AAG_Nuclear_Prepare_Testing_Zone = {
+		icon = GFX_decision_nuclear_bomb_delivery
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Militarization > 5 }
+				check_variable = { Antarctica_Legitimacy > 5 }
+				has_political_power > 9
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAG_Nuclear_Prepare_Testing_Zone_cost_tt
+		
+		days_remove = 30
+		days_re_enable = 7
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAG_Nuclear_Mechanic_Stage_2
+			check_variable = { Antarctica_GUI_AAG_Nuclear_Delivery < 100 }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Antarctica_GUI_AAG_Nuclear_Prepare_Testing_Zone"
+			hidden_effect = { add_to_variable = { Antarctica_Militarization = -5 } }
+			hidden_effect = { add_to_variable = { Antarctica_Legitimacy = -5 } }
+			hidden_effect = { add_political_power = -10 }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Nuclear_Prepare_Testing_Zone_effect_tt
+			AAG_Nuclear_Mechanic_Increase_Delivery_5 = yes
+			
+			hidden_effect = {
+				country_event = {
+					id = antarctica_aag_nuclear.40
+				}
+			}
+		}
+	}
+	Antarctica_GUI_AAG_Nuclear_Prepare_Primary_Systems = {
+		icon = GFX_decision_nuclear_bomb_delivery
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Militarization > 10 }
+				has_political_power > 9
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAG_Nuclear_Prepare_Primary_Systems_cost_tt
+		
+		days_remove = 30
+		days_re_enable = 14
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAG_Nuclear_Mechanic_Stage_2
+			check_variable = { Antarctica_GUI_AAG_Nuclear_Delivery < 100 }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Antarctica_GUI_AAG_Nuclear_Prepare_Primary_Systems"
+			hidden_effect = { add_to_variable = { Antarctica_Militarization = -10 } }
+			hidden_effect = { add_political_power = -10 }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Nuclear_Prepare_Primary_Systems_effect_tt
+			AAG_Nuclear_Mechanic_Increase_Delivery_5 = yes
+			
+			hidden_effect = {
+				country_event = {
+					id = antarctica_aag_nuclear.50
+				}
+			}
+		}
+	}
+	Antarctica_GUI_AAG_Nuclear_Requisition_Delivery_System = {
+		icon = GFX_decision_nuclear_bomb_delivery
+		
+		cost = 30
+		days_remove = 40
+		days_re_enable = 21
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAG_Nuclear_Mechanic_Stage_2
+			check_variable = { Antarctica_GUI_AAG_Nuclear_Delivery < 100 }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Antarctica_GUI_AAG_Nuclear_Requisition_Delivery_System"
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Nuclear_Requisition_Delivery_System_effect_tt
+			AAG_Nuclear_Mechanic_Increase_Delivery_10 = yes
+			
+			hidden_effect = {
+				country_event = {
+					id = antarctica_aag_nuclear.60
+				}
+			}
+		}
+	}
+	Antarctica_GUI_AAG_Nuclear_Request_Fissible_Material_Small = {
+		icon = GFX_decision_nuclear_radiation
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Militarization > 5 }
+				command_power > 9
+				has_political_power > 9
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAG_Nuclear_Request_Fissible_Material_Small_cost_tt
+		
+		days_remove = 30
+		days_re_enable = 14
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAG_Nuclear_Mechanic_Stage_3
+			check_variable = { Antarctica_GUI_AAG_Nuclear_Material < 100 }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Antarctica_GUI_AAG_Nuclear_Request_Fissible_Material_Small"
+			hidden_effect = { add_to_variable = { Antarctica_Militarization = -5 } }
+			hidden_effect = { add_command_power = -10 }
+			hidden_effect = { add_political_power = -10 }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Nuclear_Request_Fissible_Material_Small_effect_tt
+			AAG_Nuclear_Mechanic_Increase_Material_5 = yes
+			
+			hidden_effect = {
+				country_event = {
+					id = antarctica_aag_nuclear.70
+				}
+			}
+		}
+	}
+	Antarctica_GUI_AAG_Nuclear_Request_Fissible_Material_Large = {
+		icon = GFX_decision_nuclear_radiation
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Militarization > 10 }
+				command_power > 19
+				has_political_power > 19
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAG_Nuclear_Request_Fissible_Material_Large_cost_tt
+		
+		days_remove = 45
+		days_re_enable = 21
+		
+		visible = {
+			has_country_flag = Antarctica_GUI_AAG_Nuclear_Mechanic_Stage_3
+			check_variable = { Antarctica_GUI_AAG_Nuclear_Material < 100 }
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Antarctica_GUI_AAG_Nuclear_Request_Fissible_Material_Large"
+			hidden_effect = { add_to_variable = { Antarctica_Militarization = -10 } }
+			hidden_effect = { add_command_power = -20 }
+			hidden_effect = { add_political_power = -20 }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Nuclear_Request_Fissible_Material_Large_effect_tt
+			AAG_Nuclear_Mechanic_Increase_Material_10 = yes
+			
+			hidden_effect = {
+				country_event = {
+					id = antarctica_aag_nuclear.80
+				}
+			}
+		}
+	}
+}
+
+Antarctica_GUI_AAJ = {
+	Antarctica_GUI_AAJ_Decision_Offense_Training_Exercises = {
+		icon = decision_generic_assault
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Equipment > 5 }
+				command_power > 19
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAJ_Decision_Offense_Training_Exercises_cost_tt
+		days_remove = 30
+		days_re_enable = 7
+		
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAJ_Decision_Offense_Training_Exercises"
+			hidden_effect = { add_command_power = -20 }
+			hidden_effect = { add_to_variable = { Antarctica_Equipment = -5 } }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAJ_Decision_Offense_Training_Exercises_effect_tt
+			add_to_variable = { Antarctica_GUI_AAJ_Dot_x = 20 }
+			AAJ_update_dyn_mod = yes
+		}
+	}
+	Antarctica_GUI_AAJ_Decision_Air_Assault_Combat_Exercises = {
+		icon = decision_generic_assault
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Equipment > 10 }
+				command_power > 39
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAJ_Decision_Air_Assault_Combat_Exercises_cost_tt
+		days_remove = 30
+		days_re_enable = 21
+		
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAJ_Decision_Air_Assault_Combat_Exercises"
+			hidden_effect = { add_command_power = -40 }
+			hidden_effect = { add_to_variable = { Antarctica_Equipment = -10 } }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAJ_Decision_Air_Assault_Combat_Exercises_effect_tt
+			add_to_variable = { Antarctica_GUI_AAJ_Dot_x = 40 }
+			AAJ_update_dyn_mod = yes
+		}
+	}
+	
+	Antarctica_GUI_AAJ_Decision_Defense_Training_Exercises = {
+		icon = GFX_decision_generic_defend
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Equipment > 5 }
+				command_power > 19
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAJ_Decision_Defense_Training_Exercises_cost_tt
+		days_remove = 30
+		days_re_enable = 7
+		
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAJ_Decision_Defense_Training_Exercises"
+			hidden_effect = { add_command_power = -20 }
+			hidden_effect = { add_to_variable = { Antarctica_Equipment = -5 } }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAJ_Decision_Defense_Training_Exercises_effect_tt
+			add_to_variable = { Antarctica_GUI_AAJ_Dot_x = -20 }
+			AAJ_update_dyn_mod = yes
+		}
+	}
+	Antarctica_GUI_AAJ_Decision_Point_Defense_Tactics_Training = {
+		icon = GFX_decision_generic_defend
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Equipment > 10 }
+				command_power > 39
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAJ_Decision_Point_Defense_Tactics_Training_cost_tt
+		days_remove = 30
+		days_re_enable = 21
+		
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAJ_Decision_Point_Defense_Tactics_Training"
+			hidden_effect = { add_command_power = -40 }
+			hidden_effect = { add_to_variable = { Antarctica_Equipment = -10 } }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAJ_Decision_Point_Defense_Tactics_Training_effect_tt
+			add_to_variable = { Antarctica_GUI_AAJ_Dot_x = -40 }
+			AAJ_update_dyn_mod = yes
+		}
+	}
+	
+	Antarctica_GUI_AAJ_Decision_Maneuver_Training_Exercises = {
+		icon = decision_generic_assault
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Equipment > 5 }
+				command_power > 19
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAJ_Decision_Maneuver_Training_Exercises_cost_tt
+		days_remove = 30
+		days_re_enable = 7
+		
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAJ_Decision_Maneuver_Training_Exercises"
+			hidden_effect = { add_command_power = -20 }
+			hidden_effect = { add_to_variable = { Antarctica_Equipment = -5 } }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAJ_Decision_Maneuver_Training_Exercises_effect_tt
+			add_to_variable = { Antarctica_GUI_AAJ_Dot_y = -20 }
+			AAJ_update_dyn_mod = yes
+		}
+	}
+	Antarctica_GUI_AAJ_Decision_Fast_Rope_Insertion_Training = {
+		icon = decision_generic_assault
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Equipment > 10 }
+				command_power > 39
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAJ_Decision_Fast_Rope_Insertion_Training_cost_tt
+		days_remove = 30
+		days_re_enable = 21
+		
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAJ_Decision_Fast_Rope_Insertion_Training"
+			hidden_effect = { add_command_power = -40 }
+			hidden_effect = { add_to_variable = { Antarctica_Equipment = -10 } }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAJ_Decision_Fast_Rope_Insertion_Training_effect_tt
+			add_to_variable = { Antarctica_GUI_AAJ_Dot_y = -40 }
+			AAJ_update_dyn_mod = yes
+		}
+	}
+	
+	Antarctica_GUI_AAJ_Decision_Endurance_Training_Exercises = {
+		icon = GFX_decision_generic_defend
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Equipment > 5 }
+				command_power > 19
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAJ_Decision_Endurance_Training_Exercises_cost_tt
+		days_remove = 30
+		days_re_enable = 7
+		
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAJ_Decision_Endurance_Training_Exercises"
+			hidden_effect = { add_command_power = -20 }
+			hidden_effect = { add_to_variable = { Antarctica_Equipment = -5 } }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAJ_Decision_Endurance_Training_Exercises_effect_tt
+			add_to_variable = { Antarctica_GUI_AAJ_Dot_y = 20 }
+			AAJ_update_dyn_mod = yes
+		}
+	}
+	Antarctica_GUI_AAJ_Decision_Cold_Weather_Survival_Training = {
+		icon = GFX_decision_generic_defend
+		
+		custom_cost_trigger = {
+			AND = {
+				check_variable = { Antarctica_Equipment > 10 }
+				command_power > 39
+			}
+		}
+		custom_cost_text = Antarctica_GUI_AAJ_Decision_Cold_Weather_Survival_Training_cost_tt
+		days_remove = 30
+		days_re_enable = 21
+		
+		visible = {
+			always = yes
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: decision Antarctica_GUI_AAJ_Decision_Cold_Weather_Survival_Training"
+			hidden_effect = { add_command_power = -40 }
+			hidden_effect = { add_to_variable = { Antarctica_Equipment = -10 } }
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAJ_Decision_Cold_Weather_Survival_Training_effect_tt
+			add_to_variable = { Antarctica_GUI_AAJ_Dot_y = 40 }
+			AAJ_update_dyn_mod = yes
+		}
+	}
+}

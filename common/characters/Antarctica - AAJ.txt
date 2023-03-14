@@ -1,0 +1,133 @@
+characters = {
+	AAJ_Hayao_Kinugasa = {
+		name = AAJ_Hayao_Kinugasa
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Antarctica/Portrait_AAJ_Hayao_Kinugasa.dds"
+				small = "gfx/interface/ideas/AAJ/AAJ_Hayao_Kinugasa.dds"
+			}
+			army = {
+				large = "gfx/leaders/Antarctica/Portrait_AAJ_Hayao_Kinugasa.dds"
+				small = "gfx/interface/ideas/AAJ/AAJ_Hayao_Kinugasa.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism_antarctic_administration_subtype
+			expire = "1999.1.1"
+			desc = POLITICS_HAYAO_KINUGASA_DESC
+			traits = {
+				despotism
+				Antarctic_General
+			}
+			id = -1
+		}
+	}
+	AAJ_Michio_Sugahara = {
+		name = AAJ_Michio_Sugahara
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAJ/AAJ_HoG_Michio_Sugahara_large.dds"
+				small = "gfx/interface/ideas/AAJ/AAJ_HoG_Michio_Sugahara.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAJ/AAJ_HoG_Michio_Sugahara_large.dds"
+				small = "gfx/interface/ideas/AAJ/AAJ_HoG_Michio_Sugahara.dds"
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = AAJ_Michio_Sugahara_dep
+			allowed = { original_tag = AAJ }
+			traits = {
+				head_of_government
+				despotism
+				hog_old_general
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAJ_Takeso_Shimoda = {
+		name = AAJ_Takeso_Shimoda
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAJ/AAJ_ForMin_Takeso_Shimoda_large.dds"
+				small = "gfx/interface/ideas/AAJ/AAJ_ForMin_Takeso_Shimoda.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAJ/AAJ_ForMin_Takeso_Shimoda_large.dds"
+				small = "gfx/interface/ideas/AAJ/AAJ_ForMin_Takeso_Shimoda.dds"
+			}
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = AAJ_Takeso_Shimoda_pol
+			allowed = { original_tag = AAJ }
+			traits = {
+				foreign_minister
+				paternalism
+				for_seasoned_ambassador
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAJ_Koichiro_Asakai = {
+		name = AAJ_Koichiro_Asakai
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAJ/AAJ_EconMin_Koichiro_Asakai_large.dds"
+				small = "gfx/interface/ideas/AAJ/AAJ_EconMin_Koichiro_Asakai.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAJ/AAJ_EconMin_Koichiro_Asakai_large.dds"
+				small = "gfx/interface/ideas/AAJ/AAJ_EconMin_Koichiro_Asakai.dds"
+			}
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = AAJ_Koichiro_Asakai_eco
+			allowed = { original_tag = AAJ }
+			traits = {
+				economy_minister
+				paternalism
+				for_well_connected
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAJ_Koichi_Ono = {
+		name = AAJ_Koichi_Ono
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAJ/AAJ_SecMin_Koichi_Ono_large.dds"
+				small = "gfx/interface/ideas/AAJ/AAJ_SecMin_Koichi_Ono.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAJ/AAJ_SecMin_Koichi_Ono_large.dds"
+				small = "gfx/interface/ideas/AAJ/AAJ_SecMin_Koichi_Ono.dds"
+			}
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = AAJ_Koichi_Ono_sec
+			allowed = { original_tag = AAJ }
+			traits = {
+				security_minister
+				fascism
+				sec_secret_police_chief
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+}

@@ -1,0 +1,19 @@
+state={
+	id=2009
+	name="STATE_2009"
+	provinces={
+		16592 16642 16596 16635
+	}
+	manpower = 1
+
+	state_category = wasteland
+
+	history = {
+		owner = AAO
+		add_core_of = AAO
+		buildings = {
+			infrastructure = 0
+		}
+	}
+
+}

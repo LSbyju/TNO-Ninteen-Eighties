@@ -2927,6 +2927,35 @@ guiTypes = {
 			position = { x = 4 y = -24 }
 		}
 	}
+	
+	containerWindowType = {
+		name = "economy_view_Antarctica"
+		position = { x = 0 y = 28 }
+		size = { width = 830 height = -1 }
+		clipping = no
+		
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window_thin_border2_hollow"
+		}
+		
+		iconType = {
+			name = "Antarctica_econ_window_overlay"
+			spriteType = "GFX_frozen_economy_screen"
+			position = { x = 4 y = -25 }
+			pdx_tooltip = Antarctica_econ_window_overlay_tt
+		}
+
+		buttonType = {
+			name = "Antarctica_economy_close_button"
+			position = { x = 796 y = -21 }
+			quadTextureSprite = "GFX_closebutton_small"
+			buttonFont = "Main_14_black"
+			#shortcut = "ESCAPE"
+			clicksound = click_close
+			position = { x = 4 y = -24 }
+		}
+	}
 }
 
 # # Econ Macro Menu - Line Graphs

@@ -1,0 +1,62 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Antarctica_GUI_AAA_Horizontal_Bar"
+		textureFile = "gfx/interface/Antarctica_GUI_AAA/Antarctica_Decision_GUI_AAA_Horizontal_Bar.dds"
+	}
+	progressbartype = {
+		name = "GFX_Antarctica_GUI_AAA_Progressbar_Secrecy"
+		textureFile1 = "gfx/interface/Antarctica_GUI_AAA/Antarctica_Decision_GUI_AAA_Progressbar_Bar.dds"
+		textureFile2 = "gfx/interface/Antarctica_GUI_AAA/Antarctica_Decision_GUI_AAA_Progressbar_Frame.dds"
+		size = { x = 452 y = 31 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	spriteType = {
+		name = "GFX_Antarctica_GUI_AAA_Plus_Button"
+		textureFile = "gfx/interface/Antarctica_GUI_AAA/Antarctica_Decision_GUI_AAA_Plus_Button.dds"
+	}
+	spriteType = {
+		name = "GFX_Antarctica_GUI_AAA_Minus_Button"
+		textureFile = "gfx/interface/Antarctica_GUI_AAA/Antarctica_Decision_GUI_AAA_Minus_Button.dds"
+	}
+	spriteType = {
+		name = "GFX_Antarctica_GUI_AAA_Tech_Icon"
+		textureFile = "gfx/interface/Antarctica_GUI_AAA/Antarctica_Decision_GUI_AAA_Tech_Icon.dds"
+	}
+	spriteType = {
+		name = "GFX_Antarctica_GUI_AAA_Standard_Button"
+		textureFile = "gfx/interface/Antarctica_GUI_AAA/Antarctica_Decision_GUI_AAA_Standard_Button.dds"
+	}
+	spriteType = {
+		name = "GFX_Antarctica_GUI_AAA_Standard_Button_Blue"
+		textureFile = "gfx/interface/Antarctica_GUI_AAA/Antarctica_Decision_GUI_AAA_Standard_Button_Blue.dds"
+	}
+	spriteType = {
+		name = "GFX_Antarctica_GUI_AAA_Large_Button"
+		textureFile = "gfx/interface/Antarctica_GUI_AAA/Antarctica_Decision_GUI_AAA_Large_Button.dds"
+	}
+	
+	progressbartype = {
+		name = "GFX_Antarctica_Decision_GUI_Bar_E_Base"
+		textureFile1 = "gfx/interface/Antarctica_GUI/Antarctica_Decision_GUI_Bar_E_Full.dds"
+		textureFile2 = "gfx/interface/Antarctica_GUI/Antarctica_Decision_GUI_Bar_Empty.dds"
+		size = { x = 452 y = 31 }
+		effectFile = "gfx/FX/progress.lua"
+		steps = 60
+	}
+	progressbartype = {
+		name = "GFX_Antarctica_Decision_GUI_Bar_E_SubBase"
+		textureFile1 = "gfx/interface/Antarctica_GUI/Antarctica_Decision_GUI_Bar_E_Full.dds"
+		textureFile2 = "gfx/interface/Antarctica_GUI/Antarctica_Decision_GUI_Bar_Empty.dds"
+		size = { x = 452 y = 31 }
+		effectFile = "gfx/FX/progress.lua"
+		steps = 40
+	}
+	progressbartype = {
+		name = "GFX_Antarctica_Decision_GUI_Bar_E_Patrol"
+		textureFile1 = "gfx/interface/Antarctica_GUI/Antarctica_Decision_GUI_Bar_E_Full.dds"
+		textureFile2 = "gfx/interface/Antarctica_GUI/Antarctica_Decision_GUI_Bar_Empty.dds"
+		size = { x = 452 y = 31 }
+		effectFile = "gfx/FX/progress.lua"
+		steps = 15
+	}
+}

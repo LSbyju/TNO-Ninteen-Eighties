@@ -1,0 +1,23 @@
+state={
+	id=1966
+	name="STATE_1966" # Little America
+	manpower = 20
+	
+	state_category = wasteland
+
+	history={
+		owner = AAO
+		add_core_of = AAO
+		victory_points = { 16549 1 }
+		buildings = {
+			infrastructure = 2
+			16549 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		16549
+	}
+}

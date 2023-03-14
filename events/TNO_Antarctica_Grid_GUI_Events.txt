@@ -1,0 +1,2224 @@
+add_namespace = antarctica_grid_event_debug
+add_namespace = antarctica_grid_event_aag
+add_namespace = antarctica_grid_event_aao
+
+country_event = { #
+	id = antarctica_grid_event_debug.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_debug.1" }
+	title = "Something broke"
+	desc = "This mission's event is broken somehow. Also you're New Swabia [?broken_event_finder] [?Antarctica_GUI_event_variable]"
+	picture = GFX_report_event_raborn_laughing
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = "Ok"
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_debug.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_debug.2" }
+	title = "Something broke"
+	desc = "You're not in Antarctica"
+	picture = GFX_report_event_raborn_laughing
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = "Ok"
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_debug.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_debug.3" }
+	title = "Something broke"
+	desc = "This territory doesn't have content yet. That means no loc for grid events"
+	picture = GFX_report_event_raborn_laughing
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = "Ok"
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.1" }
+	title = antarctica_grid_event_aag.1.t
+	desc = antarctica_grid_event_aag.1.desc
+	picture = GFX_report_event_antarctica_german_trucks
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.1.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.2" }
+	title = antarctica_grid_event_aag.2.t
+	desc = antarctica_grid_event_aag.2.desc
+	picture = GFX_report_event_german_jet_plane_me_262
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.2.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.3" }
+	title = antarctica_grid_event_aag.3.t
+	desc = antarctica_grid_event_aag.3.desc
+	picture = GFX_report_event_antarctica_german_soldiers_base
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.3.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.4" }
+	title = antarctica_grid_event_aag.4.t
+	desc = antarctica_grid_event_aag.4.desc
+	picture = GFX_report_event_antarctica_german_helicopter
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.4.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.5" }
+	title = antarctica_grid_event_aag.5.t
+	desc = antarctica_grid_event_aag.5.desc
+	picture = GFX_report_event_antarctica_german_trucks
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.5.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.6" }
+	title = antarctica_grid_event_aag.6.t
+	desc = antarctica_grid_event_aag.6.desc
+	picture = GFX_report_event_antarctica_tracked_vehicle
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.6.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.7" }
+	title = antarctica_grid_event_aag.7.t
+	desc = antarctica_grid_event_aag.7.desc
+	picture = GFX_report_event_antarctica_german_soldiers_trench
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.7.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.8" }
+	title = antarctica_grid_event_aag.8.t
+	desc = antarctica_grid_event_aag.8.desc
+	picture = GFX_report_event_antarctica_german_soldiers_stg
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.8.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.9" }
+	title = antarctica_grid_event_aag.9.t
+	desc = antarctica_grid_event_aag.9.desc
+	picture = GFX_report_event_antarctica_german_soldiers
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.9.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.10" }
+	title = antarctica_grid_event_aag.10.t
+	desc = antarctica_grid_event_aag.10.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.10.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.11" }
+	title = antarctica_grid_event_aag.11.t
+	desc = antarctica_grid_event_aag.11.desc
+	picture = GFX_report_event_antarctica_office
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.11.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.12" }
+	title = antarctica_grid_event_aag.12.t
+	desc = antarctica_grid_event_aag.12.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.12.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.13" }
+	title = antarctica_grid_event_aag.13.t
+	desc = antarctica_grid_event_aag.13.desc
+	picture = GFX_report_event_antarctic_survey_camera
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.13.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.14" }
+	title = antarctica_grid_event_aag.14.t
+	desc = antarctica_grid_event_aag.14.desc
+	picture = GFX_report_event_antarctica_german_soldiers_mg_2
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.14.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.15" }
+	title = antarctica_grid_event_aag.15.t
+	desc = antarctica_grid_event_aag.15.desc
+	picture = GFX_report_event_ernst_herrmann
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.15.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.16" }
+	title = antarctica_grid_event_aag.16.t
+	desc = antarctica_grid_event_aag.16.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.16.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.17" }
+	title = antarctica_grid_event_aag.17.t
+	desc = antarctica_grid_event_aag.17.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.17.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.18" }
+	title = antarctica_grid_event_aag.18.t
+	desc = antarctica_grid_event_aag.18.desc
+	picture = GFX_report_event_antarctica_coast_storm
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.18.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.19
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.19" }
+	title = antarctica_grid_event_aag.19.t
+	desc = antarctica_grid_event_aag.19.desc
+	picture = GFX_report_event_antarctica_hangar
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.19.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.20" }
+	title = antarctica_grid_event_aag.20.t
+	desc = antarctica_grid_event_aag.20.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.20.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.21" }
+	title = antarctica_grid_event_aag.21.t
+	desc = antarctica_grid_event_aag.21.desc
+	picture = GFX_report_event_glacier_moulin
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.21.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.22
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.22" }
+	title = antarctica_grid_event_aag.22.t
+	desc = antarctica_grid_event_aag.22.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.22.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.23
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.23" }
+	title = antarctica_grid_event_aag.23.t
+	desc = antarctica_grid_event_aag.23.desc
+	picture = GFX_report_event_german_rations_crate
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.23.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.24
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.24" }
+	title = antarctica_grid_event_aag.24.t
+	desc = antarctica_grid_event_aag.24.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.24.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.25
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.25" }
+	title = antarctica_grid_event_aag.25.t
+	desc = antarctica_grid_event_aag.25.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.25.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.26
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.26" }
+	title = antarctica_grid_event_aag.26.t
+	desc = antarctica_grid_event_aag.26.desc
+	picture = GFX_report_event_nazi_flag_explorers
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.26.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.27
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.27" }
+	title = antarctica_grid_event_aag.27.t
+	desc = antarctica_grid_event_aag.27.desc
+	picture = GFX_report_event_paperwork_pile
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.27.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.28
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.28" }
+	title = antarctica_grid_event_aag.28.t
+	desc = antarctica_grid_event_aag.28.desc
+	picture = GFX_report_event_antarctica_german_soldiers_base
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.28.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.29
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.29" }
+	title = antarctica_grid_event_aag.29.t
+	desc = antarctica_grid_event_aag.29.desc
+	picture = GFX_GFX_report_event_antarctica_working_crew_2
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.29.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.30
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.30" }
+	title = antarctica_grid_event_aag.30.t
+	desc = antarctica_grid_event_aag.30.desc
+	picture = GFX_report_event_antarctica_outpost_tunnel
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.30.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.31" }
+	title = antarctica_grid_event_aag.31.t
+	desc = antarctica_grid_event_aag.31.desc
+	picture = GFX_report_event_antarctica_bar
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.31.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.32
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.32" }
+	title = antarctica_grid_event_aag.32.t
+	desc = antarctica_grid_event_aag.32.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.32.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.33
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.33" }
+	title = antarctica_grid_event_aag.33.t
+	desc = antarctica_grid_event_aag.33.desc
+	picture = GFX_report_event_paperwork_pile
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.33.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.34
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.34" }
+	title = antarctica_grid_event_aag.34.t
+	desc = antarctica_grid_event_aag.34.desc
+	picture = GFX_report_event_new_swabia_map
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.34.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.35
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.35" }
+	title = antarctica_grid_event_aag.35.t
+	desc = antarctica_grid_event_aag.35.desc
+	picture = GFX_report_event_antarctica_large_naval_vessels
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.35.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.36
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.36" }
+	title = antarctica_grid_event_aag.36.t
+	desc = antarctica_grid_event_aag.36.desc
+	picture = GFX_report_event_rudolf_mayr
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.36.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.37
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.37" }
+	title = antarctica_grid_event_aag.37.t
+	desc = antarctica_grid_event_aag.37.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.37.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.38
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.38" }
+	title = antarctica_grid_event_aag.38.t
+	desc = antarctica_grid_event_aag.38.desc
+	#picture = GFX_report_event_tape_recorder
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.38.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.39
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.39" }
+	title = antarctica_grid_event_aag.39.t
+	desc = antarctica_grid_event_aag.39.desc
+	picture = GFX_report_event_antarctica_schirmacher_station
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.39.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.40
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.40" }
+	title = antarctica_grid_event_aag.40.t
+	desc = antarctica_grid_event_aag.40.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.40.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.41
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.41" }
+	title = antarctica_grid_event_aag.41.t
+	desc = antarctica_grid_event_aag.41.desc
+	picture = GFX_report_event_antarctica_german_soldiers_mg_1
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.41.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.42
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.42" }
+	title = antarctica_grid_event_aag.42.t
+	desc = antarctica_grid_event_aag.42.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.42.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.43
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.43" }
+	title = antarctica_grid_event_aag.43.t
+	desc = antarctica_grid_event_aag.43.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.43.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.44
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.44" }
+	title = antarctica_grid_event_aag.44.t
+	desc = antarctica_grid_event_aag.44.desc
+	picture = GFX_report_event_antarctica_map_2
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.44.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.45
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.45" }
+	title = antarctica_grid_event_aag.45.t
+	desc = antarctica_grid_event_aag.45.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.45.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.46
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.46" }
+	title = antarctica_grid_event_aag.46.t
+	desc = antarctica_grid_event_aag.46.desc
+	picture = GFX_report_event_german_rations_crate
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.46.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.47
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.47" }
+	title = antarctica_grid_event_aag.47.t
+	desc = antarctica_grid_event_aag.47.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.47.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.48
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.48" }
+	title = antarctica_grid_event_aag.48.t
+	desc = antarctica_grid_event_aag.48.desc
+	picture = GFX_report_event_antarctica_office
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.48.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.49
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.49" }
+	title = antarctica_grid_event_aag.49.t
+	desc = antarctica_grid_event_aag.49.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.49.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.50
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.50" }
+	title = antarctica_grid_event_aag.50.t
+	desc = antarctica_grid_event_aag.50.desc
+	picture = GFX_report_event_written_notes
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.50.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.51
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.51" }
+	title = antarctica_grid_event_aag.51.t
+	desc = antarctica_grid_event_aag.51.desc
+	picture = GFX_report_event_antarctica_naval_patrol_sub
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.51.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.52
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.52" }
+	title = antarctica_grid_event_aag.52.t
+	desc = antarctica_grid_event_aag.52.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.52.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.53
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.53" }
+	title = antarctica_grid_event_aag.53.t
+	desc = antarctica_grid_event_aag.53.desc
+	picture = GFX_report_event_antarctica_naval_buoy
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.53.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.54
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.54" }
+	title = antarctica_grid_event_aag.54.t
+	desc = antarctica_grid_event_aag.54.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.54.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.55
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.55" }
+	title = antarctica_grid_event_aag.55.t
+	desc = antarctica_grid_event_aag.55.desc
+	picture = GFX_report_event_antarctica_german_subarmine_ice
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.55.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.56
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.56" }
+	title = antarctica_grid_event_aag.56.t
+	desc = antarctica_grid_event_aag.56.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.56.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.57
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.57" }
+	title = antarctica_grid_event_aag.57.t
+	desc = antarctica_grid_event_aag.57.desc
+	picture = GFX_report_event_german_antarctic_crew
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.57.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.58
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.58" }
+	title = antarctica_grid_event_aag.58.t
+	desc = antarctica_grid_event_aag.58.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.58.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.59
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.59" }
+	title = antarctica_grid_event_aag.59.t
+	desc = antarctica_grid_event_aag.59.desc
+	picture = GFX_report_event_office_door
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.59.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.60
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.60" }
+	title = antarctica_grid_event_aag.60.t
+	desc = antarctica_grid_event_aag.60.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.60.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.61
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.61" }
+	title = antarctica_grid_event_aag.61.t
+	desc = antarctica_grid_event_aag.61.desc
+	picture = GFX_report_event_antarctica_naval_patrol_sub
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.61.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.62
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.62" }
+	title = antarctica_grid_event_aag.62.t
+	desc = antarctica_grid_event_aag.62.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.62.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.63
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.63" }
+	title = antarctica_grid_event_aag.63.t
+	desc = antarctica_grid_event_aag.63.desc
+	picture = GFX_report_event_antarctica_naval_buoy
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.63.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aag.64
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aag.64" }
+	title = antarctica_grid_event_aag.64.t
+	desc = antarctica_grid_event_aag.64.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aag.64.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.1" }
+	title = antarctica_grid_event_aao.1.t
+	desc = antarctica_grid_event_aao.1.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.1.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.2" }
+	title = antarctica_grid_event_aao.2.t
+	desc = antarctica_grid_event_aao.2.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.2.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.3" }
+	title = antarctica_grid_event_aao.3.t
+	desc = antarctica_grid_event_aao.3.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.3.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.4" }
+	title = antarctica_grid_event_aao.4.t
+	desc = antarctica_grid_event_aao.4.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.4.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.5" }
+	title = antarctica_grid_event_aao.5.t
+	desc = antarctica_grid_event_aao.5.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.5.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.6" }
+	title = antarctica_grid_event_aao.6.t
+	desc = antarctica_grid_event_aao.6.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.6.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.7" }
+	title = antarctica_grid_event_aao.7.t
+	desc = antarctica_grid_event_aao.7.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.7.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.8" }
+	title = antarctica_grid_event_aao.8.t
+	desc = antarctica_grid_event_aao.8.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.8.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.9" }
+	title = antarctica_grid_event_aao.9.t
+	desc = antarctica_grid_event_aao.9.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.9.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.10" }
+	title = antarctica_grid_event_aao.10.t
+	desc = antarctica_grid_event_aao.10.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.10.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.11" }
+	title = antarctica_grid_event_aao.11.t
+	desc = antarctica_grid_event_aao.11.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.11.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.12" }
+	title = antarctica_grid_event_aao.12.t
+	desc = antarctica_grid_event_aao.12.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.12.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.13" }
+	title = antarctica_grid_event_aao.13.t
+	desc = antarctica_grid_event_aao.13.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.13.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.14" }
+	title = antarctica_grid_event_aao.14.t
+	desc = antarctica_grid_event_aao.14.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.14.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.15" }
+	title = antarctica_grid_event_aao.15.t
+	desc = antarctica_grid_event_aao.15.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.15.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.16" }
+	title = antarctica_grid_event_aao.16.t
+	desc = antarctica_grid_event_aao.16.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.16.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.17" }
+	title = antarctica_grid_event_aao.17.t
+	desc = antarctica_grid_event_aao.17.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.17.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.18" }
+	title = antarctica_grid_event_aao.18.t
+	desc = antarctica_grid_event_aao.18.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.18.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.19
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.19" }
+	title = antarctica_grid_event_aao.19.t
+	desc = antarctica_grid_event_aao.19.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.19.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.20" }
+	title = antarctica_grid_event_aao.20.t
+	desc = antarctica_grid_event_aao.20.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.20.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.21" }
+	title = antarctica_grid_event_aao.21.t
+	desc = antarctica_grid_event_aao.21.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.21.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.22
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.22" }
+	title = antarctica_grid_event_aao.22.t
+	desc = antarctica_grid_event_aao.22.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.22.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.23
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.23" }
+	title = antarctica_grid_event_aao.23.t
+	desc = antarctica_grid_event_aao.23.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.23.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.24
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.24" }
+	title = antarctica_grid_event_aao.24.t
+	desc = antarctica_grid_event_aao.24.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.24.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.25
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.25" }
+	title = antarctica_grid_event_aao.25.t
+	desc = antarctica_grid_event_aao.25.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.25.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.26
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.26" }
+	title = antarctica_grid_event_aao.26.t
+	desc = antarctica_grid_event_aao.26.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.26.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.27
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.27" }
+	title = antarctica_grid_event_aao.27.t
+	desc = antarctica_grid_event_aao.27.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.27.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.28
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.28" }
+	title = antarctica_grid_event_aao.28.t
+	desc = antarctica_grid_event_aao.28.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.28.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.29
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.29" }
+	title = antarctica_grid_event_aao.29.t
+	desc = antarctica_grid_event_aao.29.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.29.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.30
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.30" }
+	title = antarctica_grid_event_aao.30.t
+	desc = antarctica_grid_event_aao.30.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.30.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.31" }
+	title = antarctica_grid_event_aao.31.t
+	desc = antarctica_grid_event_aao.31.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.31.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.32
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.32" }
+	title = antarctica_grid_event_aao.32.t
+	desc = antarctica_grid_event_aao.32.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.32.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.33
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.33" }
+	title = antarctica_grid_event_aao.33.t
+	desc = antarctica_grid_event_aao.33.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.33.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.34
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.34" }
+	title = antarctica_grid_event_aao.34.t
+	desc = antarctica_grid_event_aao.34.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.34.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.35
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.35" }
+	title = antarctica_grid_event_aao.35.t
+	desc = antarctica_grid_event_aao.35.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.35.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.36
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.36" }
+	title = antarctica_grid_event_aao.36.t
+	desc = antarctica_grid_event_aao.36.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.36.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.37
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.37" }
+	title = antarctica_grid_event_aao.37.t
+	desc = antarctica_grid_event_aao.37.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.37.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.38
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.38" }
+	title = antarctica_grid_event_aao.38.t
+	desc = antarctica_grid_event_aao.38.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.38.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.39
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.39" }
+	title = antarctica_grid_event_aao.39.t
+	desc = antarctica_grid_event_aao.39.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.39.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.40
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.40" }
+	title = antarctica_grid_event_aao.40.t
+	desc = antarctica_grid_event_aao.40.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.40.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.41
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.41" }
+	title = antarctica_grid_event_aao.41.t
+	desc = antarctica_grid_event_aao.41.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.41.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.42
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.42" }
+	title = antarctica_grid_event_aao.42.t
+	desc = antarctica_grid_event_aao.42.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.42.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.43
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.43" }
+	title = antarctica_grid_event_aao.43.t
+	desc = antarctica_grid_event_aao.43.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.43.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.44
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.44" }
+	title = antarctica_grid_event_aao.44.t
+	desc = antarctica_grid_event_aao.44.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.44.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.45
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.45" }
+	title = antarctica_grid_event_aao.45.t
+	desc = antarctica_grid_event_aao.45.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.45.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.46
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.46" }
+	title = antarctica_grid_event_aao.46.t
+	desc = antarctica_grid_event_aao.46.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.46.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.47
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.47" }
+	title = antarctica_grid_event_aao.47.t
+	desc = antarctica_grid_event_aao.47.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.47.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.48
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.48" }
+	title = antarctica_grid_event_aao.48.t
+	desc = antarctica_grid_event_aao.48.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.48.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.49
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.49" }
+	title = antarctica_grid_event_aao.49.t
+	desc = antarctica_grid_event_aao.49.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.49.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.50
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.50" }
+	title = antarctica_grid_event_aao.50.t
+	desc = antarctica_grid_event_aao.50.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.50.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.51
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.51" }
+	title = antarctica_grid_event_aao.51.t
+	desc = antarctica_grid_event_aao.51.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.51.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.52
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.52" }
+	title = antarctica_grid_event_aao.52.t
+	desc = antarctica_grid_event_aao.52.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.52.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.53
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.53" }
+	title = antarctica_grid_event_aao.53.t
+	desc = antarctica_grid_event_aao.53.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.53.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.54
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.54" }
+	title = antarctica_grid_event_aao.54.t
+	desc = antarctica_grid_event_aao.54.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.54.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.55
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.55" }
+	title = antarctica_grid_event_aao.55.t
+	desc = antarctica_grid_event_aao.55.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.55.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.56
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.56" }
+	title = antarctica_grid_event_aao.56.t
+	desc = antarctica_grid_event_aao.56.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.56.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.57
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.57" }
+	title = antarctica_grid_event_aao.57.t
+	desc = antarctica_grid_event_aao.57.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.57.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.58
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.58" }
+	title = antarctica_grid_event_aao.58.t
+	desc = antarctica_grid_event_aao.58.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.58.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.59
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.59" }
+	title = antarctica_grid_event_aao.59.t
+	desc = antarctica_grid_event_aao.59.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.59.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.60
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.60" }
+	title = antarctica_grid_event_aao.60.t
+	desc = antarctica_grid_event_aao.60.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.60.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.61
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.61" }
+	title = antarctica_grid_event_aao.61.t
+	desc = antarctica_grid_event_aao.61.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.61.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.62
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.62" }
+	title = antarctica_grid_event_aao.62.t
+	desc = antarctica_grid_event_aao.62.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.62.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.63
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.63" }
+	title = antarctica_grid_event_aao.63.t
+	desc = antarctica_grid_event_aao.63.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.63.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = antarctica_grid_event_aao.64
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_grid_event_aao.64" }
+	title = antarctica_grid_event_aao.64.t
+	desc = antarctica_grid_event_aao.64.desc
+	#picture =
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = antarctica_grid_event_aao.64.a
+		ai_chance = { factor = 1 }
+		
+	}
+}

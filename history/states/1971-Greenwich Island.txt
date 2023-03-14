@@ -1,0 +1,24 @@
+state={
+	id=1971
+	name="STATE_1971" # Greenwich Island
+	manpower = 1
+	
+	state_category = wasteland
+
+	history={
+		owner = AAC
+		add_core_of = AAC
+		victory_points = { 16554 3 }
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+			16554 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		16554
+	}
+}

@@ -1,0 +1,82 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Antarctica_GUI_Foreign_Leader_USA"
+		textureFile = "gfx/interface/Antarctica_GUI_Foreign/AAOLeader.dds"
+	}
+	spriteType = {
+		name = "GFX_Antarctica_GUI_Foreign_Leader_USA2"
+		textureFile = "gfx/interface/Antarctica_GUI_Foreign/AAOLeader2.dds"
+	}
+	spriteType = {
+		name = "GFX_Antarctica_GUI_Foreign_Leader_USA3"
+		textureFile = "gfx/interface/Antarctica_GUI_Foreign/AAOLeader3.dds"
+	}
+	spriteType = {
+		name = "GFX_Antarctica_GUI_Foreign_Leader_GER1"
+		textureFile = "gfx/interface/Antarctica_GUI_Foreign/AAGLeader1.dds"
+	}
+	spriteType = {
+		name = "GFX_Antarctica_GUI_Foreign_Leader_GER2"
+		textureFile = "gfx/interface/Antarctica_GUI_Foreign/AAGLeader2.dds"
+	}
+	spriteType = {
+		name = "GFX_Antarctica_GUI_Foreign_Leader_GER3"
+		textureFile = "gfx/interface/Antarctica_GUI_Foreign/AAGLeader3.dds"
+	}
+	spriteType = {
+		name = "GFX_Antarctica_GUI_Foreign_Leader_GER4"
+		textureFile = "gfx/interface/Antarctica_GUI_Foreign/AAGLeader4.dds"
+	}
+	spriteType = {
+		name = "GFX_Antarctica_GUI_Foreign_Leader_GER5"
+		textureFile = "gfx/interface/Antarctica_GUI_Foreign/AAGLeader5.dds"
+	}
+	spriteType = {
+		name = "GFX_Antarctica_GUI_Foreign_Leader_JAP"
+		textureFile = "gfx/interface/Antarctica_GUI_Foreign/AAJLeader.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Antarctica_GUI_Foreign_Admin_USA"
+		textureFile = "gfx/interface/Antarctica_GUI_Foreign/AAOsymbol.dds"
+	}
+	spriteType = {
+		name = "GFX_Antarctica_GUI_Foreign_Admin_GER"
+		textureFile = "gfx/interface/Antarctica_GUI_Foreign/AAGsymbol.dds"
+	}
+	spriteType = {
+		name = "GFX_Antarctica_GUI_Foreign_Admin_JAP"
+		textureFile = "gfx/interface/Antarctica_GUI_Foreign/AAJsymbol.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Antarctica_GUI_Foreign_Antarctica_Outline"
+		textureFile = "gfx/interface/Antarctica_GUI_Foreign/MapFull.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Antarctica_GUI_Foreign_Antarctica_AAA"
+		textureFile = "gfx/interface/Antarctica_GUI_Foreign/AAASector.dds"
+	}
+	spriteType = {
+		name = "GFX_Antarctica_GUI_Foreign_Antarctica_AAC"
+		textureFile = "gfx/interface/Antarctica_GUI_Foreign/AACSector.dds"
+	}
+	spriteType = {
+		name = "GFX_Antarctica_GUI_Foreign_Antarctica_AAG"
+		textureFile = "gfx/interface/Antarctica_GUI_Foreign/AAGSector.dds"
+	}
+	spriteType = {
+		name = "GFX_Antarctica_GUI_Foreign_Antarctica_AAJ"
+		textureFile = "gfx/interface/Antarctica_GUI_Foreign/AAJSector.dds"
+	}
+	spriteType = {
+		name = "GFX_Antarctica_GUI_Foreign_Antarctica_AAO"
+		textureFile = "gfx/interface/Antarctica_GUI_Foreign/AAOSector.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Antarctica_GUI_Foreign_SliderBorder"
+		textureFile = "gfx/interface/Antarctica_GUI_Foreign/SliderBorder.dds"
+	}
+}

@@ -1,0 +1,406 @@
+music_station = "104.5_McMurdo_FM"
+music = {
+	song = "I Got A Woman"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Crystal Blue Persuasion"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Home Is Where The Hatred Is"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Dreams"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Intermission 1"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Take It Easy (Live)"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "You'll Never Find Another Love Like Mine"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "I Can Make It Better"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Summer Breeze"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Intermission 2"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Summer Madness"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "And The Beat Goes On"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Ladyfingers"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Lake Shore Drive"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Intermission 3"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Everybody Wants To Rule The World"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Reelin' In The Years"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Let's Stay Together"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "The Wreck Of The Edmund Fitzgerald"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Intermission 4 w/ Ride Like The Wind"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Already Gone"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Down Under"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Running On Empty"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "I'll Do My Best"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Intermission 5"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "I Shot The Sherriff"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Syncopated Love"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Tonight"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "The Gambler"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Intermission 6"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "American Remains"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Do It Again"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "West End Girls"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Centerfold"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Carribean Queen"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Let's Groove"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Linus & Lucy"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "North to Alaska"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Hold Tight"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Searching"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "The Glow of Love"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "California Dreamin"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Lazy Nina"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Der Gefrorene Adler"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "Operation Deep Freeze"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 1
+		}
+	}
+}

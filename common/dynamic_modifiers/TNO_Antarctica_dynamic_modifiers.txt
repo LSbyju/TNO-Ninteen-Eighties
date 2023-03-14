@@ -1,0 +1,40 @@
+AAJ_1st_Airborne_Brigade = {
+	icon = "GFX_idea_AAJ_1st_Airborne_Brigade"
+	# All
+	acclimatization_cold_climate_gain_factor = AAJ_1st_Airborne_Brigade_acclimatization_cold_climate_gain_factor
+	winter_attrition_factor = AAJ_1st_Airborne_Brigade_winter_attrition_factor
+	terrain_penalty_reduction = AAJ_1st_Airborne_Brigade_terrain_penalty_reduction
+	
+	# Attack
+	army_attack_factor = AAJ_1st_Airborne_Brigade_army_attack_factor
+	breakthrough_factor = AAJ_1st_Airborne_Brigade_breakthrough_factor
+	army_org_factor = AAJ_1st_Airborne_Brigade_army_org_factor
+	land_night_attack = AAJ_1st_Airborne_Brigade_land_night_attack
+	
+	# Defense
+	army_defence_factor = AAJ_1st_Airborne_Brigade_army_defence_factor
+	dig_in_speed_factor = AAJ_1st_Airborne_Brigade_dig_in_speed_factor
+	max_dig_in_factor = AAJ_1st_Airborne_Brigade_max_dig_in_factor
+	no_supply_grace = AAJ_1st_Airborne_Brigade_no_supply_grace
+	
+	# Maneuver
+	army_speed_factor = AAJ_1st_Airborne_Brigade_army_speed_factor
+	army_morale_factor = AAJ_1st_Airborne_Brigade_army_morale_factor
+	max_planning_factor = AAJ_1st_Airborne_Brigade_max_planning_factor
+	planning_speed = AAJ_1st_Airborne_Brigade_planning_speed
+	supply_consumption_factor = AAJ_1st_Airborne_Brigade_supply_consumption_factor
+	
+	# Endurance
+	army_fuel_consumption_factor = AAJ_1st_Airborne_Brigade_army_fuel_consumption_factor
+	attrition = AAJ_1st_Airborne_Brigade_attrition
+	recon_factor = AAJ_1st_Airborne_Brigade_recon_factor
+	org_loss_when_moving = AAJ_1st_Airborne_Brigade_org_loss_when_moving
+	out_of_supply_factor = AAJ_1st_Airborne_Brigade_out_of_supply_factor
+}
+
+AAO_Gunship_Support = {
+	icon = "GFX_idea_AAO_Gunship_Support"
+	
+	breakthrough_factor = AAO_Gunship_Support_breakthrough_factor
+	initiative_factor = AAO_Gunship_Support_initiative_factor
+}

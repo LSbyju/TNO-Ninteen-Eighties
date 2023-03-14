@@ -1,0 +1,19 @@
+state={
+	id=1978
+	name="STATE_1978" # Signy Island
+	manpower = 1
+	
+	state_category = wasteland
+
+	history={
+		owner = AAA
+		add_core_of = AAA
+		buildings = {
+			infrastructure = 0
+		}
+	}
+
+	provinces={
+		16561
+	}
+}

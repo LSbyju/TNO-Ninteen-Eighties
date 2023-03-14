@@ -56,3 +56,17 @@ technology_sharing_group = {
 		is_in_faction_with = USA
 	}
 }
+
+technology_sharing_group = {
+
+	id = aag_tech_group
+	name = aag_group_name
+	desc = aag_tech_group_desc
+	picture = GFX_idea_AAG_Aircraft_Testing_Site
+	
+	research_sharing_per_country_bonus = 0.1
+
+	available = {
+		is_in_faction_with = AAG
+	}
+}

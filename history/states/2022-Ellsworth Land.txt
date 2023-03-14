@@ -1,0 +1,20 @@
+state={
+	id=2022
+	name="STATE_2022" # Ellsworth Land
+	manpower = 1
+	
+	state_category = wasteland
+	
+	impassable = yes
+
+	history={
+		owner = ZZZ
+		buildings = {
+			infrastructure = 0
+		}
+	}
+
+	provinces={
+		16518 16519
+	}
+}

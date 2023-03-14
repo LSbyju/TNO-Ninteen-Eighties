@@ -1,0 +1,24 @@
+characters = {
+	AAR_Augusto_Rademaker = {
+		name = AAR_Augusto_Rademaker
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Antarctica/Portrait_AAR_Augusto_Rademaker.dds"
+				small = "gfx/interface/ideas/AAR/AAR_Augusto_Rademaker.dds"
+			}
+			army = {
+				large = "gfx/leaders/Antarctica/Portrait_AAR_Augusto_Rademaker.dds"
+				small = "gfx/interface/ideas/AAR/AAR_Augusto_Rademaker.dds"
+			}
+		}
+		country_leader = {
+			ideology = paternalism_antarctic_administration_subtype
+			expire = "1999.1.1"
+			#desc = 
+			traits = {
+				paternalism
+			}
+			id = -1
+		}
+	}
+}

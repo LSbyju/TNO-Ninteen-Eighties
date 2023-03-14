@@ -1,0 +1,271 @@
+Antarctica_GUI_AAG_Germany = {
+	Antarctica_GUI_AAG_Germany_Dispatch_Rescue_Mission = {
+		icon = GFX_decision_ger_reichskommissariats
+
+		custom_cost_text = Antarctica_GUI_AAG_Germany_Dispatch_Rescue_Mission_cost_tt
+		
+		days_remove = 7
+		fire_only_once = yes
+		
+		visible = {
+			NOT = { has_global_flag = Antarctica_Germany_Rescued_NS }
+		}
+		
+		available = {
+			AAG = { exists = yes }
+		}
+		
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 1000
+				AAG = { exists = yes }
+			}
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Antarctica_GUI_AAG_Germany_Dispatch_Rescue_Mission"
+			hidden_effect = {
+				add_to_variable = { money_reserves = -15 }
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Germany_Dispatch_Rescue_Mission_effect_tt
+			AAG = {
+				country_event = {
+					id = antarctica_aag_rescue.10
+					days = 3
+				}
+			}
+		}
+	}
+	Antarctica_GUI_AAG_Germany_Establish_Scientific_Administration = {
+		icon = GFX_decision_ger_reichskommissariats
+
+		custom_cost_text = Antarctica_GUI_AAG_Germany_Establish_Scientific_Administration_cost_tt
+		
+		days_remove = 14
+		
+		visible = {
+			has_global_flag = Antarctica_Germany_Rescued_NS
+			OR = {
+				has_country_leader = { character = GER_albert_speer }
+				has_country_leader = { character = GER_martin_bormann }
+			}
+		}
+		
+		available = {
+			NOT = { has_country_flag = Antarctica_Germany_Chose_NS_Admin }
+		}
+		
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 1000
+				always = yes
+			}
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Antarctica_GUI_AAG_Germany_Establish_Scientific_Administration"
+			hidden_effect = {
+				add_to_variable = { money_reserves = -30 }
+				set_country_flag = Antarctica_Germany_Chose_NS_Admin
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Germany_Establish_Scientific_Administration_effect_tt
+			AAG = {
+				country_event = {
+					id = antarctica_aag_rescue.20
+					days = 4
+				}
+			}
+			set_global_flag = Antarctica_Germany_Returned_to_NS
+		}
+	}
+	Antarctica_GUI_AAG_Germany_Establish_PartyCivilian_Administration = {
+		icon = GFX_decision_ger_reichskommissariats
+		
+		custom_cost_text = Antarctica_GUI_AAG_Germany_Establish_PartyCivilian_Administration_cost_tt
+		
+		days_remove = 14
+		
+		visible = {
+			has_global_flag = Antarctica_Germany_Rescued_NS
+			OR = {
+				has_country_leader = { character = GER_albert_speer }
+				has_country_leader = { character = GER_martin_bormann }
+			}
+		}
+		
+		available = {
+			NOT = { has_country_flag = Antarctica_Germany_Chose_NS_Admin }
+		}
+		
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 1000
+				always = yes
+			}
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Antarctica_GUI_AAG_Germany_Establish_PartyCivilian_Administration"
+			hidden_effect = {
+				add_to_variable = { money_reserves = -30 }
+				set_country_flag = Antarctica_Germany_Chose_NS_Admin
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Germany_Establish_PartyCivilian_Administration_effect_tt
+			AAG = {
+				country_event = {
+					id = antarctica_aag_rescue.40
+					days = 4
+				}
+			}
+			set_global_flag = Antarctica_Germany_Returned_to_NS
+		}
+	}
+	Antarctica_GUI_AAG_Germany_Establish_Military_Administration = {
+		icon = GFX_decision_ger_reichskommissariats
+		
+		custom_cost_text = Antarctica_GUI_AAG_Germany_Establish_Military_Administration_cost_tt
+		
+		days_remove = 14
+		
+		visible = {
+			has_global_flag = Antarctica_Germany_Rescued_NS
+			OR = {
+				has_country_leader = { character = GER_albert_speer }
+				has_country_leader = { character = GER_martin_bormann }
+			}
+		}
+		
+		available = {
+			NOT = { has_country_flag = Antarctica_Germany_Chose_NS_Admin }
+		}
+		
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 1000
+				always = yes
+			}
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Antarctica_GUI_AAG_Germany_Establish_Military_Administration"
+			hidden_effect = {
+				add_to_variable = { money_reserves = -30 }
+				set_country_flag = Antarctica_Germany_Chose_NS_Admin
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Germany_Establish_Military_Administration_effect_tt
+			AAG = {
+				country_event = {
+					id = antarctica_aag_rescue.60
+					days = 4
+				}
+			}
+			set_global_flag = Antarctica_Germany_Returned_to_NS
+		}
+	}
+	Antarctica_GUI_AAG_Germany_Establish_Administration_Goring = {
+		icon = GFX_decision_ger_reichskommissariats
+		
+		custom_cost_text = Antarctica_GUI_AAG_Germany_Establish_Administration_Goring_cost_tt
+		
+		days_remove = 14
+		
+		visible = {
+			has_global_flag = Antarctica_Germany_Rescued_NS
+			has_country_leader = { character = GER_hermann_goring }
+		}
+		
+		available = {
+			NOT = { has_country_flag = Antarctica_Germany_Chose_NS_Admin }
+		}
+		
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 1000
+				always = yes
+			}
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Antarctica_GUI_AAG_Germany_Establish_Administration_Goring"
+			hidden_effect = {
+				add_to_variable = { money_reserves = -30 }
+				set_country_flag = Antarctica_Germany_Chose_NS_Admin
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Germany_Establish_Administration_Goring_effect_tt
+			AAG = {
+				country_event = {
+					id = antarctica_aag_rescue.80
+					days = 2
+				}
+			}
+			set_global_flag = Antarctica_Germany_Returned_to_NS
+		}
+	}
+	Antarctica_GUI_AAG_Germany_Establish_Administration_Heydrich = {
+		icon = GFX_decision_ger_reichskommissariats
+		
+		custom_cost_text = Antarctica_GUI_AAG_Germany_Establish_Administration_Heydrich_cost_tt
+		
+		days_remove = 14
+		
+		visible = {
+			has_global_flag = Antarctica_Germany_Rescued_NS
+			has_country_leader = { character = GER_reinhard_heydrich }
+		}
+		
+		available = {
+			NOT = { has_country_flag = Antarctica_Germany_Chose_NS_Admin }
+		}
+		
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 1000
+				always = yes
+			}
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Antarctica_GUI_AAG_Germany_Establish_Administration_Heydrich"
+			hidden_effect = {
+				add_to_variable = { money_reserves = -30 }
+				set_country_flag = Antarctica_Germany_Chose_NS_Admin
+			}
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = Antarctica_GUI_AAG_Germany_Establish_Administration_Heydrich_effect_tt
+			AAG = {
+				country_event = {
+					id = antarctica_aag_rescue.100
+					days = 7
+				}
+			}
+			set_global_flag = Antarctica_Germany_Returned_to_NS
+		}
+	}
+}
+
+Antarctica_GUI_Foreign = {
+
+}

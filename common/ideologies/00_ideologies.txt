@@ -16,6 +16,7 @@ ideologies = {
 			esoteric_nazism_imperial_cult_subtype = { can_be_randomly_selected = no }
 			esoteric_nazism_agrarian_spartanism_subtype = { can_be_randomly_selected = no }
 			esoteric_nazism_deep_ecology_nazism_subtype = { can_be_randomly_selected = no }
+			esoteric_nazism_antarctic_administration_subtype = { can_be_randomly_selected = no }
 		}
 		dynamic_faction_names = {}
 		color = { 52 25 80 }
@@ -50,6 +51,7 @@ ideologies = {
 			national_socialism_stratocratic_corporatism_subtype = { can_be_randomly_selected = no }
 			national_socialism_spartanism_subtype = { can_be_randomly_selected = no }
 			national_socialism_revolutionary_nazism_subtype = { can_be_randomly_selected = no }
+			national_socialism_antarctic_administration_subtype = { can_be_randomly_selected = no }
 		}
 		dynamic_faction_names = {}
 		color = { 80 50 0 }
@@ -167,6 +169,7 @@ ideologies = {
 			despotism_partisan_movement_subtype = { can_be_randomly_selected = no }
 			despotism_national_catholicism_subtype = { can_be_randomly_selected = no }
 			despotism_managerial_state_subtype = { can_be_randomly_selected = no }
+			despotism_antarctic_administration_subtype = { can_be_randomly_selected = no }
 		}
 		dynamic_faction_names = {}
 		color = { 75 75 75 }
@@ -218,6 +221,7 @@ ideologies = {
 			paternalism_paleoconservatism_subtype = { can_be_randomly_selected = no }
 			paternalism_poujadism_subtype = { can_be_randomly_selected = no }
 			paternalism_authoritarian_developmentalism_subtype = { can_be_randomly_selected = no }
+			paternalism_antarctic_administration_subtype = { can_be_randomly_selected = no }
 
 		}
 		dynamic_faction_names = {}

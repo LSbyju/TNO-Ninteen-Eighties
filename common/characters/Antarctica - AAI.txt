@@ -1,0 +1,24 @@
+characters = {
+	AAI_Giovanni_Torrisi = {
+		name = AAI_Giovanni_Torrisi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Antarctica/Portrait_AAI_Giovanni_Torrisi.dds"
+				small = "gfx/interface/ideas/AAI/AAI_Giovanni_Torrisi.dds"
+			}
+			army = {
+				large = "gfx/leaders/Antarctica/Portrait_AAI_Giovanni_Torrisi.dds"
+				small = "gfx/interface/ideas/AAI/AAI_Giovanni_Torrisi.dds"
+			}
+		}
+		country_leader = {
+			ideology = paternalism_antarctic_administration_subtype
+			expire = "1999.1.1"
+			#desc = 
+			traits = {
+				paternalism
+			}
+			id = -1
+		}
+	}
+}

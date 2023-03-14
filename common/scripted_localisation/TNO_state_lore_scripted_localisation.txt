@@ -1817,6 +1817,43 @@ defined_text = {
 		}
 		localization_key = state_lore_name.301
 	}
+	
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 994 }
+		}
+		localization_key = state_lore_name.994
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 995 }
+		}
+		localization_key = state_lore_name.995
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 996 }
+		}
+		localization_key = state_lore_name.996
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 997 }
+		}
+		localization_key = state_lore_name.997
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 998 }
+		}
+		localization_key = state_lore_name.998
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 999 }
+		}
+		localization_key = state_lore_name.999
+	}
 }
 
 ###################
@@ -3631,6 +3668,43 @@ defined_text = {
 		}
 		localization_key = state_lore_initials.301
 	}
+	
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 994 }
+		}
+		localization_key = state_lore_initials.994
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 995 }
+		}
+		localization_key = state_lore_initials.995
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 996 }
+		}
+		localization_key = state_lore_initials.996
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 997 }
+		}
+		localization_key = state_lore_initials.997
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 998 }
+		}
+		localization_key = state_lore_initials.998
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 999 }
+		}
+		localization_key = state_lore_initials.999
+	}
 }
 
 ######################
@@ -5443,5 +5517,42 @@ defined_text = {
 			check_variable = { selected_lore = 301 }
 		}
 		localization_key = state_lore_desc.301
+	}
+	
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 994 }
+		}
+		localization_key = state_lore_desc.994
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 995 }
+		}
+		localization_key = state_lore_desc.995
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 996 }
+		}
+		localization_key = state_lore_desc.996
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 997 }
+		}
+		localization_key = state_lore_desc.997
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 998 }
+		}
+		localization_key = state_lore_desc.998
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 999 }
+		}
+		localization_key = state_lore_desc.999
 	}
 }

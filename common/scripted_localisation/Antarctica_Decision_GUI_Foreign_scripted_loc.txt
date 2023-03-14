@@ -1,0 +1,458 @@
+defined_text = {
+	name = get_Antarctica_GUI_Foreign_Title
+
+	text = {
+		trigger = {
+			tag = USA
+		}
+		localization_key = Antarctica_GUI_Foreign_USA
+	}
+	text = {
+		trigger = {
+			tag = GER
+		}
+		localization_key = Antarctica_GUI_Foreign_GER
+	}
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = Antarctica_GUI_Foreign_JAP
+	}
+	text = {
+		localization_key = Antarctica_GUI_Foreign_Extra
+	}
+}
+
+defined_text = {
+	name = get_Antarctica_GUI_Foreign_Info_Text
+	
+	text = {
+		localization_key = Antarctica_GUI_Foreign_Extra
+	}
+}
+
+defined_text = {
+	name = get_Antarctica_GUI_Foreign_Leader_Text
+	
+	text = {
+		trigger = {
+			tag = USA
+			AAO = { has_country_leader = { character = AAO_William_Francis_Raborn ruling_only = yes } }
+		}
+		localization_key = Antarctica_GUI_Foreign_Leader_USA
+	}
+	text = {
+		trigger = {
+			tag = USA
+			OR = {
+				AAO = { has_country_leader = { character = AAO_Phillip_Law ruling_only = yes } }
+				AAO = { has_country_leader = { character = AAO_Edmund_Hillary ruling_only = yes } }
+			}
+		}
+		localization_key = Antarctica_GUI_Foreign_Leader_USA3
+	}
+	text = {
+		trigger = {
+			tag = USA
+			AAO = { has_country_leader = { character = AAO_Hyman_Rickover ruling_only = yes } }
+		}
+		localization_key = Antarctica_GUI_Foreign_Leader_USA2
+	}
+	text = {
+		trigger = {
+			tag = GER
+			has_country_leader = { character = GER_albert_speer ruling_only = yes }
+		}
+		localization_key = Antarctica_GUI_Foreign_Leader_GER3
+	}
+	text = {
+		trigger = {
+			tag = GER
+			has_country_leader = { character = GER_martin_bormann ruling_only = yes }
+		}
+		localization_key = Antarctica_GUI_Foreign_Leader_GER4
+	}
+	text = {
+		trigger = {
+			tag = GER
+			has_country_leader = { character = GER_Hermann_Goring ruling_only = yes }
+		}
+		localization_key = Antarctica_GUI_Foreign_Leader_GER5
+	}
+	text = {
+		trigger = {
+			tag = GER
+			GER = { NOT = { has_country_flag = Alfred_Ritscher_Died } }
+		}
+		localization_key = Antarctica_GUI_Foreign_Leader_GER1
+	}
+	text = {
+		trigger = {
+			tag = GER
+			GER = { has_country_flag = Alfred_Ritscher_Died }
+		}
+		localization_key = Antarctica_GUI_Foreign_Leader_GER2
+	}
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = Antarctica_GUI_Foreign_Leader_JAP
+	}
+}
+
+defined_text = {
+	name = get_Antarctica_GUI_Foreign_Leader_Icon_tt
+	
+	text = {
+		trigger = {
+			tag = USA
+			AAO = { has_country_leader = { character = AAO_William_Francis_Raborn ruling_only = yes } }
+		}
+		localization_key = Antarctica_GUI_Foreign_Leader_USA_tt
+	}
+	text = {
+		trigger = {
+			tag = USA
+			OR = {
+				AAO = { has_country_leader = { character = AAO_Phillip_Law ruling_only = yes } }
+				AAO = { has_country_leader = { character = AAO_Edmund_Hillary ruling_only = yes } }
+			}
+		}
+		localization_key = Antarctica_GUI_Foreign_Leader_USA3_tt
+	}
+	text = {
+		trigger = {
+			tag = USA
+			AAO = { has_country_leader = { character = AAO_Hyman_Rickover ruling_only = yes } }
+		}
+		localization_key = Antarctica_GUI_Foreign_Leader_USA2_tt
+	}
+	text = {
+		trigger = {
+			tag = GER
+			has_country_leader = { character = GER_albert_speer ruling_only = yes }
+		}
+		localization_key = Antarctica_GUI_Foreign_Leader_GER3_tt
+	}
+	text = {
+		trigger = {
+			tag = GER
+			has_country_leader = { character = GER_martin_bormann ruling_only = yes }
+		}
+		localization_key = Antarctica_GUI_Foreign_Leader_GER4_tt
+	}
+	text = {
+		trigger = {
+			tag = GER
+			has_country_leader = { character = GER_Hermann_Goring ruling_only = yes }
+		}
+		localization_key = Antarctica_GUI_Foreign_Leader_GER5_tt
+	}
+	text = {
+		trigger = {
+			tag = GER
+			GER = { NOT = { has_country_flag = Alfred_Ritscher_Died } }
+		}
+		localization_key = Antarctica_GUI_Foreign_Leader_GER1_tt
+	}
+	text = {
+		trigger = {
+			tag = GER
+			GER = { has_country_flag = Alfred_Ritscher_Died }
+		}
+		localization_key = Antarctica_GUI_Foreign_Leader_GER2_tt
+	}
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = Antarctica_GUI_Foreign_Leader_JAP_tt
+	}
+}
+
+defined_text = {
+	name = get_Antarctica_GUI_Foreign_Leader_Image
+	
+	text = {
+		trigger = {
+			tag = USA
+			AAO = { has_country_leader = { character = AAO_William_Francis_Raborn ruling_only = yes } }
+		}
+		localization_key = GFX_Antarctica_GUI_Foreign_Leader_USA
+	}
+	text = {
+		trigger = {
+			tag = USA
+			OR = {
+				AAO = { has_country_leader = { character = AAO_Phillip_Law ruling_only = yes } }
+				AAO = { has_country_leader = { character = AAO_Edmund_Hillary ruling_only = yes } }
+			}
+		}
+		localization_key = GFX_Antarctica_GUI_Foreign_Leader_USA3
+	}
+	text = {
+		trigger = {
+			tag = USA
+			AAO = { has_country_leader = { character = AAO_Hyman_Rickover ruling_only = yes } }
+		}
+		localization_key = GFX_Antarctica_GUI_Foreign_Leader_USA2
+	}
+	text = {
+		trigger = {
+			tag = GER
+			has_country_leader = { character = GER_albert_speer ruling_only = yes }
+		}
+		localization_key = GFX_Antarctica_GUI_Foreign_Leader_GER3
+	}
+	text = {
+		trigger = {
+			tag = GER
+			has_country_leader = { character = GER_martin_bormann ruling_only = yes }
+		}
+		localization_key = GFX_Antarctica_GUI_Foreign_Leader_GER4
+	}
+	text = {
+		trigger = {
+			tag = GER
+			has_country_leader = { character = GER_Hermann_Goring ruling_only = yes }
+		}
+		localization_key = GFX_Antarctica_GUI_Foreign_Leader_GER5
+	}
+	text = {
+		trigger = {
+			tag = GER
+			GER = { NOT = { has_country_flag = Alfred_Ritscher_Died } }
+		}
+		localization_key = GFX_Antarctica_GUI_Foreign_Leader_GER1
+	}
+	text = {
+		trigger = {
+			tag = GER
+			GER = { has_country_flag = Alfred_Ritscher_Died }
+		}
+		localization_key = GFX_Antarctica_GUI_Foreign_Leader_GER2
+	}
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = GFX_Antarctica_GUI_Foreign_Leader_JAP
+	}
+}
+
+defined_text = {
+	name = get_Antarctica_GUI_Foreign_Admin_Icon
+	
+	text = {
+		trigger = {
+			tag = USA
+		}
+		localization_key = GFX_Antarctica_GUI_Foreign_Admin_USA
+	}
+	text = {
+		trigger = {
+			tag = GER
+		}
+		localization_key = GFX_Antarctica_GUI_Foreign_Admin_GER
+	}
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = GFX_Antarctica_GUI_Foreign_Admin_JAP
+	}
+}
+
+defined_text = {
+	name = get_Antarctica_GUI_Foreign_Admin_Icon_tt
+	
+	text = {
+		trigger = {
+			tag = USA
+		}
+		localization_key = Antarctica_GUI_Foreign_Admin_Icon_USA_tt
+	}
+	text = {
+		trigger = {
+			tag = GER
+		}
+		localization_key = Antarctica_GUI_Foreign_Admin_Icon_GER_tt
+	}
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = Antarctica_GUI_Foreign_Admin_Icon_JAP_tt
+	}
+}
+
+defined_text = {
+	name = get_Antarctica_GUI_Foreign_Zone_Text
+	
+	text = {
+		trigger = {
+			tag = USA
+		}
+		localization_key = Antarctica_GUI_Foreign_Zone_USA
+	}
+	text = {
+		trigger = {
+			tag = GER
+		}
+		localization_key = Antarctica_GUI_Foreign_Zone_GER
+	}
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = Antarctica_GUI_Foreign_Zone_JAP
+	}
+	text = {
+		trigger = {
+			tag = ARG
+		}
+		localization_key = Antarctica_GUI_Foreign_Zone_ARG
+	}
+	text = {
+		trigger = {
+			tag = CHL
+		}
+		localization_key = Antarctica_GUI_Foreign_Zone_CHL
+	}
+}
+
+defined_text = {
+	name = get_Antarctica_GUI_Foreign_Antarctica_Outline_tt
+	
+	text = {
+		trigger = {
+			tag = USA
+		}
+		localization_key = Antarctica_GUI_Foreign_Zone_USA_tt
+	}
+	text = {
+		trigger = {
+			tag = GER
+		}
+		localization_key = Antarctica_GUI_Foreign_Zone_GER_tt
+	}
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = Antarctica_GUI_Foreign_Zone_JAP_tt
+	}
+}
+
+defined_text = {
+	name = get_Antarctica_Agency_Budget_Spending_Frequency
+	
+	text = {
+		trigger = {
+			check_variable = { Antarctica_Agency_Budget_Spending_Frequency = 1 }
+		}
+		localization_key = Antarctica_Agency_Budget_Spending_Frequency_BiMonthly
+	}
+	text = {
+		trigger = {
+			check_variable = { Antarctica_Agency_Budget_Spending_Frequency = 2 }
+		}
+		localization_key = Antarctica_Agency_Budget_Spending_Frequency_Monthly
+	}
+	text = {
+		trigger = {
+			check_variable = { Antarctica_Agency_Budget_Spending_Frequency = 3 }
+		}
+		localization_key = Antarctica_Agency_Budget_Spending_Frequency_BiWeekly
+	}
+	text = {
+		trigger = {
+			check_variable = { Antarctica_Agency_Budget_Spending_Frequency = 4 }
+		}
+		localization_key = Antarctica_Agency_Budget_Spending_Frequency_Weekly
+	}
+}
+
+defined_text = {
+	name = get_Antarctica_Agency_Supply_to_be_Sent
+	
+	text = {
+		trigger = {
+			set_temp_variable = { Antarctica_Agency_Supply_to_be_Sent = Antarctica_Agency_Budget_Spending_Display }
+			#multiply_temp_variable = { Antarctica_Agency_Supply_to_be_Sent = 2 }
+			clamp_temp_variable = {
+				var = Antarctica_Agency_Supply_to_be_Sent
+				max = 100
+			}
+			round_temp_variable = Antarctica_Agency_Supply_to_be_Sent
+		
+			always = yes
+		}
+		localization_key = Antarctica_Agency_Supply_to_be_Sent_Text
+	}
+}
+
+defined_text = {
+	name = get_Antarctica_Agency_Budget_Extra_Text
+	
+	text = {
+		trigger = {
+			set_temp_variable = { Antarctica_Agency_Supply_to_be_Sent = Antarctica_Agency_Budget_Spending_Display }
+			#multiply_temp_variable = { Antarctica_Agency_Supply_to_be_Sent = 2 }
+			clamp_temp_variable = {
+				var = Antarctica_Agency_Supply_to_be_Sent
+				max = 100
+			}
+			round_temp_variable = Antarctica_Agency_Supply_to_be_Sent
+			
+			set_temp_variable = { Antarctica_Agency_Decay_Reduction = Antarctica_Agency_Budget_Spending_Display }
+			subtract_from_temp_variable = { Antarctica_Agency_Decay_Reduction = 50 }
+			clamp_temp_variable = {
+				var = Antarctica_Agency_Decay_Reduction
+				max = 50
+			}
+			round_temp_variable = Antarctica_Agency_Decay_Reduction
+			
+			#check_variable = { Antarctica_Agency_Supply_to_be_Sent > 49.999 }
+			always = no
+		}
+		localization_key = Antarctica_Agency_Budget_Extra_Text
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = get_Antarctica_Agency_Budget_Spending_Amount
+	
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					check_variable = { Antarctica_Agency_Budget_Spending_Frequency = 1 }
+					set_temp_variable = { Antarctica_Agency_Budget_Spending_Amount = Antarctica_Agency_Budget_Spending_Display }
+					multiply_temp_variable = { Antarctica_Agency_Budget_Spending_Amount = 6 }
+				}
+				AND = {
+					check_variable = { Antarctica_Agency_Budget_Spending_Frequency = 2 }
+					set_temp_variable = { Antarctica_Agency_Budget_Spending_Amount = Antarctica_Agency_Budget_Spending_Display }
+					multiply_temp_variable = { Antarctica_Agency_Budget_Spending_Amount = 12 }
+				}
+				AND = {
+					check_variable = { Antarctica_Agency_Budget_Spending_Frequency = 3 }
+					set_temp_variable = { Antarctica_Agency_Budget_Spending_Amount = Antarctica_Agency_Budget_Spending_Display }
+					multiply_temp_variable = { Antarctica_Agency_Budget_Spending_Amount = 26 }
+				}
+				AND = {
+					check_variable = { Antarctica_Agency_Budget_Spending_Frequency = 4 }
+					set_temp_variable = { Antarctica_Agency_Budget_Spending_Amount = Antarctica_Agency_Budget_Spending_Display }
+					multiply_temp_variable = { Antarctica_Agency_Budget_Spending_Amount = 52 }
+				}
+			}
+		}
+		localization_key = Antarctica_Agency_Budget_Spending_Amount_Text
+	}
+}

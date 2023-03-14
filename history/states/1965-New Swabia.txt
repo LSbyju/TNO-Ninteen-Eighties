@@ -1,0 +1,20 @@
+state={
+	id=1965
+	name="STATE_1965" # Neuschwabenland/New Swabia
+	manpower = 1
+	
+	state_category = wasteland
+	
+	impassable = yes
+
+	history={
+		owner = ZZZ
+		buildings = {
+			infrastructure = 0
+		}
+	}
+
+	provinces={
+		16525 16526 
+	}
+}

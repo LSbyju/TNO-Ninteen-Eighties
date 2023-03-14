@@ -1,0 +1,20 @@
+state={
+	id=2026
+	name="STATE_2026"
+	provinces={
+		16593 16673 16768 16625
+	}
+	manpower = 1
+
+	state_category = wasteland
+
+	history = {
+		owner = AAG
+		add_core_of = AAG
+		victory_points = { 16768 1 }
+		buildings = {
+			infrastructure = 0
+		}
+	}
+
+}

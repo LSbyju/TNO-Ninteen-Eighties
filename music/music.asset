@@ -1,8 +1,8 @@
 # MAIN THEME
 music = {
 	name = "maintheme"
-	file = "TNO_songs/Silicon Dreams.ogg"
-	volume = 1.5
+	file = "ODFMainTheme.ogg"
+	volume = 1
 }
 
 music = {
@@ -164,4 +164,12 @@ music = {
 	name = "resistance_spying"
 	file = "Under_Veils_Of_Secrets.ogg"
 	volume = 0.65
+}
+
+# Gunship BG Music
+
+music = {
+	name = "usfi_bg"
+	file = "usfi_bg.ogg"
+	volume = 0.75
 }

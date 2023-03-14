@@ -2633,3 +2633,15 @@ CAM_PRK = {
 	color = rgb { 222 37 31 }
 	color_ui = rgb { 222 37 31 }
 }
+
+# Antarctica
+
+AAB_Large = {
+	color = rgb { 68 40 73 }
+	color_ui = rgb { 68 40 73 }
+}
+
+AAJ_AAC_Puppet = {
+	color = rgb { 152 59 48 }
+	color_ui = rgb { 152 59 48 }
+}

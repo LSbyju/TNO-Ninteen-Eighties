@@ -1,0 +1,157 @@
+characters = {
+	AAA_Jorge_Edgar_Leal = {
+		name = AAA_Jorge_Edgar_Leal
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Antarctica/Portrait_AAA_Jorge_Edgar_Leal.dds"
+				small = "gfx/interface/ideas/AAA/AAA_Jorge_Edgar_Leal.dds"
+			}
+			army = {
+				large = "gfx/leaders/Antarctica/Portrait_AAA_Jorge_Edgar_Leal.dds"
+				small = "gfx/interface/ideas/AAA/AAA_Jorge_Edgar_Leal.dds"
+			}
+		}
+		country_leader = {
+			ideology = paternalism_antarctic_administration_subtype
+			expire = "1999.1.1"
+			desc = POLITICS_JORGE_EDGAR_LEAL_DESC
+			traits = {
+				paternalism
+				Spirit_of_Exploration
+			}
+			id = -1
+		}
+	}
+	AAA_Gustavo_Adolfo_Giro = {
+		name = AAA_Gustavo_Adolfo_Giro
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAA/AAA_HoG_Gustavo_Adolfo_Giro_large.dds"
+				small = "gfx/interface/ideas/AAA/AAA_HoG_Gustavo_Adolfo_Giro.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAA/AAA_HoG_Gustavo_Adolfo_Giro_large.dds"
+				small = "gfx/interface/ideas/AAA/AAA_HoG_Gustavo_Adolfo_Giro.dds"
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = AAA_Gustavo_Adolfo_Giro_dep
+			allowed = { original_tag = AAA }
+			traits = {
+				head_of_government
+				paternalism
+				hog_silent_workhorse
+				hog_devoted_follower
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAA_Juan_Carlos_Beltramino = {
+		name = AAA_Juan_Carlos_Beltramino
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAA/AAA_ForMin_Juan_Carlos_Beltramino_large.dds"
+				small = "gfx/interface/ideas/AAA/AAA_ForMin_Juan_Carlos_Beltramino.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAA/AAA_ForMin_Juan_Carlos_Beltramino_large.dds"
+				small = "gfx/interface/ideas/AAA/AAA_ForMin_Juan_Carlos_Beltramino.dds"
+			}
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = AAA_Juan_Carlos_Beltramino_pol
+			allowed = { original_tag = AAA }
+			traits = {
+				foreign_minister
+				liberalism
+				for_well_connected
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAA_Mario_Luis_Olezza = {
+		name = AAA_Mario_Luis_Olezza
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAA/AAA_EconMin_Mario_Luis_Olezza_large.dds"
+				small = "gfx/interface/ideas/AAA/AAA_EconMin_Mario_Luis_Olezza.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAA/AAA_EconMin_Mario_Luis_Olezza_large.dds"
+				small = "gfx/interface/ideas/AAA/AAA_EconMin_Mario_Luis_Olezza.dds"
+			}
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = AAA_Mario_Luis_Olezza_eco
+			allowed = { original_tag = AAA }
+			traits = {
+				economy_minister
+				paternalism
+				eco_air_superiority_proponent
+				sec_army_instructor
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAA_Hernan_Pujato = {
+		name = AAA_Hernan_Pujato
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAA/AAA_SecMin_Hernan_Pujato_large.dds"
+				small = "gfx/interface/ideas/AAA/AAA_SecMin_Hernan_Pujato.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAA/AAA_SecMin_Hernan_Pujato_large.dds"
+				small = "gfx/interface/ideas/AAA/AAA_SecMin_Hernan_Pujato.dds"
+			}
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = AAA_Hernan_Pujato_sec
+			allowed = { original_tag = AAA }
+			traits = {
+				security_minister
+				paternalism
+				sec_disliked_by_the_military
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAA_Emilio_Eduardo_Massera = {
+		name = AAA_Emilio_Eduardo_Massera
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Antarctica/Portrait_AAA_Emilio_Eduardo_Massera.dds"
+				small = "gfx/interface/ideas/AAA/AAA_Emilio_Eduardo_Massera.dds"
+			}
+			army = {
+				large = "gfx/leaders/Antarctica/Portrait_AAA_Emilio_Eduardo_Massera.dds"
+				small = "gfx/interface/ideas/AAA/AAA_Emilio_Eduardo_Massera.dds"
+			}
+		}
+		country_leader = {
+			ideology = paternalism_antarctic_administration_subtype
+			expire = "1999.1.1"
+			#desc = 
+			traits = {
+				paternalism
+			}
+			id = -1
+		}
+	}
+}

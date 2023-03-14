@@ -1,0 +1,201 @@
+﻿l_english:
+# Generic Events
+ antarctica_alert_event.10.t:0 "Special Missions Available!"
+ antarctica_alert_event.10.desc:0 "After harrowing missions and careful information gathering, we have gained enough intelligence on Argentine Antarctica to launch a special mission in their main base on the Antarctic continent. This would allow us to severely compromise one of their central capacities, whether it be damaging their militarization, impairing their legitimacy, or destroying their supplies. Of course, doing this will require the use of some intelligence, but it has the potential to give us a major strategic advantage over Argentine Antarctica."
+ antarctica_alert_event.10.a:0 "Get me those briefings, now!"
+ antarctica_alert_event.11.t:0 "Special Missions Available!"
+ antarctica_alert_event.11.desc:0 "After harrowing missions and careful information gathering, we have gained enough intelligence on die Ahnenerbe Antarktis Gruppe to launch a special mission in their main base on the Antarctic continent. This would allow us to severely compromise one of their central capacities, whether it be damaging their militarization, impairing their legitimacy, or destroying their supplies. Of course, doing this will require the use of some intelligence, but it has the potential to give us a major strategic advantage over die Ahnenerbe Antarktis Gruppe."
+ antarctica_alert_event.11.a:0 "Get me those briefings, now!"
+ antarctica_alert_event.12.t:0 "Special Missions Available!"
+ antarctica_alert_event.12.desc:0 "After harrowing missions and careful information gathering, we have gained enough intelligence on the Chilean Antarctic Territory to launch a special mission in their main base on the Antarctic continent. This would allow us to severely compromise one of their central capacities, whether it be damaging their militarization, impairing their legitimacy, or destroying their supplies. Of course, doing this will require the use of some intelligence, but it has the potential to give us a major strategic advantage over the Chilean Antarctic Territory."
+ antarctica_alert_event.12.a:0 "Get me those briefings, now!"
+ antarctica_alert_event.13.t:0 "Special Missions Available!"
+ antarctica_alert_event.13.desc:0 "After harrowing missions and careful information gathering, we have gained enough intelligence on Neuschwabenland to launch a special mission in their main base on the Antarctic continent. This would allow us to severely compromise one of their central capacities, whether it be damaging their militarization, impairing their legitimacy, or destroying their supplies. Of course, doing this will require the use of some intelligence, but it has the potential to give us a major strategic advantage over Neuschwabenland."
+ antarctica_alert_event.13.a:0 "Get me those briefings, now!"
+ antarctica_alert_event.14.t:0 "Special Missions Available!"
+ antarctica_alert_event.14.desc:0 "After harrowing missions and careful information gathering, we have gained enough intelligence on the Japanese Antarctic Sector to launch a special mission in their main base on the Antarctic continent. This would allow us to severely compromise one of their central capacities, whether it be damaging their militarization, impairing their legitimacy, or destroying their supplies. Of course, doing this will require the use of some intelligence, but it has the potential to give us a major strategic advantage over the Japanese Antarctic Sector."
+ antarctica_alert_event.14.a:0 "Get me those briefings, now!"
+ antarctica_alert_event.15.t:0 "Special Missions Available!"
+ antarctica_alert_event.15.desc:0 "After harrowing missions and careful information gathering, we have gained enough intelligence on the OFN Antarctic Administration to launch a special mission in their main base on the Antarctic continent. This would allow us to severely compromise one of their central capacities, whether it be damaging their militarization, impairing their legitimacy, or destroying their supplies. Of course, doing this will require the use of some intelligence, but it has the potential to give us a major strategic advantage over the OFN Antarctic Administration."
+ antarctica_alert_event.15.a:0 "Get me those briefings, now!"
+ 
+ antarctica_aaa_alert_event.10.t:0 "AAA Out of Militarization"
+ antarctica_aaa_alert_event.10.desc:0 "Alert"
+ antarctica_aaa_alert_event.10.a:0 "Alert"
+ 
+ antarctica_aaa_alert_event.11.t:0 "AAA Out of Militarization"
+ antarctica_aaa_alert_event.11.desc:0 "You lose"
+ antarctica_aaa_alert_event.11.a:0 "You lose"
+ 
+ antarctica_aaa_alert_event.20.t:0 "AAA Out of Legitimacy"
+ antarctica_aaa_alert_event.20.desc:0 "Alert"
+ antarctica_aaa_alert_event.20.a:0 "Alert"
+ 
+ antarctica_aaa_alert_event.21.t:0 "AAA Out of Legitimacy"
+ antarctica_aaa_alert_event.21.desc:0 "You lose"
+ antarctica_aaa_alert_event.21.a:0 "You lose"
+ 
+ antarctica_aaa_alert_event.30.t:0 ""
+ antarctica_aaa_alert_event.30.desc:0 ""
+ antarctica_aaa_alert_event.30.a:0 ""
+ 
+ antarctica_aaa_alert_event.31.t:0 "AAA Out of Supply"
+ antarctica_aaa_alert_event.31.desc:0 "You lose"
+ antarctica_aaa_alert_event.31.a:0 "You lose"
+ 
+ antarctica_aac_alert_event.10.t:0 "AAC Out of Militarization"
+ antarctica_aac_alert_event.10.desc:0 "Alert"
+ antarctica_aac_alert_event.10.a:0 "Alert"
+ antarctica_aac_alert_event.11.t:0 "AAC Out of Militarization"
+ antarctica_aac_alert_event.11.desc:0 "You lose"
+ antarctica_aac_alert_event.11.a:0 "You lose"
+ antarctica_aac_alert_event.20.t:0 "AAC Out of Legitimacy"
+ antarctica_aac_alert_event.20.desc:0 "Alert"
+ antarctica_aac_alert_event.20.a:0 "Alert"
+ antarctica_aac_alert_event.21.t:0 "AAC Out of Legitimacy"
+ antarctica_aac_alert_event.21.desc:0 "You lose"
+ antarctica_aac_alert_event.21.a:0 "You lose"
+ antarctica_aac_alert_event.30.t:0 "AAC Out of Supply"
+ antarctica_aac_alert_event.30.desc:0 "Alert"
+ antarctica_aac_alert_event.30.a:0 "Alert"
+ antarctica_aac_alert_event.31.t:0 "AAC Out of Supply"
+ antarctica_aac_alert_event.31.desc:0 "You lose"
+ antarctica_aac_alert_event.31.a:0 "You lose"
+ 
+ antarctica_aag_alert_event.10.t:0 "The Border" # AAG No Mil
+ antarctica_aag_alert_event.10.desc:0 "The last sporadic gunshots echoed through the valley, and then all was silent. Herbert Freitag, knees aching, stood up from his position of cover. He lifted a pair of binoculars to his eyes. Down the valley, he could see the American soldiers retreating on snowmobiles and snow tractors. He looked over his own squad. Two men were dead. Everyone else had sustained some form of injury, and they were, to a man, out of ammo.\n\nFreitag had no clue what the brass was thinking; they hadn't allocated nearly enough heavy weapons to his outpost, which stood on the border of the OAA. Their position was indefensible. It was a minor miracle he'd fended off this latest attack. Another, and his men might not be so lucky.\n\nFreitag went to their radio operator inside the nearby field habitat. "I want you to send this message back to Mayr," he said. "'American units launching probing attacks on border. Request immediate fire support from heavy weapons teams. Position increasingly untenable.'"\n\nFreitag hoped Mayr would heed the message. He seemed a sensible man. For now, however, all that was left was to keep eyes on the border and hope the Americans didn't come back.\n\nAt Schirmacher Station, an exhausted Mayr was pulled from his bed by an emergency communique from one of their border stations. He read the message and sighed. "Another one?" he said.\n\nAnton Grasser nodded. "Seems the bastards have noticed our lack of patrols lately. We need to send a message, and soon.""
+ antarctica_aag_alert_event.10.a:0 ""Agreed," said Mayr. "Deploy reserve units to the frontline.""
+ 
+ antarctica_aag_alert_event.11.t:0 "Canadian Engineering"
+ antarctica_aag_alert_event.11.desc:0 "Freitag pushed the engine of his snow tractor to its limit. He knew he risked a burnout, but he had to make it back to Schirmacher Station and convey the news. He had to get his few surviving men to safety.\n\nLooking in the mirror, he could see smoke rising from what remained of his border post as well as a dozen sets of headlights. The OFN Antarctic Administration had launched a surprise strike in the dead of night, smashing their way through the paltry, lightly-armed defenders on the border. Freitag and his men quite simply didn't have the firepower necessary to deal with the Canadian armored snow crawlers, they had plowed through the paltry fortifications crushing all in their path.\n\nThe weapon shipments and overall combat capability of Neuscwabenland had deteriorated severely, and Freitag knew that the OFN would be upon Schirmacher within the week. That left only seven days to destroy all compromising materials and make an exit stage left from this shithole of a continent.\n\nHe just prayed his engine would hold out, and that Mayr had some sort of plan for this eventuality."
+ antarctica_aag_alert_event.11.a:0 "Soldiers without rifles do not an army make."
+ 
+ antarctica_aag_alert_event.20.t:0 "Legitimacy" # AAG No Leg
+ antarctica_aag_alert_event.20.desc:0 "To: Deutsche Gesellschaft für Polarforschung\n\nFrom: Ernst Hermann\n\nSubject: Argentinian and Chilean territorial trespasses.\n\nBegin: In recent weeks, we have seen increasing numbers of Argentinian and Chilean ships and aircraft crossing into our waters and airspace. The vehicles in question refused to alter their courses when ordered to, and due to standing Abwehr orders, were not fired upon by our personnel. These transgressions seem to be done for convenience's sake, not for military purposes; the vehicles in question were lightly armed and took the most direct routes to their destinations.\n\nThis flagrant violation of our territorial integrity and legitimacy leaves us exposed to advances from the Japanese and Americans, who have no doubt observed our failure to act. I formally request that the Reichsministerium für Volksaufklärung und Propaganda assert Germania's authority over Neuschwabenland. If immediate action is not taken and our legitimacy is challenged again, we will be powerless to keep our colony and research facilities from being partitioned by our neighbors.\n\nSieg Heil."
+ antarctica_aag_alert_event.20.a:0 "P.S. An extra shipment of liquor would boost morale."
+ 
+ antarctica_aag_alert_event.21.t:0 "Partition"
+ antarctica_aag_alert_event.21.desc:0 "Ernst Hermann\n\nFrom: Deutsche Gesellschaft für Polarforschung\n\nSubject: Foreign incursion into Neuschwabenland\n\nBegin: We received your information and acted upon it with the utmost urgency. We immediately extended our diplomatic feelers towards the Argentinians and Chileans about the flagrant yet nonviolent incursions into our territory. They denied it totally and denounced what they stated was a blatant attempt by the Reich to slander its Antarctic competitors. This overt rebuke surprised us, as both Chile and Argentina have at least nominally good relations with the Reich itself.\n\nWe have horrible news: through Advair contacts, we have discovered that the actions of the Chileans and Argentinians are part of a wider scheme to dismantle Neuschwabenland. The OAA, and by some reports, even the Japanese, have coordinated a plan to partition our territory and seize our sensitive documents and materials. The fact that even the Chileans and Argentinians are willing to join this venture speaks to how far our legitimacy in Antarctica has fallen. We recommend an immediate evacuation of the colony and destruction of anything they could use against us. Needless to say, the Reich will not embark on a World War over a barren patch of ice, especially with the deteriorating situation at home.\n\nSieg Heil."
+ antarctica_aag_alert_event.21.a:0 "P.S. Don't come home. Use Schirmacher's South African contacts. Settle down in the Caribbean. Have a drink for us."
+ 
+ antarctica_aag_alert_event.30.t:0 "Rationing" # AAG No Sup
+ antarctica_aag_alert_event.30.desc:0 "Quartermaster Elias Baumann saluted as he entered Mayr's office. "At ease," Mayr said. "Please, sit down.\n\nBaumann squeezed into the chair opposite Mayr. His huge frame barely fit the old oak arms of the chair. Mayr lit a cigarette and contemplated its glowing tip as he spoke to the Quartermaster. "I've received reports from multiple departments indicating our supplies of food, fuel, and ammunition are insufficient for our current upkeep." His eyes flicked up to Baumann.\n\nThe quartermaster sighed. "I tried to explain the situation to the department heads, that the Kriegsmarine resupply shipments are becoming sporadic. We should not act as if we have unlimited resources anymore. Schumann's requests are growing more grandiose by the day and I fear the well-being of the men will suffer for it."\n\nMayr puffed on his cigarette. "What is our current deficit and what would your recommendation be?"\n\n"We've far exceeded our usage of food for this season, and our fuel situation is dire. If we don't ration everything, we'll have starving men and grounded test aircraft before the next Kriegsmarine shipment. I'm recommending an immediate switch to three-quarter rations, cessation of unnecessary vehicle use, and lighter duties along the border until our supplies are refilled."\n\nMayr frowned. "Bad for morale and bad for our tests, upon which our existence is predicated. Germania does not accept failure. If we end up in this situation again, I think we'll be recalled, and I'll remind you that some of us were exiled for a reason. With the tumultuous situation back home, it might mean our deaths."\n\n"With that in mind Sir, I recommend that we immediately crack open the emergency supply cache.""
+ antarctica_aag_alert_event.30.a:0 ""You have my authorization, Baumann. Do whatever's necessary.""
+ 
+ antarctica_aag_alert_event.31.t:0 "The Last Generator"
+ antarctica_aag_alert_event.31.desc:0 "Mayr sat in front of the last running generator sipping the last of his secret stage of whiskey. He'd attempted to consolidate the base's remaining supplies under armed guard and keep the lights on until the next shipment arrived, but it seemed all his efforts had been for naught. The staff had simply mismanaged the resources they were given, and as such, the feasibility of Schirmacher Station, and Neuschwabenland, was compromised.\n\nMayr had heard reports that the OFN had already seized the vacated outposts on the border, and that even the damn Ahnenerbe were taking potshots at Neuschwabenland soldats who got too close. Thus, Mayr made the incredibly hard decision to order an evacuation. All usable materials that could be used by the enemy were to be destroyed, and all men packed like sardines onto the few leaky Kriegsmarine vessels in Graf Spee harbor. They were going home, but not under the circumstances many would have liked. Mayr knew that he and the command staff would have to flee somewhere beyond the Reich's grasp; they certainly faced court martial back at home.\n\nThe generator growled and died, and with it went any hope of Neuschwabenland continuing its mission."
+ antarctica_aag_alert_event.31.a:0 ""Burn everything you can't carry," said Mayr. "We're getting off this iceberg.""
+ 
+ antarctica_aaj_alert_event.10.t:0 "AAJ Out of Militarization"
+ antarctica_aaj_alert_event.10.desc:0 "Alert"
+ antarctica_aaj_alert_event.10.a:0 "Alert"
+ antarctica_aaj_alert_event.11.t:0 "AAJ Out of Militarization"
+ antarctica_aaj_alert_event.11.desc:0 "You lose"
+ antarctica_aaj_alert_event.11.a:0 "You lose"
+ antarctica_aaj_alert_event.20.t:0 "AAJ Out of Legitimacy"
+ antarctica_aaj_alert_event.20.desc:0 "Alert"
+ antarctica_aaj_alert_event.20.a:0 "Alert"
+ antarctica_aaj_alert_event.21.t:0 "AAJ Out of Legitimacy"
+ antarctica_aaj_alert_event.21.desc:0 "You lose"
+ antarctica_aaj_alert_event.21.a:0 "You lose"
+ antarctica_aaj_alert_event.30.t:0 "AAJ Out of Supply"
+ antarctica_aaj_alert_event.30.desc:0 "Alert"
+ antarctica_aaj_alert_event.30.a:0 "Alert"
+ antarctica_aaj_alert_event.31.t:0 "AAJ Out of Supply"
+ antarctica_aaj_alert_event.31.desc:0 "You lose"
+ antarctica_aaj_alert_event.31.a:0 "You lose"
+ 
+ antarctica_alert_event_militarization:0 "§FWe will gain§! §R50 militarization§! £Antarctica_texticon_MIL .\n§eThe emergency exercises are no longer available.§!"
+ antarctica_alert_event_legitimacy:0 "§FWe will gain§! §G50 legitimacy§! £Antarctica_texticon_LEG .\n§eThe emergency diplomatic efforts are no longer available.§!"
+ antarctica_alert_event_equipment:0 "§FWe will gain§! §W50 supply§! £Antarctica_texticon_SUP .\n§eThe emergency stockpile is no longer available.§!"
+
+# News Events
+ 
+ antarctica_news_events.1.t:0 "[Get_newspaper_header]Afrika Schild Sends Aid to New Swabia"
+ antarctica_news_events.1.desc:0 "Word has reached the international community of a miraculous rescue in the farthest reaches of the Southern Hemisphere - and conducted from a most unexpected source. The Reich's territory in Antarctica, New Swabia, has long been suspected of chronic logistics shortages following the German Civil War, but the latest reports suggest that the isolated prison-state of Reichskommissariat Ostafrika has stepped in to aid the struggling outpost.\n\nWhile little news has yet escaped either New Swabia or Ostafrika, further Antarctic deployments of the American, Chilean, and Argentine air forces suggest that the continent will continue to be an area of contention for all major players. As the German Civil War trundles towards its conclusion, who knows how the new occupant of the Reichstag will choose to reassert control over the far south."
+ antarctica_news_events.1.a:0 "Is the Reich's furthest conquest saved?"
+ 
+ antarctica_news_events.2.t:0 "[Get_newspaper_header]Argentina Sends Aid to New Swabia"
+ antarctica_news_events.2.desc:0 "Help has come from the most unlikely of places for the ailing German slice of Antarctica. Earlier this morning, Edgar Jorge Leal, the charismatic leader of the Argentinean Antarctic Administration, put in an emergency request to send supplies to their German neighbor.\n\nDespite past feuds over set borders, Leal has selflessly given aid to New Swabia, whose supply line from Quelimane was disrupted following the recent conflict within the Reich. Rudolf Mayr has expressed his gratitude and, "is forever indebted to the Argentine people."\n\nThe OFN has already condemned Argentina, while the remnants of the Einheitspakt praise the nation. The Co-Prosperity Sphere has yet to comment, but the 1st Airborne Brigade, stationed on the continent, is making audacious flights over Argentina's territory."
+ antarctica_news_events.2.a:0 "A kind gesture."
+ 
+ antarctica_news_events.3.t:0 "[Get_newspaper_header]OFN Sends Aid to New Swabia"
+ antarctica_news_events.3.desc:0 "Shocking news has emerged from the coldest front in the Cold War. The OFN Antarctic Administration has greenlit the delivery of emergency supplies to the German Antarctic territory. Also known as New Swabia, said territory had already been going through supply struggles prior to the upheaval in Germany. The recent chaos all but forced the administration to search elsewhere for help.\n\nWhen questioned on the matter, US Vice Admiral William Raborn had this to say, "In any other situation, we would have told them to go to hell, but things are different down here. It doesn't matter where you're from, we all freeze the same."\n\nAdmiral Raborn has caught flack for the decision, but he has stood by his choice and is unlikely to lose his position thanks to his illustrious career."
+ antarctica_news_events.3.a:0 "A kind gesture."
+ 
+ antarctica_news_events.4.t:0 "[Get_newspaper_header]New Swabia Partitioned"
+ antarctica_news_events.4.desc:0 "In a surprise attack, a CIA SOG team launched an assault upon New Swabia with a small group of elite troops. The demoralized Germans surrendered without significant resistance; reports state no bullets were fired. Although tensions nearly boiled over when German General Anton Grasser lunged to seize the pistol of a nearby officer, he was quickly restrained and taken into custody, along with other high value targets. Additionally, existing SS forces on the continent secured a small amount of land in western New Swabia.\n\nThe OAA put out a statement on their annexation, calling it necessary for the preservation of peace, although some detractors have called this a thinly veiled move to extend their own influence. Vice Admiral William Raborn congratulated Rip's forces, stating he was "glad the situation could be handled without a fight.""
+ antarctica_news_events.4.a:0 "The SS declined to comment."
+ 
+ antarctica_news_events.5.t:0 "[Get_newspaper_header]Antarctica Explorer Alfred Ritscher Dead"
+ antarctica_news_events.5.desc:0 "News has emerged from the quagmire of German politics, as Alfred Ritscher, age 83, has been declared dead. His death comes at a tumultuous time in the Reich, and there has been little done to honor him, though Karl Dönitz has held a small ceremony in his memory.\n\nA Kapitän zur See in the Kriegsmarine, his leading of 1930's Third German Antarctic Expedition made way for the German claim on New Swabia during the Scramble for Antarctica. Ritscher feuded with US Admiral Richard Byrd, as they led their respective country's initial forays into Antarctica. Since then, Ritscher has chaired the German Society for Polar Research. His seat has now been passed to Karl-Heinz Röbke, another veteran of the Third German Antarctic Expedition, and a staunch NSDAP conservative."
+ antarctica_news_events.5.a:0 "The generation of giants passes, and no one seems worthy to take their place."
+ 
+ antarctica_news_events.6.t:0 "[Get_newspaper_header]Germany Returns to Antarctica"
+ antarctica_news_events.6.desc:0 "Following the conclusion of the German Civil War, the Kriegsmarine has returned to New Swabia, bringing the full force of the Reich to uphold their claim. Surprisingly, they found that the soldiers and scientists left at the outset of the war were still alive, at least partially, and had defended the claim against outside incursion into the territory. The reunion was a bright spark of joy standing in contrast to the ever darkening future, as the relief came as stocks and supply had dwindled to nearly nothing.\n\nNow, Germania must decide what to do with their fledgling territory. As of now, all signs indicate the new Führer is intent on the expansion of the far-flung bases with the purpose of "securing the future of the Reich," though how realistic this goal is has yet to be seen."
+ antarctica_news_events.6.a:0 "What is Germany to do?"
+ 
+ antarctica_news_events.7.t:0 "[Get_newspaper_header]Nazis Battle at the Ends of the Earth"
+ antarctica_news_events.7.desc:0 "Strange news from the southern continent and the German Antarctic colony of New Swabia as a former soldier turned whistleblower revealed to OFN forces that Schirmacher Station, the colony's capital, was attacked by the SS!\n\nThe whistleblower, a German soldier who wished to remain anonymous, revealed that a battle broke out between the army of the colony and the traitorous SS. Fortunately for the besieged colony, they were able to push the SS out, losing dozens of lives and thousands of Reichsmarks in property damage.\n\nMany are concerned about the rationale for such an attack, saying that it was a politically motivated lie or that it was an inside job in order to purge opposition. Was this assault an order directly from Ost-Paris? Or did the Ahnenerbe Antarktis Gruppe act alone?"
+ antarctica_news_events.7.a:0 "They got lucky."
+ 
+ antarctica_news_events.8.t:0 "[Get_newspaper_header]New Swabia Partitioned"
+ antarctica_news_events.8.desc:0 "After a recent strain of supply shortages and a turbulent history, the German Antarctica territory of New Swabia has collapsed. The Organization of Free Nations has deployed military units to the region and has apparently taken control of the territory. Additionally, existing SS forces on the continent secured a small amount of land in western New Swabia.\n\nThe OAA put out a statement on their annexation, calling it necessary for the preservation of peace, although some detractors have called this a thinly veiled move to extend their own influence. However, Vice Admiral William F. Raborn commented that he was "glad the fascists would be rooted out without a fight.""
+ antarctica_news_events.8.a:0 "The SS declined to comment."
+ 
+ antarctica_news_events.9.t:0 "[Get_newspaper_header]Horror in Antarctica"
+ antarctica_news_events.9.desc:0 "The precipitous downturn in the fortunes of the Reich has left no corner of their empire unscathed. The Sydney Morning Herald learned recently from sources in the OFN Antarctic Administration that the Nazi colony of Neuschwabenland has collapsed. OFN personnel entered the territory after a prolonged period of inactivity on the German side of the border, and discovered a scene of abject horror at Schirmacher Station.\n\nIn the absence of supply shipments due to the German Civil War, the inhabitants of the base seemingly starved to death or otherwise succumbed to the elements. Initial examinations of some of the bodies revealed that scurvy had run rampant through the base. There are even unconfirmed reports of tooth marks on bone, indicating the possibility that these men turned to cannibalism like so many polar explorers before them."
+ antarctica_news_events.9.a:0 "Another mass grave in the history of the Reich."
+ 
+ antarctica_news_events.11.t:0 "[Get_newspaper_header]Italy Leases Galindez Island from Argentina"
+ antarctica_news_events.11.desc:0 "News from Rome this morning as the Italian and Argentinian governments have agreed on a 10 year lease of the Argentine Antarctic Galindez Island to Italy. There is some dispute over whether or not the island was even Argentina's to lease as the island is claimed by English and Canadian governments. Regardless of the legality of the agreement, Italy plans to have a civilian research presence on the island by the end of the month. No statements have been made about whether or not the island will be militarized, but given Rome's support of Argentina's ventures in Antarctica, and the heavily militarized nature of the region, there is little doubt that the Italian Navy will be present in Antarctica in the near future.\n\nWith this agreement cooperation between Rome and Buenos Aires over Antarctica is cemented."
+ antarctica_news_events.11.a:0 "The scales tip on the white continent."
+ antarctica_news_events.11.b:0 "Oh great, more friends."
+ antarctica_news_events.11.c:0 "The Cold War gets a little colder."
+ 
+ antarctica_news_events.12.t:0 "[Get_newspaper_header]Canada Ceedes South Georgia to Joint OFN Administration"
+ antarctica_news_events.12.desc:0 "This morning the Canadian Foreign Minister announced that the South Georgia and South Sandwich islands would be ceded over to the OFN Antarctic Administration. The uninhabited islands have a strategic position in the battle for Antarctica and the addition of the islands to the OFN Antarctic claim will be a major boon to the alliance's naval power projection in the region.\n\nIn addition the Foreign Minister announced Canada would take a more active role in Antarctic affairs, including contributing to the Antarctic defense budget. While the islands have never had a significant permanent population, they were a major whaling station prior to the heavy militarization of the region. Perhaps if someday the Antarctic were to become safer for civilian vessels, the whaling stations would return."
+ antarctica_news_events.12.a:0 "Hey! Those are our islands!"
+ antarctica_news_events.12.b:0 "This will be good for our Antarctic interests."
+ antarctica_news_events.12.c:0 "Looks like it's open season on South Georgia."
+ antarctica_news_events.12.d:0 "Things heat up on the coldest continent."
+ 
+ antarctica_news_events.13.t:0 "[Get_newspaper_header]South Africa Establishes Antarctic Base"
+ antarctica_news_events.13.desc:0 "After being devastated by the deadliest war since World War 2, South Africa has re-emerged onto the world stage with the establishment of the South African National Antarctic Program (SANAP). As per its mission, SANAP will be launching South African National Antarctic Expedition I. As part of the expedition, a permanent base of the same name will be established. The new base will be established in the Holme Bay region of the Australian sector, in the vicinity of Australia's Mawson Station. The nation will also begin contributing to the defense of OFN Antarctica. As a result of these contributions, South Africa will also get a say in the OFN's Antarctic Administration. While there is general optimism in Washington about South Africa's contributions to the Administration, some claim that this will only make the OAA more unwieldy. Only time will tell whether this proves to be a boon or otherwise for the OAA."
+ antarctica_news_events.13.a:0 "A great day for our nation!"
+ antarctica_news_events.13.b:0 "Hopefully they'll contribute to the defense."
+ antarctica_news_events.13.c:0 "Hopefully this will lead to more gridlock in the OFN's Antarctic venture."
+ antarctica_news_events.13.d:0 "The OFN Antarctic administration grows ever more unwieldy."
+ 
+ antarctica_news_events.14.t:0 "[Get_newspaper_header]Hyman Rickover Appointed New OAA Chief"
+ antarctica_news_events.14.desc:0 "US Vice Admiral William Raborn has today announced his retirement from the lead position in the OFN Antarctic Administration, as well as the identity of his successor: Vice Admiral Hyman Rickover. Out of all the predictions made as to Raborn's successor, a fellow American was deemed the most likely.\n\nBorn in Poland to Jewish parents, Hyman's family emigrated to what is now the superpower of the OFN, the United States. As the father of America's Nuclear Navy, and a stickler for reactor safety, it seems likely that Hyman's first order of business will be to overhaul McMurdo Station's vital yet problematic nuclear reactor, aptly named "Nukey Poo". In any case, it seems American control of the OFN Antarctic Administration has been upheld."
+ antarctica_news_events.14.a:0 "More of the same at the ends of the Earth."
+ antarctica_news_events.14.b:0 "Of course, he's American."
+ antarctica_news_events.14.c:0 "Our interests are secure."
+ 
+ antarctica_news_events.15.t:0 "[Get_newspaper_header]Howard Beale Assumes Leadership of the OAA"
+ antarctica_news_events.15.desc:0 "US Vice Admiral William Raborn has today announced his retirement from the lead position in the OFN Antarctic Administration, as well as the identity of his successor: Australian Howard Beale.\n\nDuring his time as the Chief Finance Minister of the OAA, Beale oversaw establishment of the Mawson and Davis Antarctic stations, and championed the construction of McMurdo Station's vital nuclear power plant. It is believed by analysts that as Chief of the OFN Antarctic Administration, Beale will prioritize infrastructure and security, as well as championing the interests of Australia on the continent."
+ antarctica_news_events.15.a:0 "A fresh face at the ends of the Earth."
+ antarctica_news_events.15.b:0 "A slight setback at the ends of the Earth."
+ antarctica_news_events.15.c:0 "Antarctica is back in hands that will care for her."
+ antarctica_news_events.15.d:0 "A bright future for the frozen continent!"
+ 
+ antarctica_news_events.16.t:0 "[Get_newspaper_header]Hillary Takes Up Raborn's Mantle"
+ antarctica_news_events.16.desc:0 "US Vice Admiral William Raborn Jr. has today announced his retirement as Chief of the OFN Antarctic Administration, as well as the identity of his successor: New Zealander Air Commodore Sir Edmund Hillary. Out of the handful of predictions made as to Raborn's successor, none pegged Hillary for the job.\n\nHailing from the smallest of the territory's parent nations, Hillary is a renown explorer. He was among the first pair to reach the summit of Mount Everest in 1953. More recently, he has represented New Zealand in the OAA, and his remarks on his goals for Antarctica indicate that pacifism and a focus on matters of science, exploration, and the environment will dominate his leadership, though some have expressed concern that he may compromise the OFN's position in the region."
+ antarctica_news_events.16.a:0 "A fresh face at the ends of the Earth."
+ antarctica_news_events.16.b:0 "Wait, he's from New Zealand?"
+ antarctica_news_events.16.c:0 "A bright future for the frozen continent!"
+ 
+ antarctica_news_events.17.t:0 "[Get_newspaper_header]South Pole Reached by Argentinian Explorers"
+ antarctica_news_events.17.desc:0 "History was made today in the frozen southern continent of Antarctica. Operación 90, an Argentinian venture led by Captain Jorge Edgar Leal, has succeeded in its goal to plant an Argentine national flag at the South Pole. The stated purpose of this venture was to "resolutely affirm the territorial integrity of rightful Argentinian lands."\n\nThrough vicious storms and freezing temperatures, Leal led his men over glaciers and mountains to reach the Pole, an overland journey of three thousand kilometers. They are the first human beings to set foot there since Roald Amundsen and the failed Scott expedition in 1912. The Leal and his men received a rapturous welcome in Buenos Aires, with the team receiving many accolades and honors. The ramifications of this accomplishment on the border disputes of Antarctica is as yet unclear."
+ antarctica_news_events.17.a:0 "Argentina on the rise."
+ 
+ antarctica_news_events.18.t:0 "[Get_newspaper_header]Argentina Mourns its Antarctic Dead"
+ antarctica_news_events.18.desc:0 "There was a day of mourning held in Buenos Aires today for the explorers of Operación 90. Led by Captain Jorge Edgar Leal, the expedition set out to plant an Argentine flag at the South Pole to further legitimize their Antarctic territory.\n\nThe explorers were due back two weeks ago and no communication has been received as to their whereabouts. The Argentine government has reluctantly confirmed that the team would have run out of supplies by now and that no rescue is planned. The Argentine Antarctic territory has since been placed under the interim naval command of recently promoted Admiral Emilio Massera.\n\nIt is presumed Leal and his men suffered the fate of Scott of the Antarctic's failed expedition. Starvation and the cold of the Antarctic oblivion swallowed them whole."
+ antarctica_news_events.18.a:0 "Argentina mourns over an icy grave."
+ 
+ antarctica_news_events.20.t:0 "[Get_newspaper_header]Operation Southern Cross"
+ antarctica_news_events.20.desc:0 "Breaking news from Antarctica: the Organization of Free Nations has announced an operation to seize part of the German territory of New Swabia. A multinational joint force has launched an incursion into the German Antarctic territory. Simultaneously, a Brazilian flotilla has been sighted sailing south, confirming earlier reports of greater military cooperation with the OFN.\n\nAntarctica has been the site of a prolonged stalemate between its occupants. While skirmishes are not uncommon, this is the first open battle since the Snipe Incident of 1958. Many have questioned the reasoning behind shedding blood over an apparently worthless desert, while others have noted that this conflict is simply an extension of the conflagration in Africa. One thing is certain: any combat in this most hostile environ will be excruciating for the combatants."
+ antarctica_news_events.20.a:0 "Freedom on any continent, at any price."
+ antarctica_news_events.20.b:0 "The Thousand Year Reich will endure on every continent!"
+ antarctica_news_events.20.c:0 "Such a pointless waste of life."

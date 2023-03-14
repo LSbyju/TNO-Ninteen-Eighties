@@ -1,0 +1,133 @@
+characters = {
+	AAC_Julio_Escudero_Guzman = {
+		name = AAC_Julio_Escudero_Guzman
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Antarctica/Portrait_AAC_Julio_Escudero_Guzman.dds"
+				small = "gfx/interface/ideas/AAC/AAC_Julio_Escudero_Guzman.dds"
+			}
+			army = {
+				large = "gfx/leaders/Antarctica/Portrait_AAC_Julio_Escudero_Guzman.dds"
+				small = "gfx/interface/ideas/AAC/AAC_Julio_Escudero_Guzman.dds"
+			}
+		}
+		country_leader = {
+			ideology = paternalism_antarctic_administration_subtype
+			expire = "1999.1.1"
+			desc = POLITICS_JULIO_ESCUDERO_GUZMAN_DESC
+			traits = {
+				liberalism
+				Antarctic_Diplomat
+			}
+			id = -1
+		}
+	}
+	AAC_Marcial_Mora_Miranda = {
+		name = AAC_Marcial_Mora_Miranda
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAC/AAC_HoG_Marcial_Mora_Miranda_large.dds"
+				small = "gfx/interface/ideas/AAC/AAC_HoG_Marcial_Mora_Miranda.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAC/AAC_HoG_Marcial_Mora_Miranda_large.dds"
+				small = "gfx/interface/ideas/AAC/AAC_HoG_Marcial_Mora_Miranda.dds"
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = AAC_Marcial_Mora_Miranda_dep
+			allowed = { original_tag = AAC }
+			traits = {
+				head_of_government
+				liberalism
+				hog_pragmatic_statesman
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAC_Enrique_Gajardo_Villarroel = {
+		name = AAC_Enrique_Gajardo_Villarroel
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAC/AAC_ForMin_Enrique_Gajardo_Villarroel_large.dds"
+				small = "gfx/interface/ideas/AAC/AAC_ForMin_Enrique_Gajardo_Villarroel.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAC/AAC_ForMin_Enrique_Gajardo_Villarroel_large.dds"
+				small = "gfx/interface/ideas/AAC/AAC_ForMin_Enrique_Gajardo_Villarroel.dds"
+			}
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = AAC_Enrique_Gajardo_Villarroel_pol
+			allowed = { original_tag = AAC }
+			traits = {
+				foreign_minister
+				liberalism
+				for_well_connected
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAC_Anibal_Pinto_Santa_Cruz = {
+		name = AAC_Anibal_Pinto_Santa_Cruz
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAC/AAC_EconMin_Anibal_Pinto_Santa_Cruz_large.dds"
+				small = "gfx/interface/ideas/AAC/AAC_EconMin_Anibal_Pinto_Santa_Cruz.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAC/AAC_EconMin_Anibal_Pinto_Santa_Cruz_large.dds"
+				small = "gfx/interface/ideas/AAC/AAC_EconMin_Anibal_Pinto_Santa_Cruz.dds"
+			}
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = AAC_Anibal_Pinto_Santa_Cruz_eco
+			allowed = { original_tag = AAC }
+			traits = {
+				economy_minister
+				progressivism
+				eco_balanced_budget_economy
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAC_Jose_Toribio_Merino = {
+		name = AAC_Jose_Toribio_Merino
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAC/AAC_SecMin_Jose_Toribio_Merino_large.dds"
+				small = "gfx/interface/ideas/AAC/AAC_SecMin_Jose_Toribio_Merino.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAC/AAC_SecMin_Jose_Toribio_Merino_large.dds"
+				small = "gfx/interface/ideas/AAC/AAC_SecMin_Jose_Toribio_Merino.dds"
+			}
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = AAC_Jose_Toribio_Merino_sec
+			allowed = { original_tag = AAC }
+			traits = {
+				security_minister
+				paternalism
+				sec_rules_the_waves
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+}

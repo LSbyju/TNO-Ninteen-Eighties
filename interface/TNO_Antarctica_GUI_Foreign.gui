@@ -1,0 +1,248 @@
+guiTypes = {
+	containerWindowType = {
+		name = "Antarctica_GUI_Foreign"
+		position = { x = 0 y = 0 }
+		size = { width = 0 height = 1171 }
+		
+		instantTextboxType = {
+			name = "Antarctica_GUI_Foreign_Info_Text"
+			position = { x = 20 y = 10 }
+			font = "aldrich_18_outline"
+			text = Antarctica_GUI_Foreign_Info_Text
+			maxWidth = 452
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "Antarctica_GUI_Foreign_movement_container"
+			position = { x = 0 y = 60 }
+			size = { width = 0 height = 0 }
+		
+			instantTextboxType = {
+				name = "Antarctica_GUI_Foreign_Leader_Text"
+				position = { x = 20 y = 120 }
+				font = "aldrich_24_outline"
+				text = Antarctica_GUI_Foreign_Leader_Text
+				maxWidth = 226
+				maxHeight = 72
+				format = center
+				vertical_alignment = center
+			}
+			iconType = {
+				name = "Antarctica_GUI_Foreign_Leader_Icon"
+				position = { x = 50 y = 210 }
+				pdx_tooltip = Antarctica_GUI_Foreign_Leader_Icon_tt
+			}
+			
+			instantTextboxType = {
+				name = "Antarctica_GUI_Foreign_Admin_Text"
+				position = { x = 246 y = 120 }
+				font = "aldrich_24_outline"
+				text = Antarctica_GUI_Foreign_Agency_Title_Text
+				maxWidth = 226
+				maxHeight = 72
+				format = center
+				vertical_alignment = center
+			}
+			iconType = {
+				name = "Antarctica_GUI_Foreign_Admin_Icon"
+				position = { x = 360 y = 316 }
+				centerposition = yes
+				pdx_tooltip = Antarctica_GUI_Foreign_Admin_Icon_tt
+			}
+			
+			instantTextboxType = {
+				name = "Antarctica_GUI_Foreign_Zone_Text"
+				position = { x = 20 y = 440 }
+				font = "aldrich_24_outline"
+				text = Antarctica_GUI_Foreign_Zone_Text
+				maxWidth = 452
+				format = center
+			}
+			iconType = {
+				name = "Antarctica_GUI_Foreign_Antarctica_AAA"
+				spriteType = "GFX_Antarctica_GUI_Foreign_Antarctica_AAA"
+				position = { x = 57 y = 500 }
+			}
+			iconType = {
+				name = "Antarctica_GUI_Foreign_Antarctica_AAC"
+				spriteType = "GFX_Antarctica_GUI_Foreign_Antarctica_AAC"
+				position = { x = 57 y = 500 }
+			}
+			iconType = {
+				name = "Antarctica_GUI_Foreign_Antarctica_AAG"
+				spriteType = "GFX_Antarctica_GUI_Foreign_Antarctica_AAG"
+				position = { x = 57 y = 500 }
+			}
+			iconType = {
+				name = "Antarctica_GUI_Foreign_Antarctica_AAJ"
+				spriteType = "GFX_Antarctica_GUI_Foreign_Antarctica_AAJ"
+				position = { x = 57 y = 500 }
+			}
+			iconType = {
+				name = "Antarctica_GUI_Foreign_Antarctica_AAO"
+				spriteType = "GFX_Antarctica_GUI_Foreign_Antarctica_AAO"
+				position = { x = 57 y = 500 }
+			}
+			iconType = {
+				name = "Antarctica_GUI_Foreign_Antarctica_Outline"
+				spriteType = "GFX_Antarctica_GUI_Foreign_Antarctica_Outline"
+				position = { x = 57 y = 500 }
+				pdx_tooltip = Antarctica_GUI_Foreign_Antarctica_Outline_tt
+			}
+			
+			instantTextboxType = {
+				name = "Antarctica_GUI_Foreign_Budget"
+				position = { x = 20 y = 845 }
+				font = "aldrich_24_outline"
+				text = Antarctica_GUI_Foreign_Budget_Text
+				maxWidth = 452
+				format = center
+				pdx_tooltip = Antarctica_GUI_Foreign_Budget_tt
+			}
+			
+			containerWindowType = {
+				name = "Antarctica_GUI_Foreign_Budget_Slider_Container"
+				position = { x = 100 y = 894 }
+
+				iconType = {
+					name = "Antarctica_GUI_Foreign_Budget_slider_bg"
+					quadTextureSprite = "GFX_Antarctica_GUI_Foreign_SliderBorder"
+					position = { x = 25 y = 11 }
+					alwaystransparent = yes
+				}
+				iconType = {
+					name = "Antarctica_GUI_Foreign_Budget_slider_line"
+					quadTextureSprite = "GFX_econ_crt_slider_bg"
+					position = { x = 17 y = 18 }
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "Antarctica_GUI_Foreign_Budget_slider_left"
+					quadTextureSprite = "GFX_econ_crt_slider_left"
+					position = { x = 30 y = 18 }
+					#pdx_tooltip = Antarctica_GUI_Foreign_Budget_slider_button_left_tt
+				}
+				buttonType = {
+					name = "Antarctica_GUI_Foreign_Budget_slider_right"
+					quadTextureSprite = "GFX_econ_crt_slider_right"
+					position = { x = 251 y = 18 }
+					#pdx_tooltip = Antarctica_GUI_Foreign_Budget_slider_button_right_tt
+				}
+				iconType = {
+					name = "Antarctica_GUI_Foreign_Budget_slider_dot"
+					quadTextureSprite = "GFX_econ_crt_slider_dot"
+					position = { x = 50 y = 16 }
+					alwaystransparent = yes
+				}
+
+				gridboxtype = {
+					name = "Antarctica_GUI_Foreign_Budget_set_buttons"
+					position = { x = -37 y = 18 }
+					size = { width = 189 height = 14 }
+					slotsize = { width = 3 height = 14 }
+					add_horizontal = yes
+				}
+			}
+			
+			instantTextboxType = {
+				name = "Antarctica_GUI_Foreign_Budget_Freq"
+				position = { x = 20 y = 946 }
+				font = "aldrich_24_outline"
+				text = Antarctica_GUI_Foreign_Budget_Freq_Text
+				maxWidth = 452
+				format = center
+			}
+			
+			containerWindowType = {
+				name = "Antarctica_GUI_Foreign_Checkbox_Container"
+				position = { x = 60 y = 82 }
+				size = { width = 0 height = 0 }
+				
+				buttonType = {
+					name = "Antarctica_GUI_Foreign_Checkbox_BiMonthly"
+					quadTextureSprite = "GFX_generic_checkbox"
+					position = { x = 20 y = 900 }
+					pdx_tooltip = Antarctica_GUI_Foreign_Budget_tt
+				}
+				instantTextboxType = {
+					name = "Antarctica_GUI_Foreign_Checkbox_BiMonthly_Text"
+					position = { x = 60 y = 904 }
+					font = "aldrich_24_outline"
+					text = "Bi-Monthly"
+					maxWidth = 452
+					format = left
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "Antarctica_GUI_Foreign_Checkbox_BiWeekly"
+					quadTextureSprite = "GFX_generic_checkbox"
+					position = { x = 20 y = 950 }
+					pdx_tooltip = Antarctica_GUI_Foreign_Budget_tt
+				}
+				instantTextboxType = {
+					name = "Antarctica_GUI_Foreign_Checkbox_BiWeekly_Text"
+					position = { x = 60 y = 954 }
+					font = "aldrich_24_outline"
+					text = "Bi-Weekly"
+					maxWidth = 452
+					format = left
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "Antarctica_GUI_Foreign_Checkbox_Monthly"
+					quadTextureSprite = "GFX_generic_checkbox"
+					position = { x = 220 y = 900 }
+					pdx_tooltip = Antarctica_GUI_Foreign_Budget_tt
+				}
+				instantTextboxType = {
+					name = "Antarctica_GUI_Foreign_Checkbox_Monthly_Text"
+					position = { x = 260 y = 904 }
+					font = "aldrich_24_outline"
+					text = "Monthly"
+					maxWidth = 452
+					format = left
+					alwaystransparent = yes
+				}
+				buttonType = {
+					name = "Antarctica_GUI_Foreign_Checkbox_Weekly"
+					quadTextureSprite = "GFX_generic_checkbox"
+					position = { x = 220 y = 950 }
+					pdx_tooltip = Antarctica_GUI_Foreign_Budget_tt
+				}
+				instantTextboxType = {
+					name = "Antarctica_GUI_Foreign_Checkbox_Weekly_Text"
+					position = { x = 260 y = 954 }
+					font = "aldrich_24_outline"
+					text = "Weekly"
+					maxWidth = 452
+					format = left
+					alwaystransparent = yes
+				}
+			}
+			
+			buttonType = {
+				name = "Antarctica_GUI_Foreign_Lock_Budget"
+				quadTextureSprite = "GFX_econ_tab_action_button_red"
+				buttonFont = "aldrich_22_outline"
+				buttonText = Antarctica_GUI_Foreign_Lock_Budget_Text
+				position = { x = 169 y = 1082 }
+				pdx_tooltip = Antarctica_GUI_Foreign_Lock_Budget_tt
+			}
+		}
+	}
+	
+	containerWindowType = {
+		name = "Antarctica_GUI_Foreign_Budget_set_button"
+		size = { width = 3 height = 10 }
+		position = { x = 0 y = 0 }
+
+		buttonType = {
+			name = "Antarctica_GUI_Foreign_Budget_set_button_real"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_econ_crt_slider_set_transparent"
+			#pdx_tooltip = "econ_army_expenditures_set_button_tt"
+			clicksound = "click_scroll"
+		}
+	}
+}

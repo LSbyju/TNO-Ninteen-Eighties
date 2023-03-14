@@ -55,6 +55,7 @@ scripted_gui = {
 
 		visible = {
 			is_controlled_by = ROOT
+			ROOT = { NOT = { is_Antarctic_nation = yes } }
 		}
 
 		properties = {
@@ -130,7 +131,7 @@ scripted_gui = {
 		parent_window_token = trade_tab
 
 		visible = {
-			always = yes
+			NOT = { is_Antarctic_nation = yes }
 		}
 
 		### Tabs / Base
@@ -223,6 +224,10 @@ scripted_gui = {
 		triggers = {
 			production_units_toggle_alert_visible = {
 				NOT = { has_country_flag = has_opened_pu_menu }
+				NOT = { is_Antarctic_nation = yes }
+			}
+			production_units_toggle_click_enabled = {
+				NOT = { is_Antarctic_nation = yes }
 			}
 		}
 
@@ -801,6 +806,7 @@ scripted_gui = {
 		visible = {
 			econ_macroView = yes
 			econ_can_use_economy_system = yes
+			NOT = { is_Antarctic_nation = yes }
 		}
 
 		### | INDEX | ###
@@ -2710,6 +2716,29 @@ scripted_gui = {
 			econ_BRGView = yes
 		}
 	}
+	
+	# Antarctica Econ Cover
+	TNO_economy_Antarctica = {
+		window_name = "economy_view_Antarctica"
+		context_type = player_context
+		parent_window_token = trade_tab
+
+		visible = {
+			is_Antarctic_nation = yes
+		}
+		
+		effects = {
+			Antarctica_economy_close_button_click = {
+				if = {
+					limit = { NOT = { has_country_flag = econ_view_visible } }
+					set_country_flag = econ_view_visible
+				}
+				else = {
+					clr_country_flag = econ_view_visible
+				}
+			}
+		}
+	}
 }
 
 # # Econ Social Menu
@@ -3285,6 +3314,10 @@ scripted_gui = {
 		triggers = {
 			production_units_toggle_alert_visible = {
 				NOT = { has_country_flag = has_opened_pu_menu }
+				NOT = { is_Antarctic_nation = yes }
+			}
+			production_units_toggle_const_click_enabled = {
+				NOT = { is_Antarctic_nation = yes }
 			}
 		}
 
@@ -3571,6 +3604,10 @@ scripted_gui = {
 		triggers = {
 			production_units_toggle_alert_visible = {
 				NOT = { has_country_flag = has_opened_pu_menu }
+				NOT = { is_Antarctic_nation = yes }
+			}
+			production_units_toggle_const_click_enabled = {
+				NOT = { is_Antarctic_nation = yes }
 			}
 		}
 

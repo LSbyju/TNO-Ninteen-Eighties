@@ -191,4 +191,95 @@ SHO_war_end_effect = {
 		set_temp_variable = { target = SHO }
 		TNO_clear_num_volunteers = yes
 	}
+	
+	# ODF effects below to account for all war scenarios
+	AAO = {
+		# Clear all unit related things
+		
+		set_temp_variable = { target = MLY }
+		TNO_clear_and_recall_volunteers = yes
+		
+		#set_equipment_fraction = 0.0
+		delete_unit_template_and_units = {
+			division_template = "Special Operations Group S"
+		}
+		
+		# Remove all objective traits and flags
+		every_unit_leader = {
+			limit = {
+				has_trait = AAO_Attack_Objective_1
+			}
+			remove_unit_leader_trait = AAO_Attack_Objective_1
+		}
+		every_unit_leader = {
+			limit = {
+				has_trait = AAO_Attack_Objective_2
+			}
+			remove_unit_leader_trait = AAO_Attack_Objective_2
+		}
+		every_unit_leader = {
+			limit = {
+				has_trait = AAO_Attack_Objective_3
+			}
+			remove_unit_leader_trait = AAO_Attack_Objective_3
+		}
+		every_unit_leader = {
+			limit = {
+				has_trait = AAO_Underdog_Objective_1
+			}
+			remove_unit_leader_trait = AAO_Underdog_Objective_1
+		}
+		every_unit_leader = {
+			limit = {
+				has_trait = AAO_Underdog_Objective_2
+			}
+			remove_unit_leader_trait = AAO_Underdog_Objective_2
+		}
+		every_unit_leader = {
+			limit = {
+				has_trait = AAO_Underdog_Objective_3
+			}
+			remove_unit_leader_trait = AAO_Underdog_Objective_3
+		}
+		every_unit_leader = {
+			limit = {
+				has_trait = AAO_Flanking_Objective_1
+			}
+			remove_unit_leader_trait = AAO_Flanking_Objective_1
+		}
+		every_unit_leader = {
+			limit = {
+				has_trait = AAO_Flanking_Objective_2
+			}
+			remove_unit_leader_trait = AAO_Flanking_Objective_2
+		}
+		every_unit_leader = {
+			limit = {
+				has_trait = AAO_Flanking_Objective_3
+			}
+			remove_unit_leader_trait = AAO_Flanking_Objective_3
+		}
+		
+		clr_country_flag = Antarctica_MLY_Attack_Objective
+		clr_country_flag = Antarctica_MLY_Underdog_Objective
+		clr_country_flag = Antarctica_MLY_Flanking_Objective
+		
+		if = {
+			limit = {
+				num_divisions < 1
+			}
+			clear_array = Antarctica_GUI_Volunteers_Buttons_Grid_Array
+		}
+		
+		clr_country_flag = Antarctica_AAO_Volunteers_in_MLY
+		
+		set_variable = { Antarctica_GUI_Volunteers_Obj1_Checkbox_Frame = 1 }
+		set_variable = { Antarctica_GUI_Volunteers_Obj2_Checkbox_Frame = 1 }
+		set_variable = { Antarctica_GUI_Volunteers_Obj3_Checkbox_Frame = 1 }
+		
+		country_event = {
+			id = antarctica_aao_cia.60
+			days = 2
+		}
+	}
 }

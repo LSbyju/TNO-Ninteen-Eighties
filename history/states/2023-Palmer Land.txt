@@ -1,0 +1,20 @@
+state={
+	id=2023
+	name="STATE_2023" # Palmer Land
+	manpower = 1
+	
+	state_category = wasteland
+	
+	impassable = yes
+
+	history={
+		owner = ZZZ
+		buildings = {
+			infrastructure = 0
+		}
+	}
+
+	provinces={
+		16520 16521 16522 16523
+	}
+}

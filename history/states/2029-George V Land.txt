@@ -1,0 +1,20 @@
+state={
+	id=2029
+	name="STATE_2029" # George V Land
+	manpower = 1
+	
+	state_category = wasteland
+	
+	impassable = yes
+
+	history={
+		owner = ZZZ
+		buildings = {
+			infrastructure = 0
+		}
+	}
+
+	provinces={
+		16545 16546
+	}
+}

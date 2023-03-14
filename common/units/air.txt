@@ -176,4 +176,14 @@ sub_units = {
 		categories = { category_missile }
 		land_air_wing_size = 100
 	}
+	
+	attack_helicopter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { cas }
+		need = { attack_helicopter_equipment = 1 }
+		categories = { category_cas category_helicopter }
+		land_air_wing_size = 10
+	}
 }

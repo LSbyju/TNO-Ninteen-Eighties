@@ -1,0 +1,26 @@
+state={
+	id=1974
+	name="STATE_1974" # Admiralty Bay
+	manpower = 1
+	
+	state_category = wasteland
+
+	history={
+		owner = AAA
+		add_core_of = AAA
+		victory_points = { 16776 1 }
+		buildings = {
+			infrastructure = 1
+			16557 = {
+				naval_base = 1
+			}
+			16776 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		16557 16776 
+	}
+}

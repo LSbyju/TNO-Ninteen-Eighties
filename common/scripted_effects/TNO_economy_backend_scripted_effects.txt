@@ -2526,6 +2526,7 @@ calculate_military_expenditures = {
 	add_to_variable = { military_expenditures = naval_costs }
 	add_to_variable = { military_expenditures = nuclear_costs }
 	add_to_variable = { military_expenditures = military_costs_misc }
+	add_to_variable = { military_expenditures = Antarctica_Agency_Budget_Spending } # ODF adds this one line
 
 	if = {
 		limit = {

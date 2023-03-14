@@ -376,6 +376,11 @@ GER_GCW_begin = {
 	log = "[GetDateText]: [This.GetName]: GER_GCW_begin; Executing"
 
 	country_event = { id = gcw_dbg.20 days = 200 }
+	
+	# ADDED BY ODF - Operation Deep Freeze
+	# New Swabia Reaction Event
+	AAG = { country_event = { id = antarctica_aag_survival.10 } }
+	AAG = { country_event = { id = antarctica_aag_division.200 hours = 6 } }
 
 	## Ownership & Cores Getting set up
 	# Speer
@@ -1391,6 +1396,27 @@ GER_GCW_conclude_bormann = {
 
 	## Ireland Rejoining the Pakt
 	IRE = { country_event = { id = IRE_eco_collapse.15 days = 100 } }
+	
+	# ADDED BY ODF - Operation Deep Freeze
+	# New Swabia Reaction Event
+	AAG = {
+		country_event = { id = antarctica_aag_rescue.1 }
+		if = {
+			limit = {
+				has_country_flag = Antarctica_AAG_Division_Chose_Bormann
+			}
+			country_event = {
+				id = antarctica_aag_gcw_division.50
+				days = 1
+			}
+		}
+		else = {
+			country_event = {
+				id = antarctica_aag_gcw_division.60
+				days = 1
+			}
+		}
+	}
 
 	log = "[GetDateText]: [This.GetName]: GER_GCW_conclude_bormann; Completed execution."
 }
@@ -1494,6 +1520,27 @@ GER_GCW_conclude_goering = {
 		set_variable = { tno_military_supervision_effectiveness = 43 }
 		set_variable = { tno_training_effectiveness = 52 }
 		set_variable = { tno_draft_exemptions_effectiveness = 90 }
+	}
+	
+	# ADDED BY ODF - Operation Deep Freeze
+	# New Swabia Reaction Event
+	AAG = {
+		country_event = { id = antarctica_aag_rescue.3 }
+		if = {
+			limit = {
+				has_country_flag = Antarctica_AAG_Division_Chose_Goring
+			}
+			country_event = {
+				id = antarctica_aag_gcw_division.50
+				days = 1
+			}
+		}
+		else = {
+			country_event = {
+				id = antarctica_aag_gcw_division.60
+				days = 1
+			}
+		}
 	}
 
 	log = "[GetDateText]: [This.GetName]: GER_GCW_conclude_goering; Completed execution."
@@ -1722,6 +1769,27 @@ GER_GCW_conclude_speer = {
 
 	## Ireland Rejoining the Pakt
 	IRE = { country_event = { id = IRE_eco_collapse.15 days = 100 } }
+
+	# ADDED BY ODF - Operation Deep Freeze
+	# New Swabia Reaction Event
+	AAG = {
+		country_event = { id = antarctica_aag_rescue.2 }
+		if = {
+			limit = {
+				has_country_flag = Antarctica_AAG_Division_Chose_Speer
+			}
+			country_event = {
+				id = antarctica_aag_gcw_division.50
+				days = 1
+			}
+		}
+		else = {
+			country_event = {
+				id = antarctica_aag_gcw_division.60
+				days = 1
+			}
+		}
+	}
 
 	log = "[GetDateText]: [This.GetName]: GER_GCW_conclude_speer; Completed execution."
 }

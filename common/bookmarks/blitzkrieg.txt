@@ -10,7 +10,7 @@ bookmarks = {
 		desc = "THENEWORDER_DESC"
 		date = 1962.1.1.1
 		picture = "GFX_select_date_1939"
-		default_country = "GNG"
+		default_country = "AAO"
 		default = yes
 
 		effect = {
@@ -50,33 +50,29 @@ bookmarks = {
 			}
 		}
 
-		"USA" = { #For random country select
-			history = "USA_THENEWORDER_DESC"
-			ideology = conservatism
+		"AAG" = {
+			history = "AAG_THENEWORDER_DESC"
+			ideology = national_socialism
 			ideas = {
-				USA_last_bastion_of_liberty
-				USA_the_american_depression_4
-				USA_jim_crow
+				Antarctica_Territory_Generic_Idea
+				AAG_Aircraft_Testing_Site
+				AAG_Precarious_Supply_Situation
 			}
 			focuses = {
-				USA_the_nixon_presidency
-				USA_the_civil_rights_dillema
-				USA_Boxing_In_the_Sphere
+				
 			}
 		}
 
-		"GER" = { #For random country select
-			history = "GER_THENEWORDER_DESC"
-			ideology = national_socialism
+		"AAB" = {
+			history = "AAB_THENEWORDER_DESC"
+			ideology = esoteric_nazism
 			ideas = {
-				to_banish_want
-				the_two_principles
-				endsieg
+				Antarctica_Territory_Generic_Idea
+				AAB_Burgundian_Think_Tank
+				AAB_Vital_Research
 			}
 			focuses = {
-				BOR_der_wilde_ritt
-				SGR_doppeldenken
-				HGR_victory_tree
+				
 			}
 		}
 
@@ -134,8 +130,31 @@ bookmarks = {
 			}
 		}
 
-		"ZZZ" = { history = "" }
-		"ZZZ" = { history = "" }
+		"AAA" = {
+			history = "AAA_THENEWORDER_DESC"
+			ideology = national_socialism
+			ideas = {
+				Antarctica_Territory_Generic_Idea
+				AAA_Dreams_Of_The_South_Pole
+				AAA_Research_Haven
+			}
+			focuses = {
+				
+			}
+		}
+		
+		"AAC" = {
+			history = "AAC_THENEWORDER_DESC"
+			ideology = paternalism
+			ideas = {
+				Antarctica_Territory_Generic_Idea
+				AAC_Unrecognized_Antarctic_Claims
+				AAC_Jealous_Defence
+			}
+			focuses = {
+				
+			}
+		}
 
 		"CHI" = {
 			history = "CHI_THENEWORDER_DESC"
@@ -178,9 +197,32 @@ bookmarks = {
 			history = ""
 			ideology = fascism
 		}
-
-		"ZZZ" = { history = "" }
-		"ZZZ" = { history = "" }
+		
+		"AAO" = {
+			history = "AAO_THENEWORDER_DESC"
+			ideology = paternalism
+			ideas = {
+				Antarctica_Territory_Generic_Idea
+				AAO_McMurdo_Station
+				AAO_OFN_Tensions
+			}
+			focuses = {
+				
+			}
+		}
+		
+		"AAJ" = {
+			history = "AAJ_THENEWORDER_DESC"
+			ideology = fascism
+			ideas = {
+				Antarctica_Territory_Generic_Idea
+				AAJ_1st_Airborne_Brigade_Idea
+				AAJ_Enforced_Claims
+			}
+			focuses = {
+				
+			}
+		}
 
 		"MAN" = {
 			history = ""

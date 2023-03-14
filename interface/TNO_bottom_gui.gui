@@ -144,6 +144,13 @@ guiTypes = {
 			centerposition = yes
 			pdx_tooltip = scripted_gui_open_tt_OMO_fer
 		}
+		buttonType = {
+			name = "antarctica_grid_gui_crt_icon"
+			spriteType = "GFX_antarctica_grid_gui_crt_icon"
+			position = { x = 48 y = 48 }
+			centerposition = yes
+			pdx_tooltip = "scripted_gui_open_tt_antarctica_grid"
+		}
 	}
 
 	containerWindowType = {
@@ -180,6 +187,14 @@ guiTypes = {
 			position = { x = 48 y = 48 }
 			centerposition = yes
 			pdx_tooltip = "scripted_gui_open_tt_GNG_market"
+		}
+		
+		buttonType = {
+			name = "antarctica_pert_gui_crt_icon"
+			spriteType = "GFX_antarctica_pert_gui_crt_icon"
+			position = { x = 48 y = 48 }
+			centerposition = yes
+			pdx_tooltip = "Antarctica_GUI_AAO_PERT_Open_Button_tt"
 		}
 	}
 

@@ -1,0 +1,20 @@
+state={
+	id=2034
+	name="STATE_2034" # Laurie Island
+	manpower = 20
+	
+	state_category = wasteland
+
+	history = {
+		owner = AAO
+		add_core_of = AAO
+		set_demilitarized_zone = yes
+		buildings = {
+			infrastructure = 0
+		}
+	}
+
+	provinces={
+		16548
+	}
+}

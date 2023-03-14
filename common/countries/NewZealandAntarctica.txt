@@ -1,0 +1,4 @@
+graphical_culture = NZL
+graphical_culture_2d = NZL
+
+color = { 44 82 142 }

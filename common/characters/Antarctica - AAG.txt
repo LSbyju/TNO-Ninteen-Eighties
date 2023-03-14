@@ -1,0 +1,770 @@
+characters = {
+	AAG_Rudolf_Mayr = {
+		name = AAG_Rudolf_Mayr
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Antarctica/Portrait_AAG_Rudolf_Mayr.dds"
+				small = "gfx/interface/ideas/AAG/AAG_Rudolf_Mayr.dds"
+			}
+			army = {
+				large = "gfx/leaders/Antarctica/Portrait_AAG_Rudolf_Mayr.dds"
+				small = "gfx/interface/ideas/AAG/AAG_Rudolf_Mayr.dds"
+			}
+		}
+		country_leader = {
+			ideology = national_socialism_antarctic_administration_subtype
+			expire = "1999.1.1"
+			desc = POLITICS_RUDOLF_MAYR_DESC
+			traits = {
+				national_socialism
+				Seasoned_Airman
+			}
+			id = -1
+		}
+	}
+	AAG_Richard_Heinrich_Schirmacher = {
+		name = AAG_Richard_Heinrich_Schirmacher
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAG/AAG_HoG_Richard_Heinrich_Schirmacher_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_HoG_Richard_Heinrich_Schirmacher.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAG/AAG_HoG_Richard_Heinrich_Schirmacher_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_HoG_Richard_Heinrich_Schirmacher.dds"
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = AAG_Richard_Heinrich_Schirmacher_dep
+			allowed = { original_tag = AAG }
+			traits = {
+				head_of_government
+				national_socialism
+				sec_air_power_pioneer
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAG_Ernst_Herrmann = {
+		name = AAG_Ernst_Herrmann
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAG/AAG_ForMin_Ernst_Herrmann_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_ForMin_Ernst_Herrmann.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAG/AAG_ForMin_Ernst_Herrmann_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_ForMin_Ernst_Herrmann.dds"
+			}
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = AAG_Ernst_Herrmann_pol
+			allowed = { original_tag = AAG }
+			traits = {
+				foreign_minister
+				fascism
+				eco_resource_industrialist
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAG_Erich_Schumann = {
+		name = AAG_Erich_Schumann
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAG/AAG_EconMin_Erich_Schumann_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_EconMin_Erich_Schumann.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAG/AAG_EconMin_Erich_Schumann_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_EconMin_Erich_Schumann.dds"
+			}
+		}
+		country_leader = {
+			ideology = national_socialism_antarctic_administration_subtype
+			expire = "1999.1.1"
+			traits = {
+				national_socialism
+			}
+			id = -1
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = AAG_Erich_Schumann_eco
+			allowed = { original_tag = AAG }
+			traits = {
+				economy_minister
+				national_socialism
+				eco_theoretical_scientist
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAG_Anton_Grasser = {
+		name = AAG_Anton_Grasser
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAG/AAG_SecMin_Anton_Grasser_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_SecMin_Anton_Grasser.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAG/AAG_SecMin_Anton_Grasser_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_SecMin_Anton_Grasser.dds"
+			}
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = AAG_Anton_Grasser_sec
+			allowed = { original_tag = AAG }
+			traits = {
+				security_minister
+				national_socialism
+				sec_crime_fighter
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	
+	AAG_No_Authority = {
+		name = AAG_No_Authority
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_AAG_All_Gone"
+			}
+			army = {
+				large = "GFX_Portrait_AAG_All_Gone"
+			}
+		}
+		country_leader = {
+			ideology = socialist_subtype
+			expire = "1999.1.1"
+			traits = { }
+			id = -1
+		}
+	}
+	
+	AAG_Hans_Degen = {
+		name = AAG_Hans_Degen
+		portraits = { 
+			civilian = {
+				large = "gfx/interface/ideas/AAG/AAG_Hans_Degen_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_Hans_Degen.dds"
+			} 
+			army = {
+				large = "gfx/interface/ideas/AAG/AAG_Hans_Degen_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_Hans_Degen.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = AAG_Hans_Degen_high_command
+			allowed = {
+				original_tag = AAG
+			}
+			traits = {
+				high_command
+				high_command_AAG_experience_gain
+			}
+			ledger = army
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		field_marshal = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			traits = {
+				trait_mountaineer
+				adaptable
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = AAG_Hans_Degen_army_chief
+			allowed = {
+				original_tag = AAG
+			}
+			traits = {
+				army_chief
+			}
+			ledger = army
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAG_Eduard_Zorn = {
+		name = AAG_Eduard_Zorn
+		portraits = { 
+			civilian = {
+				large = "gfx/interface/ideas/AAG/AAG_Eduard_Zorn_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_Eduard_Zorn.dds"
+			} 
+			army = {
+				large = "gfx/interface/ideas/AAG/AAG_Eduard_Zorn_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_Eduard_Zorn.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {
+				trait_mountaineer
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = AAG_Eduard_Zorn_high_command
+			allowed = {
+				original_tag = AAG
+			}
+			traits = {
+				high_command
+				high_command_AAG_experience_gain
+			}
+			ledger = army
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAG_Erwin_Fussenegger = {
+		name = AAG_Erwin_Fussenegger
+		portraits = { 
+			civilian = {
+				large = "gfx/interface/ideas/AAG/AAG_Erwin_Fussenegger_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_Erwin_Fussenegger.dds"
+			} 
+			army = {
+				large = "gfx/interface/ideas/AAG/AAG_Erwin_Fussenegger_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_Erwin_Fussenegger.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = AAG_Erwin_Fussenegger_high_command
+			allowed = {
+				original_tag = AAG
+			}
+			traits = {
+				high_command
+				high_command_AAG_experience_gain
+			}
+			ledger = army
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAG_Valentin_Feurstein = {
+		name = AAG_Valentin_Feurstein
+		portraits = { 
+			civilian = {
+				large = "gfx/interface/ideas/AAG/AAG_Valentin_Feurstein_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_Valentin_Feurstein.dds"
+			} 
+			army = {
+				large = "gfx/interface/ideas/AAG/AAG_Valentin_Feurstein_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_Valentin_Feurstein.dds"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = AAG_Valentin_Feurstein_theorist
+			allowed = {
+				original_tag = AAG
+			}
+			traits = {
+				theorist
+				high_command_AAG_experience_gain
+			}
+			ledger = army
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAG_Alfred_Kottas = {
+		name = AAG_Alfred_Kottas
+		portraits = { 
+			civilian = {
+				large = "gfx/interface/ideas/AAG/AAG_Alfred_Kottas_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_Alfred_Kottas.dds"
+			} 
+			army = {
+				large = "gfx/interface/ideas/AAG/AAG_Alfred_Kottas_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_Alfred_Kottas.dds"
+			}
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 3
+			traits = {
+				#
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = AAG_Alfred_Kottas_navy_chief
+			allowed = {
+				original_tag = AAG
+			}
+			traits = {
+				navy_chief
+				navy_chief_AAG_experience_gain
+			}
+			ledger = army
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAG_Franz_Preuschoff = {
+		name = AAG_Franz_Preuschoff
+		portraits = { 
+			civilian = {
+				large = "gfx/interface/ideas/AAG/AAG_Franz_Preuschoff_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_Franz_Preuschoff.dds"
+			} 
+			army = {
+				large = "gfx/interface/ideas/AAG/AAG_Franz_Preuschoff_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_Franz_Preuschoff.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = AAG_Franz_Preuschoff_air_chief
+			allowed = {
+				original_tag = AAG
+			}
+			traits = {
+				air_chief
+				air_chief_AAG_experience_gain
+			}
+			ledger = army
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	
+	AAG_Kurt_Diebner = {
+		name = AAG_Kurt_Diebner
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAG/AAG_HoG_Kurt_Diebner_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_HoG_Kurt_Diebner.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAG/AAG_HoG_Kurt_Diebner_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_HoG_Kurt_Diebner.dds"
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = AAG_Kurt_Diebner_dep
+			allowed = { original_tag = AAG }
+			traits = {
+				head_of_government
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAG_Carl_Friedrich_von_Weizsacker = {
+		name = AAG_Carl_Friedrich_von_Weizsacker
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAG/AAG_ForMin_Carl_Friedrich_von_Weizsacker_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_ForMin_Carl_Friedrich_von_Weizsacker.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAG/AAG_ForMin_Carl_Friedrich_von_Weizsacker_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_ForMin_Carl_Friedrich_von_Weizsacker.dds"
+			}
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = AAG_Carl_Friedrich_von_Weizsacker_pol
+			allowed = { original_tag = AAG }
+			traits = {
+				foreign_minister
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAG_Rudolf_Mentzel = {
+		name = AAG_Rudolf_Mentzel
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAG/AAG_EconMin_Rudolf_Mentzel_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_EconMin_Rudolf_Mentzel.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAG/AAG_EconMin_Rudolf_Mentzel_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_EconMin_Rudolf_Mentzel.dds"
+			}
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = AAG_Rudolf_Mentzel_eco
+			allowed = { original_tag = AAG }
+			traits = {
+				economy_minister
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	
+	AAG_Karl_Weiken = {
+		name = AAG_Karl_Weiken
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAG/AAG_HoG_Karl_Weiken_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_HoG_Karl_Weiken.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAG/AAG_HoG_Karl_Weiken_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_HoG_Karl_Weiken.dds"
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = AAG_Karl_Weiken_dep
+			allowed = { original_tag = AAG }
+			traits = {
+				head_of_government
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAG_Werner_Dankwort = {
+		name = AAG_Werner_Dankwort
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAG/AAG_ForMin_Werner_Dankwort_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_ForMin_Werner_Dankwort.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAG/AAG_ForMin_Werner_Dankwort_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_ForMin_Werner_Dankwort.dds"
+			}
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = AAG_Werner_Dankwort_pol
+			allowed = { original_tag = AAG }
+			traits = {
+				foreign_minister
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAG_Walther_Hofmann = {
+		name = AAG_Walther_Hofmann
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAG/AAG_EconMin_Walther_Hofmann_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_EconMin_Walther_Hofmann.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAG/AAG_EconMin_Walther_Hofmann_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_EconMin_Walther_Hofmann.dds"
+			}
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = AAG_Walther_Hofmann_eco
+			allowed = { original_tag = AAG }
+			traits = {
+				economy_minister
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	
+	AAG_Otto_Abetz = {
+		name = AAG_Otto_Abetz
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAG/AAG_HoG_Otto_Abetz_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_HoG_Otto_Abetz.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAG/AAG_HoG_Otto_Abetz_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_HoG_Otto_Abetz.dds"
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = AAG_Otto_Abetz_dep
+			allowed = { original_tag = AAG }
+			traits = {
+				head_of_government
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAG_Rudolf_Rahn = {
+		name = AAG_Rudolf_Rahn
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAG/AAG_ForMin_Rudolf_Rahn_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_ForMin_Rudolf_Rahn.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAG/AAG_ForMin_Rudolf_Rahn_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_ForMin_Rudolf_Rahn.dds"
+			}
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = AAG_Rudolf_Rahn_pol
+			allowed = { original_tag = AAG }
+			traits = {
+				foreign_minister
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAG_Karl_Maria_Hettlage = {
+		name = AAG_Karl_Maria_Hettlage
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAG/AAG_EconMin_Karl_Maria_Hettlage_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_EconMin_Karl_Maria_Hettlage.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAG/AAG_EconMin_Karl_Maria_Hettlage_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_EconMin_Karl_Maria_Hettlage.dds"
+			}
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = AAG_Karl_Maria_Hettlage_eco
+			allowed = { original_tag = AAG }
+			traits = {
+				economy_minister
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAG_Erich_Ehrlinger = {
+		name = AAG_Erich_Ehrlinger
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAG/AAG_SecMin_Erich_Ehrlinger_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_SecMin_Erich_Ehrlinger.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAG/AAG_SecMin_Erich_Ehrlinger_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_SecMin_Erich_Ehrlinger.dds"
+			}
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = AAG_Erich_Ehrlinger_sec
+			allowed = { original_tag = AAG }
+			traits = {
+				security_minister
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	
+	AAG_Eberhard_Kinzel = {
+		name = AAG_Eberhard_Kinzel
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAG/AAG_HoG_Eberhard_Kinzel_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_HoG_Eberhard_Kinzel.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAG/AAG_HoG_Eberhard_Kinzel_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_HoG_Eberhard_Kinzel.dds"
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = AAG_Eberhard_Kinzel_dep
+			allowed = { original_tag = AAG }
+			traits = {
+				head_of_government
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAG_Hasso_Von_Manteuffel = {
+		name = AAG_Hasso_Von_Manteuffel
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAG/AAG_ForMin_Hasso_Von_Manteuffel_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_ForMin_Hasso_Von_Manteuffel.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAG/AAG_ForMin_Hasso_Von_Manteuffel_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_ForMin_Hasso_Von_Manteuffel.dds"
+			}
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = AAG_Hasso_Von_Manteuffel_pol
+			allowed = { original_tag = AAG }
+			traits = {
+				foreign_minister
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAG_Martin_Harlinghausen = {
+		name = AAG_Martin_Harlinghausen
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAG/AAG_EconMin_Martin_Harlinghausen_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_EconMin_Martin_Harlinghausen.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAG/AAG_EconMin_Martin_Harlinghausen_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_EconMin_Martin_Harlinghausen.dds"
+			}
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = AAG_Martin_Harlinghausen_eco
+			allowed = { original_tag = AAG }
+			traits = {
+				economy_minister
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AAG_Ernst_Klasing = {
+		name = AAG_Ernst_Klasing
+		portraits = {
+			civilian = {
+				large = "gfx/interface/ideas/AAG/AAG_SecMin_Ernst_Klasing_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_SecMin_Ernst_Klasing.dds"
+			}
+			army = {
+				large = "gfx/interface/ideas/AAG/AAG_SecMin_Ernst_Klasing_large.dds"
+				small = "gfx/interface/ideas/AAG/AAG_SecMin_Ernst_Klasing.dds"
+			}
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = AAG_Ernst_Klasing_sec
+			allowed = { original_tag = AAG }
+			traits = {
+				security_minister
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	
+	AAG_Konstanty_Gutschow = {
+		name = AAG_Konstanty_Gutschow
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Antarctica/Portrait_AAG_Konstanty_Gutschow.dds"
+				small = "gfx/interface/ideas/AAG/AAG_Konstanty_Gutschow.dds"
+			}
+			army = {
+				large = "gfx/leaders/Antarctica/Portrait_AAG_Konstanty_Gutschow.dds"
+				small = "gfx/interface/ideas/AAG/AAG_Konstanty_Gutschow.dds"
+			}
+		}
+		country_leader = {
+			ideology = national_socialism_antarctic_administration_subtype
+			expire = "1999.1.1"
+			traits = {
+				national_socialism
+			}
+			id = -1
+		}
+	}
+	AAG_Viktor_Lutze = {
+		name = AAG_Viktor_Lutze
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Antarctica/Portrait_AAG_Viktor_Lutze.dds"
+				small = "gfx/interface/ideas/AAG/AAG_Viktor_Lutze.dds"
+			}
+			army = {
+				large = "gfx/leaders/Antarctica/Portrait_AAG_Viktor_Lutze.dds"
+				small = "gfx/interface/ideas/AAG/AAG_Viktor_Lutze.dds"
+			}
+		}
+		country_leader = {
+			ideology = national_socialism_antarctic_administration_subtype
+			expire = "1999.1.1"
+			traits = {
+				national_socialism
+			}
+			id = -1
+		}
+	}
+}

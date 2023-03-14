@@ -1,0 +1,20 @@
+state={
+	id=2021
+	name="STATE_2021" # Marie Byrd Land
+	manpower = 1
+	
+	state_category = wasteland
+	
+	impassable = yes
+
+	history={
+		owner = ZZZ
+		buildings = {
+			infrastructure = 0
+		}
+	}
+
+	provinces={
+		16517 
+	}
+}

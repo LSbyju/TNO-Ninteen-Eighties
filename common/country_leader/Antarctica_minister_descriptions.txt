@@ -1,0 +1,61 @@
+leader_traits = {
+	#AAO
+	AAO_James_R_Reedy_dep_desc = {}
+	AAO_Herman_Phleger_pol_desc = {}
+	AAO_Howard_Beale_eco_desc = {}
+	AAO_William_Robertson_sec_desc = {}
+
+	#AAC
+	AAC_Marcial_Mora_Miranda_dep_desc = {}
+	AAC_Enrique_Gajardo_Villarroel_pol_desc = {}
+	AAC_Anibal_Pinto_Santa_Cruz_eco_desc = {}
+	AAC_Jose_Toribio_Merino_sec_desc = {}
+
+	#AAG
+	AAG_Richard_Heinrich_Schirmacher_dep_desc = {}
+	AAG_Ernst_Herrmann_pol_desc = {}
+	AAG_Erich_Schumann_eco_desc = {}
+	AAG_Anton_Grasser_sec_desc = {}
+
+	#AAG Goring
+	AAG_Kurt_Diebner_dep_desc = {}
+	AAG_Carl_Friedrich_von_Weizsacker_pol_desc = {}
+	AAG_Rudolf_Mentzel_eco_desc = {}
+	AAG_Anton_Grasser_GGR_sec_desc = {}
+	
+	#AAG Science
+	AAG_Karl_Weiken_dep_desc = {}
+	AAG_Werner_Dankwort_pol_desc = {}
+	AAG_Walther_Hofmann_eco_desc = {}
+	AAG_Anton_Grasser_SGR_sec_desc = {}
+	
+	#AAG Party
+	AAG_Otto_Abetz_dep_desc = {}
+	AAG_Rudolf_Rahn_pol_desc = {}
+	AAG_Karl_Maria_Hettlage_eco_desc = {}
+	AAG_Erich_Ehrlinger_sec_desc = {}
+	
+	#AAG Military
+	AAG_Eberhard_Kinzel_dep_desc = {}
+	AAG_Hasso_Von_Manteuffel_pol_desc = {}
+	AAG_Martin_Harlinghausen_eco_desc = {}
+	AAG_Ernst_Klasing_sec_desc = {}
+
+	#AAJ
+	AAJ_Michio_Sugahara_dep_desc = {}
+	AAJ_Takeso_Shimoda_pol_desc = {}
+	AAJ_Koichiro_Asakai_eco_desc = {}
+	AAJ_Koichi_Ono_sec_desc = {}
+
+	#AAA
+	AAA_Gustavo_Adolfo_Giro_dep_desc = {}
+	AAA_Juan_Carlos_Beltramino_pol_desc = {}
+	AAA_Mario_Luis_Olezza_eco_desc = {}
+	AAA_Hernan_Pujato_sec_desc = {}
+
+	#AAB
+	AAB_Herbert_Jankuhn_dep_desc = {}
+	AAB_Yrjo_Von_Gronhagen_pol_desc = {}
+	AAB_Heinz_Brucher_eco_desc = {}
+	AAB_Otto_Ohlendorf_sec_desc = {}
+}

@@ -1,0 +1,265 @@
+scripted_gui = {
+	Antarctica_GUI_Foreign = {
+		context_type = decision_category
+		window_name = "Antarctica_GUI_Foreign"
+
+		visible = {
+			always = yes
+		}
+		
+		triggers = {
+			Antarctica_GUI_Foreign_Antarctica_AAA_visible = {
+				tag = ARG
+			}
+			Antarctica_GUI_Foreign_Antarctica_AAC_visible = {
+				tag = CHL
+			}
+			Antarctica_GUI_Foreign_Antarctica_AAG_visible = {
+				tag = GER
+			}
+			Antarctica_GUI_Foreign_Antarctica_AAJ_visible = {
+				tag = JAP
+			}
+			Antarctica_GUI_Foreign_Antarctica_AAO_visible = {
+				tag = USA
+			}
+			
+			Antarctica_GUI_Foreign_Checkbox_BiMonthly_click_enabled = {
+				check_variable = { Antarctica_Agency_Budget_Adjustment_Timer = 0 }
+			}
+			Antarctica_GUI_Foreign_Checkbox_Monthly_click_enabled = {
+				check_variable = { Antarctica_Agency_Budget_Adjustment_Timer = 0 }
+			}
+			Antarctica_GUI_Foreign_Checkbox_BiWeekly_click_enabled = {
+				check_variable = { Antarctica_Agency_Budget_Adjustment_Timer = 0 }
+			}
+			Antarctica_GUI_Foreign_Checkbox_Weekly_click_enabled = {
+				check_variable = { Antarctica_Agency_Budget_Adjustment_Timer = 0 }
+			}
+			Antarctica_GUI_Foreign_Budget_slider_left_click_enabled = {
+				check_variable = { Antarctica_Agency_Budget_Adjustment_Timer = 0 }
+			}
+			Antarctica_GUI_Foreign_Budget_slider_right_click_enabled = {
+				check_variable = { Antarctica_Agency_Budget_Adjustment_Timer = 0 }
+			}
+			Antarctica_GUI_Foreign_Budget_set_button_real_click_enabled = {
+				check_variable = { Antarctica_Agency_Budget_Adjustment_Timer = 0 }
+			}
+			Antarctica_GUI_Foreign_Lock_Budget_click_enabled = {
+				check_variable = { Antarctica_Agency_Budget_Adjustment_Timer = 0 }
+			}
+		}
+		
+		effects = {
+			Antarctica_GUI_Foreign_Checkbox_BiMonthly_click = {
+				set_variable = { Antarctica_Agency_Budget_Spending_Frequency = 1 }
+				
+				set_variable = { Antarctica_Agency_Budget_Spending_BiMonthly = 2 }
+				set_variable = { Antarctica_Agency_Budget_Spending_Monthly = 1 }
+				set_variable = { Antarctica_Agency_Budget_Spending_BiWeekly = 1 }
+				set_variable = { Antarctica_Agency_Budget_Spending_Weekly = 1 }
+			}
+			Antarctica_GUI_Foreign_Checkbox_Monthly_click = {
+				set_variable = { Antarctica_Agency_Budget_Spending_Frequency = 2 }
+				
+				set_variable = { Antarctica_Agency_Budget_Spending_BiMonthly = 1 }
+				set_variable = { Antarctica_Agency_Budget_Spending_Monthly = 2 }
+				set_variable = { Antarctica_Agency_Budget_Spending_BiWeekly = 1 }
+				set_variable = { Antarctica_Agency_Budget_Spending_Weekly = 1 }
+			}
+			Antarctica_GUI_Foreign_Checkbox_BiWeekly_click = {
+				set_variable = { Antarctica_Agency_Budget_Spending_Frequency = 3 }
+				
+				set_variable = { Antarctica_Agency_Budget_Spending_BiMonthly = 1 }
+				set_variable = { Antarctica_Agency_Budget_Spending_Monthly = 1 }
+				set_variable = { Antarctica_Agency_Budget_Spending_BiWeekly = 2 }
+				set_variable = { Antarctica_Agency_Budget_Spending_Weekly = 1 }
+			}
+			Antarctica_GUI_Foreign_Checkbox_Weekly_click = {
+				set_variable = { Antarctica_Agency_Budget_Spending_Frequency = 4 }
+				
+				set_variable = { Antarctica_Agency_Budget_Spending_BiMonthly = 1 }
+				set_variable = { Antarctica_Agency_Budget_Spending_Monthly = 1 }
+				set_variable = { Antarctica_Agency_Budget_Spending_BiWeekly = 1 }
+				set_variable = { Antarctica_Agency_Budget_Spending_Weekly = 2 }
+			}
+			
+			Antarctica_GUI_Foreign_Budget_slider_left_click = {
+				subtract_from_variable = { econ_Antarctica_GUI_Foreign_Budget_slider_pct = 1 }
+				#custom_effect_tooltip = econ_army_expenditures_slider_button_left_tt
+				
+				clamp_variable = {
+					var = econ_Antarctica_GUI_Foreign_Budget_slider_pct
+					min = 0
+					max = 100
+				}
+				
+				set_variable = { Antarctica_GUI_Foreign_Budget_slider_dot_x = econ_Antarctica_GUI_Foreign_Budget_slider_pct }
+				multiply_variable = { Antarctica_GUI_Foreign_Budget_slider_dot_x = 1.88 }
+				add_to_variable = { Antarctica_GUI_Foreign_Budget_slider_dot_x = 45 }
+				
+				set_variable = { Antarctica_Agency_Budget_Spending_Display = econ_Antarctica_GUI_Foreign_Budget_slider_pct }
+			}
+			Antarctica_GUI_Foreign_Budget_slider_right_click = {
+				add_to_variable = { econ_Antarctica_GUI_Foreign_Budget_slider_pct = 1 }
+				#custom_effect_tooltip = econ_army_expenditures_slider_button_right_tt
+				
+				clamp_variable = {
+					var = econ_Antarctica_GUI_Foreign_Budget_slider_pct
+					min = 0
+					max = 100
+				}
+				
+				set_variable = { Antarctica_GUI_Foreign_Budget_slider_dot_x = econ_Antarctica_GUI_Foreign_Budget_slider_pct }
+				multiply_variable = { Antarctica_GUI_Foreign_Budget_slider_dot_x = 1.88 }
+				add_to_variable = { Antarctica_GUI_Foreign_Budget_slider_dot_x = 45 }
+				
+				set_variable = { Antarctica_Agency_Budget_Spending_Display = econ_Antarctica_GUI_Foreign_Budget_slider_pct }
+			}
+			Antarctica_GUI_Foreign_Budget_set_button_real_click = {
+				set_variable = { econ_Antarctica_GUI_Foreign_Budget_slider_pct = button_idx }
+				multiply_variable = { econ_Antarctica_GUI_Foreign_Budget_slider_pct = 5 }
+				divide_variable = { econ_Antarctica_GUI_Foreign_Budget_slider_pct = 3 }
+				#custom_effect_tooltip = econ_army_expenditures_slider_button_left_tt
+				
+				clamp_variable = {
+					var = econ_Antarctica_GUI_Foreign_Budget_slider_pct
+					min = 0
+					max = 100
+				}
+				
+				set_variable = { Antarctica_GUI_Foreign_Budget_slider_dot_x = econ_Antarctica_GUI_Foreign_Budget_slider_pct }
+				multiply_variable = { Antarctica_GUI_Foreign_Budget_slider_dot_x = 1.88 }
+				add_to_variable = { Antarctica_GUI_Foreign_Budget_slider_dot_x = 45 }
+				
+				set_variable = { Antarctica_Agency_Budget_Spending_Display = econ_Antarctica_GUI_Foreign_Budget_slider_pct }
+			}
+			
+			Antarctica_GUI_Foreign_Lock_Budget_click = {
+				set_variable = { Antarctica_Agency_Budget_Spending = econ_Antarctica_GUI_Foreign_Budget_slider_pct }
+				set_variable = { Antarctica_Agency_Budget_Spending_Display = econ_Antarctica_GUI_Foreign_Budget_slider_pct }
+				
+				set_variable = { Antarctica_Agency_Supply_to_be_Sent = Antarctica_Agency_Budget_Spending_Display }
+				clamp_variable = {
+					var = Antarctica_Agency_Supply_to_be_Sent
+					max = 100
+				}
+				round_variable = Antarctica_Agency_Supply_to_be_Sent
+				
+				set_variable = { Antarctica_Agency_Decay_Reduction = Antarctica_Agency_Budget_Spending_Display }
+				subtract_from_variable = { Antarctica_Agency_Decay_Reduction = 50 }
+				clamp_variable = {
+					var = Antarctica_Agency_Decay_Reduction
+					max = 50
+				}
+				round_variable = Antarctica_Agency_Decay_Reduction
+				multiply_variable = { Antarctica_Agency_Decay_Reduction = 0.01 }
+				
+				if = {
+					limit = {
+						check_variable = { Antarctica_Agency_Budget_Spending_Frequency = 1 }
+					}
+					set_variable = { Antarctica_Agency_Supply_Shipment_Time = 60 }
+					multiply_variable = { Antarctica_Agency_Budget_Spending = 6 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { Antarctica_Agency_Budget_Spending_Frequency = 2 }
+					}
+					set_variable = { Antarctica_Agency_Supply_Shipment_Time = 30 }
+					multiply_variable = { Antarctica_Agency_Budget_Spending = 12 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { Antarctica_Agency_Budget_Spending_Frequency = 3 }
+					}
+					set_variable = { Antarctica_Agency_Supply_Shipment_Time = 14 }
+					multiply_variable = { Antarctica_Agency_Budget_Spending = 26 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { Antarctica_Agency_Budget_Spending_Frequency = 4 }
+					}
+					set_variable = { Antarctica_Agency_Supply_Shipment_Time = 7 }
+					multiply_variable = { Antarctica_Agency_Budget_Spending = 52 }
+				}
+				else = {
+					set_variable = { Antarctica_Agency_Supply_Shipment_Time = 30 }
+					multiply_variable = { Antarctica_Agency_Budget_Spending = 26 }
+				}
+				
+				multiply_variable = { Antarctica_Agency_Budget_Spending = 0.01 }
+				multiply_variable = { Antarctica_Agency_Budget_Spending = 0.1 }
+				
+				if = {
+					limit = {
+						tag = USA
+					}
+					AAO = {
+						remove_mission = Antarctica_Situation_Overview_Supply_AAO_mission
+						activate_mission = Antarctica_Situation_Overview_Supply_AAO_mission
+					}
+				}
+				else_if = {
+					limit = {
+						tag = GER
+					}
+					AAG = {
+						remove_mission = Antarctica_Situation_Overview_Supply_AAG_mission
+						activate_mission = Antarctica_Situation_Overview_Supply_AAG_mission
+					}
+				}
+				else_if = {
+					limit = {
+						tag = JAP
+					}
+					AAJ = {
+						remove_mission = Antarctica_Situation_Overview_Supply_AAJ_mission
+						activate_mission = Antarctica_Situation_Overview_Supply_AAJ_mission
+					}
+				}
+				
+				set_variable = { Antarctica_Agency_Budget_Adjustment_Timer = 180 }
+				# Antarctica_Agency_Budget_Spending
+				# Antarctica_Agency_Supply_to_be_Sent
+				# Antarctica_Agency_Supply_Shipment_Time
+				# Antarctica_Agency_Decay_Reduction
+			}
+		}
+		
+		properties = {
+			Antarctica_GUI_Foreign_Leader_Icon = {
+				image = "[get_Antarctica_GUI_Foreign_Leader_Image]"
+			}
+			Antarctica_GUI_Foreign_Admin_Icon = {
+				image = "[get_Antarctica_GUI_Foreign_Admin_Icon]"
+			}
+			
+			Antarctica_GUI_Foreign_Checkbox_BiMonthly = {
+				frame = Antarctica_Agency_Budget_Spending_BiMonthly
+			}
+			Antarctica_GUI_Foreign_Checkbox_Monthly = {
+				frame = Antarctica_Agency_Budget_Spending_Monthly
+			}
+			Antarctica_GUI_Foreign_Checkbox_BiWeekly = {
+				frame = Antarctica_Agency_Budget_Spending_BiWeekly
+			}
+			Antarctica_GUI_Foreign_Checkbox_Weekly = {
+				frame = Antarctica_Agency_Budget_Spending_Weekly
+			}
+			
+			Antarctica_GUI_Foreign_Budget_slider_dot = {
+				x = Antarctica_GUI_Foreign_Budget_slider_dot_x
+			}
+		}
+		
+		dynamic_lists = {
+			Antarctica_GUI_Foreign_Budget_set_buttons = {
+				array = Antarctica_GUI_Foreign_Budget_set_buttons_array
+				change_scope = no
+				entry_container = Antarctica_GUI_Foreign_Budget_set_button
+				value = button_idx
+			}
+		}
+	}
+}

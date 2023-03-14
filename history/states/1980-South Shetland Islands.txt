@@ -1,0 +1,19 @@
+state={
+	id=1980
+	name="STATE_1980" #South Shetland Islands
+	provinces={
+		16724 16726 16727 16729 16730 16731 
+	}
+	manpower = 1
+
+	state_category = wasteland
+
+	history = {
+		owner = AAA
+		add_core_of = AAA
+		victory_points = { 16726 1 }
+		buildings = {
+			infrastructure = 0
+		}
+	}
+}

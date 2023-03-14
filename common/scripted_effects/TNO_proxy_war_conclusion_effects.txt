@@ -281,6 +281,14 @@ conclude_south_african_war = {
 				}
 			}
 		}
+		
+		# Added by ODF
+		AAO = {
+			country_event =  {
+				id = antarctica_aao_cia.710
+				days = 2
+			}
+		}
 	}
 	USA_SAW_conclusion_events = yes
 }

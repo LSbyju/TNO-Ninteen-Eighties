@@ -1,0 +1,22 @@
+﻿capital = 2019
+
+set_politics = {
+	ruling_party = paternalism
+	last_election = "1960.11.11"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+set_popularities = {
+	communist = 0
+	ultranationalism = 0
+	socialist = 0
+	progressivism = 0
+	liberalism = 0
+	conservatism = 0
+	paternalism = 100
+	despotism = 0
+	fascism = 0
+	national_socialism = 0
+	esoteric_nazism = 0
+}

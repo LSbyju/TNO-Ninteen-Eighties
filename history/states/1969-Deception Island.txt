@@ -1,0 +1,23 @@
+state={
+	id=1969
+	name="STATE_1969" # Deception Island
+	manpower = 1
+	
+	state_category = wasteland
+
+	history={
+		owner = AAA
+		add_core_of = AAA
+		victory_points = { 16552 1 }
+		buildings = {
+			infrastructure = 0
+			16552 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		16552
+	}
+}

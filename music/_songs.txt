@@ -293,3 +293,18 @@ music = {
 		}
 	}
 }
+
+music = {
+	song = "usfi_bg"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			ICE = { NOT = { has_country_flag = USFI_Air_Support_Mission_Begun } }
+		}
+		modifier = {
+			factor = 30000
+			ICE = { has_country_flag = USFI_Air_Support_Mission_Begun }
+		}		
+	}	
+}

@@ -1,0 +1,23 @@
+state={
+	id=1977
+	name="STATE_1977" # Cape Margerie
+	manpower = 1
+	
+	state_category = wasteland
+
+	history={
+		owner = AAO
+		add_core_of = AAO
+		victory_points = { 16560 1 }
+		buildings = {
+			infrastructure = 1
+			16560 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		16560
+	}
+}

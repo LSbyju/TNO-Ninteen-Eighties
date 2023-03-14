@@ -1,8 +1,8 @@
 ﻿l_english:
  # Format - TNO vMajorVersion.ContentUpdate.PatchNumber(Hotfix Letter) - Content Update Name
- tno_current_version:0 "TNO v1.4.0a - Silicon Dreams"
+ tno_current_version:0 "TNO v1.4.0a - Silicon Dreams\nOperation Deep Freeze v1.2.3 - Byrd's Nightmare"
  # Format - Date of most recent update - Hotfix Or Patch Contents
- tno_current_version_date:0 "§YFebruary 13th, 2023 - Silicon Dreams§!"
+ tno_current_version_date:0 "§YFebruary 13th, 2023 - Silicon Dreams\nJanuary 22nd, 2023 - Byrd's Nightmare§!"
 
  # Patch History logged below
  # TNO v1.0.0 - Released on July 21st, 2020 - Initial Release

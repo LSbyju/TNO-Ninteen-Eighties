@@ -1,0 +1,19 @@
+state={
+	id=1990
+	name="STATE_1990"
+	provinces={
+		16630 16631 16632 16634 16649 16650 16690 16697 16712 16659 16648 16656 
+	}
+	manpower = 1
+
+	state_category = wasteland
+
+	history = {
+		owner = AAA
+		add_core_of = AAA
+		buildings = {
+			infrastructure = 0
+		}
+	}
+
+}

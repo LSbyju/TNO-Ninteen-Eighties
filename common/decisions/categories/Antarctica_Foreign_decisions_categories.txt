@@ -1,0 +1,45 @@
+Antarctica_GUI_AAG_Germany = {
+	icon = GFX_decision_category_antarctica_ns
+	picture = GFX_decision_category_picture_AAG_Germany_GUI
+	
+	allowed = {
+		tag = GER
+	}
+	visible = {
+		has_global_flag = german_civil_war_end
+		AAG = { exists = yes }
+		NOT = { has_global_flag = Antarctica_Germany_Returned_to_NS }
+	}
+	visible_when_empty = yes
+	priority = 100000
+	scripted_gui = Antarctica_GUI_AAG_Germany
+}
+
+Antarctica_GUI_Foreign = {
+	icon = GFX_decision_category_antarctica
+	picture = GFX_decision_category_picture_Foreign
+	
+	allowed = {
+		OR = {
+			AND = {
+				tag = USA
+				AAO = { exists = yes }
+			}
+			AND = {
+				tag = JAP
+				AAJ = { exists = yes }
+			}
+			AND = {
+				tag = GER
+				NOT = { has_global_flag = german_civil_war }
+				AAG = { exists = yes }
+			}
+		}
+	}
+	visible = {
+		always = yes
+	}
+	visible_when_empty = yes
+	priority = 1
+	scripted_gui = Antarctica_GUI_Foreign
+}

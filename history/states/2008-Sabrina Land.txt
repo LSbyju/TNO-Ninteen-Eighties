@@ -1,0 +1,23 @@
+state={
+	id=2008
+	name="STATE_2008"
+	provinces={
+		16590 16664 16669 16781
+	}
+	manpower = 1
+
+	state_category = wasteland
+
+	history = {
+		owner = AAO
+		add_core_of = AAO
+		victory_points = { 16781 1 }
+		buildings = {
+			infrastructure = 0
+			16781 = {
+				naval_base = 1
+			}
+		}
+	}
+
+}

@@ -14,7 +14,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 6345;6287;sea;2382;-1;-1;-1;-1;;Skåne-Sjaelland
 9279;6287;sea;2382;-1;-1;-1;-1;;Skåne-Sjaelland
 3260;3325;;2408;-1;-1;-1;-1;;Sjaelland-Fyn
-3260;3374;;2408;-1;-1;2973;1625;;Sjaelland-SdFyn
+3260;3374;;2408;-1;-1;-1;-1;;Sjaelland-SdFyn
 3277;3325;;2408;-1;-1;-1;-1;;Fyn-Jylland
 11251;3325;;2408;2956;1628;2960;1629;;Fyn-SdrJylland
 83;185;sea;1885;-1;-1;-1;-1;;Estonia-Ösel
@@ -127,7 +127,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 9833;11829;sea;5412;-1;-1;-1;-1;;Bosphorus
 9680;6741;sea;8282;-1;-1;-1;-1;;Kerch Strait
 9859;3962;sea;5946;-1;-1;-1;-1;;Tsugaru Strait
-10011;1158;sea;2708;4825;1219;-1;-1;;Tsushima-Kyushu
+10011;1158;sea;2708;-1;-1;-1;-1;;Tsushima-Kyushu
 4160;1070;sea;5244;-1;-1;-1;-1;;Hainan-Strait
 1712;12147;sea;8978;-1;-1;-1;-1;;Quebec-Strait
 3691;7813;sea;6261;-1;-1;-1;-1;;Cold Ass-Strait

@@ -1,0 +1,24 @@
+state={
+	id=1970
+	name="STATE_1970" # Hope Bay
+	manpower = 1
+	
+	state_category = wasteland
+
+	history={
+		owner = AAA
+		add_core_of = AAA
+		victory_points = { 16553 3 }
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+			16553 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		16553
+	}
+}

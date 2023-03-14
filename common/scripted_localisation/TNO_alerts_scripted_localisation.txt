@@ -28,6 +28,15 @@ defined_text = {
 	# 	trigger = { check_variable = { alert_id = token: } }
 	# 	localization_key = 
 	# }
+	
+	text = {
+		trigger = { check_variable = { alert_id = 9000 } }
+		localization_key = TNO_alert_name_antarctica_task_forces
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 9001 } }
+		localization_key = TNO_alert_name_antarctica_low_stat
+	}
 
 	#|=====[ REICH ]=====|#
 	
@@ -75,6 +84,20 @@ defined_text = {
 	text = { # Fiscal Crisis
 		trigger = { check_variable = { alert_id = token:Alert_FiscalCrisis } }
 		localization_key = Alert_FiscalCrisis_Desc
+	}
+	
+	text = {
+		trigger = {
+			set_temp_variable = { Antarctic_Intelligence_Agents_Free = Antarctic_Intelligence_Agents_Cap }
+			subtract_from_temp_variable = { Antarctic_Intelligence_Agents_Free = Antarctic_Intelligence_Agents_Active }
+			
+			check_variable = { alert_id = 9000 }
+		}
+		localization_key = TNO_alert_desc_antarctica_task_forces
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 9001 } }
+		localization_key = TNO_alert_desc_antarctica_low_stat
 	}
 
 	#|=====[ REICH ]=====|#
@@ -139,6 +162,15 @@ defined_text = {
 	# 	trigger = { check_variable = { alert_id = token: } }
 	# 	localization_key = "GFX_TNO_"
 	# }
+	
+	text = {
+		trigger = { check_variable = { alert_id = 9000 } }
+		localization_key = "GFX_TNO_custom_alert_Antarctica_Task_Force_Available"
+	}
+	text = {
+		trigger = { check_variable = { alert_id = 9001 } }
+		localization_key = "GFX_TNO_custom_alert_Antarctica_Low_Stat"
+	}
 
 	#|=====[ REICH ]=====|#
 

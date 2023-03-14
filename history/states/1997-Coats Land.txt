@@ -1,0 +1,20 @@
+state={
+	id=1997
+	name="STATE_1997"
+	provinces={
+		16678 16609 16582 16773 
+	}
+	manpower = 1
+
+	state_category = wasteland
+
+	history = {
+		owner = AAG
+		add_core_of = AAG
+		victory_points = { 16773 1 }
+		buildings = {
+			infrastructure = 0
+		}
+	}
+
+}

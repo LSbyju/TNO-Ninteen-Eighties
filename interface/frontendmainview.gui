@@ -64,7 +64,7 @@ guiTypes = {
 		iconType = {
 			name ="frontend_tno_logo"
 			spriteType = "GFX_frontend_tno_logo"
-			position = { x = -300 y = 40 }
+			position = { x = -300 y = 10 }
 		}
 		
 		ButtonType = {
@@ -231,26 +231,26 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name ="version_label"
-			position = { x = 600 y = -28 }
+			position = { x = 650 y = -28 }
 			textureFile = ""
 			font = "aldrich_24_outline"
 			borderSize = {x = 0 y = 0}
 			text = "V1.0.3"
 			format = right
-			maxWidth = 400
+			maxWidth = 350
 			maxHeight = 20
 		}
 
 		instantTextBoxType = {
 			name ="tno_version_label"
-			position = { x = 100 y = -28 }
+			position = { x = 100 y = -52 }
 			textureFile = ""
 			font = "aldrich_24_outline"
 			borderSize = {x = 0 y = 0}
 			text = tno_current_version
 			format = left
 			maxWidth = 600
-			maxHeight = 20
+			maxHeight = 52
 			pdx_tooltip = tno_current_version_date
 		}
 
@@ -300,7 +300,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "settings_button"
-			position = { x = 43 y = 14 }
+			position = { x = 43 y = 34 }
 			quadTextureSprite ="GFX_settings_icon"
 			clicksound = click_default
 			oversound = ui_menu_over
@@ -328,7 +328,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "credits_button"
-			position = {  x = 43 y = 54 }
+			position = {  x = 43 y = 74 }
 			quadTextureSprite ="GFX_credits_icon"
 			clicksound = click_default
 			oversound = ui_menu_over
@@ -337,7 +337,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "career_profile_button"
-			position = { x = 43 y = 94 }
+			position = { x = 43 y = 164 }
 			quadTextureSprite = "GFX_career_profile_icon"
 			clicksound = click_default
 			oversound = ui_menu_over
@@ -346,7 +346,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "nudge_button"
-			position = { x = 43 y = 138 }
+			position = { x = 43 y = 114 }
 			quadTextureSprite = "GFX_nudge_icon"
 			clicksound = click_default
 			oversound = ui_menu_over

@@ -209,6 +209,21 @@ TNO_alert_click = {
 		add_to_array = { BRA_map_tab_frames = 1 }
 		add_to_array = { BRA_map_tab_frames = 1 }
 	}
+	else_if = {
+		# Antarctica Task Forces Available Alert
+		limit = { check_variable = { alert_id = 9000 } }
+		set_country_flag = Antarctica_GUI_Open_Flag
+		
+		set_temp_variable = { alert_id = 9000 }
+		remove_TNO_alert = yes
+	}
+	else_if = {
+		# Antarctica Low Stat Alert
+		limit = { check_variable = { alert_id = 9001 } }
+		set_country_flag = Antarctica_GUI_Open_Flag
+		set_variable = { Antarctica_GUI_Dropdown_Var = 1 }
+		set_variable = { Antarctica_GUI_Dropdown_Button_Var = 2 }
+	}
 
 	#|=====[ MEDITERRANEAN ]=====|#
 	
@@ -269,7 +284,15 @@ suppress_TNO_alert = {
 			limit = { check_variable = { alert_id = token:Alert_RUS_Smuta_War } }
 			set_temp_variable = { suppression_weeks = 0 }
 		}
-
+		else_if = {
+			limit = { check_variable = { alert_id = 9000 } }
+			set_temp_variable = { suppression_weeks = 4 }
+		}
+		else_if = {
+			limit = { check_variable = { alert_id = 9001 } }
+			set_temp_variable = { suppression_weeks = 2 }
+		}
+		
 		if = {
 			limit = { check_variable = { suppression_weeks > 0 } }
 			

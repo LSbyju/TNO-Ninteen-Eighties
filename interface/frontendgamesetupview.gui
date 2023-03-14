@@ -749,6 +749,44 @@ guiTypes = {
 			spriteType = "GFX_countries_cover"
 			#alwaystransparent = yes
 		}
+		
+		# WIP Covers
+		#iconType = {
+		#	name = "countries_clickcover_AAG"
+		#	position = { x = 474 y = 56 }
+		#	spriteType = "GFX_country_selection_screen_WIP_overlay"
+		#	pdx_tooltip = ODF_WIP_Country_tt_AAG
+		#}
+		iconType = {
+			name = "countries_clickcover_AAB"
+			position = { x = 654 y = 56 }
+			spriteType = "GFX_country_selection_screen_WIP_overlay"
+			pdx_tooltip = ODF_WIP_Country_tt_AAB
+		}
+		iconType = {
+			name = "countries_clickcover_AAA"
+			position = { x = 474 y = 128 }
+			spriteType = "GFX_country_selection_screen_WIP_overlay"
+			pdx_tooltip = ODF_WIP_Country_tt_AAA
+		}
+		iconType = {
+			name = "countries_clickcover_AAC"
+			position = { x = 654 y = 128 }
+			spriteType = "GFX_country_selection_screen_WIP_overlay"
+			pdx_tooltip = ODF_WIP_Country_tt_AAC
+		}
+		#iconType = {
+		#	name = "countries_clickcover_AAO"
+		#	position = { x = 474 y = 200 }
+		#	spriteType = "GFX_country_selection_screen_WIP_overlay"
+		#	pdx_tooltip = ODF_WIP_Country_tt_AAO
+		#}
+		iconType = {
+			name = "countries_clickcover_AAJ"
+			position = { x = 654 y = 200 }
+			spriteType = "GFX_country_selection_screen_WIP_overlay"
+			pdx_tooltip = ODF_WIP_Country_tt_AAJ
+		}
 
 		## Clickability Covers
 		# Edges
@@ -908,13 +946,6 @@ guiTypes = {
 			spriteType = "GFX_country_selection_screen_blocker"
 			pdx_tooltip = "BOOKMARK_OSTLAND_BLOCKER"
 			pdx_tooltip_delayed = "BOOKMARK_OSTLAND_BLOCKER_DELAYED"
-		}
-
-		# Russia
-		iconType = {
-			name = "countries_clickcover_russia_bigboys"
-			position = { x = 438 y = 53 }
-			spriteType = "GFX_country_selection_clickcover_bigboys"		
 		}
 
 		# Sphere

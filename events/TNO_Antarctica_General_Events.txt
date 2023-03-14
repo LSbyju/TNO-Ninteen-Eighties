@@ -1,0 +1,2636 @@
+add_namespace = antarctica_alert_event
+add_namespace = antarctica_intercept_event
+add_namespace = antarctica_aaa_alert_event
+add_namespace = antarctica_aac_alert_event
+add_namespace = antarctica_aag_alert_event
+add_namespace = antarctica_aaj_alert_event
+add_namespace = antarctica_aao_alert_event
+add_namespace = antarctica_news_events
+add_namespace = antarctica_aao_flavor
+add_namespace = germany_antarctica
+
+country_event = { # Debug event for interception stuff
+	id = antarctica_intercept_event.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_intercept_event.10" }
+	title = antarctica_intercept_event.10.t
+	desc = antarctica_intercept_event.10.desc
+
+	is_triggered_only = yes
+	hidden = yes
+	
+	immediate = {
+		clr_country_flag = Antarctic_Special_Missions_Currently_Intercepting_Mission
+
+		set_variable = { global.Antarctica_GUI_Tile_Mission_Scope_Source_Array^Antarctic_Special_Missions_Interception_Tile = 0 }
+		set_variable = { global.Antarctica_GUI_Tile_Mission_Scope_Target_Array^Antarctic_Special_Missions_Interception_Tile = 0 }
+		set_variable = { global.Antarctica_GUI_Tile_Mission_Progress_Array^Antarctic_Special_Missions_Interception_Tile = 0 }
+		set_variable = { global.Antarctica_GUI_Tile_Mission_Id_Array^Antarctic_Special_Missions_Interception_Tile = 0 }
+
+		set_variable = { Antarctic_Special_Missions_Interception_Tile_Internal = 0 }
+		set_variable = { Antarctic_Special_Missions_Interception_Tile = 0 }
+
+		remove_one_Antarctic_Intelligence_Agent_Used = yes
+	}
+
+	option = {
+		name = antarctica_intercept_event.10.a
+	}
+}
+
+country_event = { # Alerts the player that they have gained enough intelligence to conduct special missions
+	id = antarctica_alert_event.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_alert_event.10" }
+	title = antarctica_alert_event.10.t
+	desc = antarctica_alert_event.10.desc
+	picture = GFX_report_event_antarctica_letter
+
+	is_triggered_only = yes
+
+	option = {
+		name = antarctica_alert_event.10.a
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = { # Alerts the player that they have gained enough intelligence to conduct special missions
+	id = antarctica_alert_event.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_alert_event.11" }
+	title = antarctica_alert_event.11.t
+	desc = antarctica_alert_event.11.desc
+	picture = GFX_report_event_antarctica_letter
+
+	is_triggered_only = yes
+
+	option = {
+		name = antarctica_alert_event.11.a
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = { # Alerts the player that they have gained enough intelligence to conduct special missions
+	id = antarctica_alert_event.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_alert_event.12" }
+	title = antarctica_alert_event.12.t
+	desc = antarctica_alert_event.12.desc
+	picture = GFX_report_event_antarctica_letter
+
+	is_triggered_only = yes
+
+	option = {
+		name = antarctica_alert_event.12.a
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = { # Alerts the player that they have gained enough intelligence to conduct special missions
+	id = antarctica_alert_event.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_alert_event.13" }
+	title = antarctica_alert_event.13.t
+	desc = antarctica_alert_event.13.desc
+	picture = GFX_report_event_antarctica_letter
+
+	is_triggered_only = yes
+
+	option = {
+		name = antarctica_alert_event.13.a
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = { # Alerts the player that they have gained enough intelligence to conduct special missions
+	id = antarctica_alert_event.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_alert_event.14" }
+	title = antarctica_alert_event.14.t
+	desc = antarctica_alert_event.14.desc
+	picture = GFX_report_event_antarctica_letter
+
+	is_triggered_only = yes
+
+	option = {
+		name = antarctica_alert_event.14.a
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = { # Alerts the player that they have gained enough intelligence to conduct special missions
+	id = antarctica_alert_event.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_alert_event.15" }
+	title = antarctica_alert_event.15.t
+	desc = antarctica_alert_event.15.desc
+	picture = GFX_report_event_antarctica_letter
+
+	is_triggered_only = yes
+
+	option = {
+		name = antarctica_alert_event.15.a
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aaa_alert_event.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aaa_alert_event.10" }
+	title = antarctica_aaa_alert_event.10.t
+	desc = antarctica_aaa_alert_event.10.desc
+	picture = GFX_report_event_antarctica_machine_gun
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = antarctica_aaa_alert_event.10.a
+		custom_effect_tooltip = antarctica_alert_event_militarization
+		
+		add_to_variable = { Antarctica_Militarization = 50 }
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aaa_alert_event.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aaa_alert_event.11" }
+	title = antarctica_aaa_alert_event.11.t
+	desc = antarctica_aaa_alert_event.11.desc
+	picture = GFX_report_event_antarctica_machine_gun
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		is_ai = no
+	}
+
+	option = {
+		name = antarctica_aaa_alert_event.11.a
+
+		AAA = {
+			every_owned_state = {
+				remove_core_of = AAA
+			}
+		}
+
+		AAG = { transfer_state = 1996 }
+		AAG = { transfer_state = 1992 }
+		AAC = { transfer_state = 1990 }
+		AAC = { transfer_state = 1993 }
+		AAC = { transfer_state = 1989 }
+		AAC = { transfer_state = 1988 }
+		AAC = { transfer_state = 1973 }
+		AAC = { transfer_state = 2013 }
+		AAC = { transfer_state = 1968 }
+		AAC = { transfer_state = 1972 }
+		AAC = { transfer_state = 1980 }
+		AAC = { transfer_state = 1969 }
+		AAC = { transfer_state = 1994 }
+		AAC = { transfer_state = 2017 }
+		AAC = { transfer_state = 2016 }
+		AAC = { transfer_state = 2015 }
+		AAC = { transfer_state = 1974 }
+		AAC = { transfer_state = 2014 }
+		AAC = { transfer_state = 2031 }
+		AAC = { transfer_state = 1970 }
+		AAO = { transfer_state = 1979 }
+		AAO = { transfer_state = 1978 }
+
+		1996 = { add_core_of = AAG }
+		1992 = { add_core_of = AAG }
+		1990 = { add_core_of = AAC }
+		1993 = { add_core_of = AAC }
+		1989 = { add_core_of = AAC }
+		1988 = { add_core_of = AAC }
+		1973 = { add_core_of = AAC }
+		2013 = { add_core_of = AAC }
+		1968 = { add_core_of = AAC }
+		1972 = { add_core_of = AAC }
+		1980 = { add_core_of = AAC }
+		1969 = { add_core_of = AAC }
+		1994 = { add_core_of = AAC }
+		2017 = { add_core_of = AAC }
+		2016 = { add_core_of = AAC }
+		2015 = { add_core_of = AAC }
+		1974 = { add_core_of = AAC }
+		2014 = { add_core_of = AAC }
+		2031 = { add_core_of = AAC }
+		1970 = { add_core_of = AAC }
+		1979 = { add_core_of = AAO }
+		1978 = { add_core_of = AAO }
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aaa_alert_event.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aaa_alert_event.20" }
+	title = antarctica_aaa_alert_event.20.t
+	desc = antarctica_aaa_alert_event.20.desc
+	picture = GFX_report_event_antarctica_office
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = antarctica_aaa_alert_event.20.a
+		custom_effect_tooltip = antarctica_alert_event_legitimacy
+		
+		add_to_variable = { Antarctica_Legitimacy = 50 }
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aaa_alert_event.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aaa_alert_event.21" }
+	title = antarctica_aaa_alert_event.21.t
+	desc = antarctica_aaa_alert_event.21.desc
+	picture = GFX_report_event_antarctica_office
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		is_ai = no
+	}
+
+	option = {
+		name = antarctica_aaa_alert_event.21.a
+
+		AAA = {
+			every_owned_state = {
+				remove_core_of = AAA
+			}
+			remove_ideas = AAA_Dreams_Of_The_South_Pole
+			remove_ideas = AAA_War_Legacy
+		}
+
+		AAC = { transfer_state = 1990 }
+		AAC = { transfer_state = 1993 }
+		AAC = { transfer_state = 1989 }
+		AAC = { transfer_state = 1988 }
+		AAC = { transfer_state = 1973 }
+		AAC = { transfer_state = 2013 }
+		AAC = { transfer_state = 1968 }
+		AAC = { transfer_state = 1972 }
+		AAC = { transfer_state = 1980 }
+		AAC = { transfer_state = 1969 }
+		AAC = { transfer_state = 1994 }
+		AAC = { transfer_state = 2017 }
+		AAC = { transfer_state = 2016 }
+		AAC = { transfer_state = 2015 }
+		AAC = { transfer_state = 1974 }
+		AAC = { transfer_state = 2014 }
+		AAC = { transfer_state = 2031 }
+		AAC = { transfer_state = 1970 }
+
+		1990 = { add_core_of = AAC }
+		1993 = { add_core_of = AAC }
+		1989 = { add_core_of = AAC }
+		1988 = { add_core_of = AAC }
+		1973 = { add_core_of = AAC }
+		2013 = { add_core_of = AAC }
+		1968 = { add_core_of = AAC }
+		1972 = { add_core_of = AAC }
+		1980 = { add_core_of = AAC }
+		1969 = { add_core_of = AAC }
+		1994 = { add_core_of = AAC }
+		2017 = { add_core_of = AAC }
+		2016 = { add_core_of = AAC }
+		2015 = { add_core_of = AAC }
+		1974 = { add_core_of = AAC }
+		2014 = { add_core_of = AAC }
+		2031 = { add_core_of = AAC }
+		1970 = { add_core_of = AAC }
+
+		1979 = { add_core_of = AAA }
+		1978 = { add_core_of = AAA }
+		1996 = { add_core_of = AAA }
+		1992 = { add_core_of = AAA }
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aaa_alert_event.30
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aaa_alert_event.30" }
+	title = antarctica_aaa_alert_event.30.t
+	desc = antarctica_aaa_alert_event.30.desc
+	picture = GFX_report_event_supplies_antarctica
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = antarctica_aaa_alert_event.30.a
+		custom_effect_tooltip = antarctica_alert_event_equipment
+		
+		add_to_variable = { Antarctica_Equipment = 50 }
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aaa_alert_event.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aaa_alert_event.31" }
+	title = antarctica_aaa_alert_event.31.t
+	desc = antarctica_aaa_alert_event.31.desc
+	picture = GFX_report_event_supplies_antarctica
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		is_ai = no
+	}
+
+	option = {
+		name = antarctica_aaa_alert_event.31.a
+
+		AAA = {
+			every_owned_state = {
+				remove_core_of = AAA
+			}
+		}
+
+		AAG = { transfer_state = 1996 }
+		AAG = { transfer_state = 1992 }
+		AAC = { transfer_state = 1990 }
+		AAC = { transfer_state = 1993 }
+		AAC = { transfer_state = 1989 }
+		AAC = { transfer_state = 1988 }
+		AAC = { transfer_state = 1973 }
+		AAC = { transfer_state = 2013 }
+		AAC = { transfer_state = 1968 }
+		AAC = { transfer_state = 1972 }
+		AAC = { transfer_state = 1980 }
+		AAC = { transfer_state = 1969 }
+		AAC = { transfer_state = 1994 }
+		AAC = { transfer_state = 2017 }
+		AAC = { transfer_state = 2016 }
+		AAC = { transfer_state = 2015 }
+		AAC = { transfer_state = 1974 }
+		AAC = { transfer_state = 2014 }
+		AAC = { transfer_state = 2031 }
+		AAC = { transfer_state = 1970 }
+		AAO = { transfer_state = 1979 }
+		AAO = { transfer_state = 1978 }
+
+		1996 = { add_core_of = AAG }
+		1992 = { add_core_of = AAG }
+		1990 = { add_core_of = AAC }
+		1993 = { add_core_of = AAC }
+		1989 = { add_core_of = AAC }
+		1988 = { add_core_of = AAC }
+		1973 = { add_core_of = AAC }
+		2013 = { add_core_of = AAC }
+		1968 = { add_core_of = AAC }
+		1972 = { add_core_of = AAC }
+		1980 = { add_core_of = AAC }
+		1969 = { add_core_of = AAC }
+		1994 = { add_core_of = AAC }
+		2017 = { add_core_of = AAC }
+		2016 = { add_core_of = AAC }
+		2015 = { add_core_of = AAC }
+		1974 = { add_core_of = AAC }
+		2014 = { add_core_of = AAC }
+		2031 = { add_core_of = AAC }
+		1970 = { add_core_of = AAC }
+		1979 = { add_core_of = AAO }
+		1978 = { add_core_of = AAO }
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aac_alert_event.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aac_alert_event.10" }
+	title = antarctica_aac_alert_event.10.t
+	desc = antarctica_aac_alert_event.10.desc
+	picture = GFX_report_event_antarctica_machine_gun
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = antarctica_aac_alert_event.10.a
+		custom_effect_tooltip = antarctica_alert_event_militarization
+		
+		add_to_variable = { Antarctica_Militarization = 50 }
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aac_alert_event.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aac_alert_event.11" }
+	title = antarctica_aac_alert_event.11.t
+	desc = antarctica_aac_alert_event.11.desc
+	picture = GFX_report_event_antarctica_machine_gun
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		is_ai = no
+	}
+
+	option = {
+		name = antarctica_aac_alert_event.11.a
+		
+		AAJ = { transfer_state = 1991 }
+		AAJ = { transfer_state = 1987 }
+		AAJ = { transfer_state = 1985 }
+		AAA = { transfer_state = 1975 }
+		
+		1991 = { remove_core_of = AAC }
+		1991 = { add_core_of = AAJ }
+		1987 = { remove_core_of = AAC }
+		1987 = { add_core_of = AAJ }
+		1985 = { remove_core_of = AAC }
+		1985 = { add_core_of = AAJ }
+		1975 = { remove_core_of = AAC }
+		1975 = { add_core_of = AAA }
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aac_alert_event.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aac_alert_event.20" }
+	title = antarctica_aac_alert_event.20.t
+	desc = antarctica_aac_alert_event.20.desc
+	picture = GFX_report_event_antarctica_office
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = antarctica_aac_alert_event.20.a
+		custom_effect_tooltip = antarctica_alert_event_legitimacy
+		
+		add_to_variable = { Antarctica_Legitimacy = 50 }
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aac_alert_event.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aac_alert_event.21" }
+	title = antarctica_aac_alert_event.21.t
+	desc = antarctica_aac_alert_event.21.desc
+	picture = GFX_report_event_antarctica_office
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		is_ai = no
+	}
+
+	option = {
+		name = antarctica_aac_alert_event.21.a
+		
+		AAC = {
+			every_owned_state = {
+				remove_core_of = AAC
+			}
+		}
+		
+		AAA = { transfer_state = 1991 }
+		AAA = { transfer_state = 1987 }
+		AAA = { transfer_state = 1985 }
+		AAA = { transfer_state = 1971 }
+		AAA = { transfer_state = 1975 }
+		AAA = { transfer_state = 1995 }
+		
+		1991 = { add_core_of = AAA }
+		1987 = { add_core_of = AAA }
+		1985 = { add_core_of = AAA }
+		1971 = { add_core_of = AAA }
+		1975 = { add_core_of = AAA }
+		1995 = { add_core_of = AAA }
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aac_alert_event.30
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aac_alert_event.30" }
+	title = antarctica_aac_alert_event.30.t
+	desc = antarctica_aac_alert_event.30.desc
+	picture = GFX_report_event_supplies_antarctica
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = antarctica_aac_alert_event.30.a
+		custom_effect_tooltip = antarctica_alert_event_equipment
+		
+		add_to_variable = { Antarctica_Equipment = 50 }
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aac_alert_event.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aac_alert_event.31" }
+	title = antarctica_aac_alert_event.31.t
+	desc = antarctica_aac_alert_event.31.desc
+	picture = GFX_report_event_supplies_antarctica
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		is_ai = no
+	}
+
+	option = {
+		name = antarctica_aac_alert_event.31.a
+		
+		AAC = {
+			every_owned_state = {
+				remove_core_of = AAC
+			}
+		}
+		
+		AAJ = { transfer_state = 1991 }
+		AAJ = { transfer_state = 1987 }
+		AAJ = { transfer_state = 1985 }
+		AAA = { transfer_state = 1975 }
+		AAA = { transfer_state = 1971 }
+		AAA = { transfer_state = 1995 }
+		
+		1991 = { add_core_of = AAJ }
+		1987 = { add_core_of = AAJ }
+		1985 = { add_core_of = AAJ }
+		1975 = { add_core_of = AAA }
+		1971 = { add_core_of = AAA }
+		1995 = { add_core_of = AAA }
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aag_alert_event.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aag_alert_event.10" }
+	title = antarctica_aag_alert_event.10.t
+	desc = antarctica_aag_alert_event.10.desc
+	picture = GFX_report_event_antarctica_machine_gun
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		add_to_variable = { Antarctica_Militarization = 50 }
+	}
+	
+	option = {
+		name = antarctica_aag_alert_event.10.a
+		custom_effect_tooltip = antarctica_alert_event_militarization
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aag_alert_event.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aag_alert_event.11" }
+	title = antarctica_aag_alert_event.11.t
+	desc = antarctica_aag_alert_event.11.desc
+	picture = GFX_report_event_antarctica_machine_gun
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		is_ai = no
+	}
+
+	option = {
+		name = antarctica_aag_alert_event.11.a
+
+		AAG = {
+			every_owned_state = {
+				remove_core_of = AAG
+			}
+		}
+
+		AAO = { transfer_state = 2000 }
+		AAO = { transfer_state = 2026 }
+		AAO = { transfer_state = 2027 }
+		AAO = { transfer_state = 1999 }
+		AAO = { transfer_state = 1998 }
+		if = {
+			limit = {
+				AAR = {	exists = no }
+			}
+			AAO = { transfer_state = 1997 }
+		}
+		AAJ = { transfer_state = 2033 }
+
+		2000 = { add_core_of = AAO }
+		2026 = { add_core_of = AAO }
+		2027 = { add_core_of = AAO }
+		1999 = { add_core_of = AAO }
+		1998 = { add_core_of = AAO }
+		if = {
+			limit = {
+				AAR = {	exists = no }
+			}
+			1997 = { add_core_of = AAO }
+		}
+		2033 = { add_core_of = AAJ }
+		
+		if = {
+			limit = { AAG = { is_ai = yes } }
+			AAO = { transfer_state = 2032 }
+			2032 = { add_core_of = AAO }
+		}
+
+		promote_character = AAG_No_Authority
+		hidden_effect = {
+			remove_ideas = Antarctica_Territory_Generic_Idea
+			remove_ideas = AAG_Alone_in_the_Cold
+			add_popularity = {
+				ideology = socialist
+				popularity = 1
+			}
+			set_politics = {
+				ruling_party = socialist
+			}
+			remove_ideas = AAG_Richard_Heinrich_Schirmacher_dep
+			remove_ideas = AAG_Ernst_Herrmann_pol
+			remove_ideas = AAG_Erich_Schumann_eco
+			remove_ideas = AAG_Anton_Grasser_sec
+			
+			every_country = {
+				news_event = {
+					id = antarctica_news_events.8
+					hours = 12
+				}
+			}
+		}
+		
+		setup_Antarctica_GUI_Tile_Scope_Array_AAG_Militarization_Loss = yes
+		
+		set_country_flag = Antarctica_Closing_Screen_visible
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aag_alert_event.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aag_alert_event.20" }
+	title = antarctica_aag_alert_event.20.t
+	desc = antarctica_aag_alert_event.20.desc
+	picture = GFX_report_event_antarctica_office
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		add_to_variable = { Antarctica_Legitimacy = 50 }
+	}
+	
+	option = {
+		name = antarctica_aag_alert_event.20.a
+		custom_effect_tooltip = antarctica_alert_event_legitimacy
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aag_alert_event.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aag_alert_event.21" }
+ 	title = antarctica_aag_alert_event.21.t
+ 	desc = antarctica_aag_alert_event.21.desc
+ 	picture = GFX_report_event_antarctica_office
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		is_ai = no
+	}
+
+ 	option = {
+ 		name = antarctica_aag_alert_event.21.a
+		
+		AAG = {
+			every_owned_state = {
+				remove_core_of = AAG
+			}
+		}
+		
+		AAO = { transfer_state = 2000 }
+		AAO = { transfer_state = 2026 }
+		AAO = { transfer_state = 2027 }
+		AAO = { transfer_state = 1999 }
+		AAB = { transfer_state = 1998 }
+		if = {
+			limit = {
+				AAR = {	exists = no }
+			}
+			AAA = { transfer_state = 1997 }
+		}
+		AAJ = { transfer_state = 2033 }
+
+		2000 = { add_core_of = AAO }
+		2026 = { add_core_of = AAO }
+		2027 = { add_core_of = AAO }
+		1999 = { add_core_of = AAO }
+		1998 = { add_core_of = AAB }
+		if = {
+			limit = {
+				AAR = {	exists = no }
+			}
+			1997 = { add_core_of = AAA }
+		}
+		2033 = { add_core_of = AAJ }
+		
+		if = {
+			limit = { AAG = { is_ai = yes } }
+			AAO = { transfer_state = 2032 }
+			2032 = { add_core_of = AAO }
+		}
+		
+		AAB = {
+			set_cosmetic_tag = AAB_Large
+		}
+		
+		promote_character = AAG_No_Authority
+		hidden_effect = {
+			remove_ideas = Antarctica_Territory_Generic_Idea
+			remove_ideas = AAG_Alone_in_the_Cold
+			add_popularity = {
+				ideology = socialist
+				popularity = 1
+			}
+			set_politics = {
+				ruling_party = socialist
+			}
+			remove_ideas = AAG_Richard_Heinrich_Schirmacher_dep
+			remove_ideas = AAG_Ernst_Herrmann_pol
+			remove_ideas = AAG_Erich_Schumann_eco
+			remove_ideas = AAG_Anton_Grasser_sec
+			
+			every_country = {
+				news_event = {
+					id = antarctica_news_events.8
+					hours = 12
+				}
+			}
+		}
+		
+		setup_Antarctica_GUI_Tile_Scope_Array_AAG_Legitimacy_Loss = yes
+		
+		set_country_flag = Antarctica_Closing_Screen_visible
+		
+		ai_chance = {
+			factor = 1
+		}
+ 	}
+}
+
+country_event = { # 
+	id = antarctica_aag_alert_event.30
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aag_alert_event.30" }
+	title = antarctica_aag_alert_event.30.t
+	desc = antarctica_aag_alert_event.30.desc
+	picture = GFX_report_event_supplies_antarctica
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		add_to_variable = { Antarctica_Equipment = 50 }
+	}
+
+	option = {
+		name = antarctica_aag_alert_event.30.a
+		custom_effect_tooltip = antarctica_alert_event_equipment
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aag_alert_event.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aag_alert_event.31" }
+	title = antarctica_aag_alert_event.31.t
+	desc = antarctica_aag_alert_event.31.desc
+	picture = GFX_report_event_supplies_antarctica
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		is_ai = no
+	}
+
+	option = {
+		name = antarctica_aag_alert_event.31.a
+
+		AAG = {
+			every_owned_state = {
+				remove_core_of = AAG
+			}
+		}
+		
+		AAO = { transfer_state = 2000 }
+		AAO = { transfer_state = 2026 }
+		AAO = { transfer_state = 2027 }
+		AAO = { transfer_state = 1999 }
+		AAB = { transfer_state = 1998 }
+		if = {
+			limit = {
+				AAR = {	exists = no }
+			}
+			AAB = { transfer_state = 1997 }
+		}
+		AAJ = { transfer_state = 2033 }
+
+		2000 = { add_core_of = AAO }
+		2026 = { add_core_of = AAO }
+		2027 = { add_core_of = AAO }
+		1999 = { add_core_of = AAO }
+		1998 = { add_core_of = AAB }
+		if = {
+			limit = {
+				AAR = {	exists = no }
+			}
+			1997 = { add_core_of = AAB }
+		}
+		2033 = { add_core_of = AAJ }
+		
+		if = {
+			limit = { AAG = { is_ai = yes } }
+			AAO = { transfer_state = 2032 }
+			2032 = { add_core_of = AAO }
+		}
+		
+		AAB = {
+			set_cosmetic_tag = AAB_Large
+		}
+		
+		promote_character = AAG_No_Authority
+		hidden_effect = {
+			remove_ideas = Antarctica_Territory_Generic_Idea
+			remove_ideas = AAG_Alone_in_the_Cold
+			add_popularity = {
+				ideology = socialist
+				popularity = 1
+			}
+			set_politics = {
+				ruling_party = socialist
+			}
+			remove_ideas = AAG_Richard_Heinrich_Schirmacher_dep
+			remove_ideas = AAG_Ernst_Herrmann_pol
+			remove_ideas = AAG_Erich_Schumann_eco
+			remove_ideas = AAG_Anton_Grasser_sec
+			
+			every_country = {
+				news_event = {
+					id = antarctica_news_events.8
+					hours = 12
+				}
+			}
+		}
+		
+		setup_Antarctica_GUI_Tile_Scope_Array_AAG_Supply_Loss = yes
+		
+		set_country_flag = Antarctica_Closing_Screen_visible
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aaj_alert_event.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aaj_alert_event.10" }
+	title = antarctica_aaj_alert_event.10.t
+	desc = antarctica_aaj_alert_event.10.desc
+	picture = GFX_report_event_antarctica_machine_gun
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = antarctica_aaj_alert_event.10.a
+		custom_effect_tooltip = antarctica_alert_event_militarization
+		
+		add_to_variable = { Antarctica_Militarization = 50 }
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aaj_alert_event.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aaj_alert_event.11" }
+	title = antarctica_aaj_alert_event.11.t
+	desc = antarctica_aaj_alert_event.11.desc
+	picture = GFX_report_event_antarctica_machine_gun
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		is_ai = no
+	}
+
+	option = {
+		name = antarctica_aaj_alert_event.11.a
+		
+		AAJ = {
+			every_owned_state = {
+				remove_core_of = AAJ
+			}
+		}
+		
+		AAC = { transfer_state = 1986 }
+		AAO = { transfer_state = 1984 }
+		AAO = { transfer_state = 1983 }
+		AAO = { transfer_state = 2018 }
+		AAO = { transfer_state = 1982 }
+
+		1986 = { add_core_of = AAC }
+		1984 = { add_core_of = AAO }
+		1983 = { add_core_of = AAO }
+		2018 = { add_core_of = AAO }
+		1982 = { add_core_of = AAO }
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aaj_alert_event.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aaj_alert_event.20" }
+	title = antarctica_aaj_alert_event.20.t
+	desc = antarctica_aaj_alert_event.20.desc
+	picture = GFX_report_event_antarctica_office
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = antarctica_aaj_alert_event.20.a
+		custom_effect_tooltip = antarctica_alert_event_legitimacy
+		
+		add_to_variable = { Antarctica_Legitimacy = 50 }
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aaj_alert_event.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aaj_alert_event.21" }
+	title = antarctica_aaj_alert_event.21.t
+	desc = antarctica_aaj_alert_event.21.desc
+	picture = GFX_report_event_antarctica_office
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		is_ai = no
+	}
+
+	option = {
+		name = antarctica_aaj_alert_event.21.a
+		
+		AAC = {
+			if = {
+				limit = {
+					OR = {
+						has_dlc = "Together for Victory"
+						has_dlc = "Man the Guns"
+					}
+				}
+				set_autonomy = {
+					target = AAJ
+					autonomy_state = autonomy_antarctic_territory
+				}
+				else = {
+					puppet = AAJ
+				}
+			}
+		}
+		
+		AAJ = {
+			remove_dynamic_modifier = { modifier = AAJ_1st_Airborne_Brigade }
+			remove_ideas = AAJ_Enforced_Claims
+			remove_ideas = AAJ_Michio_Sugahara_dep
+			remove_ideas = AAJ_Takeso_Shimoda_pol
+			remove_ideas = AAJ_Koichiro_Asakai_eco
+			remove_ideas = AAJ_Koichi_Ono_sec
+			remove_ideas = Sphere_Imp_Protectorate
+			add_popularity = {
+				ideology = paternalism
+				popularity = 1
+			}
+			set_politics = {
+				ruling_party = paternalism
+			}
+			set_cosmetic_tag = AAJ_AAC_Puppet
+			econ_join_sphere_USA = yes
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aaj_alert_event.30
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aaj_alert_event.30" }
+	title = antarctica_aaj_alert_event.30.t
+	desc = antarctica_aaj_alert_event.30.desc
+	picture = GFX_report_event_supplies_antarctica
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = antarctica_aaj_alert_event.30.a
+		custom_effect_tooltip = antarctica_alert_event_equipment
+		
+		add_to_variable = { Antarctica_Equipment = 50 }
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aaj_alert_event.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aaj_alert_event.31" }
+	title = antarctica_aaj_alert_event.31.t
+	desc = antarctica_aaj_alert_event.31.desc
+	picture = GFX_report_event_supplies_antarctica
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		is_ai = no
+	}
+
+	option = {
+		name = antarctica_aaj_alert_event.31.a
+		
+		AAJ = {
+			every_owned_state = {
+				remove_core_of = AAJ
+			}
+		}
+		
+		AAC = { transfer_state = 1986 }
+		AAO = { transfer_state = 1984 }
+		AAO = { transfer_state = 1983 }
+		AAO = { transfer_state = 2018 }
+		AAO = { transfer_state = 1982 }
+
+		1986 = { add_core_of = AAC }
+		1984 = { add_core_of = AAO }
+		1983 = { add_core_of = AAO }
+		2018 = { add_core_of = AAO }
+		1982 = { add_core_of = AAO }
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aao_alert_event.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aao_alert_event.10" }
+	title = antarctica_aao_alert_event.10.t
+	desc = antarctica_aao_alert_event.10.desc
+	picture = GFX_report_event_antarctica_machine_gun
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = antarctica_aao_alert_event.10.a
+		custom_effect_tooltip = antarctica_alert_event_militarization
+		
+		add_to_variable = { Antarctica_Militarization = 50 }
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aao_alert_event.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aao_alert_event.11" }
+	title = antarctica_aao_alert_event.11.t
+	desc = antarctica_aao_alert_event.11.desc
+	picture = GFX_report_event_antarctica_mcmurdo_nuclear_reactor_sign_penguin
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		is_ai = no
+	}
+
+	option = {
+		name = antarctica_aao_alert_event.11.a
+		
+		ZZZ = { transfer_state = 2019 }
+		2019 = {
+			remove_core_of = AAO
+			add_province_modifier = {
+				static_modifiers = { irradiated }
+				province = {
+					id = 16760
+				}
+			}
+		}
+		
+		2019 = { remove_core_of = AAO }
+		
+		AAO = {
+			country_event = {
+				id = antarctica_aao_alert_event.12
+				days = 14
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aao_alert_event.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aao_alert_event.12" }
+	title = antarctica_aao_alert_event.12.t
+	desc = antarctica_aao_alert_event.12.desc
+	picture = GFX_report_event_antarctica_mcmurdo_nuclear_reactor_sign_penguin
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = antarctica_aao_alert_event.12.a
+		
+		AAO = {
+			every_owned_state = {
+				remove_core_of = AAO
+			}
+		}
+		
+		AAJ = { transfer_state = 1981 }
+		AAJ = { transfer_state = 2009 }
+		AAJ = { transfer_state = 2010 }
+		AAJ = { transfer_state = 1977 }
+		AAJ = { transfer_state = 2011 }
+		AAJ = { transfer_state = 2012 }
+		AAJ = { transfer_state = 1966 }
+		AAJ = { transfer_state = 2008 }
+		AAG = { transfer_state = 2001 }
+		AAG = { transfer_state = 2002 }
+		AAG = { transfer_state = 2003 }
+		AAG = { transfer_state = 2004 }
+		AAG = { transfer_state = 2005 }
+		AAG = { transfer_state = 2006 }
+		AAG = { transfer_state = 2007 }
+		AAA = { transfer_state = 1967 }
+		AAA = { transfer_state = 2034 }
+		
+		1981 = { add_core_of = AAJ }
+		2009 = { add_core_of = AAJ }
+		2010 = { add_core_of = AAJ }
+		1977 = { add_core_of = AAJ }
+		2011 = { add_core_of = AAJ }
+		2012 = { add_core_of = AAJ }
+		1966 = { add_core_of = AAJ }
+		2008 = { add_core_of = AAJ }
+		2001 = { add_core_of = AAG }
+		2002 = { add_core_of = AAG }
+		2003 = { add_core_of = AAG }
+		2004 = { add_core_of = AAG }
+		2005 = { add_core_of = AAG }
+		2006 = { add_core_of = AAG }
+		2007 = { add_core_of = AAG }
+		1967 = { add_core_of = AAA }
+		2034 = { add_core_of = AAA }
+		
+		if = {
+			limit = {
+				AAO = { controls_state = 2027 }
+			}
+			AAG = { transfer_state = 2027 }
+			2027 = { set_state_name = STATE_2027 }
+			set_province_name = { id = 16757 name = VICTORY_POINTS_16757 }
+			2027 = { add_core_of = AAG }
+		}
+		if = {
+			limit = {
+				AAO = { controls_state = 2000 }
+			}
+			AAG = { transfer_state = 2000 }
+			2000 = { set_state_name = STATE_2000 }
+			set_province_name = { id = 16774 name = VICTORY_POINTS_16774 }
+			2000 = { add_core_of = AAG }
+		}
+		if = {
+			limit = {
+				AAO = { controls_state = 2026 }
+			}
+			AAG = { transfer_state = 2026 }
+			2026 = { set_state_name = STATE_2026 }
+			set_province_name = { id = 16768 name = VICTORY_POINTS_16768 }
+			2026 = { add_core_of = AAG }
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aao_alert_event.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aao_alert_event.20" }
+	title = antarctica_aao_alert_event.20.t
+	desc = antarctica_aao_alert_event.20.desc
+	picture = GFX_report_event_antarctica_office
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = antarctica_aao_alert_event.20.a
+		custom_effect_tooltip = antarctica_alert_event_legitimacy
+		
+		add_to_variable = { Antarctica_Legitimacy = 50 }
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aao_alert_event.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aao_alert_event.21" }
+	title = antarctica_aao_alert_event.21.t
+	desc = antarctica_aao_alert_event.21.desc
+	picture = GFX_report_event_howard_beale_interview
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		is_ai = no
+	}
+
+	option = {
+		name = antarctica_aao_alert_event.21.a
+		
+		AAO = {
+			every_owned_state = {
+				remove_core_of = AAO
+			}
+		}
+		
+		AAA = { transfer_state = 1967 }
+		AAA = { transfer_state = 2034 }
+		AAU = { transfer_state = 2010 }
+		AAU = { transfer_state = 1977 }
+		AAZ = { transfer_state = 2012 }
+		AAU = { transfer_state = 2019 }
+		AAZ = { transfer_state = 1981 }
+		AAZ = { transfer_state = 1966 }
+		AAS = { transfer_state = 2011 }
+		AAS = { transfer_state = 2009 }
+		AAS = { transfer_state = 2008 }
+		AAS = { transfer_state = 2006 }
+		AAS = { transfer_state = 2007 }
+		AAS = { transfer_state = 2005 }
+		AAS = { transfer_state = 2004 }
+		AAS = { transfer_state = 2003 }
+		AAS = { transfer_state = 2002 }
+		AAS = { transfer_state = 2001 }
+		
+		1967 = { add_core_of = AAA }
+		2034 = { add_core_of = AAA }
+		2010 = { add_core_of = AAU }
+		1977 = { add_core_of = AAU }
+		2012 = { add_core_of = AAZ }
+		2019 = { add_core_of = AAU }
+		1981 = { add_core_of = AAZ }
+		1966 = { add_core_of = AAZ }
+		2011 = { add_core_of = AAS }
+		2009 = { add_core_of = AAS }
+		2008 = { add_core_of = AAS }
+		2006 = { add_core_of = AAS }
+		2007 = { add_core_of = AAS }
+		2005 = { add_core_of = AAS }
+		2004 = { add_core_of = AAS }
+		2003 = { add_core_of = AAS }
+		2002 = { add_core_of = AAS }
+		2001 = { add_core_of = AAS }
+		
+		if = {
+			limit = {
+				AAO = { controls_state = 2027 }
+			}
+			AAG = { transfer_state = 2027 }
+			2027 = { set_state_name = STATE_2027 }
+			set_province_name = { id = 16757 name = VICTORY_POINTS_16757 }
+			2027 = { add_core_of = AAG }
+		}
+		if = {
+			limit = {
+				AAO = { controls_state = 2000 }
+			}
+			AAG = { transfer_state = 2000 }
+			2000 = { set_state_name = STATE_2000 }
+			set_province_name = { id = 16774 name = VICTORY_POINTS_16774 }
+			2000 = { add_core_of = AAG }
+		}
+		if = {
+			limit = {
+				AAO = { controls_state = 2026 }
+			}
+			AAG = { transfer_state = 2026 }
+			2026 = { set_state_name = STATE_2026 }
+			set_province_name = { id = 16768 name = VICTORY_POINTS_16768 }
+			2026 = { add_core_of = AAG }
+		}
+		
+		AAU = {
+			AAO = { AAO_William_Francis_Raborn = { set_nationality = AAU } }
+			USA = {
+				if = {
+					limit = {
+						OR = {
+							has_dlc = "Together for Victory"
+							has_dlc = "Man the Guns"
+						}
+					}
+					set_autonomy = {
+						target = AAU
+						autonomy_state = autonomy_antarctic_territory
+					}
+					else = {
+						puppet = AAU
+					}
+				}
+			}
+			add_popularity = {
+				ideology = paternalism
+				popularity = 1
+			}
+			set_politics = {
+				ruling_party = paternalism
+			}
+			USA = { add_to_faction = AAU }
+			promote_character = AAO_William_Francis_Raborn
+			set_country_leader_description = {
+				desc = ""
+			}
+			
+			econ_join_sphere_USA = yes
+			set_variable = { TNO_economy_subtype = 998 }
+			set_variable = { TNO_economy_type = 3 }
+			activate_mission = Antarctica_Situation_Overview_Supply_AAO_mission
+			set_country_flag = country_has_gui
+		}
+		AAS = {
+			AAO = { AAO_Howard_Beale = { set_nationality = AAS } }
+			AAO = { AAO_Phillip_Law = { set_nationality = AAS } }
+			AST = {
+				if = {
+					limit = {
+						OR = {
+							has_dlc = "Together for Victory"
+							has_dlc = "Man the Guns"
+						}
+					}
+					set_autonomy = {
+						target = AAS
+						autonomy_state = autonomy_antarctic_territory
+					}
+					else = {
+						puppet = AAS
+					}
+				}
+			}
+			add_popularity = {
+				ideology = paternalism
+				popularity = 1
+			}
+			set_politics = {
+				ruling_party = paternalism
+			}
+			AST = { add_to_faction = AAS }
+			promote_character = AAO_Phillip_Law
+			
+			econ_join_sphere_USA = yes
+			set_variable = { TNO_economy_subtype = 998 }
+			set_variable = { TNO_economy_type = 3 }
+			activate_mission = Antarctica_Situation_Overview_Supply_AAO_mission
+			set_country_flag = country_has_gui
+		}
+		AAZ = {
+			AAO = { AAO_Edmund_Hillary = { set_nationality = AAZ } }
+			NZL = {
+				if = {
+					limit = {
+						OR = {
+							has_dlc = "Together for Victory"
+							has_dlc = "Man the Guns"
+						}
+					}
+					set_autonomy = {
+						target = AAZ
+						autonomy_state = autonomy_antarctic_territory
+					}
+					else = {
+						puppet = AAZ
+					}
+				}
+			}
+			add_popularity = {
+				ideology = paternalism
+				popularity = 1
+			}
+			set_politics = {
+				ruling_party = paternalism
+			}
+			NZL = { add_to_faction = AAZ }
+			promote_character = AAO_Edmund_Hillary
+			
+			econ_join_sphere_USA = yes
+			set_variable = { TNO_economy_subtype = 998 }
+			set_variable = { TNO_economy_type = 3 }
+			activate_mission = Antarctica_Situation_Overview_Supply_AAO_mission
+			set_country_flag = country_has_gui
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aao_alert_event.30
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aao_alert_event.30" }
+	title = antarctica_aao_alert_event.30.t
+	desc = antarctica_aao_alert_event.30.desc
+	picture = GFX_report_event_supplies_antarctica
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = antarctica_aao_alert_event.30.a
+		custom_effect_tooltip = antarctica_alert_event_equipment
+		
+		add_to_variable = { Antarctica_Equipment = 50 }
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aao_alert_event.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aao_alert_event.31" }
+	title = antarctica_aao_alert_event.31.t
+	desc = antarctica_aao_alert_event.31.desc
+	picture = GFX_report_event_antarctica_mcmurdo_nuclear_reactor_sign_penguin
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		is_ai = no
+	}
+
+	option = {
+		name = antarctica_aao_alert_event.31.a
+		
+		ZZZ = { transfer_state = 2019 }
+		2019 = {
+			remove_core_of = AAO
+			add_province_modifier = {
+				static_modifiers = { irradiated }
+				province = {
+					id = 16760
+				}
+			}
+		}
+		
+		2019 = { remove_core_of = AAO }
+		
+		AAO = {
+			country_event = {
+				id = antarctica_aao_alert_event.32
+				days = 14
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # 
+	id = antarctica_aao_alert_event.32
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aao_alert_event.32" }
+	title = antarctica_aao_alert_event.32.t
+	desc = antarctica_aao_alert_event.32.desc
+	picture = GFX_report_event_antarctica_mcmurdo_nuclear_reactor_sign_penguin
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = antarctica_aao_alert_event.32.a
+		
+		AAO = {
+			every_owned_state = {
+				remove_core_of = AAO
+			}
+		}
+		
+		AAJ = { transfer_state = 1981 }
+		AAJ = { transfer_state = 2009 }
+		AAJ = { transfer_state = 2010 }
+		AAJ = { transfer_state = 1977 }
+		AAJ = { transfer_state = 2011 }
+		AAJ = { transfer_state = 2012 }
+		AAJ = { transfer_state = 1966 }
+		AAJ = { transfer_state = 2008 }
+		AAG = { transfer_state = 2001 }
+		AAG = { transfer_state = 2002 }
+		AAG = { transfer_state = 2003 }
+		AAG = { transfer_state = 2004 }
+		AAG = { transfer_state = 2005 }
+		AAG = { transfer_state = 2006 }
+		AAG = { transfer_state = 2007 }
+		AAA = { transfer_state = 1967 }
+		AAA = { transfer_state = 2034 }
+		
+		1981 = { add_core_of = AAJ }
+		2009 = { add_core_of = AAJ }
+		2010 = { add_core_of = AAJ }
+		1977 = { add_core_of = AAJ }
+		2011 = { add_core_of = AAJ }
+		2012 = { add_core_of = AAJ }
+		1966 = { add_core_of = AAJ }
+		2008 = { add_core_of = AAJ }
+		2001 = { add_core_of = AAG }
+		2002 = { add_core_of = AAG }
+		2003 = { add_core_of = AAG }
+		2004 = { add_core_of = AAG }
+		2005 = { add_core_of = AAG }
+		2006 = { add_core_of = AAG }
+		2007 = { add_core_of = AAG }
+		1967 = { add_core_of = AAA }
+		2034 = { add_core_of = AAA }
+		
+		if = {
+			limit = {
+				AAO = { controls_state = 2027 }
+			}
+			AAG = { transfer_state = 2027 }
+			2027 = { set_state_name = STATE_2027 }
+			set_province_name = { id = 16757 name = VICTORY_POINTS_16757 }
+			2027 = { add_core_of = AAG }
+		}
+		if = {
+			limit = {
+				AAO = { controls_state = 2000 }
+			}
+			AAG = { transfer_state = 2000 }
+			2000 = { set_state_name = STATE_2000 }
+			set_province_name = { id = 16774 name = VICTORY_POINTS_16774 }
+			2000 = { add_core_of = AAG }
+		}
+		if = {
+			limit = {
+				AAO = { controls_state = 2026 }
+			}
+			AAG = { transfer_state = 2026 }
+			2026 = { set_state_name = STATE_2026 }
+			set_province_name = { id = 16768 name = VICTORY_POINTS_16768 }
+			2026 = { add_core_of = AAG }
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+news_event = { # German Antarctica gets supplies from the Afrika Schild
+	id = antarctica_news_events.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_news_events.1" }
+	title = antarctica_news_events.1.t
+	desc = antarctica_news_events.1.desc
+	picture = GFX_news_event_german_antarctic_supplies_1
+
+	is_triggered_only = yes
+
+	option = {
+		name = antarctica_news_events.1.a
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+news_event = { # German Antarctica gets supplies from Argentina
+	id = antarctica_news_events.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_news_events.2" }
+	title = antarctica_news_events.2.t
+	desc = antarctica_news_events.2.desc
+	picture = GFX_news_event_german_antarctic_supplies_2
+
+	is_triggered_only = yes
+
+	option = {
+		name = antarctica_news_events.2.a
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+news_event = { # German Antarctica gets supplies from OFN
+	id = antarctica_news_events.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_news_events.3" }
+	title = antarctica_news_events.3.t
+	desc = antarctica_news_events.3.desc
+	picture = GFX_news_event_german_antarctic_supplies_3
+
+	is_triggered_only = yes
+
+	option = {
+		name = antarctica_news_events.3.a
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+news_event = { # German Antarctica partitioned between SS and OFN
+	id = antarctica_news_events.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_news_events.4" }
+	title = antarctica_news_events.4.t
+	desc = antarctica_news_events.4.desc
+	picture = GFX_news_event_ofn_reedy
+
+	is_triggered_only = yes
+
+	option = {
+		name = antarctica_news_events.4.a
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+news_event = { # Alfred Ritscher Dead at 83
+	id = antarctica_news_events.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_news_events.5" }
+	title = antarctica_news_events.5.t
+	desc = antarctica_news_events.5.desc
+	picture = GFX_news_event_alfred_ritscher
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			AAG = {
+				country_event = {
+					id = antarctica_aag_flavor.1
+					days = 1
+				}
+			}
+			GER = {
+				set_country_flag = Alfred_Ritscher_Died
+			}
+		}
+	}
+
+	option = {
+		name = antarctica_news_events.5.a
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+news_event = { # Germany returns to NS
+	id = antarctica_news_events.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_news_events.6" }
+	title = antarctica_news_events.6.t
+	desc = antarctica_news_events.6.desc
+	picture = GFX_news_event_antarctica_map
+
+	is_triggered_only = yes
+
+	option = {
+		name = antarctica_news_events.6.a
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+news_event = { # SS Attack leaks
+	id = antarctica_news_events.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_news_events.7" }
+	title = antarctica_news_events.7.t
+	desc = antarctica_news_events.7.desc
+	picture = GFX_news_event_antarctica_german_soldier
+
+	is_triggered_only = yes
+
+	option = {
+		name = antarctica_news_events.7.a
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+news_event = { # AAG Generic Game Over
+	id = antarctica_news_events.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_news_events.8" }
+	title = antarctica_news_events.8.t
+	desc = antarctica_news_events.8.desc
+	picture = GFX_news_event_antarctica_map
+
+	is_triggered_only = yes
+
+	option = {
+		name = antarctica_news_events.8.a
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+news_event = { # AAG Supply Game Over
+	id = antarctica_news_events.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_news_events.9" }
+	title = antarctica_news_events.9.t
+	desc = antarctica_news_events.9.desc
+	picture = GFX_news_event_antarctica_map
+
+	is_triggered_only = yes
+
+	option = {
+		name = antarctica_news_events.9.a
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+news_event = { # Galindez Island Lease
+	id = antarctica_news_events.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_news_events.11" }
+	title = antarctica_news_events.11.t
+	desc = antarctica_news_events.11.desc
+	picture = GFX_news_event_antarctica_galindez_island
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					tag = AAA
+				}
+				
+				1973 = { remove_core_of = AAA }
+				1973 = { add_core_of = AAI }
+				AAI = { transfer_state = 1973 }
+				set_variable = { global.Antarctica_GUI_Tile_Scope_Array^289 = AAI }
+				
+				AAI = {
+					ITA = {
+						if = {
+							limit = {
+								OR = {
+									has_dlc = "Together for Victory"
+									has_dlc = "Man the Guns"
+								}
+							}
+							set_autonomy = {
+								target = AAI
+								autonomy_state = autonomy_antarctic_territory
+							}
+							else = {
+								puppet = AAI
+							}
+						}
+					}
+				
+					econ_join_sphere_ITA = yes
+					set_variable = { TNO_economy_subtype = 998 }
+					set_variable = { TNO_economy_type = 3 }
+					
+					add_popularity = {
+						ideology = paternalism
+						popularity = 1
+					}
+					set_politics = {
+						ruling_party = paternalism
+					}
+					promote_character = AAI_Giovanni_Torrisi
+					
+					activate_mission = Antarctica_Situation_Overview_Supply_AAJ_mission # temp
+					set_country_flag = country_has_gui
+					
+					set_variable = { Antarctica_Militarization = 80 }
+					set_variable = { Antarctica_Legitimacy = 80 }
+					set_variable = { Antarctica_Equipment = 80 }
+					set_variable = { Antarctic_Intelligence_Agents_Cap = 2 }
+					
+					set_variable = { Antarctica_Intel_on_AAO_Value = 0 }
+					set_variable = { Antarctica_Intel_on_AAO_Max = 0 }
+					set_variable = { Antarctica_Intel_on_AAJ_Value = 0 }
+					set_variable = { Antarctica_Intel_on_AAJ_Max = 0 }
+					set_variable = { Antarctica_Intel_on_AAG_Value = 0 }
+					set_variable = { Antarctica_Intel_on_AAG_Max = 0 }
+					set_variable = { Antarctica_Intel_on_AAA_Value = 0 }
+					set_variable = { Antarctica_Intel_on_AAA_Max = 0 }
+					set_variable = { Antarctica_Intel_on_AAC_Value = 0 }
+					set_variable = { Antarctica_Intel_on_AAC_Max = 0 }
+					set_variable = { Antarctica_Intel_on_AAB_Value = 0 }
+					set_variable = { Antarctica_Intel_on_AAB_Max = 0 }
+					set_variable = { Antarctica_Intel_on_AAR_Value = 0 }
+					set_variable = { Antarctica_Intel_on_AAR_Max = 0 }
+					set_variable = { Antarctica_Intel_on_AAI_Value = 0 }
+					set_variable = { Antarctica_Intel_on_AAI_Max = 0 }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = antarctica_news_events.11.a
+		trigger = {
+			OR = {
+				tag = AAA
+				tag = ARG
+				tag = ITA
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = antarctica_news_events.11.b
+		trigger = {
+			OR = {
+				tag = USA
+				tag = GER
+				tag = JAP
+				tag = CHL
+				tag = AAO
+				tag = AAG
+				tag = AAJ
+				tag = AAC
+				tag = AAB
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = antarctica_news_events.11.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = AAA
+					tag = ARG
+					tag = ITA
+					tag = USA
+					tag = GER
+					tag = JAP
+					tag = CHL
+					tag = AAO
+					tag = AAG
+					tag = AAJ
+					tag = AAC
+					tag = AAB
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+news_event = { # Canada transfers South Georgia
+	id = antarctica_news_events.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_news_events.12" }
+	title = antarctica_news_events.12.t
+	desc = antarctica_news_events.12.desc
+	picture = GFX_news_event_antarctica_south_georgia
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			AAO = { transfer_state = 720 }
+			720 = { remove_core_of = CAN }
+			720 = { add_core_of = AAO }
+		}
+	}
+
+	option = {
+		name = antarctica_news_events.12.a
+		trigger = {
+			OR = {
+				tag = ENG
+				tag = FEN
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = antarctica_news_events.12.b
+		trigger = {
+			OR = {
+				is_in_faction_with = USA
+				tag = USA
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = antarctica_news_events.12.c
+		trigger = {
+			OR = {
+				tag = ARG
+				tag = GER
+				tag = JAP
+				tag = CHL
+				tag = AAA
+				tag = AAG
+				tag = AAJ
+				tag = AAC
+				tag = AAB
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = antarctica_news_events.12.d
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ARG
+					tag = GER
+					tag = JAP
+					tag = CHL
+					tag = AAA
+					tag = AAG
+					tag = AAJ
+					tag = AAC
+					tag = AAB
+					is_in_faction_with = USA
+					tag = USA
+					tag = ENG
+					tag = FEN
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+news_event = { # SAF base
+	id = antarctica_news_events.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_news_events.13" }
+	title = antarctica_news_events.13.t
+	desc = antarctica_news_events.13.desc
+	picture = GFX_news_event_antarctica_sanae
+
+	is_triggered_only = yes
+	
+	trigger = {
+		SAF = { exists = yes }
+		OR = {
+			has_global_flag = SAF_OFN_Victory
+			has_global_flag = SAF_OFN_Ceasefire
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_victory_points = {
+				province = 16485
+				value = 1
+			}
+		}
+	}
+
+	option = {
+		name = antarctica_news_events.13.a
+		trigger = {
+			OR = {
+				tag = SAF
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = antarctica_news_events.13.b
+		trigger = {
+			OR = {
+				is_in_faction_with = USA
+				tag = USA
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = antarctica_news_events.13.c
+		trigger = {
+			OR = {
+				tag = ARG
+				tag = GER
+				tag = JAP
+				tag = CHL
+				tag = AAA
+				tag = AAG
+				tag = AAJ
+				tag = AAC
+				tag = AAB
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = antarctica_news_events.13.d
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ARG
+					tag = GER
+					tag = JAP
+					tag = CHL
+					tag = AAA
+					tag = AAG
+					tag = AAJ
+					tag = AAC
+					tag = AAB
+					is_in_faction_with = USA
+					tag = USA
+					tag = ENG
+					tag = FEN
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+news_event = { # Raborn retires - USA maintains control
+	id = antarctica_news_events.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_news_events.14" }
+	title = antarctica_news_events.14.t
+	desc = antarctica_news_events.14.desc
+	picture = GFX_news_event_hyman_rickover
+
+	is_triggered_only = yes
+	
+	trigger = {
+		AAO = { exists = yes }
+	}
+
+	option = {
+		name = antarctica_news_events.14.a
+		trigger = {
+			NOT = {
+				OR = {
+					tag = AST
+					tag = NZL
+					tag = USA
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = antarctica_news_events.14.b
+		trigger = {
+			OR = {
+				tag = AST
+				tag = NZL
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = antarctica_news_events.14.c
+		trigger = {
+			OR = {
+				tag = USA
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+news_event = { # Raborn retires - Australia takes control
+	id = antarctica_news_events.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_news_events.15" }
+	title = antarctica_news_events.15.t
+	desc = antarctica_news_events.15.desc
+	picture = GFX_news_event_howard_beale
+
+	is_triggered_only = yes
+	
+	trigger = {
+		AAO = { exists = yes }
+	}
+
+	option = {
+		name = antarctica_news_events.15.a
+		trigger = {
+			NOT = {
+				OR = {
+					tag = AST
+					tag = NZL
+					tag = USA
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = antarctica_news_events.15.b
+		trigger = {
+			OR = {
+				tag = USA
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = antarctica_news_events.15.c
+		trigger = {
+			OR = {
+				tag = NZL
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = antarctica_news_events.15.d
+		trigger = {
+			OR = {
+				tag = AST
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+news_event = { # Raborn retires - NZ takes control
+	id = antarctica_news_events.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_news_events.16" }
+	title = antarctica_news_events.16.t
+	desc = antarctica_news_events.16.desc
+	picture = GFX_news_event_edmund_hillary
+
+	is_triggered_only = yes
+	
+	trigger = {
+		AAO = { exists = yes }
+	}
+
+	option = {
+		name = antarctica_news_events.16.a
+		trigger = {
+			NOT = {
+				OR = {
+					tag = AST
+					tag = NZL
+					tag = USA
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = antarctica_news_events.16.b
+		trigger = {
+			OR = {
+				tag = AST
+				tag = USA
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = antarctica_news_events.16.c
+		trigger = {
+			OR = {
+				tag = NZL
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+news_event = { # Op90 Succeeds - Team returns
+	id = antarctica_news_events.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_news_events.17" }
+	title = antarctica_news_events.17.t
+	desc = antarctica_news_events.17.desc
+	picture = GFX_news_event_operacion_90_success
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_variable = { global.Antarctica_GUI_Tile_Scope_Array^527 = AAA }
+		}
+	}
+
+	option = {
+		name = antarctica_news_events.17.a
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+news_event = { # Op90 Succeeds - Team fails
+	id = antarctica_news_events.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_news_events.18" }
+	title = antarctica_news_events.18.t
+	desc = antarctica_news_events.18.desc
+	picture = GFX_news_event_operacion_90_failure
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { tag = AAA }
+				AAA = {
+					promote_character = AAA_Emilio_Eduardo_Massera
+					remove_ideas = AAA_Gustavo_Adolfo_Giro_dep
+					remove_ideas = AAA_Juan_Carlos_Beltramino_pol
+					remove_ideas = AAA_Mario_Luis_Olezza_eco
+					remove_ideas = AAA_Hernan_Pujato_sec
+				}
+			}
+		}
+	}
+
+	option = {
+		name = antarctica_news_events.18.a
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+news_event = { # Operation Southern Cross
+	id = antarctica_news_events.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_news_events.20" }
+	title = antarctica_news_events.20.t
+	desc = antarctica_news_events.20.desc
+	picture = GFX_news_event_operation_southern_cross
+
+	is_triggered_only = yes
+
+	option = {
+		name = antarctica_news_events.20.a
+		trigger = {
+			OR = {
+				is_in_faction_with = USA
+				tag = USA
+			}
+		}
+	
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = antarctica_news_events.20.b
+		trigger = {
+			tag = GER
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = antarctica_news_events.20.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = GER
+					is_in_faction_with = USA
+					tag = USA
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # Castle Bravo
+	id = antarctica_aao_flavor.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event antarctica_aao_flavor.1" }
+	title = antarctica_aao_flavor.1.t
+	desc = antarctica_aao_flavor.1.desc
+	picture = GFX_report_event_castle_bravo_bw
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = antarctica_aao_flavor.1.a
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # Bormann selected
+	id = germany_antarctica.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event germany_antarctica.1" }
+	title = germany_antarctica.1.t
+	desc = germany_antarctica.1.desc
+	picture = GFX_news_event_antarctica_map
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		GER = {
+			has_country_flag = bormann_for_germany
+		}
+	}
+
+	option = {
+		name = germany_antarctica.1.a
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # Goring selected
+	id = germany_antarctica.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event germany_antarctica.2" }
+	title = germany_antarctica.2.t
+	desc = germany_antarctica.2.desc
+	picture = GFX_news_event_antarctica_map
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		GER = {
+			has_country_flag = goring_for_germany
+		}
+	}
+
+	option = {
+		name = germany_antarctica.2.a
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # Heydrich selected
+	id = germany_antarctica.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event germany_antarctica.3" }
+	title = germany_antarctica.3.t
+	desc = germany_antarctica.3.desc
+	picture = GFX_news_event_antarctica_map
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		GER = {
+			has_country_flag = heydrich_for_germany
+		}
+	}
+
+	option = {
+		name = germany_antarctica.3.a
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = { # Speer selected
+	id = germany_antarctica.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event germany_antarctica.4" }
+	title = germany_antarctica.4.t
+	desc = germany_antarctica.4.desc
+	picture = GFX_news_event_antarctica_map
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		GER = {
+			has_country_flag = speer_for_germany
+		}
+	}
+
+	option = {
+		name = germany_antarctica.4.a
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
