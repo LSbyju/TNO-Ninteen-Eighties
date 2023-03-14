@@ -21,8 +21,6 @@ state={
 			air_base = 2
 		}
 		add_core_of = ENG
-		add_core_of = FEN
-		set_demilitarized_zone = yes
 	}
 	provinces={
 		6526 9562 11406

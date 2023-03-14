@@ -48,7 +48,6 @@ BRG_Domestic_GUI_Initialize = yes
 ###Playable
 set_country_flag = tno_playable_country
 ###Nuclear
-set_country_flag = tno_can_research_nuclear_tech
 
 add_ideas = {
 	#FACTION

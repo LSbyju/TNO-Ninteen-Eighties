@@ -1119,8 +1119,8 @@ CAM = {
 }
 
 BRG = {
-	color = rgb { 68 40 73 }
-	color_ui = rgb { 68 40 73 }
+	color = rgb { 41 55 71 }
+	color_ui = rgb { 41 55 71 }
 }
 
 IBR = {

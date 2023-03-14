@@ -629,7 +629,6 @@ CZE = { set_cosmetic_tag = CZE_GER }
 SLO = { set_cosmetic_tag = SLO_GER }
 HOL = { set_cosmetic_tag = HOL }
 CAU = { set_cosmetic_tag = CAU }
-BRG = { set_cosmetic_tag = BRG }
 
 ## POLITICS
 set_politics = {

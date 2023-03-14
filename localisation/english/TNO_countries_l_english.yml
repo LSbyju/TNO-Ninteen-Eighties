@@ -233,9 +233,9 @@
 
  # C
  ##cau
- CAU_fascism:0 "Kaukasische Militärregierung"
- CAU_fascism_DEF:0 "Die Kaukasische Militärregierung"
- CAU_fascism_ADJ:0 "Kaukasian"
+ CAU_fascism:0 "Caucasian Federation"
+ CAU_fascism_DEF:0 "the Caucasian Federation"
+ CAU_fascism_ADJ:0 "Caucasian"
  ##
  CAN: "Canada"
  CAN_DEF: "Canada"

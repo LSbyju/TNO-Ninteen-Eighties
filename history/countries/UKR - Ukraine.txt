@@ -106,9 +106,6 @@ add_ideas = {
 	tno_academic_base_basic_literacy
 	tno_admin_efficiency_functional_administrative_systems
 }
-
-set_country_flag = tno_defined_startup_effectiveness
-
 # ECONOMIC LAWS
 set_variable = { tno_trade_laws_effectiveness = 88 }
 set_variable = { tno_income_taxation_effectiveness = 93 }

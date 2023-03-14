@@ -3,4 +3,4 @@
 graphical_culture = GER
 graphical_culture_2d = GER
 
-color = { 68 40 73 }
+color = { 41 55 71 }
