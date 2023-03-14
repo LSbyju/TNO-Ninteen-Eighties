@@ -3,6 +3,11 @@
  CAU:0 "Reichskommissariat Kaukasien"
  CAU_DEF:0 "Reichskommissariat Kaukasien"
  CAU_ADJ:0 "Kaukasian"
+ 
+ CAU_fascism:0 "Caucasian Federation"
+ CAU_fascism_DEF:0 "the Caucasian Federation"
+ CAU_fascism_ADJ:0 "Caucasian"
+
 
  CAU_SGR:0 "Caucasian Federation"
  CAU_SGR_DEF:0 "the Caucasian Federation"

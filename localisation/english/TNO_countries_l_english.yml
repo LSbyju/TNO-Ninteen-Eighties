@@ -232,10 +232,6 @@
  BZZ_ADJ: "Brazzavillian"
 
  # C
- ##cau
- CAU_fascism:0 "Caucasian Federation"
- CAU_fascism_DEF:0 "the Caucasian Federation"
- CAU_fascism_ADJ:0 "Caucasian"
  ##
  CAN: "Canada"
  CAN_DEF: "Canada"

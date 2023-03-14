@@ -1319,8 +1319,8 @@ GAY = {
 }
 
 KOM = {
-	color = rgb { 94 131 162 }
-	color_ui = rgb { 94 131 162 }
+	color = rgb { 163 66 76 }
+	color_ui = rgb { 163 66 76 }
 }
 
 VYT = {

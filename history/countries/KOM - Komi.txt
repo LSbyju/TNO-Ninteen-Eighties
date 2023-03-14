@@ -351,25 +351,24 @@ if = {
 }
 
 
-load_focus_tree = KOM_pre_election
 
 set_politics = {
-	ruling_party = progressivism
+	ruling_party = communist
 	last_election = "1959.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	communist = 13
+	communist = 100
 	ultranationalism = 0
-	socialist = 11
-	progressivism = 25
-	liberalism = 17
-	paternalism = 12
-	liberal_conservatism = 7
-	despotism = 9
-	national_socialism = 6
+	socialist = 0
+	progressivism = 0
+	liberalism = 0
+	paternalism = 0
+	liberal_conservatism = 0
+	despotism = 0
+	national_socialism = 0
 	fascism = 0
 	conservatism = 0
 	
@@ -480,8 +479,8 @@ if = {
 }
 
 #econtype
-set_variable = { TNO_economy_type = 1 }
-set_variable = { TNO_economy_subtype = 10 }
+set_variable = { TNO_economy_type = 3 }
+set_variable = { TNO_economy_subtype = 2 }
 
 #Starting Equipment
 if = {
@@ -495,3 +494,11 @@ if = {
 		variant_name = "T-44"
 	}
 }
+
+##puppets
+puppet = KRK
+puppet = UZB
+puppet = TRK
+puppet = TAJ
+puppet = KYR
+puppet = KAZ
